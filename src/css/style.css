@@ -138,9 +138,9 @@ main {
 }
 
 .livre-card-cover {
-  aspect-ratio: 2/3;
+  /*aspect-ratio: 2/3;
   overflow: hidden;
-  background: #f3f4f6;
+  background: #f3f4f6;*/
 }
 
 .livre-card-cover img {
@@ -274,7 +274,9 @@ main {
 }
 
 .btn-primary:hover {
-  background: #1d4ed8;
+  background: #dae2f9;
+  text-decoration: none;
+  color: #1f2937;
 }
 
 .btn-secondary {
@@ -282,9 +284,9 @@ main {
   color: #1f2937;
 }
 
-.btn-secondary:hover {
+/*.btn-secondary:hover {
   background: #d1d5db;
-}
+}*/
 
 /* Livres similaires */
 .livres-similaires {
@@ -587,7 +589,10 @@ mark {
 }
 
 .btn-secondary:hover {
-  background: #d1d5db;
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
