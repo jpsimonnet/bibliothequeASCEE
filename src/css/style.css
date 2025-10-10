@@ -592,3 +592,9 @@ mark {
     flex-direction: row;
   }
 }
+
+/* Fallback image avec CSS */
+.livre-card-cover img,
+.livre-cover img {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}

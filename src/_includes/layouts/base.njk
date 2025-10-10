@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if title %}{{ title }} - {% endif %}Ma Bibliothèque</title>
   <meta name="description" content="{{ description or 'Catalogue de 7240 livres' }}">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
   
   <header class="site-header">
     <nav class="nav-main">
-      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <a href="{{ '/' | url }}" class="logo">📚 Ma Bibliothèque</a>
       <ul>
-        <li><a href="/">Accueil</a></li>
-        <li><a href="/catalogue/">Catalogue</a></li>
-        <li><a href="/categories/">Catégories</a></li>
-        <li><a href="/recherche/">Recherche</a></li>
+        <li><a href="{{ '/' | url }}">Accueil</a></li>
+        <li><a href="{{ '/catalogue/' | url }}">Catalogue</a></li>
+        <li><a href="{{ '/categories/' | url }}">Catégories</a></li>
+        <li><a href="{{ '/recherche/' | url }}">Recherche</a></li>
       </ul>
     </nav>
   </header>
