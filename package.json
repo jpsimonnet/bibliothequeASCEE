@@ -4,7 +4,7 @@
   "description": "Site statique pour catalogue de 7310 livres",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy --pathprefix=/bibliothequeASCEE/",
+    "build": "ELEVENTY_PATHPREFIX=/bibliothequeASCEE eleventy --pathprefix=/bibliothequeASCEE/",
     "clean": "rm -rf _site"
   },
   "keywords": ["11ty", "bibliothèque", "livres"],

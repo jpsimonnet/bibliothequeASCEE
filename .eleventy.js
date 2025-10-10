@@ -3,8 +3,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/css");
   
-  // Ne pas surveiller les images (trop nombreuses)
   eleventyConfig.watchIgnores.add("src/images/**");
+  
+  // Créer une variable globale accessible dans tous les templates
+  eleventyConfig.addGlobalData("pathPrefix", function() {
+    return process.env.ELEVENTY_PATHPREFIX || '';
+  });
   
   eleventyConfig.addFilter("auteurFormat", function(auteur) {
     return auteur || "Auteur inconnu";
