@@ -1,15 +1,19 @@
 {
   "name": "bibliotheque-11ty",
   "version": "1.0.0",
+  "description": "Site statique pour catalogue de 7310 livres",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy",
+    "build": "eleventy --pathprefix=/bibliothequeASCEE/",
     "clean": "rm -rf _site"
   },
+  "keywords": ["11ty", "bibliothèque", "livres"],
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
   },
   "dependencies": {
-    "csv-parse": "^6.1.0"
+    "csv-parse": "^5.6.0"
   }
 }

@@ -3,6 +3,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/css");
   
+  // Ne pas surveiller les images (trop nombreuses)
+  eleventyConfig.watchIgnores.add("src/images/**");
+  
   eleventyConfig.addFilter("auteurFormat", function(auteur) {
     return auteur || "Auteur inconnu";
   });
@@ -51,7 +54,6 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/bibliothequeASCEE/",
     dir: {
       input: "src",
       output: "_site",
