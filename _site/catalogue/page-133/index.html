@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="un festival meurtrier" 
+        data-auteur="joan d. vinge"
+        data-annee="0"
+        data-ordre="6336">
+        <a href="/livre/6336/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6350.webp" 
+              alt="Un festival meurtrier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un festival meurtrier</h3>
+            <p>Joan D. VINGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la reine de l&#39;été (3 tomes)" 
+        data-auteur="lydieetdesplechin marie violet"
+        data-annee="0"
+        data-ordre="6337">
+        <a href="/livre/6337/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6351.webp" 
+              alt="La reine de l&#39;été (3 tomes)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La reine de l&#39;été (3 tomes)</h3>
+            <p>LydieetDESPLECHIN Marie VIOLET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie sauve" 
+        data-auteur="alain vircondelet"
+        data-annee="1979"
+        data-ordre="6338">
+        <a href="/livre/6338/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6352.webp" 
+              alt="La vie sauve"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie sauve</h3>
+            <p>Alain VIRCONDELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="séraphine de senlis" 
+        data-auteur="virgile"
+        data-annee="1872"
+        data-ordre="6339">
+        <a href="/livre/6339/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6353.webp" 
+              alt="Séraphine de Senlis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Séraphine de Senlis</h3>
+            <p>VIRGILE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les bucoliques, les georgiques" 
+        data-auteur="bertrand visage"
+        data-annee="0"
+        data-ordre="6340">
+        <a href="/livre/6340/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6354.webp" 
+              alt="Les bucoliques, les georgiques"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les bucoliques, les georgiques</h3>
+            <p>Bertrand VISAGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="angelica" 
+        data-auteur="bertrand visage"
+        data-annee="1988"
+        data-ordre="6341">
+        <a href="/livre/6341/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6355.webp" 
+              alt="Angelica"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Angelica</h3>
+            <p>Bertrand VISAGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tous les soleils" 
+        data-auteur="jean-pierre vittori"
+        data-annee="1994"
+        data-ordre="6342">
+        <a href="/livre/6342/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6356.webp" 
+              alt="Tous les soleils"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tous les soleils</h3>
+            <p>Jean-Pierre VITTORI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nous, les appelés d&#39;algérie" 
+        data-auteur="stephen vizinczey"
+        data-annee="0"
+        data-ordre="6343">
+        <a href="/livre/6343/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6357.webp" 
+              alt="Nous, les appelés d&#39;Algérie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nous, les appelés d&#39;Algérie</h3>
+            <p>Stephen VIZINCZEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="eloge des femmes mûres" 
+        data-auteur="georges vizyinos"
+        data-annee="2001"
+        data-ordre="6344">
+        <a href="/livre/6344/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6358.webp" 
+              alt="Eloge des femmes mûres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Eloge des femmes mûres</h3>
+            <p>Georges VIZYINOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le péché de ma mère" 
+        data-auteur="volhard jack/volhard wendy"
+        data-annee="0"
+        data-ordre="6345">
+        <a href="/livre/6345/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6359.webp" 
+              alt="Le péché de ma mère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le péché de ma mère</h3>
+            <p>VOLHARD Jack/VOLHARD Wendy</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;interrogatoire" 
+        data-auteur="vladimir volkoff"
+        data-annee="2000"
+        data-ordre="6346">
+        <a href="/livre/6346/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6360.webp" 
+              alt="L&#39;interrogatoire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;interrogatoire</h3>
+            <p>Vladimir VOLKOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le professeur d&#39;histoire" 
+        data-auteur="vladimir volkoff"
+        data-annee="1985"
+        data-ordre="6347">
+        <a href="/livre/6347/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6361.webp" 
+              alt="Le professeur d&#39;histoire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le professeur d&#39;histoire</h3>
+            <p>Vladimir VOLKOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bouclage" 
+        data-auteur="vladimir volkoff"
+        data-annee="1990"
+        data-ordre="6348">
+        <a href="/livre/6348/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6362.webp" 
+              alt="Le bouclage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bouclage</h3>
+            <p>Vladimir VOLKOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le retournement" 
+        data-auteur="vladimir volkoff"
+        data-annee="1979"
+        data-ordre="6349">
+        <a href="/livre/6349/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6363.webp" 
+              alt="Le retournement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le retournement</h3>
+            <p>Vladimir VOLKOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="éduquer son chien chez les nuls" 
+        data-auteur="vladimir volkoff"
+        data-annee="0"
+        data-ordre="6350">
+        <a href="/livre/6350/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6364.webp" 
+              alt="Éduquer son chien chez les nuls"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Éduquer son chien chez les nuls</h3>
+            <p>Vladimir VOLKOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les faux tsars" 
+        data-auteur="t. william vollmann"
+        data-annee="0"
+        data-ordre="6351">
+        <a href="/livre/6351/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6365.webp" 
+              alt="Les faux tsars"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les faux tsars</h3>
+            <p>T. William VOLLMANN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la famille royale" 
+        data-auteur="jorge volpi"
+        data-annee="0"
+        data-ordre="6352">
+        <a href="/livre/6352/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6366.webp" 
+              alt="La famille royale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La famille royale</h3>
+            <p>Jorge VOLPI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le jardin dévasté" 
+        data-auteur="jorge volpi"
+        data-annee="2009"
+        data-ordre="6353">
+        <a href="/livre/6353/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6367.webp" 
+              alt="Le jardin dévasté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le jardin dévasté</h3>
+            <p>Jorge VOLPI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le temps des cendres" 
+        data-auteur="voltaire"
+        data-annee="1846"
+        data-ordre="6354">
+        <a href="/livre/6354/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6368.webp" 
+              alt="Le temps des cendres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le temps des cendres</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="traité sur la tolérance" 
+        data-auteur="voltaire"
+        data-annee="1763"
+        data-ordre="6355">
+        <a href="/livre/6355/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6369.webp" 
+              alt="Traité sur la tolérance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Traité sur la tolérance</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="candide" 
+        data-auteur="voltaire"
+        data-annee="1746"
+        data-ordre="6356">
+        <a href="/livre/6356/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6370.webp" 
+              alt="Candide"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Candide</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de l’horrible danger de la lecture" 
+        data-auteur="voltaire"
+        data-annee="2006"
+        data-ordre="6357">
+        <a href="/livre/6357/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6371.webp" 
+              alt="De l’horrible danger de la lecture"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De l’horrible danger de la lecture</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;affaire calaset autres affaires - traité sur la tolérance" 
+        data-auteur="voltaire"
+        data-annee="1975"
+        data-ordre="6358">
+        <a href="/livre/6358/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6372.webp" 
+              alt="L&#39;affaire Calaset autres affaires - Traité sur la tolérance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;affaire Calaset autres affaires - Traité sur la tolérance</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lettres philosophiques" 
+        data-auteur="voltaire"
+        data-annee="1733"
+        data-ordre="6359">
+        <a href="/livre/6359/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6373.webp" 
+              alt="Lettres philosophiques"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lettres philosophiques</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="micromégas  - l&#39;ingénu" 
+        data-auteur="voltaire"
+        data-annee="1995"
+        data-ordre="6360">
+        <a href="/livre/6360/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6374.webp" 
+              alt="Micromégas  - L&#39;ingénu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Micromégas  - L&#39;ingénu</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="romans et contes" 
+        data-auteur="voltaire"
+        data-annee="1778"
+        data-ordre="6361">
+        <a href="/livre/6361/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6375.webp" 
+              alt="Romans et contes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Romans et contes</h3>
+            <p>VOLTAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="zadiget autres contes" 
+        data-auteur="ernst von salomon"
+        data-annee="1953"
+        data-ordre="6362">
+        <a href="/livre/6362/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6376.webp" 
+              alt="Zadiget autres contes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Zadiget autres contes</h3>
+            <p>Ernst VON SALOMON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les réprouvés" 
+        data-auteur="emile vuillermoz"
+        data-annee="1947"
+        data-ordre="6363">
+        <a href="/livre/6363/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6377.webp" 
+              alt="Les réprouvés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les réprouvés</h3>
+            <p>Emile VUILLERMOZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de la musique" 
+        data-auteur="klaus wagenbach"
+        data-annee="1993"
+        data-ordre="6364">
+        <a href="/livre/6364/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6378.webp" 
+              alt="Histoire de la musique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de la musique</h3>
+            <p>Klaus WAGENBACH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="kafka par lui-même" 
+        data-auteur="lech walesa"
+        data-annee="0"
+        data-ordre="6365">
+        <a href="/livre/6365/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6379.webp" 
+              alt="Kafka par lui-même"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Kafka par lui-même</h3>
+            <p>Lech WALESA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un chemin d&#39;espoir" 
+        data-auteur="mika walkari"
+        data-annee="0"
+        data-ordre="6366">
+        <a href="/livre/6366/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6380.webp" 
+              alt="Un chemin d&#39;espoir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un chemin d&#39;espoir</h3>
+            <p>Mika WALKARI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;etrusque" 
+        data-auteur="mika walkari"
+        data-annee="0"
+        data-ordre="6367">
+        <a href="/livre/6367/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6381.webp" 
+              alt="L&#39;Etrusque"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;Etrusque</h3>
+            <p>Mika WALKARI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le secret du royaume - tomes 1 et 2" 
+        data-auteur="marylin wallace"
+        data-annee="0"
+        data-ordre="6368">
+        <a href="/livre/6368/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6382.webp" 
+              alt="Le secret du royaume - Tomes 1 et 2"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le secret du royaume - Tomes 1 et 2</h3>
+            <p>Marylin WALLACE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un ange disparait" 
+        data-auteur="robert j. waller"
+        data-annee="0"
+        data-ordre="6369">
+        <a href="/livre/6369/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6383.webp" 
+              alt="Un ange disparait"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un ange disparait</h3>
+            <p>Robert J. WALLER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sur la route de madison" 
+        data-auteur="horace walpole"
+        data-annee="1818"
+        data-ordre="6370">
+        <a href="/livre/6370/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6384.webp" 
+              alt="Sur la route de Madison"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sur la route de Madison</h3>
+            <p>Horace WALPOLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le château d&#39;otrante" 
+        data-auteur="raoul walsh"
+        data-annee="1851"
+        data-ordre="6371">
+        <a href="/livre/6371/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6385.webp" 
+              alt="Le château d&#39;Otrante"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le château d&#39;Otrante</h3>
+            <p>Raoul WALSH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un demi-siècle à hollywood" 
+        data-auteur="mika waltari"
+        data-annee="0"
+        data-ordre="6372">
+        <a href="/livre/6372/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6386.webp" 
+              alt="Un demi-siècle à Hollywood"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un demi-siècle à Hollywood</h3>
+            <p>Mika WALTARI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;escholier de dieu" 
+        data-auteur="mika waltari"
+        data-annee="1987"
+        data-ordre="6373">
+        <a href="/livre/6373/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6387.webp" 
+              alt="L&#39;escholier de Dieu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;escholier de Dieu</h3>
+            <p>Mika WALTARI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jean le pérégrin" 
+        data-auteur="mika waltari"
+        data-annee="1992"
+        data-ordre="6374">
+        <a href="/livre/6374/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6388.webp" 
+              alt="Jean le Pérégrin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jean le Pérégrin</h3>
+            <p>Mika WALTARI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le serviteur du prophète" 
+        data-auteur="mika waltari"
+        data-annee="1986"
+        data-ordre="6375">
+        <a href="/livre/6375/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6389.webp" 
+              alt="Le serviteur du prophète"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le serviteur du prophète</h3>
+            <p>Mika WALTARI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les amants de byzance" 
+        data-auteur="mika waltari"
+        data-annee="2001"
+        data-ordre="6376">
+        <a href="/livre/6376/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6390.webp" 
+              alt="Les amants de Byzance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les amants de Byzance</h3>
+            <p>Mika WALTARI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sinouhé l&#39;egyptien" 
+        data-auteur="gérard walter"
+        data-annee="2012"
+        data-ordre="6377">
+        <a href="/livre/6377/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6391.webp" 
+              alt="Sinouhé l&#39;Egyptien"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sinouhé l&#39;Egyptien</h3>
+            <p>Gérard WALTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="césar" 
+        data-auteur="gérard walter"
+        data-annee="1980"
+        data-ordre="6378">
+        <a href="/livre/6378/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6392.webp" 
+              alt="César"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>César</h3>
+            <p>Gérard WALTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marat" 
+        data-auteur="henriette walter"
+        data-annee="2012"
+        data-ordre="6379">
+        <a href="/livre/6379/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6393.webp" 
+              alt="Marat"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marat</h3>
+            <p>Henriette WALTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cuisine sanglante" 
+        data-auteur="henriette walter"
+        data-annee="1997"
+        data-ordre="6380">
+        <a href="/livre/6380/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6394.webp" 
+              alt="Cuisine sanglante"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cuisine sanglante</h3>
+            <p>Henriette WALTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la disparue de colliton park" 
+        data-auteur="minette walters"
+        data-annee="2005"
+        data-ordre="6381">
+        <a href="/livre/6381/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6395.webp" 
+              alt="La disparue de Colliton Park"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La disparue de Colliton Park</h3>
+            <p>Minette WALTERS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ombre du caméléon" 
+        data-auteur="minette walters"
+        data-annee="2008"
+        data-ordre="6382">
+        <a href="/livre/6382/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6396.webp" 
+              alt="L&#39;ombre du caméléon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ombre du caméléon</h3>
+            <p>Minette WALTERS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lame de fond" 
+        data-auteur="minette walters"
+        data-annee="2000"
+        data-ordre="6383">
+        <a href="/livre/6383/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6397.webp" 
+              alt="Lame de fond"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lame de fond</h3>
+            <p>Minette WALTERS</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-132/">← Précédent</a>
+    
+    
+    <span>Page 133 sur 153</span>
+    
+    
+      <a href="/catalogue/page-134/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

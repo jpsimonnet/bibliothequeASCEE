@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="les noces sauvages" 
+        data-auteur="nikki gemmel"
+        data-annee="2000"
+        data-ordre="2496">
+        <a href="/livre/2496/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2507.webp" 
+              alt="Les noces sauvages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les noces sauvages</h3>
+            <p>Nikki GEMMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="traversée" 
+        data-auteur="nikki gemmel"
+        data-annee="2000"
+        data-ordre="2497">
+        <a href="/livre/2497/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2508.webp" 
+              alt="Traversée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Traversée</h3>
+            <p>Nikki GEMMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une raison d&#39;espérer" 
+        data-auteur="jacques genereux"
+        data-annee="2000"
+        data-ordre="2498">
+        <a href="/livre/2498/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2509.webp" 
+              alt="Une raison d&#39;espérer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une raison d&#39;espérer</h3>
+            <p>Jacques GENEREUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal du voleur" 
+        data-auteur="jean genet"
+        data-annee="1949"
+        data-ordre="2499">
+        <a href="/livre/2499/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2510.webp" 
+              alt="Journal du voleur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal du voleur</h3>
+            <p>Jean GENET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="notre-dame-des-fleurs" 
+        data-auteur="jean genet"
+        data-annee="1948"
+        data-ordre="2500">
+        <a href="/livre/2500/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2511.webp" 
+              alt="Notre-Dame-des-Fleurs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Notre-Dame-des-Fleurs</h3>
+            <p>Jean GENET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les nègres" 
+        data-auteur="jean genet"
+        data-annee="1959"
+        data-ordre="2501">
+        <a href="/livre/2501/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2512.webp" 
+              alt="Les nègres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les nègres</h3>
+            <p>Jean GENET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les bonnes" 
+        data-auteur="jean genet"
+        data-annee="1963"
+        data-ordre="2502">
+        <a href="/livre/2502/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2513.webp" 
+              alt="Les bonnes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les bonnes</h3>
+            <p>Jean GENET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les paravents" 
+        data-auteur="jean genet"
+        data-annee="1961"
+        data-ordre="2503">
+        <a href="/livre/2503/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2514.webp" 
+              alt="Les paravents"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les paravents</h3>
+            <p>Jean GENET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la motte rouge" 
+        data-auteur="maurice genevoix"
+        data-annee="1979"
+        data-ordre="2504">
+        <a href="/livre/2504/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2515.webp" 
+              alt="La motte rouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La motte rouge</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marcheloup" 
+        data-auteur="maurice genevoix"
+        data-annee="1959"
+        data-ordre="2505">
+        <a href="/livre/2505/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2516.webp" 
+              alt="Marcheloup"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marcheloup</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bestiaire enchanté" 
+        data-auteur="maurice genevoix"
+        data-annee="1969"
+        data-ordre="2506">
+        <a href="/livre/2506/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2517.webp" 
+              alt="Bestiaire enchanté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bestiaire enchanté</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lorelei" 
+        data-auteur="maurice genevoix"
+        data-annee="1978"
+        data-ordre="2507">
+        <a href="/livre/2507/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2518.webp" 
+              alt="Lorelei"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lorelei</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rroû" 
+        data-auteur="maurice genevoix"
+        data-annee="1931"
+        data-ordre="2508">
+        <a href="/livre/2508/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2519.webp" 
+              alt="Rroû"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rroû</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tendre bestiaire" 
+        data-auteur="maurice genevoix"
+        data-annee="1969"
+        data-ordre="2509">
+        <a href="/livre/2509/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2520.webp" 
+              alt="Tendre bestiaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tendre bestiaire</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="trente mille jours" 
+        data-auteur="maurice genevoix"
+        data-annee="1980"
+        data-ordre="2510">
+        <a href="/livre/2510/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2521.webp" 
+              alt="Trente mille jours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Trente mille jours</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un jour" 
+        data-auteur="maurice genevoix"
+        data-annee="1976"
+        data-ordre="2511">
+        <a href="/livre/2511/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2522.webp" 
+              alt="Un jour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un jour</h3>
+            <p>Maurice GENEVOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="balzac - le napoléon  des lettres" 
+        data-auteur="gérard gengembre"
+        data-annee="1999"
+        data-ordre="2512">
+        <a href="/livre/2512/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2523.webp" 
+              alt="Balzac - Le Napoléon  des lettres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Balzac - Le Napoléon  des lettres</h3>
+            <p>Gérard GENGEMBRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a vos plumes citoyens !" 
+        data-auteur="gérard gengembre"
+        data-annee="1988"
+        data-ordre="2513">
+        <a href="/livre/2513/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2524.webp" 
+              alt="A vos plumes citoyens !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A vos plumes citoyens !</h3>
+            <p>Gérard GENGEMBRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jeanne la pudeur" 
+        data-auteur="nicolas genka"
+        data-annee="1964"
+        data-ordre="2514">
+        <a href="/livre/2514/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2525.webp" 
+              alt="Jeanne la Pudeur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jeanne la Pudeur</h3>
+            <p>Nicolas GENKA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;épi monstre" 
+        data-auteur="nicolas genka"
+        data-annee="1962"
+        data-ordre="2515">
+        <a href="/livre/2515/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2526.webp" 
+              alt="L&#39;épi monstre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;épi monstre</h3>
+            <p>Nicolas GENKA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cortège de la mort" 
+        data-auteur="elisabeth george"
+        data-annee="2017"
+        data-ordre="2516">
+        <a href="/livre/2516/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2527.webp" 
+              alt="Le cortège de la mort"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cortège de la mort</h3>
+            <p>Elisabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le rouge du péché" 
+        data-auteur="elisabeth george"
+        data-annee="2000"
+        data-ordre="2517">
+        <a href="/livre/2517/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2528.webp" 
+              alt="Le rouge du péché"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le rouge du péché</h3>
+            <p>Elisabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un nid de mensonges" 
+        data-auteur="elisabeth george"
+        data-annee="2006"
+        data-ordre="2518">
+        <a href="/livre/2518/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2529.webp" 
+              alt="Un nid de mensonges"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un nid de mensonges</h3>
+            <p>Elisabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un goût de cendres" 
+        data-auteur="elizabeth george"
+        data-annee="0"
+        data-ordre="2519">
+        <a href="/livre/2519/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2530.webp" 
+              alt="Un goût de cendres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un goût de cendres</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une douce vengeance" 
+        data-auteur="elizabeth george"
+        data-annee="1993"
+        data-ordre="2520">
+        <a href="/livre/2520/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2531.webp" 
+              alt="Une douce vengeance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une douce vengeance</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cérémonies barbares" 
+        data-auteur="elizabeth george"
+        data-annee="1998"
+        data-ordre="2521">
+        <a href="/livre/2521/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2532.webp" 
+              alt="Cérémonies barbares"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cérémonies barbares</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="enquête dans le brouillard" 
+        data-auteur="elizabeth george"
+        data-annee="1990"
+        data-ordre="2522">
+        <a href="/livre/2522/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2533.webp" 
+              alt="Enquête dans le brouillard"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Enquête dans le brouillard</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le lieu du crime" 
+        data-auteur="elizabeth george"
+        data-annee="1993"
+        data-ordre="2523">
+        <a href="/livre/2523/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2534.webp" 
+              alt="Le lieu du crime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le lieu du crime</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le meurtre de la falaise" 
+        data-auteur="elizabeth george"
+        data-annee="2009"
+        data-ordre="2524">
+        <a href="/livre/2524/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2535.webp" 
+              alt="Le meurtre de la falaise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le meurtre de la falaise</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le visage de l’ennemi" 
+        data-auteur="elizabeth george"
+        data-annee="1998"
+        data-ordre="2525">
+        <a href="/livre/2525/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2536.webp" 
+              alt="Le visage de l’ennemi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le visage de l’ennemi</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoire infidèle" 
+        data-auteur="elizabeth george"
+        data-annee="2001"
+        data-ordre="2526">
+        <a href="/livre/2526/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2537.webp" 
+              alt="Mémoire infidèle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoire infidèle</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pour solde de tout compte" 
+        data-auteur="elizabeth george"
+        data-annee="2004"
+        data-ordre="2527">
+        <a href="/livre/2527/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2538.webp" 
+              alt="Pour solde de tout compte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pour solde de tout compte</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mal d’enfant" 
+        data-auteur="elizabeth george"
+        data-annee="1994"
+        data-ordre="2528">
+        <a href="/livre/2528/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2539.webp" 
+              alt="Mal d’enfant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mal d’enfant</h3>
+            <p>Elizabeth GEORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la trace aux esclaves" 
+        data-auteur="alain gerber"
+        data-annee="1946"
+        data-ordre="2529">
+        <a href="/livre/2529/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2540.webp" 
+              alt="La trace aux esclaves"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La trace aux esclaves</h3>
+            <p>Alain GERBER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;enfant méduse" 
+        data-auteur="sylvie germain"
+        data-annee="1991"
+        data-ordre="2530">
+        <a href="/livre/2530/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2541.webp" 
+              alt="L&#39;enfant Méduse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;enfant Méduse</h3>
+            <p>Sylvie GERMAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le livre des nuits" 
+        data-auteur="sylvie germain"
+        data-annee="1985"
+        data-ordre="2531">
+        <a href="/livre/2531/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2542.webp" 
+              alt="Le livre des nuits"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le livre des nuits</h3>
+            <p>Sylvie GERMAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="magnus" 
+        data-auteur="sylvie germain"
+        data-annee="2005"
+        data-ordre="2532">
+        <a href="/livre/2532/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2543.webp" 
+              alt="Magnus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Magnus</h3>
+            <p>Sylvie GERMAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tobie des marais" 
+        data-auteur="sylvie germain"
+        data-annee="2000"
+        data-ordre="2533">
+        <a href="/livre/2533/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2544.webp" 
+              alt="Tobie des marais"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tobie des marais</h3>
+            <p>Sylvie GERMAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="on ne chevauche pas les tigres" 
+        data-auteur="jack gerson"
+        data-annee="1985"
+        data-ordre="2534">
+        <a href="/livre/2534/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2545.webp" 
+              alt="On ne chevauche pas les tigres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>On ne chevauche pas les tigres</h3>
+            <p>Jack GERSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tous les jeux de cartes" 
+        data-auteur="frans gerver"
+        data-annee="2006"
+        data-ordre="2535">
+        <a href="/livre/2535/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2546.webp" 
+              alt="Tous les jeux de cartes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tous les jeux de cartes</h3>
+            <p>Frans GERVER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="eux sur la photo" 
+        data-auteur="hélène gestern"
+        data-annee="2011"
+        data-ordre="2536">
+        <a href="/livre/2536/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2547.webp" 
+              alt="Eux sur la photo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Eux sur la photo</h3>
+            <p>Hélène GESTERN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la balade du grand macabre" 
+        data-auteur="michel de ghelderode"
+        data-annee="2002"
+        data-ordre="2537">
+        <a href="/livre/2537/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2548.webp" 
+              alt="La balade du grand macabre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La balade du grand macabre</h3>
+            <p>Michel de GHELDERODE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;espionne" 
+        data-auteur="virgil gheorghiu"
+        data-annee="1971"
+        data-ordre="2538">
+        <a href="/livre/2538/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2549.webp" 
+              alt="L&#39;espionne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;espionne</h3>
+            <p>Virgil GHEORGHIU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les mendiants de miracles" 
+        data-auteur="virgil gheorghiu"
+        data-annee="1958"
+        data-ordre="2539">
+        <a href="/livre/2539/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2550.webp" 
+              alt="Les mendiants de miracles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les mendiants de miracles</h3>
+            <p>Virgil GHEORGHIU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les feux du bengale" 
+        data-auteur="amitav ghost"
+        data-annee="2002"
+        data-ordre="2540">
+        <a href="/livre/2540/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2551.webp" 
+              alt="Les feux du Bengale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les feux du Bengale</h3>
+            <p>Amitav GHOST</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="apocalypse" 
+        data-auteur="&amp; ravenne giacometti"
+        data-annee="2010"
+        data-ordre="2541">
+        <a href="/livre/2541/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2552.webp" 
+              alt="Apocalypse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Apocalypse</h3>
+            <p>&amp; Ravenne GIACOMETTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les mères qui travaillent sont-elles  coupables ?" 
+        data-auteur="sylviane giampino"
+        data-annee="2000"
+        data-ordre="2542">
+        <a href="/livre/2542/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2553.webp" 
+              alt="Les mères qui travaillent sont-elles  coupables ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les mères qui travaillent sont-elles  coupables ?</h3>
+            <p>Sylviane GIAMPINO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une femme vertueuse" 
+        data-auteur="kaye gibbons"
+        data-annee="1990"
+        data-ordre="2543">
+        <a href="/livre/2543/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2554.webp" 
+              alt="Une femme vertueuse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une femme vertueuse</h3>
+            <p>Kaye GIBBONS</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-52/">← Précédent</a>
+    
+    
+    <span>Page 53 sur 153</span>
+    
+    
+      <a href="/catalogue/page-54/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

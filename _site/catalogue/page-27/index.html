@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="les roses de verdun" 
+        data-auteur="bernard clavel"
+        data-annee="1994"
+        data-ordre="1248">
+        <a href="/livre/1248/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1251.webp" 
+              alt="Les roses de Verdun"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les roses de Verdun</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="malataverne" 
+        data-auteur="bernard clavel"
+        data-annee="1960"
+        data-ordre="1249">
+        <a href="/livre/1249/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1252.webp" 
+              alt="Malataverne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Malataverne</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="meurtre sur le grandvaux" 
+        data-auteur="bernard clavel"
+        data-annee="1991"
+        data-ordre="1250">
+        <a href="/livre/1250/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1253.webp" 
+              alt="Meurtre sur le Grandvaux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Meurtre sur le Grandvaux</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;iroquoise" 
+        data-auteur="bernard clavel"
+        data-annee="1979"
+        data-ordre="1251">
+        <a href="/livre/1251/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1254.webp" 
+              alt="L&#39;Iroquoise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;Iroquoise</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="comment être un névrosé heureux" 
+        data-auteur="john/skynner robin cleese"
+        data-annee="1998"
+        data-ordre="1252">
+        <a href="/livre/1252/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1255.webp" 
+              alt="Comment être un névrosé heureux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Comment être un névrosé heureux</h3>
+            <p>John/SKYNNER Robin CLEESE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cherche-midi" 
+        data-auteur="catherine clement"
+        data-annee="2000"
+        data-ordre="1253">
+        <a href="/livre/1253/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1256.webp" 
+              alt="Cherche-Midi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cherche-Midi</h3>
+            <p>Catherine CLEMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jésus au bucher" 
+        data-auteur="catherine clement"
+        data-annee="2000"
+        data-ordre="1254">
+        <a href="/livre/1254/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1257.webp" 
+              alt="Jésus au bucher"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jésus au bucher</h3>
+            <p>Catherine CLEMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les derniers jours de la déesse" 
+        data-auteur="catherine clement"
+        data-annee="2006"
+        data-ordre="1255">
+        <a href="/livre/1255/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1258.webp" 
+              alt="Les derniers jours de la déesse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les derniers jours de la déesse</h3>
+            <p>Catherine CLEMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pour l&#39;amour de l&#39;inde" 
+        data-auteur="catherine clement"
+        data-annee="1993"
+        data-ordre="1256">
+        <a href="/livre/1256/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1259.webp" 
+              alt="Pour l&#39;amour de l&#39;Inde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pour l&#39;amour de l&#39;Inde</h3>
+            <p>Catherine CLEMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voyage de théo" 
+        data-auteur="catherine clement"
+        data-annee="1997"
+        data-ordre="1257">
+        <a href="/livre/1257/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1260.webp" 
+              alt="Le voyage de Théo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voyage de Théo</h3>
+            <p>Catherine CLEMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les lapins ne mangent pas de carottes" 
+        data-auteur="hugo clement"
+        data-annee="2022"
+        data-ordre="1258">
+        <a href="/livre/1258/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1261.webp" 
+              alt="Les lapins ne mangent pas de carottes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les lapins ne mangent pas de carottes</h3>
+            <p>Hugo CLEMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le guide marabout des jeux de société" 
+        data-auteur="martine clidiere"
+        data-annee="1968"
+        data-ordre="1259">
+        <a href="/livre/1259/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1262.webp" 
+              alt="Le guide marabout des jeux de société"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le guide marabout des jeux de société</h3>
+            <p>Martine CLIDIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le compte à rebours" 
+        data-auteur="françois de closets"
+        data-annee="1999"
+        data-ordre="1260">
+        <a href="/livre/1260/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1263.webp" 
+              alt="Le compte à rebours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le compte à rebours</h3>
+            <p>François de CLOSETS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="toujours plus !" 
+        data-auteur="françois de closets"
+        data-annee="1982"
+        data-ordre="1261">
+        <a href="/livre/1261/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1264.webp" 
+              alt="Toujours plus !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Toujours plus !</h3>
+            <p>François de CLOSETS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand cirque" 
+        data-auteur="pierre clostermann"
+        data-annee="1951"
+        data-ordre="1262">
+        <a href="/livre/1262/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1265.webp" 
+              alt="Le Grand Cirque"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Grand Cirque</h3>
+            <p>Pierre CLOSTERMANN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="soliman le magnifique" 
+        data-auteur="andré clot"
+        data-annee="1983"
+        data-ordre="1263">
+        <a href="/livre/1263/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1266.webp" 
+              alt="Soliman le magnifique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Soliman le magnifique</h3>
+            <p>André CLOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;enfant halluciné" 
+        data-auteur="rené-jean clot"
+        data-annee="1987"
+        data-ordre="1264">
+        <a href="/livre/1264/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1267.webp" 
+              alt="L&#39;enfant halluciné"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;enfant halluciné</h3>
+            <p>René-Jean CLOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="laurent le magnifique" 
+        data-auteur="ivan cloulas"
+        data-annee="1982"
+        data-ordre="1265">
+        <a href="/livre/1265/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1268.webp" 
+              alt="Laurent le magnifique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Laurent le magnifique</h3>
+            <p>Ivan CLOULAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un sentiment d&#39;abandon" 
+        data-auteur="christopher coake"
+        data-annee="2006"
+        data-ordre="1266">
+        <a href="/livre/1266/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1269.webp" 
+              alt="Un sentiment d&#39;abandon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un sentiment d&#39;abandon</h3>
+            <p>Christopher COAKE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans les bois" 
+        data-auteur="harlan coben"
+        data-annee="2013"
+        data-ordre="1267">
+        <a href="/livre/1267/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1270.webp" 
+              alt="Dans les bois"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans les bois</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="peur noire" 
+        data-auteur="harlan coben"
+        data-annee="2009"
+        data-ordre="1268">
+        <a href="/livre/1268/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1271.webp" 
+              alt="Peur noire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Peur noire</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sans laisser d&#39;adresse" 
+        data-auteur="harlan coben"
+        data-annee="2010"
+        data-ordre="1269">
+        <a href="/livre/1269/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1272.webp" 
+              alt="Sans laisser d&#39;adresse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sans laisser d&#39;adresse</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sans un mot" 
+        data-auteur="harlan coben"
+        data-annee="2009"
+        data-ordre="1270">
+        <a href="/livre/1270/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1273.webp" 
+              alt="Sans un mot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sans un mot</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="balle de match" 
+        data-auteur="harlan coben"
+        data-annee="2005"
+        data-ordre="1271">
+        <a href="/livre/1271/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1274.webp" 
+              alt="Balle de match"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Balle de match</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="disparu à jamais" 
+        data-auteur="harlan coben"
+        data-annee="2003"
+        data-ordre="1272">
+        <a href="/livre/1272/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1275.webp" 
+              alt="Disparu à jamais"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Disparu à jamais</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="innocent" 
+        data-auteur="harlan coben"
+        data-annee="2004"
+        data-ordre="1273">
+        <a href="/livre/1273/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1276.webp" 
+              alt="Innocent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Innocent</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ne le dis à personne…" 
+        data-auteur="harlan coben"
+        data-annee="2002"
+        data-ordre="1274">
+        <a href="/livre/1274/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1277.webp" 
+              alt="Ne le dis à personne…"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ne le dis à personne…</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="promets-moi" 
+        data-auteur="harlan coben"
+        data-annee="2013"
+        data-ordre="1275">
+        <a href="/livre/1275/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1278.webp" 
+              alt="Promets-moi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Promets-moi</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rupture de contrat" 
+        data-auteur="harlan coben"
+        data-annee="2003"
+        data-ordre="1276">
+        <a href="/livre/1276/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1279.webp" 
+              alt="Rupture de contrat"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rupture de contrat</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="temps mort" 
+        data-auteur="harlan coben"
+        data-annee="2007"
+        data-ordre="1277">
+        <a href="/livre/1277/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1280.webp" 
+              alt="Temps mort"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Temps mort</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ne t&#39;enfuis plus" 
+        data-auteur="harlan coben"
+        data-annee="2019"
+        data-ordre="1278">
+        <a href="/livre/1278/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1281.webp" 
+              alt="Ne t&#39;enfuis plus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ne t&#39;enfuis plus</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;inconnu de la forêt" 
+        data-auteur="harlan coben"
+        data-annee="2020"
+        data-ordre="1279">
+        <a href="/livre/1279/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1282.webp" 
+              alt="L&#39;inconnu de la forêt"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;inconnu de la forêt</h3>
+            <p>Harlan COBEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="personne ne devrait mourir comme ça" 
+        data-auteur="a. coburn"
+        data-annee="1981"
+        data-ordre="1280">
+        <a href="/livre/1280/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1283.webp" 
+              alt="Personne ne devrait mourir comme ça"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Personne ne devrait mourir comme ça</h3>
+            <p>A. COBURN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="thomas l&#39;imposteur" 
+        data-auteur="jean cocteau"
+        data-annee="1923"
+        data-ordre="1281">
+        <a href="/livre/1281/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1284.webp" 
+              alt="Thomas l&#39;imposteur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Thomas l&#39;imposteur</h3>
+            <p>Jean COCTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bacchus" 
+        data-auteur="jean cocteau"
+        data-annee="1952"
+        data-ordre="1282">
+        <a href="/livre/1282/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1285.webp" 
+              alt="Bacchus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bacchus</h3>
+            <p>Jean COCTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la machine infernale" 
+        data-auteur="jean cocteau"
+        data-annee="1934"
+        data-ordre="1283">
+        <a href="/livre/1283/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1286.webp" 
+              alt="La machine infernale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La machine infernale</h3>
+            <p>Jean COCTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les parents terribles" 
+        data-auteur="jean cocteau"
+        data-annee="1938"
+        data-ordre="1284">
+        <a href="/livre/1284/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1287.webp" 
+              alt="Les parents terribles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les parents terribles</h3>
+            <p>Jean COCTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie très privée de mr sim" 
+        data-auteur="jonathan coe"
+        data-annee="2011"
+        data-ordre="1285">
+        <a href="/livre/1285/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1288.webp" 
+              alt="La vie très privée de Mr Sim"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie très privée de Mr Sim</h3>
+            <p>Jonathan COE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison du sommeil" 
+        data-auteur="jonathan coe"
+        data-annee="1998"
+        data-ordre="1286">
+        <a href="/livre/1286/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1289.webp" 
+              alt="La maison du sommeil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison du sommeil</h3>
+            <p>Jonathan COE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la pluie, avant qu&#39;elle tombe" 
+        data-auteur="jonathan coe"
+        data-annee="2009"
+        data-ordre="1287">
+        <a href="/livre/1287/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1290.webp" 
+              alt="La pluie, avant qu&#39;elle tombe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La pluie, avant qu&#39;elle tombe</h3>
+            <p>Jonathan COE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="testament à l&#39;anglaise" 
+        data-auteur="jonathan coe"
+        data-annee="1997"
+        data-ordre="1288">
+        <a href="/livre/1288/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1291.webp" 
+              alt="Testament à l&#39;anglaise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Testament à l&#39;anglaise</h3>
+            <p>Jonathan COE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="comme le fleuve qui coule" 
+        data-auteur="paulo coelho"
+        data-annee="2006"
+        data-ordre="1289">
+        <a href="/livre/1289/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1292.webp" 
+              alt="Comme le fleuve qui coule"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Comme le fleuve qui coule</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;alchimiste" 
+        data-auteur="paulo coelho"
+        data-annee="1995"
+        data-ordre="1290">
+        <a href="/livre/1290/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1293.webp" 
+              alt="L&#39;alchimiste"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;alchimiste</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la cinquième montagne" 
+        data-auteur="paulo coelho"
+        data-annee="1998"
+        data-ordre="1291">
+        <a href="/livre/1291/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1294.webp" 
+              alt="La cinquième montagne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La cinquième montagne</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la sorcière de portobello" 
+        data-auteur="paulo coelho"
+        data-annee="2008"
+        data-ordre="1292">
+        <a href="/livre/1292/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1295.webp" 
+              alt="La sorcière de Portobello"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La sorcière de Portobello</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le démon et mademoiselle pyrm" 
+        data-auteur="paulo coelho"
+        data-annee="2004"
+        data-ordre="1293">
+        <a href="/livre/1293/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1296.webp" 
+              alt="Le démon et Mademoiselle Pyrm"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le démon et Mademoiselle Pyrm</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le pèlerin de compostelle" 
+        data-auteur="paulo coelho"
+        data-annee="1996"
+        data-ordre="1294">
+        <a href="/livre/1294/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1297.webp" 
+              alt="Le pèlerin de Compostelle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le pèlerin de Compostelle</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le zahir" 
+        data-auteur="paulo coelho"
+        data-annee="2005"
+        data-ordre="1295">
+        <a href="/livre/1295/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1298.webp" 
+              alt="Le zahir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le zahir</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-26/">← Précédent</a>
+    
+    
+    <span>Page 27 sur 153</span>
+    
+    
+      <a href="/catalogue/page-28/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

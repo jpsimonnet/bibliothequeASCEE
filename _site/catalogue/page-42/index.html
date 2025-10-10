@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le bouchot" 
+        data-auteur="hortense dufour"
+        data-annee="1982"
+        data-ordre="1968">
+        <a href="/livre/1968/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1972.webp" 
+              alt="Le bouchot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bouchot</h3>
+            <p>Hortense DUFOUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la farce de maître pathelin" 
+        data-auteur="jean dufournet"
+        data-annee="1986"
+        data-ordre="1969">
+        <a href="/livre/1969/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1973.webp" 
+              alt="La farce de Maître Pathelin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La farce de Maître Pathelin</h3>
+            <p>Jean DUFOURNET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="morny le roi du second empire" 
+        data-auteur="claude dufresne"
+        data-annee="1993"
+        data-ordre="1970">
+        <a href="/livre/1970/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1974.webp" 
+              alt="Morny le roi du second Empire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Morny le roi du second Empire</h3>
+            <p>Claude DUFRESNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chambre des officiers" 
+        data-auteur="marc dugain"
+        data-annee="1998"
+        data-ordre="1971">
+        <a href="/livre/1971/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1975.webp" 
+              alt="La chambre des officiers"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chambre des officiers</h3>
+            <p>Marc DUGAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la malédiction d&#39;edgar" 
+        data-auteur="marc dugain"
+        data-annee="2005"
+        data-ordre="1972">
+        <a href="/livre/1972/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1976.webp" 
+              alt="La malédiction d&#39;Edgar"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La malédiction d&#39;Edgar</h3>
+            <p>Marc DUGAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une exécution ordinaire" 
+        data-auteur="marc dugain"
+        data-annee="2007"
+        data-ordre="1973">
+        <a href="/livre/1973/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1977.webp" 
+              alt="Une exécution ordinaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une exécution ordinaire</h3>
+            <p>Marc DUGAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="derrière le miroir -les hommes politiques à la télévision" 
+        data-auteur="alain duhamel"
+        data-annee="2016"
+        data-ordre="1974">
+        <a href="/livre/1974/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1978.webp" 
+              alt="Derrière le miroir -Les hommes politiques à la télévision"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Derrière le miroir -Les hommes politiques à la télévision</h3>
+            <p>Alain DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cécile parmi nous" 
+        data-auteur="georges duhamel"
+        data-annee="1938"
+        data-ordre="1975">
+        <a href="/livre/1975/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1979.webp" 
+              alt="Cécile parmi nous"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cécile parmi nous</h3>
+            <p>Georges DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la nuit de la saint-jean" 
+        data-auteur="georges duhamel"
+        data-annee="1935"
+        data-ordre="1976">
+        <a href="/livre/1976/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1980.webp" 
+              alt="La nuit de la Saint-Jean"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La nuit de la Saint-Jean</h3>
+            <p>Georges DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le combat contre les ombres" 
+        data-auteur="georges duhamel"
+        data-annee="1938"
+        data-ordre="1977">
+        <a href="/livre/1977/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1981.webp" 
+              alt="Le combat contre les ombres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le combat contre les ombres</h3>
+            <p>Georges DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le jardin des bêtes sauvages" 
+        data-auteur="georges duhamel"
+        data-annee="1933"
+        data-ordre="1978">
+        <a href="/livre/1978/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1982.webp" 
+              alt="Le jardin des bêtes sauvages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le jardin des bêtes sauvages</h3>
+            <p>Georges DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="suzanne et les jeunes hommes" 
+        data-auteur="georges duhamel"
+        data-annee="1940"
+        data-ordre="1979">
+        <a href="/livre/1979/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1983.webp" 
+              alt="Suzanne et les jeunes hommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Suzanne et les jeunes hommes</h3>
+            <p>Georges DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vie des martyrs" 
+        data-auteur="georges duhamel"
+        data-annee="1917"
+        data-ordre="1980">
+        <a href="/livre/1980/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1984.webp" 
+              alt="Vie des Martyrs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vie des Martyrs</h3>
+            <p>Georges DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vue de la terre promise" 
+        data-auteur="georges duhamel"
+        data-annee="1900"
+        data-ordre="1981">
+        <a href="/livre/1981/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1985.webp" 
+              alt="Vue de la terre promise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vue de la terre promise</h3>
+            <p>Georges DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand condé" 
+        data-auteur="pierre duhamel"
+        data-annee="1981"
+        data-ordre="1982">
+        <a href="/livre/1982/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1986.webp" 
+              alt="Le Grand Condé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Grand Condé</h3>
+            <p>Pierre DUHAMEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la comtesse de charny" 
+        data-auteur="alexandre dumas"
+        data-annee="1890"
+        data-ordre="1983">
+        <a href="/livre/1983/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1987.webp" 
+              alt="La Comtesse de Charny"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Comtesse de Charny</h3>
+            <p>Alexandre DUMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la reine margot" 
+        data-auteur="alexandre dumas"
+        data-annee="1844"
+        data-ordre="1984">
+        <a href="/livre/1984/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1988.webp" 
+              alt="La reine Margot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La reine Margot</h3>
+            <p>Alexandre DUMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la tulipe noire" 
+        data-auteur="alexandre dumas"
+        data-annee="1800"
+        data-ordre="1985">
+        <a href="/livre/1985/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1989.webp" 
+              alt="La tulipe noire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La tulipe noire</h3>
+            <p>Alexandre DUMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le comte de monte-cristo(2 tomes)" 
+        data-auteur="alexandre dumas"
+        data-annee="2017"
+        data-ordre="1986">
+        <a href="/livre/1986/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1990.webp" 
+              alt="Le Comte de Monte-Cristo(2 tomes)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Comte de Monte-Cristo(2 tomes)</h3>
+            <p>Alexandre DUMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les trois mousquetaires" 
+        data-auteur="alexandre dumas"
+        data-annee="1844"
+        data-ordre="1987">
+        <a href="/livre/1987/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1991.webp" 
+              alt="Les Trois Mousquetaires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Trois Mousquetaires</h3>
+            <p>Alexandre DUMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la dame aux camélias" 
+        data-auteur="alexandre  fils dumas"
+        data-annee="1848"
+        data-ordre="1988">
+        <a href="/livre/1988/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1992.webp" 
+              alt="La dame aux camélias"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La dame aux camélias</h3>
+            <p>Alexandre  Fils DUMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marie de bourgogne" 
+        data-auteur="georges-henri dumont"
+        data-annee="1942"
+        data-ordre="1989">
+        <a href="/livre/1989/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1993.webp" 
+              alt="Marie de Bourgogne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marie de Bourgogne</h3>
+            <p>Georges-Henri DUMONT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="encre – le livre de toutes les heures, ii" 
+        data-auteur="hall duncan"
+        data-annee="2012"
+        data-ordre="1990">
+        <a href="/livre/1990/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1994.webp" 
+              alt="Encre – Le livre de Toutes les Heures, II"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Encre – Le livre de Toutes les Heures, II</h3>
+            <p>Hall DUNCAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="velum – le livre de toutes les heures, i" 
+        data-auteur="hall duncan"
+        data-annee="2012"
+        data-ordre="1991">
+        <a href="/livre/1991/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1995.webp" 
+              alt="Velum – Le livre de Toutes les Heures, I"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Velum – Le livre de Toutes les Heures, I</h3>
+            <p>Hall DUNCAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ma vie" 
+        data-auteur="isadora duncan"
+        data-annee="1928"
+        data-ordre="1992">
+        <a href="/livre/1992/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1996.webp" 
+              alt="Ma vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ma vie</h3>
+            <p>Isadora DUNCAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="terre des oublis" 
+        data-auteur="thu huong duong"
+        data-annee="2006"
+        data-ordre="1993">
+        <a href="/livre/1993/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1997.webp" 
+              alt="Terre des oublis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Terre des oublis</h3>
+            <p>Thu Huong DUONG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la saga de l&#39;espace" 
+        data-auteur="alain dupas"
+        data-annee="1986"
+        data-ordre="1994">
+        <a href="/livre/1994/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1998.webp" 
+              alt="La saga de l&#39;espace"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La saga de l&#39;espace</h3>
+            <p>Alain DUPAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="allons voir plus loin, veux-tu ?" 
+        data-auteur="anny duperey"
+        data-annee="2002"
+        data-ordre="1995">
+        <a href="/livre/1995/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1999.webp" 
+              alt="Allons voir plus loin, veux-tu ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Allons voir plus loin, veux-tu ?</h3>
+            <p>Anny DUPEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je vous écris" 
+        data-auteur="anny duperey"
+        data-annee="1993"
+        data-ordre="1996">
+        <a href="/livre/1996/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2000.webp" 
+              alt="Je vous écris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je vous écris</h3>
+            <p>Anny DUPEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le poil et la plume" 
+        data-auteur="anny duperey"
+        data-annee="2011"
+        data-ordre="1997">
+        <a href="/livre/1997/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2001.webp" 
+              alt="Le poil et la plume"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le poil et la plume</h3>
+            <p>Anny DUPEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voile noir" 
+        data-auteur="anny duperey"
+        data-annee="1992"
+        data-ordre="1998">
+        <a href="/livre/1998/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2002.webp" 
+              alt="Le voile noir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voile noir</h3>
+            <p>Anny DUPEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chats de hasard" 
+        data-auteur="anny duperey"
+        data-annee="1999"
+        data-ordre="1999">
+        <a href="/livre/1999/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2003.webp" 
+              alt="Les chats de hasard"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chats de hasard</h3>
+            <p>Anny DUPEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une soirée" 
+        data-auteur="anny duperey"
+        data-annee="2005"
+        data-ordre="2000">
+        <a href="/livre/2000/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2004.webp" 
+              alt="Une soirée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une soirée</h3>
+            <p>Anny DUPEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand soir" 
+        data-auteur="françois dupeyron"
+        data-annee="2006"
+        data-ordre="2001">
+        <a href="/livre/2001/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2005.webp" 
+              alt="Le grand soir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le grand soir</h3>
+            <p>François DUPEYRON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gros temps sur la planète" 
+        data-auteur="duplessy j-c/morel p"
+        data-annee="1990"
+        data-ordre="2002">
+        <a href="/livre/2002/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2006.webp" 
+              alt="Gros temps sur la planète"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gros temps sur la planète</h3>
+            <p>DUPLESSY J-C/MOREL P</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le roi disait que j’étais diable" 
+        data-auteur="clara dupont-monod"
+        data-annee="2015"
+        data-ordre="2003">
+        <a href="/livre/2003/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2007.webp" 
+              alt="Le roi disait que j’étais diable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le roi disait que j’étais diable</h3>
+            <p>Clara DUPONT-MONOD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bertrand du guesclincapitaine d&#39;aventure connétable de france" 
+        data-auteur="micheline dupuy"
+        data-annee="1977"
+        data-ordre="2004">
+        <a href="/livre/2004/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2008.webp" 
+              alt="Bertrand du GuesclinCapitaine d&#39;aventure Connétable de France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bertrand du GuesclinCapitaine d&#39;aventure Connétable de France</h3>
+            <p>Micheline DUPUY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le prince noir(edouard, seigneur d&#39;aquitaine)" 
+        data-auteur="micheline dupuy"
+        data-annee="1970"
+        data-ordre="2005">
+        <a href="/livre/2005/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2009.webp" 
+              alt="Le prince noir(Edouard, seigneur d&#39;Aquitaine)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le prince noir(Edouard, seigneur d&#39;Aquitaine)</h3>
+            <p>Micheline DUPUY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jean bart" 
+        data-auteur="jacques duquesne"
+        data-annee="1992"
+        data-ordre="2006">
+        <a href="/livre/2006/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2010.webp" 
+              alt="Jean Bart"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jean Bart</h3>
+            <p>Jacques DUQUESNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au début d&#39;un bel été" 
+        data-auteur="jacques duquesne"
+        data-annee="1988"
+        data-ordre="2007">
+        <a href="/livre/2007/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2011.webp" 
+              alt="Au début d&#39;un bel été"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au début d&#39;un bel été</h3>
+            <p>Jacques DUQUESNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="catherine courage" 
+        data-auteur="jacques duquesne"
+        data-annee="1990"
+        data-ordre="2008">
+        <a href="/livre/2008/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2012.webp" 
+              alt="Catherine Courage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Catherine Courage</h3>
+            <p>Jacques DUQUESNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maria vandamme" 
+        data-auteur="jacques duquesne"
+        data-annee="1983"
+        data-ordre="2009">
+        <a href="/livre/2009/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2013.webp" 
+              alt="Maria Vandamme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maria Vandamme</h3>
+            <p>Jacques DUQUESNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jésus" 
+        data-auteur="jacques duquesne"
+        data-annee="1994"
+        data-ordre="2010">
+        <a href="/livre/2010/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2014.webp" 
+              alt="Jésus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jésus</h3>
+            <p>Jacques DUQUESNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon cas personnel" 
+        data-auteur="ilan duran-cohen"
+        data-annee="2002"
+        data-ordre="2011">
+        <a href="/livre/2011/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2015.webp" 
+              alt="Mon cas personnel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon cas personnel</h3>
+            <p>Ilan DURAN-COHEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la captivité(histoire des prisonniers de guerre français 1939-1945)" 
+        data-auteur="yves durand"
+        data-annee="1981"
+        data-ordre="2012">
+        <a href="/livre/2012/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2016.webp" 
+              alt="La captivité(histoire des prisonniers de guerre français 1939-1945)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La captivité(histoire des prisonniers de guerre français 1939-1945)</h3>
+            <p>Yves DURAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la passion suspendue" 
+        data-auteur="marguerite duras"
+        data-annee="2013"
+        data-ordre="2013">
+        <a href="/livre/2013/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2017.webp" 
+              alt="La passion suspendue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La passion suspendue</h3>
+            <p>Marguerite DURAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="emily l." 
+        data-auteur="marguerite duras"
+        data-annee="1987"
+        data-ordre="2014">
+        <a href="/livre/2014/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2018.webp" 
+              alt="Emily L."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Emily L.</h3>
+            <p>Marguerite DURAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la douleur" 
+        data-auteur="marguerite duras"
+        data-annee="1979"
+        data-ordre="2015">
+        <a href="/livre/2015/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2019.webp" 
+              alt="La douleur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La douleur</h3>
+            <p>Marguerite DURAS</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-41/">← Précédent</a>
+    
+    
+    <span>Page 42 sur 153</span>
+    
+    
+      <a href="/catalogue/page-43/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

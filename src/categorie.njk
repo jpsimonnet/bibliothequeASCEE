@@ -1,0 +1,139 @@
+---
+pagination:
+  data: collections.categoriesUniques
+  size: 1
+  alias: categorie
+permalink: "/categorie/{{ categorie | slugify }}/"
+eleventyComputed:
+  title: "{{ categorie }}"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="categorie-detail">
+  
+  <nav class="breadcrumb">
+    <a href="/">Accueil</a> / 
+    <a href="/categories/">Catégories</a> / 
+    <span>{{ categorie }}</span>
+  </nav>
+
+  <header class="categorie-header">
+    <h1>{{ categorie }}</h1>
+    {% set count = 0 %}
+    {% for livre in livres %}
+      {% if livre.type == categorie %}
+        {% set count = count + 1 %}
+      {% endif %}
+    {% endfor %}
+    <p class="categorie-stats">{{ count }} livre{% if count > 1 %}s{% endif %} dans cette catégorie</p>
+  </header>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher dans cette catégorie..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    {% for livre in livres %}
+      {% if livre.type == categorie %}
+        <article class="livre-card"
+          data-titre="{{ livre.nom | lower }}" 
+          data-auteur="{{ livre.auteur | lower }}"
+          data-annee="{{ livre.annee or '0' }}"
+          data-ordre="{{ loop.index0 }}">
+          <a href="/livre/{{ loop.index0 }}/">
+            <div class="livre-card-cover">
+              <img 
+                src="/images/covers/{{ livre.id }}.webp" 
+                alt="Couverture de {{ livre.nom }}"
+                loading="lazy"
+                width="200"
+                height="300"
+                onerror="this.src='/images/0-livre-par-defaut.svg'"
+              >
+            </div>
+            <div class="livre-card-info">
+              <h3>{{ livre.nom }}</h3>
+              <p class="auteur">{{ livre.auteur }}</p>
+            </div>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</article>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA;
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+{% endblock %}

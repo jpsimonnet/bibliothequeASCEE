@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="d’un bord à l’autre" 
+        data-auteur="armistead maupin"
+        data-annee="2001"
+        data-ordre="4032">
+        <a href="/livre/4032/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4044.webp" 
+              alt="D’un bord à l’autre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>D’un bord à l’autre</h3>
+            <p>Armistead MAUPIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nouvelles chroniques de san francisco" 
+        data-auteur="armistead maupin"
+        data-annee="2000"
+        data-ordre="4033">
+        <a href="/livre/4033/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4045.webp" 
+              alt="Nouvelles chroniques de San Francisco"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nouvelles chroniques de San Francisco</h3>
+            <p>Armistead MAUPIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fin de la nuit" 
+        data-auteur="françois mauriac"
+        data-annee="1935"
+        data-ordre="4034">
+        <a href="/livre/4034/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4046.webp" 
+              alt="La fin de la nuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fin de la nuit</h3>
+            <p>François MAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le désert de l&#39;amour" 
+        data-auteur="françois mauriac"
+        data-annee="1925"
+        data-ordre="4035">
+        <a href="/livre/4035/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4047.webp" 
+              alt="Le désert de l&#39;amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le désert de l&#39;amour</h3>
+            <p>François MAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fleuve de feu" 
+        data-auteur="françois mauriac"
+        data-annee="1923"
+        data-ordre="4036">
+        <a href="/livre/4036/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4048.webp" 
+              alt="Le fleuve de feu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fleuve de feu</h3>
+            <p>François MAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le sagouin" 
+        data-auteur="françois mauriac"
+        data-annee="1951"
+        data-ordre="4037">
+        <a href="/livre/4037/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4049.webp" 
+              alt="Le sagouin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le sagouin</h3>
+            <p>François MAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="thérèse desqueyroux" 
+        data-auteur="françois mauriac"
+        data-annee="1927"
+        data-ordre="4038">
+        <a href="/livre/4038/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4050.webp" 
+              alt="Thérèse Desqueyroux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Thérèse Desqueyroux</h3>
+            <p>François MAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le mystère frontenac" 
+        data-auteur="françois mauriac"
+        data-annee="1933"
+        data-ordre="4039">
+        <a href="/livre/4039/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4051.webp" 
+              alt="Le mystère Frontenac"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le mystère Frontenac</h3>
+            <p>François MAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le noeud de vipères" 
+        data-auteur="françois mauriac"
+        data-annee="1932"
+        data-ordre="4040">
+        <a href="/livre/4040/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4052.webp" 
+              alt="Le noeud de vipères"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le noeud de vipères</h3>
+            <p>François MAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de la haine à la vie" 
+        data-auteur="philippe maurice"
+        data-annee="2002"
+        data-ordre="4041">
+        <a href="/livre/4041/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4053.webp" 
+              alt="De la haine à la vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De la haine à la vie</h3>
+            <p>Philippe MAURICE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;auberge de la jamaïque" 
+        data-auteur="daphné du maurier"
+        data-annee="1950"
+        data-ordre="4042">
+        <a href="/livre/4042/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4054.webp" 
+              alt="L&#39;auberge de la Jamaïque"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;auberge de la Jamaïque</h3>
+            <p>Daphné du MAURIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rebecca" 
+        data-auteur="daphné du maurier"
+        data-annee="1938"
+        data-ordre="4043">
+        <a href="/livre/4043/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4055.webp" 
+              alt="Rebecca"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rebecca</h3>
+            <p>Daphné du MAURIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ombre du soleil" 
+        data-auteur="christelle maurin"
+        data-annee="2005"
+        data-ordre="4044">
+        <a href="/livre/4044/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4056.webp" 
+              alt="L&#39;ombre du soleil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ombre du soleil</h3>
+            <p>Christelle MAURIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="prométhée ou la vie de balzac" 
+        data-auteur="andré maurois"
+        data-annee="1835"
+        data-ordre="4045">
+        <a href="/livre/4045/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4057.webp" 
+              alt="Prométhée ou la vie de Balzac"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Prométhée ou la vie de Balzac</h3>
+            <p>André MAUROIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="climats" 
+        data-auteur="andré maurois"
+        data-annee="1928"
+        data-ordre="4046">
+        <a href="/livre/4046/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4058.webp" 
+              alt="Climats"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Climats</h3>
+            <p>André MAUROIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’instinct du bonheur" 
+        data-auteur="andré maurois"
+        data-annee="1976"
+        data-ordre="4047">
+        <a href="/livre/4047/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4059.webp" 
+              alt="L’instinct du bonheur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’instinct du bonheur</h3>
+            <p>André MAUROIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ni ange, ni bête" 
+        data-auteur="andré maurois"
+        data-annee="1919"
+        data-ordre="4048">
+        <a href="/livre/4048/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4060.webp" 
+              alt="Ni ange, ni bête"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ni ange, ni bête</h3>
+            <p>André MAUROIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la seule france" 
+        data-auteur="charles maurras"
+        data-annee="1941"
+        data-ordre="4049">
+        <a href="/livre/4049/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4061.webp" 
+              alt="La seule France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La seule France</h3>
+            <p>Charles MAURRAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="galilée – le messager des étoiles" 
+        data-auteur="jean-pierre maury"
+        data-annee="1986"
+        data-ordre="4050">
+        <a href="/livre/4050/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4062.webp" 
+              alt="Galilée – le messager des étoiles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Galilée – le messager des étoiles</h3>
+            <p>Jean-Pierre MAURY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="apprendre à finir" 
+        data-auteur="laurent mauvignier"
+        data-annee="2004"
+        data-ordre="4051">
+        <a href="/livre/4051/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4063.webp" 
+              alt="Apprendre à finir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Apprendre à finir</h3>
+            <p>Laurent MAUVIGNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="autour du monde" 
+        data-auteur="laurent mauvignier"
+        data-annee="2014"
+        data-ordre="4052">
+        <a href="/livre/4052/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4064.webp" 
+              alt="Autour du monde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Autour du monde</h3>
+            <p>Laurent MAUVIGNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ce que j&#39;appelle oubli" 
+        data-auteur="laurent mauvignier"
+        data-annee="2011"
+        data-ordre="4053">
+        <a href="/livre/4053/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4065.webp" 
+              alt="Ce que j&#39;appelle oubli"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ce que j&#39;appelle oubli</h3>
+            <p>Laurent MAUVIGNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans la foule" 
+        data-auteur="laurent mauvignier"
+        data-annee="2006"
+        data-ordre="4054">
+        <a href="/livre/4054/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4066.webp" 
+              alt="Dans la foule"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans la foule</h3>
+            <p>Laurent MAUVIGNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="des hommes" 
+        data-auteur="laurent mauvignier"
+        data-annee="2009"
+        data-ordre="4055">
+        <a href="/livre/4055/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4067.webp" 
+              alt="Des hommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Des hommes</h3>
+            <p>Laurent MAUVIGNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le lien" 
+        data-auteur="laurent mauvignier"
+        data-annee="2005"
+        data-ordre="4056">
+        <a href="/livre/4056/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4068.webp" 
+              alt="Le lien"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le lien</h3>
+            <p>Laurent MAUVIGNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au revoir, à demain" 
+        data-auteur="william maxwell"
+        data-annee="2002"
+        data-ordre="4057">
+        <a href="/livre/4057/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4069.webp" 
+              alt="Au revoir, à demain"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au revoir, à demain</h3>
+            <p>William MAXWELL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rousseau" 
+        data-auteur="georges may"
+        data-annee="1961"
+        data-ordre="4058">
+        <a href="/livre/4058/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4070.webp" 
+              alt="Rousseau"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rousseau</h3>
+            <p>Georges MAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bonheur en provence" 
+        data-auteur="peter mayle"
+        data-annee="2000"
+        data-ordre="4059">
+        <a href="/livre/4059/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4071.webp" 
+              alt="Le bonheur en Provence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bonheur en Provence</h3>
+            <p>Peter MAYLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le diamant noir" 
+        data-auteur="peter mayle"
+        data-annee="1999"
+        data-ordre="4060">
+        <a href="/livre/4060/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4072.webp" 
+              alt="Le diamant noir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le diamant noir</h3>
+            <p>Peter MAYLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une année en provence" 
+        data-auteur="peter mayle"
+        data-annee="1994"
+        data-ordre="4061">
+        <a href="/livre/4061/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4073.webp" 
+              alt="Une année en Provence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une année en Provence</h3>
+            <p>Peter MAYLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les filles de l’ouragan" 
+        data-auteur="joyce maynard"
+        data-annee="2012"
+        data-ordre="4062">
+        <a href="/livre/4062/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4074.webp" 
+              alt="Les filles de l’ouragan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les filles de l’ouragan</h3>
+            <p>Joyce MAYNARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="des cailloux et des mouches ou échec à l&#39;himalaya" 
+        data-auteur="pierre mazeaud"
+        data-annee="1985"
+        data-ordre="4063">
+        <a href="/livre/4063/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4075.webp" 
+              alt="Des cailloux et des mouches ou échec à l&#39;Himalaya"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Des cailloux et des mouches ou échec à l&#39;Himalaya</h3>
+            <p>Pierre MAZEAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="montagne pour un homme nu" 
+        data-auteur="pierre mazeaud"
+        data-annee="1971"
+        data-ordre="4064">
+        <a href="/livre/4064/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4076.webp" 
+              alt="Montagne pour un homme nu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Montagne pour un homme nu</h3>
+            <p>Pierre MAZEAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le mec de la tombe d&#39;à côté" 
+        data-auteur="katarina mazetti"
+        data-annee="2011"
+        data-ordre="4065">
+        <a href="/livre/4065/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4077.webp" 
+              alt="Le mec de la tombe d&#39;à côté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le mec de la tombe d&#39;à côté</h3>
+            <p>Katarina MAZETTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fantastique ile de pâques" 
+        data-auteur="francis maziere"
+        data-annee="1965"
+        data-ordre="4066">
+        <a href="/livre/4066/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4078.webp" 
+              alt="Fantastique Ile de Pâques"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fantastique Ile de Pâques</h3>
+            <p>Francis MAZIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="01. la naissance de jalna" 
+        data-auteur="mazo de la roche"
+        data-annee="1975"
+        data-ordre="4067">
+        <a href="/livre/4067/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4079.webp" 
+              alt="01. La naissance de Jalna"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>01. La naissance de Jalna</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="02. matins à jalna" 
+        data-auteur="mazo de la roche"
+        data-annee="1994"
+        data-ordre="4068">
+        <a href="/livre/4068/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4080.webp" 
+              alt="02. Matins à Jalna"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>02. Matins à Jalna</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="03. mary wakefield" 
+        data-auteur="mazo de la roche"
+        data-annee="1949"
+        data-ordre="4069">
+        <a href="/livre/4069/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4081.webp" 
+              alt="03. Mary Wakefield"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>03. Mary Wakefield</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="04. jeunesse de renny" 
+        data-auteur="mazo de la roche"
+        data-annee="1979"
+        data-ordre="4070">
+        <a href="/livre/4070/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4082.webp" 
+              alt="04. Jeunesse de Renny"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>04. Jeunesse de Renny</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="05. l&#39;héritage des whiteoak" 
+        data-auteur="mazo de la roche"
+        data-annee="0"
+        data-ordre="4071">
+        <a href="/livre/4071/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4083.webp" 
+              alt="05. L&#39;héritage des Whiteoak"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>05. L&#39;héritage des Whiteoak</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="06. les frères whiteoaks" 
+        data-auteur="mazo de la roche"
+        data-annee="1972"
+        data-ordre="4072">
+        <a href="/livre/4072/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4084.webp" 
+              alt="06. Les frères Whiteoaks"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>06. Les frères Whiteoaks</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="07. jalna" 
+        data-auteur="mazo de la roche"
+        data-annee="1959"
+        data-ordre="4073">
+        <a href="/livre/4073/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4085.webp" 
+              alt="07. Jalna"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>07. Jalna</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="08. les whiteoaks de jalna" 
+        data-auteur="mazo de la roche"
+        data-annee="1963"
+        data-ordre="4074">
+        <a href="/livre/4074/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4086.webp" 
+              alt="08. Les Whiteoaks de Jalna"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>08. Les Whiteoaks de Jalna</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="09. finch whiteoak" 
+        data-auteur="mazo de la roche"
+        data-annee="2021"
+        data-ordre="4075">
+        <a href="/livre/4075/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4087.webp" 
+              alt="09. Finch Whiteoak"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>09. Finch Whiteoak</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="10. le maître de jalna" 
+        data-auteur="mazo de la roche"
+        data-annee="2018"
+        data-ordre="4076">
+        <a href="/livre/4076/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4088.webp" 
+              alt="10. Le maître de Jalna"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>10. Le maître de Jalna</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="11. la moisson de jalna" 
+        data-auteur="mazo de la roche"
+        data-annee="2018"
+        data-ordre="4077">
+        <a href="/livre/4077/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4089.webp" 
+              alt="11. La moisson de Jalna"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>11. La moisson de Jalna</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="12. le destin de wakefield" 
+        data-auteur="mazo de la roche"
+        data-annee="2018"
+        data-ordre="4078">
+        <a href="/livre/4078/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4090.webp" 
+              alt="12. Le destin de Wakefield"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>12. Le destin de Wakefield</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="14. la fille de renny" 
+        data-auteur="mazo de la roche"
+        data-annee="2018"
+        data-ordre="4079">
+        <a href="/livre/4079/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4091.webp" 
+              alt="14. La fille de Renny"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>14. La fille de Renny</h3>
+            <p>Mazo de la ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-84/">← Précédent</a>
+    
+    
+    <span>Page 85 sur 153</span>
+    
+    
+      <a href="/catalogue/page-86/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

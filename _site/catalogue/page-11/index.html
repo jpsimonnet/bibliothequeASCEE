@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le roman de tristan et iseut" 
+        data-auteur="joseph bedier"
+        data-annee="1900"
+        data-ordre="480">
+        <a href="/livre/480/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/483.webp" 
+              alt="Le roman de Tristan et Iseut"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le roman de Tristan et Iseut</h3>
+            <p>Joseph BEDIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les neiges bleues" 
+        data-auteur="piotr bednarski"
+        data-annee="2008"
+        data-ordre="481">
+        <a href="/livre/481/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/484.webp" 
+              alt="Les neiges bleues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les neiges bleues</h3>
+            <p>Piotr BEDNARSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal d’un mythomanevol. 1" 
+        data-auteur="nicolas bedos"
+        data-annee="2011"
+        data-ordre="482">
+        <a href="/livre/482/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/485.webp" 
+              alt="Journal d’un mythomanevol. 1"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal d’un mythomanevol. 1</h3>
+            <p>Nicolas BEDOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la case de l&#39;oncle tom" 
+        data-auteur="harriet beecher-stowe"
+        data-annee="1988"
+        data-ordre="483">
+        <a href="/livre/483/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/486.webp" 
+              alt="La case de l&#39;Oncle Tom"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La case de l&#39;Oncle Tom</h3>
+            <p>Harriet BEECHER-STOWE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la guerre d&#39;espagne" 
+        data-auteur="antony beevor"
+        data-annee="2008"
+        data-ordre="484">
+        <a href="/livre/484/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/487.webp" 
+              alt="La guerre d&#39;Espagne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La guerre d&#39;Espagne</h3>
+            <p>Antony BEEVOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="entre les murs" 
+        data-auteur="françois begaudeau"
+        data-annee="2006"
+        data-ordre="485">
+        <a href="/livre/485/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/488.webp" 
+              alt="Entre les murs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Entre les murs</h3>
+            <p>François BEGAUDEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;odeur des pommes" 
+        data-auteur="mark behr"
+        data-annee="2013"
+        data-ordre="486">
+        <a href="/livre/486/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/489.webp" 
+              alt="L&#39;odeur des pommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;odeur des pommes</h3>
+            <p>Mark BEHR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat – les conseils d&#39;experts pour prendre soin de votre chat" 
+        data-auteur="behrend katrin/lehmann ute/muller alrike et h. alfred"
+        data-annee="0"
+        data-ordre="487">
+        <a href="/livre/487/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/490.webp" 
+              alt="Le chat – Les conseils d&#39;experts pour prendre soin de votre chat"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat – Les conseils d&#39;experts pour prendre soin de votre chat</h3>
+            <p>BEHREND Katrin/LEHMANN Ute/MULLER Alrike et H. Alfred</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lhomme qui pleure de rire" 
+        data-auteur="frédéric beigbeder"
+        data-annee="2020"
+        data-ordre="488">
+        <a href="/livre/488/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/491.webp" 
+              alt="Lhomme qui pleure de rire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lhomme qui pleure de rire</h3>
+            <p>Frédéric BEIGBEDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dernier inventaire avant liquidation" 
+        data-auteur="frédéric beigbeder"
+        data-annee="2001"
+        data-ordre="489">
+        <a href="/livre/489/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/492.webp" 
+              alt="Dernier inventaire avant liquidation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dernier inventaire avant liquidation</h3>
+            <p>Frédéric BEIGBEDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;égoïste romantique" 
+        data-auteur="frédéric beigbeder"
+        data-annee="2005"
+        data-ordre="490">
+        <a href="/livre/490/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/493.webp" 
+              alt="L&#39;égoïste romantique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;égoïste romantique</h3>
+            <p>Frédéric BEIGBEDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un roman français" 
+        data-auteur="frédéric beigbeder"
+        data-annee="2009"
+        data-ordre="491">
+        <a href="/livre/491/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/494.webp" 
+              alt="Un roman français"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un roman français</h3>
+            <p>Frédéric BEIGBEDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="99" 
+        data-auteur="frédéric beigbeder"
+        data-annee="2000"
+        data-ordre="492">
+        <a href="/livre/492/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/495.webp" 
+              alt="99"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>99</h3>
+            <p>Frédéric BEIGBEDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="14.99 €" 
+        data-auteur="frédéric beigbeder"
+        data-annee="2004"
+        data-ordre="493">
+        <a href="/livre/493/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/496.webp" 
+              alt="14.99 €"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>14.99 €</h3>
+            <p>Frédéric BEIGBEDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="windows on the world" 
+        data-auteur="frédéric beigbeder"
+        data-annee="2003"
+        data-ordre="494">
+        <a href="/livre/494/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/497.webp" 
+              alt="Windows on the world"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Windows on the world</h3>
+            <p>Frédéric BEIGBEDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bibliothécaire" 
+        data-auteur="larry beinhart"
+        data-annee="2004"
+        data-ordre="495">
+        <a href="/livre/495/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/498.webp" 
+              alt="Le bibliothécaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bibliothécaire</h3>
+            <p>Larry BEINHART</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="regard blessé" 
+        data-auteur="rabah belamri"
+        data-annee="1987"
+        data-ordre="496">
+        <a href="/livre/496/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/499.webp" 
+              alt="Regard blessé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Regard blessé</h3>
+            <p>Rabah BELAMRI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="femmes sans visage" 
+        data-auteur="rabah belamri"
+        data-annee="1992"
+        data-ordre="497">
+        <a href="/livre/497/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/500.webp" 
+              alt="Femmes sans visage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Femmes sans visage</h3>
+            <p>Rabah BELAMRI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="c&#39;était notre terre" 
+        data-auteur="matthieu belezi"
+        data-annee="2009"
+        data-ordre="498">
+        <a href="/livre/498/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/501.webp" 
+              alt="C&#39;était notre terre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>C&#39;était notre terre</h3>
+            <p>Matthieu BELEZI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’enfer" 
+        data-auteur="rené belletto"
+        data-annee="1986"
+        data-ordre="499">
+        <a href="/livre/499/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/502.webp" 
+              alt="L’enfer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’enfer</h3>
+            <p>René BELLETTO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sur la terre comme au ciel" 
+        data-auteur="rené belletto"
+        data-annee="1982"
+        data-ordre="500">
+        <a href="/livre/500/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/503.webp" 
+              alt="Sur la terre comme au ciel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sur la terre comme au ciel</h3>
+            <p>René BELLETTO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="herzog" 
+        data-auteur="saul bellow"
+        data-annee="1961"
+        data-ordre="501">
+        <a href="/livre/501/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/504.webp" 
+              alt="Herzog"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Herzog</h3>
+            <p>Saul BELLOW</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ravelstein" 
+        data-auteur="saul bellow"
+        data-annee="2000"
+        data-ordre="502">
+        <a href="/livre/502/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/505.webp" 
+              alt="Ravelstein"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ravelstein</h3>
+            <p>Saul BELLOW</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une affinité véritable" 
+        data-auteur="saul bellow"
+        data-annee="1998"
+        data-ordre="503">
+        <a href="/livre/503/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/506.webp" 
+              alt="Une affinité véritable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une affinité véritable</h3>
+            <p>Saul BELLOW</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paroles de résistants" 
+        data-auteur="robert belot"
+        data-annee="2001"
+        data-ordre="504">
+        <a href="/livre/504/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/507.webp" 
+              alt="Paroles de résistants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paroles de résistants</h3>
+            <p>Robert BELOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="du côté des petites filles" 
+        data-auteur="elena gianini belotti"
+        data-annee="1974"
+        data-ordre="505">
+        <a href="/livre/505/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/508.webp" 
+              alt="Du côté des petites filles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Du côté des petites filles</h3>
+            <p>Elena Gianini BELOTTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cette aveuglante absence de lumière" 
+        data-auteur="jelloun tahar ben"
+        data-annee="2001"
+        data-ordre="506">
+        <a href="/livre/506/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/509.webp" 
+              alt="Cette aveuglante absence de lumière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cette aveuglante absence de lumière</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="harrouda" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1973"
+        data-ordre="507">
+        <a href="/livre/507/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/510.webp" 
+              alt="Harrouda"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Harrouda</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;enfant de sable" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1988"
+        data-ordre="508">
+        <a href="/livre/508/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/511.webp" 
+              alt="L&#39;enfant de sable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;enfant de sable</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme rompu" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1994"
+        data-ordre="509">
+        <a href="/livre/509/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/512.webp" 
+              alt="L&#39;homme rompu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme rompu</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’ablation" 
+        data-auteur="jelloun tahar ben"
+        data-annee="2014"
+        data-ordre="510">
+        <a href="/livre/510/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/513.webp" 
+              alt="L’Ablation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’Ablation</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’auberge des pauvres" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1999"
+        data-ordre="511">
+        <a href="/livre/511/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/514.webp" 
+              alt="L’auberge des pauvres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’auberge des pauvres</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la nuit de l&#39;erreur" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1997"
+        data-ordre="512">
+        <a href="/livre/512/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/515.webp" 
+              alt="La nuit de l&#39;erreur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La nuit de l&#39;erreur</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la nuit sacrée" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1987"
+        data-ordre="513">
+        <a href="/livre/513/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/516.webp" 
+              alt="La nuit sacrée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La nuit sacrée</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la réclusion solitaire" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1976"
+        data-ordre="514">
+        <a href="/livre/514/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/517.webp" 
+              alt="La réclusion solitaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La réclusion solitaire</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bonheur conjugal" 
+        data-auteur="jelloun tahar ben"
+        data-annee="2012"
+        data-ordre="515">
+        <a href="/livre/515/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/518.webp" 
+              alt="Le bonheur conjugal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bonheur conjugal</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les yeux baissés" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1991"
+        data-ordre="516">
+        <a href="/livre/516/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/519.webp" 
+              alt="Les yeux baissés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les yeux baissés</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lettre à matisse" 
+        data-auteur="jelloun tahar ben"
+        data-annee="2013"
+        data-ordre="517">
+        <a href="/livre/517/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/520.webp" 
+              alt="Lettre à Matisse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lettre à Matisse</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="moha le fou moha le sage" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1978"
+        data-ordre="518">
+        <a href="/livre/518/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/521.webp" 
+              alt="Moha le fou Moha le sage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Moha le fou Moha le sage</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le racisme expliqué à ma fille" 
+        data-auteur="jelloun tahar ben"
+        data-annee="1998"
+        data-ordre="519">
+        <a href="/livre/519/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/522.webp" 
+              alt="Le racisme expliqué à ma fille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le racisme expliqué à ma fille</h3>
+            <p>JELLOUN Tahar BEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="saga" 
+        data-auteur="tonino benacquista"
+        data-annee="1997"
+        data-ordre="520">
+        <a href="/livre/520/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/523.webp" 
+              alt="Saga"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Saga</h3>
+            <p>Tonino BENACQUISTA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="malavita" 
+        data-auteur="tonino benacquista"
+        data-annee="2013"
+        data-ordre="521">
+        <a href="/livre/521/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/524.webp" 
+              alt="Malavita"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Malavita</h3>
+            <p>Tonino BENACQUISTA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quelqu’un d’autre" 
+        data-auteur="tonino benacquista"
+        data-annee="2001"
+        data-ordre="522">
+        <a href="/livre/522/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/525.webp" 
+              alt="Quelqu’un d’autre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quelqu’un d’autre</h3>
+            <p>Tonino BENACQUISTA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les insurrections singulières" 
+        data-auteur="jeanne benameur"
+        data-annee="2011"
+        data-ordre="523">
+        <a href="/livre/523/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/526.webp" 
+              alt="Les insurrections singulières"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les insurrections singulières</h3>
+            <p>Jeanne BENAMEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="otages intimes" 
+        data-auteur="jeanne benameur"
+        data-annee="2015"
+        data-ordre="524">
+        <a href="/livre/524/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/527.webp" 
+              alt="Otages intimes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Otages intimes</h3>
+            <p>Jeanne BENAMEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="profanes" 
+        data-auteur="jeanne benameur"
+        data-annee="2014"
+        data-ordre="525">
+        <a href="/livre/525/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/528.webp" 
+              alt="Profanes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Profanes</h3>
+            <p>Jeanne BENAMEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="laver les ombres" 
+        data-auteur="jeanne benameur"
+        data-annee="2008"
+        data-ordre="526">
+        <a href="/livre/526/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/529.webp" 
+              alt="Laver les ombres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Laver les ombres</h3>
+            <p>Jeanne BENAMEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;enfant qui" 
+        data-auteur="jeanne benameur"
+        data-annee="2017"
+        data-ordre="527">
+        <a href="/livre/527/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/530.webp" 
+              alt="L&#39;enfant qui"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;enfant qui</h3>
+            <p>Jeanne BENAMEUR</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-10/">← Précédent</a>
+    
+    
+    <span>Page 11 sur 153</span>
+    
+    
+      <a href="/catalogue/page-12/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le bel été" 
+        data-auteur="cesare pavese"
+        data-annee="1965"
+        data-ordre="4752">
+        <a href="/livre/4752/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4764.webp" 
+              alt="Le bel été"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bel été</h3>
+            <p>Cesare PAVESE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dictionnaire khazar" 
+        data-auteur="milorad pavic"
+        data-annee="2002"
+        data-ordre="4753">
+        <a href="/livre/4753/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4765.webp" 
+              alt="Le dictionnaire Khazar"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dictionnaire Khazar</h3>
+            <p>Milorad PAVIC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le poulpe : un trou dans la zone" 
+        data-auteur="franck pavloff"
+        data-annee="1998"
+        data-ordre="4754">
+        <a href="/livre/4754/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4766.webp" 
+              alt="Le Poulpe : Un trou dans la zone"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Poulpe : Un trou dans la zone</h3>
+            <p>Franck PAVLOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="matin brun" 
+        data-auteur="frank pavloff"
+        data-annee="2003"
+        data-ordre="4755">
+        <a href="/livre/4755/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4767.webp" 
+              alt="Matin brun"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Matin brun</h3>
+            <p>Frank PAVLOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;armée de vichy" 
+        data-auteur="o. robert paxton"
+        data-annee="0"
+        data-ordre="4756">
+        <a href="/livre/4756/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4768.webp" 
+              alt="L&#39;armée de Vichy"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;armée de Vichy</h3>
+            <p>O. Robert PAXTON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la france de vichy 1940-1944" 
+        data-auteur="o. robert paxton"
+        data-annee="1973"
+        data-ordre="4757">
+        <a href="/livre/4757/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4769.webp" 
+              alt="La France de Vichy 1940-1944"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La France de Vichy 1940-1944</h3>
+            <p>O. Robert PAXTON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le labyrinthe de la solitudesuivi decritique de la pyramide" 
+        data-auteur="octavio paz"
+        data-annee="1972"
+        data-ordre="4758">
+        <a href="/livre/4758/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4770.webp" 
+              alt="Le labyrinthe de la solitudesuivi deCritique de la pyramide"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le labyrinthe de la solitudesuivi deCritique de la pyramide</h3>
+            <p>Octavio PAZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="liberté sur parole" 
+        data-auteur="octavio paz"
+        data-annee="1990"
+        data-ordre="4759">
+        <a href="/livre/4759/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4771.webp" 
+              alt="Liberté sur parole"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Liberté sur parole</h3>
+            <p>Octavio PAZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="1974" 
+        data-auteur="david peace"
+        data-annee="2003"
+        data-ordre="4760">
+        <a href="/livre/4760/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4772.webp" 
+              alt="1974"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>1974</h3>
+            <p>David PEACE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="1977" 
+        data-auteur="david peace"
+        data-annee="2005"
+        data-ordre="4761">
+        <a href="/livre/4761/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4773.webp" 
+              alt="1977"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>1977</h3>
+            <p>David PEACE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="1980" 
+        data-auteur="david peace"
+        data-annee="2008"
+        data-ordre="4762">
+        <a href="/livre/4762/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4774.webp" 
+              alt="1980"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>1980</h3>
+            <p>David PEACE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ombre d&#39;edgar poe" 
+        data-auteur="matthew pearl"
+        data-annee="2009"
+        data-ordre="4763">
+        <a href="/livre/4763/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4775.webp" 
+              alt="L&#39;ombre d&#39;Edgar Poe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ombre d&#39;Edgar Poe</h3>
+            <p>Matthew PEARL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le secret de la vierge à l&#39;enfant" 
+        data-auteur="iain pears"
+        data-annee="2006"
+        data-ordre="4764">
+        <a href="/livre/4764/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4776.webp" 
+              alt="Le secret de la Vierge à l&#39;enfant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le secret de la Vierge à l&#39;enfant</h3>
+            <p>Iain PEARS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’affaire bernini" 
+        data-auteur="iain pears"
+        data-annee="2001"
+        data-ordre="4765">
+        <a href="/livre/4765/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4777.webp" 
+              alt="L’affaire Bernini"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’affaire Bernini</h3>
+            <p>Iain PEARS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cercle de la croix" 
+        data-auteur="iain pears"
+        data-annee="1999"
+        data-ordre="4766">
+        <a href="/livre/4766/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4778.webp" 
+              alt="Le cercle de la croix"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cercle de la croix</h3>
+            <p>Iain PEARS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le comité tiziano" 
+        data-auteur="iain pears"
+        data-annee="2002"
+        data-ordre="4767">
+        <a href="/livre/4767/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4779.webp" 
+              alt="Le comité Tiziano"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le comité Tiziano</h3>
+            <p>Iain PEARS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le songe de scipion" 
+        data-auteur="iain pears"
+        data-annee="2002"
+        data-ordre="4768">
+        <a href="/livre/4768/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4780.webp" 
+              alt="Le songe de Scipion"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le songe de Scipion</h3>
+            <p>Iain PEARS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="belleville-barcelone" 
+        data-auteur="patrick pecherot"
+        data-annee="2003"
+        data-ordre="4769">
+        <a href="/livre/4769/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4781.webp" 
+              alt="Belleville-Barcelone"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Belleville-Barcelone</h3>
+            <p>Patrick PECHEROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les brouillards de la butte" 
+        data-auteur="patrick pecherot"
+        data-annee="2001"
+        data-ordre="4770">
+        <a href="/livre/4770/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4782.webp" 
+              alt="Les brouillards de la butte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les brouillards de la butte</h3>
+            <p>Patrick PECHEROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tiuraï" 
+        data-auteur="patrick pecherot"
+        data-annee="1996"
+        data-ordre="4771">
+        <a href="/livre/4771/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4783.webp" 
+              alt="Tiuraï"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tiuraï</h3>
+            <p>Patrick PECHEROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="souvenirs" 
+        data-auteur="charles peguy"
+        data-annee="1947"
+        data-ordre="4772">
+        <a href="/livre/4772/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4784.webp" 
+              alt="Souvenirs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Souvenirs</h3>
+            <p>Charles PEGUY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pensées" 
+        data-auteur="charles peguy"
+        data-annee="1934"
+        data-ordre="4773">
+        <a href="/livre/4773/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4785.webp" 
+              alt="Pensées"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pensées</h3>
+            <p>Charles PEGUY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la petite chartreuse" 
+        data-auteur="pierre peju"
+        data-annee="2002"
+        data-ordre="4774">
+        <a href="/livre/4774/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4786.webp" 
+              alt="La petite Chartreuse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La petite Chartreuse</h3>
+            <p>Pierre PEJU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le rire de l&#39;ogre" 
+        data-auteur="pierre peju"
+        data-annee="2005"
+        data-ordre="4775">
+        <a href="/livre/4775/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4787.webp" 
+              alt="Le rire de l&#39;ogre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le rire de l&#39;ogre</h3>
+            <p>Pierre PEJU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="venise attendra" 
+        data-auteur="peju sylvie / prudon hervé"
+        data-annee="2000"
+        data-ordre="4776">
+        <a href="/livre/4776/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4788.webp" 
+              alt="Venise attendra"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Venise attendra</h3>
+            <p>PEJU Sylvie / PRUDON Hervé</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="king suckerman" 
+        data-auteur="george pelecanos"
+        data-annee="1997"
+        data-ordre="4777">
+        <a href="/livre/4777/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4789.webp" 
+              alt="King Suckerman"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>King Suckerman</h3>
+            <p>George PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chien qui vendait des chaussures" 
+        data-auteur="george pelecanos"
+        data-annee="1997"
+        data-ordre="4778">
+        <a href="/livre/4778/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4790.webp" 
+              alt="Le chien qui vendait des chaussures"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chien qui vendait des chaussures</h3>
+            <p>George PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="anacostia river blues" 
+        data-auteur="george pelecanos"
+        data-annee="1999"
+        data-ordre="4779">
+        <a href="/livre/4779/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4791.webp" 
+              alt="Anacostia River Blues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Anacostia River Blues</h3>
+            <p>George PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="soul circus" 
+        data-auteur="george pelecanos"
+        data-annee="2003"
+        data-ordre="4780">
+        <a href="/livre/4780/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4792.webp" 
+              alt="Soul circus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Soul circus</h3>
+            <p>George PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="suave comme l&#39;éternité" 
+        data-auteur="george pelecanos"
+        data-annee="2013"
+        data-ordre="4781">
+        <a href="/livre/4781/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4793.webp" 
+              alt="Suave comme l&#39;éternité"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Suave comme l&#39;éternité</h3>
+            <p>George PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un nommé peter karras" 
+        data-auteur="george pelecanos"
+        data-annee="2000"
+        data-ordre="4782">
+        <a href="/livre/4782/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4794.webp" 
+              alt="Un nommé Peter Karras"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un nommé Peter Karras</h3>
+            <p>George PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les jardins de la mort" 
+        data-auteur="george p. pelecanos"
+        data-annee="2009"
+        data-ordre="4783">
+        <a href="/livre/4783/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4795.webp" 
+              alt="Les jardins de la mort"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les jardins de la mort</h3>
+            <p>George P. PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="drama city" 
+        data-auteur="georges pelecanos"
+        data-annee="2005"
+        data-ordre="4784">
+        <a href="/livre/4784/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4796.webp" 
+              alt="Drama City"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Drama City</h3>
+            <p>Georges PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hard revolution" 
+        data-auteur="georges pelecanos"
+        data-annee="2003"
+        data-ordre="4785">
+        <a href="/livre/4785/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4797.webp" 
+              alt="Hard Revolution"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hard Revolution</h3>
+            <p>Georges PELECANOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="homo zapiens" 
+        data-auteur="viktor pelevine"
+        data-annee="2003"
+        data-ordre="4786">
+        <a href="/livre/4786/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4798.webp" 
+              alt="Homo zapiens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Homo zapiens</h3>
+            <p>Viktor PELEVINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mitrailleuse d&#39;argile" 
+        data-auteur="viktor pelevine"
+        data-annee="1997"
+        data-ordre="4787">
+        <a href="/livre/4787/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4799.webp" 
+              alt="La mitrailleuse d&#39;argile"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mitrailleuse d&#39;argile</h3>
+            <p>Viktor PELEVINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie des insectes" 
+        data-auteur="viktor pelevine"
+        data-annee="1995"
+        data-ordre="4788">
+        <a href="/livre/4788/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4800.webp" 
+              alt="La vie des insectes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie des insectes</h3>
+            <p>Viktor PELEVINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les vêtements de la liberté" 
+        data-auteur="nicole pellegrin"
+        data-annee="1989"
+        data-ordre="4789">
+        <a href="/livre/4789/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4801.webp" 
+              alt="Les vêtements de la liberté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les vêtements de la liberté</h3>
+            <p>Nicole PELLEGRIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la forêt muette" 
+        data-auteur="pierre pelot"
+        data-annee="1982"
+        data-ordre="4790">
+        <a href="/livre/4790/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4802.webp" 
+              alt="La forêt muette"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La forêt muette</h3>
+            <p>Pierre PELOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les normales saisonnières" 
+        data-auteur="pierre pelot"
+        data-annee="2007"
+        data-ordre="4791">
+        <a href="/livre/4791/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4803.webp" 
+              alt="Les normales saisonnières"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les normales saisonnières</h3>
+            <p>Pierre PELOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maria" 
+        data-auteur="pierre pelot"
+        data-annee="2011"
+        data-ordre="4792">
+        <a href="/livre/4792/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4804.webp" 
+              alt="Maria"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maria</h3>
+            <p>Pierre PELOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le tour du monde d&#39;un écologiste" 
+        data-auteur="jean-marie pelt"
+        data-annee="1990"
+        data-ordre="4793">
+        <a href="/livre/4793/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4805.webp" 
+              alt="Le tour du monde d&#39;un écologiste"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le tour du monde d&#39;un écologiste</h3>
+            <p>Jean-Marie PELT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie sociale des plantes" 
+        data-auteur="jean-marie pelt"
+        data-annee="1984"
+        data-ordre="4794">
+        <a href="/livre/4794/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4806.webp" 
+              alt="La vie sociale des plantes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie sociale des plantes</h3>
+            <p>Jean-Marie PELT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les plantes : amours et civilisations végétales" 
+        data-auteur="jean-marie pelt"
+        data-annee="1986"
+        data-ordre="4795">
+        <a href="/livre/4795/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4807.webp" 
+              alt="Les plantes : amours et civilisations végétales"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les plantes : amours et civilisations végétales</h3>
+            <p>Jean-Marie PELT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lla prodigieuse aventure des plantes" 
+        data-auteur="jean-marie – cuny jean-pierre pelt"
+        data-annee="1981"
+        data-ordre="4796">
+        <a href="/livre/4796/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4808.webp" 
+              alt="lLa prodigieuse aventure des plantes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>lLa prodigieuse aventure des plantes</h3>
+            <p>Jean-Marie – CUNY Jean-Pierre PELT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un poète en politique – les combats de victor hugo" 
+        data-auteur="pena-ruiz henri/scot jean-paul"
+        data-annee="2002"
+        data-ordre="4797">
+        <a href="/livre/4797/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4809.webp" 
+              alt="Un poète en politique – Les combats de Victor Hugo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un poète en politique – Les combats de Victor Hugo</h3>
+            <p>PENA-RUIZ Henri/SCOT Jean-Paul</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jour après nuit" 
+        data-auteur="jean penard"
+        data-annee="1981"
+        data-ordre="4798">
+        <a href="/livre/4798/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4810.webp" 
+              alt="Jour après nuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jour après nuit</h3>
+            <p>Jean PENARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poésies" 
+        data-auteur="sandro penna"
+        data-annee="1939"
+        data-ordre="4799">
+        <a href="/livre/4799/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4811.webp" 
+              alt="Poésies"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poésies</h3>
+            <p>Sandro PENNA</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-99/">← Précédent</a>
+    
+    
+    <span>Page 100 sur 153</span>
+    
+    
+      <a href="/catalogue/page-101/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="maktub" 
+        data-auteur="paulo coelho"
+        data-annee="1994"
+        data-ordre="1296">
+        <a href="/livre/1296/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1299.webp" 
+              alt="Maktub"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maktub</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="manuel du guerrier de la lumière" 
+        data-auteur="paulo coelho"
+        data-annee="1999"
+        data-ordre="1297">
+        <a href="/livre/1297/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1300.webp" 
+              alt="Manuel du guerrier de la lumière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Manuel du guerrier de la lumière</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="onze minutes" 
+        data-auteur="paulo coelho"
+        data-annee="2004"
+        data-ordre="1298">
+        <a href="/livre/1298/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1301.webp" 
+              alt="Onze minutes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Onze minutes</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sur le bord de la rivière piédra, je me suis assise et j&#39;ai pleuré" 
+        data-auteur="paulo coelho"
+        data-annee="2014"
+        data-ordre="1299">
+        <a href="/livre/1299/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1302.webp" 
+              alt="Sur le bord de la rivière Piédra, je me suis assise et j&#39;ai pleuré"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sur le bord de la rivière Piédra, je me suis assise et j&#39;ai pleuré</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="veronika décide de mourir" 
+        data-auteur="paulo coelho"
+        data-annee="2002"
+        data-ordre="1300">
+        <a href="/livre/1300/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1303.webp" 
+              alt="Veronika décide de mourir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Veronika décide de mourir</h3>
+            <p>Paulo COELHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j&#39;ai tué phil shapiro" 
+        data-auteur="ethan coen"
+        data-annee="1998"
+        data-ordre="1301">
+        <a href="/livre/1301/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1304.webp" 
+              alt="J&#39;ai tué Phil shapiro"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J&#39;ai tué Phil shapiro</h3>
+            <p>Ethan COEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au cœur de ce pays" 
+        data-auteur="j.m. coetzee"
+        data-annee="1981"
+        data-ordre="1302">
+        <a href="/livre/1302/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1305.webp" 
+              alt="Au cœur de ce pays"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au cœur de ce pays</h3>
+            <p>J.M. COETZEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="disgrâce" 
+        data-auteur="j.m. coetzee"
+        data-annee="1999"
+        data-ordre="1303">
+        <a href="/livre/1303/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1306.webp" 
+              alt="Disgrâce"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Disgrâce</h3>
+            <p>J.M. COETZEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="en attendant les barbares" 
+        data-auteur="j.m. coetzee"
+        data-annee="1991"
+        data-ordre="1304">
+        <a href="/livre/1304/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1307.webp" 
+              alt="En attendant les barbares"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>En attendant les barbares</h3>
+            <p>J.M. COETZEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;âge de fer" 
+        data-auteur="j.m. coetzee"
+        data-annee="2018"
+        data-ordre="1305">
+        <a href="/livre/1305/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1308.webp" 
+              alt="L&#39;âge de fer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;âge de fer</h3>
+            <p>J.M. COETZEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="michael k, sa vie, son temps" 
+        data-auteur="j.m. coetzee"
+        data-annee="2019"
+        data-ordre="1306">
+        <a href="/livre/1306/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1309.webp" 
+              alt="Michael K, sa vie, son temps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Michael K, sa vie, son temps</h3>
+            <p>J.M. COETZEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="scènes de la vie d&#39;un jeune garçon" 
+        data-auteur="j.m. coetzee"
+        data-annee="2017"
+        data-ordre="1307">
+        <a href="/livre/1307/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1310.webp" 
+              alt="Scènes de la vie d&#39;un jeune garçon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Scènes de la vie d&#39;un jeune garçon</h3>
+            <p>J.M. COETZEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les vikings, roi des mers" 
+        data-auteur="yves cohat"
+        data-annee="1987"
+        data-ordre="1308">
+        <a href="/livre/1308/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1311.webp" 
+              alt="Les Vikings, roi des mers"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Vikings, roi des mers</h3>
+            <p>Yves COHAT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vie et mort des baleines" 
+        data-auteur="yves cohat"
+        data-annee="1986"
+        data-ordre="1309">
+        <a href="/livre/1309/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1312.webp" 
+              alt="Vie et mort des baleines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vie et mort des baleines</h3>
+            <p>Yves COHAT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mangeclous" 
+        data-auteur="albert cohen"
+        data-annee="1938"
+        data-ordre="1310">
+        <a href="/livre/1310/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1313.webp" 
+              alt="Mangeclous"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mangeclous</h3>
+            <p>Albert COHEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="belle du seigneur" 
+        data-auteur="albert cohen"
+        data-annee="1968"
+        data-ordre="1311">
+        <a href="/livre/1311/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1314.webp" 
+              alt="Belle du Seigneur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Belle du Seigneur</h3>
+            <p>Albert COHEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="carnets 1978" 
+        data-auteur="albert cohen"
+        data-annee="1979"
+        data-ordre="1312">
+        <a href="/livre/1312/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1315.webp" 
+              alt="Carnets 1978"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Carnets 1978</h3>
+            <p>Albert COHEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le livre de ma mère" 
+        data-auteur="albert cohen"
+        data-annee="1954"
+        data-ordre="1313">
+        <a href="/livre/1313/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1316.webp" 
+              alt="Le livre de ma mère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le livre de ma mère</h3>
+            <p>Albert COHEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sartre : un penseur pour le xxième siècle" 
+        data-auteur="annie cohen-solal"
+        data-annee="2005"
+        data-ordre="1314">
+        <a href="/livre/1314/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1317.webp" 
+              alt="Sartre : un penseur pour le XXIème siècle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sartre : un penseur pour le XXIème siècle</h3>
+            <p>Annie COHEN-SOLAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nous l&#39;avons tant aimée, la révolution" 
+        data-auteur="dany cohn-bendit"
+        data-annee="1986"
+        data-ordre="1315">
+        <a href="/livre/1315/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1318.webp" 
+              alt="Nous l&#39;avons tant aimée, la révolution"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nous l&#39;avons tant aimée, la révolution</h3>
+            <p>Dany COHN-BENDIT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pour supprimer les partis politiques !?" 
+        data-auteur="dany cohn-bendit"
+        data-annee="2013"
+        data-ordre="1316">
+        <a href="/livre/1316/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1319.webp" 
+              alt="Pour supprimer les partis politiques !?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pour supprimer les partis politiques !?</h3>
+            <p>Dany COHN-BENDIT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;omerta française" 
+        data-auteur="s./wickham a. coignard"
+        data-annee="1999"
+        data-ordre="1317">
+        <a href="/livre/1317/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1320.webp" 
+              alt="L&#39;omerta française"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;omerta française</h3>
+            <p>S./WICKHAM A. COIGNARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le pacte immoral" 
+        data-auteur="sophie coignard"
+        data-annee="2011"
+        data-ordre="1318">
+        <a href="/livre/1318/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1321.webp" 
+              alt="Le pacte immoral"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le pacte immoral</h3>
+            <p>Sophie COIGNARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lettres à sa fille 1916-1953" 
+        data-auteur="colette"
+        data-annee="2003"
+        data-ordre="1319">
+        <a href="/livre/1319/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1322.webp" 
+              alt="Lettres à sa fille 1916-1953"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lettres à sa fille 1916-1953</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chambre d&#39;hôtel" 
+        data-auteur="colette"
+        data-annee="1940"
+        data-ordre="1320">
+        <a href="/livre/1320/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1323.webp" 
+              alt="Chambre d&#39;hôtel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chambre d&#39;hôtel</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chéri" 
+        data-auteur="colette"
+        data-annee="1900"
+        data-ordre="1321">
+        <a href="/livre/1321/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1324.webp" 
+              alt="Chéri"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chéri</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="claudine à l&#39;école" 
+        data-auteur="colette"
+        data-annee="1900"
+        data-ordre="1322">
+        <a href="/livre/1322/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1325.webp" 
+              alt="Claudine à l&#39;école"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Claudine à l&#39;école</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="claudine à paris" 
+        data-auteur="colette"
+        data-annee="1902"
+        data-ordre="1323">
+        <a href="/livre/1323/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1326.webp" 
+              alt="Claudine à Paris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Claudine à Paris</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="claudine en ménage" 
+        data-auteur="colette"
+        data-annee="1912"
+        data-ordre="1324">
+        <a href="/livre/1324/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1327.webp" 
+              alt="Claudine en ménage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Claudine en ménage</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="claudine s&#39;en va" 
+        data-auteur="colette"
+        data-annee="1931"
+        data-ordre="1325">
+        <a href="/livre/1325/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1328.webp" 
+              alt="Claudine s&#39;en va"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Claudine s&#39;en va</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dialogues de bêtes" 
+        data-auteur="colette"
+        data-annee="1935"
+        data-ordre="1326">
+        <a href="/livre/1326/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1329.webp" 
+              alt="Dialogues de bêtes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dialogues de bêtes</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="duosuivi de le toutounier" 
+        data-auteur="colette"
+        data-annee="1973"
+        data-ordre="1327">
+        <a href="/livre/1327/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1330.webp" 
+              alt="Duosuivi de Le Toutounier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Duosuivi de Le Toutounier</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gigi" 
+        data-auteur="colette"
+        data-annee="1900"
+        data-ordre="1328">
+        <a href="/livre/1328/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1331.webp" 
+              alt="Gigi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gigi</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j&#39;aime être gourmande" 
+        data-auteur="colette"
+        data-annee="2011"
+        data-ordre="1329">
+        <a href="/livre/1329/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1332.webp" 
+              alt="J&#39;aime être gourmande"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J&#39;aime être gourmande</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="julie de carneilhan" 
+        data-auteur="colette"
+        data-annee="1941"
+        data-ordre="1330">
+        <a href="/livre/1330/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1333.webp" 
+              alt="Julie de Carneilhan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Julie de Carneilhan</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ingénue libertine" 
+        data-auteur="colette"
+        data-annee="1973"
+        data-ordre="1331">
+        <a href="/livre/1331/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1334.webp" 
+              alt="L&#39;ingénue libertine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ingénue libertine</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chatte" 
+        data-auteur="colette"
+        data-annee="1933"
+        data-ordre="1332">
+        <a href="/livre/1332/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1335.webp" 
+              alt="La chatte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chatte</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison de claudine" 
+        data-auteur="colette"
+        data-annee="1922"
+        data-ordre="1333">
+        <a href="/livre/1333/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1336.webp" 
+              alt="La maison de Claudine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison de Claudine</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la naissance du jour" 
+        data-auteur="colette"
+        data-annee="1928"
+        data-ordre="1334">
+        <a href="/livre/1334/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1337.webp" 
+              alt="La naissance du jour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La naissance du jour</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vagabonde" 
+        data-auteur="colette"
+        data-annee="1910"
+        data-ordre="1335">
+        <a href="/livre/1335/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1338.webp" 
+              alt="La vagabonde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vagabonde</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le blé en herbe" 
+        data-auteur="colette"
+        data-annee="1923"
+        data-ordre="1336">
+        <a href="/livre/1336/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1339.webp" 
+              alt="Le blé en herbe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le blé en herbe</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fanal bleu" 
+        data-auteur="colette"
+        data-annee="1949"
+        data-ordre="1337">
+        <a href="/livre/1337/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1340.webp" 
+              alt="Le Fanal bleu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Fanal bleu</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le pur et l&#39;impur" 
+        data-auteur="colette"
+        data-annee="1941"
+        data-ordre="1338">
+        <a href="/livre/1338/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1341.webp" 
+              alt="Le pur et l&#39;impur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le pur et l&#39;impur</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paris de ma fenêtre" 
+        data-auteur="colette"
+        data-annee="1942"
+        data-ordre="1339">
+        <a href="/livre/1339/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1342.webp" 
+              alt="Paris de ma fenêtre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paris de ma fenêtre</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sidosuivi deles vrilles de la vigne" 
+        data-auteur="colette"
+        data-annee="2022"
+        data-ordre="1340">
+        <a href="/livre/1340/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1343.webp" 
+              alt="Sidosuivi deLes vrilles de la vigne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sidosuivi deLes vrilles de la vigne</h3>
+            <p>COLETTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les nuits fauves" 
+        data-auteur="cyril collard"
+        data-annee="1993"
+        data-ordre="1341">
+        <a href="/livre/1341/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1344.webp" 
+              alt="Les nuits fauves"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les nuits fauves</h3>
+            <p>Cyril COLLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="1914-1918 français et allemands dans les tranchées" 
+        data-auteur="collectif(r. dorgelès, g. chevallier, e.m. remarque, e. jünger)"
+        data-annee="2012"
+        data-ordre="1342">
+        <a href="/livre/1342/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1345.webp" 
+              alt="1914-1918 Français et Allemands dans les tranchées"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>1914-1918 Français et Allemands dans les tranchées</h3>
+            <p>COLLECTIF(R. Dorgelès, G. Chevallier, E.M. Remarque, E. Jünger)</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="14-18 reportages de guerre" 
+        data-auteur="collectif (colette, a. londres, e. wharton, m . harry,  p. loti, conan doyle)"
+        data-annee="0"
+        data-ordre="1343">
+        <a href="/livre/1343/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1346.webp" 
+              alt="14-18 Reportages de guerre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>14-18 Reportages de guerre</h3>
+            <p>COLLECTIF (Colette, A. Londres, E. Wharton, M . Harry,  P. Loti, Conan Doyle)</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-27/">← Précédent</a>
+    
+    
+    <span>Page 28 sur 153</span>
+    
+    
+      <a href="/catalogue/page-29/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

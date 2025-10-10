@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="la porte du fond" 
+        data-auteur="christine rochefort"
+        data-annee="2014"
+        data-ordre="5232">
+        <a href="/livre/5232/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5245.webp" 
+              alt="La porte du fond"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La porte du fond</h3>
+            <p>Christine ROCHEFORT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voyage de monsieur raminet" 
+        data-auteur="daniel rocher"
+        data-annee="2011"
+        data-ordre="5233">
+        <a href="/livre/5233/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5246.webp" 
+              alt="Le voyage de Monsieur Raminet"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voyage de Monsieur Raminet</h3>
+            <p>Daniel ROCHER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bruegel ou l&#39;atelier des songes" 
+        data-auteur="c.h. rocquet"
+        data-annee="2010"
+        data-ordre="5234">
+        <a href="/livre/5234/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5247.webp" 
+              alt="Bruegel ou l&#39;atelier des songes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bruegel ou l&#39;atelier des songes</h3>
+            <p>C.H. ROCQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le guide de l&#39;osteopathie" 
+        data-auteur="rod de verchere c. – schneider b."
+        data-annee="2014"
+        data-ordre="5235">
+        <a href="/livre/5235/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5248.webp" 
+              alt="Le guide de l&#39;osteopathie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le guide de l&#39;osteopathie</h3>
+            <p>ROD de VERCHERE C. – SCHNEIDER B.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bruges-la-morte" 
+        data-auteur="georges rodenbach"
+        data-annee="1892"
+        data-ordre="5236">
+        <a href="/livre/5236/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5249.webp" 
+              alt="Bruges-la-morte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bruges-la-morte</h3>
+            <p>Georges RODENBACH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="inconvenances" 
+        data-auteur="martine roffinella"
+        data-annee="2004"
+        data-ordre="5237">
+        <a href="/livre/5237/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5250.webp" 
+              alt="Inconvenances"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Inconvenances</h3>
+            <p>Martine ROFFINELLA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la gravure originale au xixème siècle" 
+        data-auteur="claude roger-marx"
+        data-annee="1962"
+        data-ordre="5238">
+        <a href="/livre/5238/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5251.webp" 
+              alt="La gravure originale au XIXème siècle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La gravure originale au XIXème siècle</h3>
+            <p>Claude ROGER-MARX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal amoureux" 
+        data-auteur="dominique rolin"
+        data-annee="2000"
+        data-ordre="5239">
+        <a href="/livre/5239/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5252.webp" 
+              alt="Journal amoureux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal amoureux</h3>
+            <p>Dominique ROLIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;invention du monde" 
+        data-auteur="olivier rolin"
+        data-annee="1993"
+        data-ordre="5240">
+        <a href="/livre/5240/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5253.webp" 
+              alt="L&#39;invention du monde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;invention du monde</h3>
+            <p>Olivier ROLIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="port-soudan" 
+        data-auteur="olivier rolin"
+        data-annee="1994"
+        data-ordre="5241">
+        <a href="/livre/5241/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5254.webp" 
+              alt="Port-Soudan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Port-Soudan</h3>
+            <p>Olivier ROLIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un chasseur de lions" 
+        data-auteur="olivier rolin"
+        data-annee="2008"
+        data-ordre="5242">
+        <a href="/livre/5242/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5255.webp" 
+              alt="Un chasseur de lions"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un chasseur de lions</h3>
+            <p>Olivier ROLIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="méroé" 
+        data-auteur="olivier rolin"
+        data-annee="2001"
+        data-ordre="5243">
+        <a href="/livre/5243/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5256.webp" 
+              alt="Méroé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Méroé</h3>
+            <p>Olivier ROLIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tigre en papier" 
+        data-auteur="olivier rolin"
+        data-annee="2002"
+        data-ordre="5244">
+        <a href="/livre/5244/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5257.webp" 
+              alt="Tigre en papier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tigre en papier</h3>
+            <p>Olivier ROLIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="crime de quinette(les hommes de bonne volonté)" 
+        data-auteur="jules romains"
+        data-annee="1945"
+        data-ordre="5245">
+        <a href="/livre/5245/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5258.webp" 
+              alt="Crime de Quinette(Les hommes de bonne volonté)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Crime de Quinette(Les hommes de bonne volonté)</h3>
+            <p>Jules ROMAINS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les copains" 
+        data-auteur="jules romains"
+        data-annee="1922"
+        data-ordre="5246">
+        <a href="/livre/5246/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5259.webp" 
+              alt="Les copains"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les copains</h3>
+            <p>Jules ROMAINS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lucienne" 
+        data-auteur="jules romains"
+        data-annee="1922"
+        data-ordre="5247">
+        <a href="/livre/5247/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5260.webp" 
+              alt="Lucienne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lucienne</h3>
+            <p>Jules ROMAINS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mort de quelqu&#39;un" 
+        data-auteur="jules romains"
+        data-annee="1911"
+        data-ordre="5248">
+        <a href="/livre/5248/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5261.webp" 
+              alt="Mort de quelqu&#39;un"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mort de quelqu&#39;un</h3>
+            <p>Jules ROMAINS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="knock" 
+        data-auteur="jules romains"
+        data-annee="1920"
+        data-ordre="5249">
+        <a href="/livre/5249/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5262.webp" 
+              alt="Knock"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Knock</h3>
+            <p>Jules ROMAINS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les révélations de la mémoire" 
+        data-auteur="jacqueline de romilly"
+        data-annee="2009"
+        data-ordre="5250">
+        <a href="/livre/5250/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5263.webp" 
+              alt="Les révélations de la mémoire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les révélations de la mémoire</h3>
+            <p>Jacqueline de ROMILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ouverture à coeur" 
+        data-auteur="jacqueline de romilly"
+        data-annee="1990"
+        data-ordre="5251">
+        <a href="/livre/5251/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5264.webp" 
+              alt="Ouverture à coeur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ouverture à coeur</h3>
+            <p>Jacqueline de ROMILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="avril rouge" 
+        data-auteur="santiago roncagliolo"
+        data-annee="2008"
+        data-ordre="5252">
+        <a href="/livre/5252/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5265.webp" 
+              alt="Avril rouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Avril rouge</h3>
+            <p>Santiago RONCAGLIOLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ce jour-là" 
+        data-auteur="willy ronis"
+        data-annee="2006"
+        data-ordre="5253">
+        <a href="/livre/5253/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5266.webp" 
+              alt="Ce jour-là"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ce jour-là</h3>
+            <p>Willy RONIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poésies choisies" 
+        data-auteur="ronsard"
+        data-annee="1989"
+        data-ordre="5254">
+        <a href="/livre/5254/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5267.webp" 
+              alt="Poésies choisies"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poésies choisies</h3>
+            <p>RONSARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sonnets pour hélène" 
+        data-auteur="ronsard"
+        data-annee="1921"
+        data-ordre="5255">
+        <a href="/livre/5255/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5268.webp" 
+              alt="Sonnets pour Hélène"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sonnets pour Hélène</h3>
+            <p>RONSARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="en chute libre" 
+        data-auteur="léon rooke"
+        data-annee="2002"
+        data-ordre="5256">
+        <a href="/livre/5256/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5269.webp" 
+              alt="En chute libre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>En chute libre</h3>
+            <p>Léon ROOKE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="normal people" 
+        data-auteur="sally rooney"
+        data-annee="2018"
+        data-ordre="5257">
+        <a href="/livre/5257/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5270.webp" 
+              alt="Normal people"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Normal people</h3>
+            <p>Sally ROONEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon ange" 
+        data-auteur="guillermo rosales"
+        data-annee="2002"
+        data-ordre="5258">
+        <a href="/livre/5258/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5271.webp" 
+              alt="Mon ange"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon ange</h3>
+            <p>Guillermo ROSALES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="titien« l&#39;art plus fort que la nature »" 
+        data-auteur="david rosand"
+        data-annee="1993"
+        data-ordre="5259">
+        <a href="/livre/5259/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5272.webp" 
+              alt="Titien« l&#39;art plus fort que la nature »"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Titien« l&#39;art plus fort que la nature »</h3>
+            <p>David ROSAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="que font les rennes après noël ?" 
+        data-auteur="olivia rosenthal"
+        data-annee="2010"
+        data-ordre="5260">
+        <a href="/livre/5260/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5273.webp" 
+              alt="Que font les rennes après Noël ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Que font les rennes après Noël ?</h3>
+            <p>Olivia ROSENTHAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les armées" 
+        data-auteur="evelio rosero"
+        data-annee="2016"
+        data-ordre="5261">
+        <a href="/livre/5261/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5274.webp" 
+              alt="Les Armées"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Armées</h3>
+            <p>Evelio ROSERO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;aventure du vivant" 
+        data-auteur="joël de rosnay"
+        data-annee="1991"
+        data-ordre="5262">
+        <a href="/livre/5262/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5275.webp" 
+              alt="L&#39;aventure du vivant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;aventure du vivant</h3>
+            <p>Joël de ROSNAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="elle s&#39;appelait sarah" 
+        data-auteur="tatiana de rosnay"
+        data-annee="2008"
+        data-ordre="5263">
+        <a href="/livre/5263/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5276.webp" 
+              alt="Elle s&#39;appelait Sarah"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Elle s&#39;appelait Sarah</h3>
+            <p>Tatiana de ROSNAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="petites morts" 
+        data-auteur="isabelle rossignol"
+        data-annee="1998"
+        data-ordre="5264">
+        <a href="/livre/5264/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5277.webp" 
+              alt="Petites morts"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Petites morts</h3>
+            <p>Isabelle ROSSIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fils" 
+        data-auteur="michel rostain"
+        data-annee="2010"
+        data-ordre="5265">
+        <a href="/livre/5265/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5278.webp" 
+              alt="Le fils"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fils</h3>
+            <p>Michel ROSTAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cyrano de bergerac" 
+        data-auteur="edmond rostand"
+        data-annee="1821"
+        data-ordre="5266">
+        <a href="/livre/5266/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5279.webp" 
+              alt="Cyrano de Bergerac"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cyrano de Bergerac</h3>
+            <p>Edmond ROSTAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="carnet d&#39;un biologiste" 
+        data-auteur="jean rostand"
+        data-annee="1959"
+        data-ordre="5267">
+        <a href="/livre/5267/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5280.webp" 
+              alt="Carnet d&#39;un biologiste"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Carnet d&#39;un biologiste</h3>
+            <p>Jean ROSTAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="inquiétudes d&#39;un biologiste" 
+        data-auteur="jean rostand"
+        data-annee="1967"
+        data-ordre="5268">
+        <a href="/livre/5268/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5281.webp" 
+              alt="Inquiétudes d&#39;un biologiste"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Inquiétudes d&#39;un biologiste</h3>
+            <p>Jean ROSTAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le multiguide nature desétoiles et planètes" 
+        data-auteur="d. günter roth"
+        data-annee="1976"
+        data-ordre="5269">
+        <a href="/livre/5269/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5282.webp" 
+              alt="Le multiguide nature desétoiles et planètes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le multiguide nature desétoiles et planètes</h3>
+            <p>D. Günter ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la crypte des capucins" 
+        data-auteur="joseph roth"
+        data-annee="1940"
+        data-ordre="5270">
+        <a href="/livre/5270/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5283.webp" 
+              alt="La crypte des capucins"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La crypte des capucins</h3>
+            <p>Joseph ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la légende du saint buveur" 
+        data-auteur="joseph roth"
+        data-annee="1986"
+        data-ordre="5271">
+        <a href="/livre/5271/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5284.webp" 
+              alt="La légende du saint buveur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La légende du saint buveur</h3>
+            <p>Joseph ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la marche de radetzky" 
+        data-auteur="joseph roth"
+        data-annee="1994"
+        data-ordre="5272">
+        <a href="/livre/5272/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5285.webp" 
+              alt="La marche de Radetzky"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La marche de Radetzky</h3>
+            <p>Joseph ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="exit le fantôme" 
+        data-auteur="philip roth"
+        data-annee="2011"
+        data-ordre="5273">
+        <a href="/livre/5273/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5286.webp" 
+              alt="Exit le fantôme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Exit le fantôme</h3>
+            <p>Philip ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="indignation" 
+        data-auteur="philip roth"
+        data-annee="2008"
+        data-ordre="5274">
+        <a href="/livre/5274/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5287.webp" 
+              alt="Indignation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Indignation</h3>
+            <p>Philip ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bête qui meurt" 
+        data-auteur="philip roth"
+        data-annee="2011"
+        data-ordre="5275">
+        <a href="/livre/5275/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5288.webp" 
+              alt="La bête qui meurt"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bête qui meurt</h3>
+            <p>Philip ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le rabaissement" 
+        data-auteur="philip roth"
+        data-annee="2011"
+        data-ordre="5276">
+        <a href="/livre/5276/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5289.webp" 
+              alt="Le rabaissement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le rabaissement</h3>
+            <p>Philip ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nemesis" 
+        data-auteur="philip roth"
+        data-annee="2010"
+        data-ordre="5277">
+        <a href="/livre/5277/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5290.webp" 
+              alt="Nemesis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nemesis</h3>
+            <p>Philip ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="opération shylock" 
+        data-auteur="philip roth"
+        data-annee="1993"
+        data-ordre="5278">
+        <a href="/livre/5278/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5291.webp" 
+              alt="Opération Shylock"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Opération Shylock</h3>
+            <p>Philip ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tromperie" 
+        data-auteur="philip roth"
+        data-annee="2017"
+        data-ordre="5279">
+        <a href="/livre/5279/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5292.webp" 
+              alt="Tromperie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tromperie</h3>
+            <p>Philip ROTH</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-109/">← Précédent</a>
+    
+    
+    <span>Page 110 sur 153</span>
+    
+    
+      <a href="/catalogue/page-111/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

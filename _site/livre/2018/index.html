@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecrire - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+<article class="livre-detail">
+  
+  <nav class="breadcrumb">
+    <a href="/">Accueil</a> / 
+    <a href="/catalogue/">Catalogue</a> / 
+    <span>Ecrire</span>
+  </nav>
+
+  <div class="livre-grid">
+    
+    <div class="livre-cover">
+      <img 
+        src="/images/covers/2022.webp" 
+        alt="Couverture de Ecrire"
+        loading="lazy"
+        width="300"
+        height="450"
+        onerror="this.src='/images/0-livre-par-defaut.svg'"
+      >
+    </div>
+
+    <div class="livre-info">
+      <h1>Ecrire</h1>
+      
+      
+      <p class="livre-type">
+        <span class="badge">Littérature française</span>
+      </p>
+      
+      
+      <p class="auteur">
+        <strong>Auteur :</strong> 
+        Marguerite DURAS
+      </p>
+
+      <div class="resume">
+        <h2>Résumé</h2>
+        
+          <p>&quot;Il faut toujours une séparation d&#39;avec les autres gens autour de la personne qui écrit les livres. C&#39;est une solitude essentielle. C&#39;est la solitude de l&#39;auteur, celle de l&#39;écrit. Pour débuter la chose, on se demande ce que c&#39;était ce silence autour de soi. Et pratiquemment à chaque pas que l&#39;on fait dans une maison et à toutes les heures de la journée, dans toutes les lumières, qu&#39;elles soient du dehors ou des lampes allumées dans le jour. Cette solitude réelle du corps devient celle, inviolable, de l&#39;écrit.&quot;</p>
+        
+      </div>
+
+      <div class="actions">
+        <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/1" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-availability">
+          📋 Vérifier la disponibilité du livre
+        </a>
+        <button onclick="history.back()" class="btn-secondary">
+          ← Retour
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="mon dernier soupir" 
+        data-auteur="luis bunuel"
+        data-annee="1982"
+        data-ordre="864">
+        <a href="/livre/864/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/867.webp" 
+              alt="Mon dernier soupir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon dernier soupir</h3>
+            <p>Luis BUNUEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;orange mécanique" 
+        data-auteur="anthony burgess"
+        data-annee="1962"
+        data-ordre="865">
+        <a href="/livre/865/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/868.webp" 
+              alt="L&#39;orange mécanique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;orange mécanique</h3>
+            <p>Anthony BURGESS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le testament de l&#39;orange" 
+        data-auteur="antony burgess"
+        data-annee="2012"
+        data-ordre="866">
+        <a href="/livre/866/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/869.webp" 
+              alt="Le testament de l&#39;orange"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le testament de l&#39;orange</h3>
+            <p>Antony BURGESS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="black cherry blues" 
+        data-auteur="james lee burke"
+        data-annee="1989"
+        data-ordre="867">
+        <a href="/livre/867/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/870.webp" 
+              alt="Black Cherry Blues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Black Cherry Blues</h3>
+            <p>James Lee BURKE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le boogie des rêves perdus" 
+        data-auteur="james lee burke"
+        data-annee="2006"
+        data-ordre="868">
+        <a href="/livre/868/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/871.webp" 
+              alt="Le boogie des rêves perdus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le boogie des rêves perdus</h3>
+            <p>James Lee BURKE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="scintillation" 
+        data-auteur="john burnside"
+        data-annee="2011"
+        data-ordre="869">
+        <a href="/livre/869/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/872.webp" 
+              alt="Scintillation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Scintillation</h3>
+            <p>John BURNSIDE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le festin nu" 
+        data-auteur="william burroughs"
+        data-annee="1984"
+        data-ordre="870">
+        <a href="/livre/870/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/873.webp" 
+              alt="Le festin nu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le festin nu</h3>
+            <p>William BURROUGHS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la triste fin du petit enfant huîtreet autres histoires" 
+        data-auteur="tim burton"
+        data-annee="1998"
+        data-ordre="871">
+        <a href="/livre/871/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/874.webp" 
+              alt="La triste fin du petit enfant huîtreet autres histoires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La triste fin du petit enfant huîtreet autres histoires</h3>
+            <p>Tim BURTON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="guide pratique des roches et mineraux" 
+        data-auteur="busbey arthur b./ coenraads robert r./ willis paul/  roots david"
+        data-annee="1997"
+        data-ordre="872">
+        <a href="/livre/872/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/875.webp" 
+              alt="Guide pratique des roches et mineraux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Guide pratique des roches et mineraux</h3>
+            <p>BUSBEY Arthur B./ COENRAADS Robert R./ WILLIS Paul/  ROOTS David</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;encyclopédie du tricot" 
+        data-auteur="katharina buss"
+        data-annee="1998"
+        data-ordre="873">
+        <a href="/livre/873/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/876.webp" 
+              alt="L&#39;encyclopédie du tricot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;encyclopédie du tricot</h3>
+            <p>Katharina BUSS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="code 612 - qui a tué le petit prince ?" 
+        data-auteur="michel bussi"
+        data-annee="2021"
+        data-ordre="874">
+        <a href="/livre/874/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/877.webp" 
+              alt="Code 612 - Qui a tué le Petit Prince ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Code 612 - Qui a tué le Petit Prince ?</h3>
+            <p>Michel BUSSI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon cœur a déménagé" 
+        data-auteur="michel bussi"
+        data-annee="2024"
+        data-ordre="875">
+        <a href="/livre/875/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/878.webp" 
+              alt="Mon cœur a déménagé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon cœur a déménagé</h3>
+            <p>Michel BUSSI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au soleil redouté" 
+        data-auteur="michel bussi"
+        data-annee="2021"
+        data-ordre="876">
+        <a href="/livre/876/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/879.webp" 
+              alt="Au soleil redouté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au soleil redouté</h3>
+            <p>Michel BUSSI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un avion sans elle" 
+        data-auteur="michel bussi"
+        data-annee="2012"
+        data-ordre="877">
+        <a href="/livre/877/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/880.webp" 
+              alt="Un avion sans elle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un avion sans elle</h3>
+            <p>Michel BUSSI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nymphéas noirs" 
+        data-auteur="michel bussi"
+        data-annee="2015"
+        data-ordre="878">
+        <a href="/livre/878/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/881.webp" 
+              alt="Nymphéas noirs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nymphéas noirs</h3>
+            <p>Michel BUSSI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maman a tort" 
+        data-auteur="michel bussi"
+        data-annee="2015"
+        data-ordre="879">
+        <a href="/livre/879/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/882.webp" 
+              alt="Maman a tort"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maman a tort</h3>
+            <p>Michel BUSSI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="monsieur butterfly" 
+        data-auteur="howard buten"
+        data-annee="1989"
+        data-ordre="880">
+        <a href="/livre/880/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/883.webp" 
+              alt="Monsieur Butterfly"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Monsieur Butterfly</h3>
+            <p>Howard BUTEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quand est-ce qu&#39;on arrive ?" 
+        data-auteur="howard buten"
+        data-annee="2000"
+        data-ordre="881">
+        <a href="/livre/881/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/884.webp" 
+              alt="Quand est-ce qu&#39;on arrive ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quand est-ce qu&#39;on arrive ?</h3>
+            <p>Howard BUTEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="il faudra bien te couvrir" 
+        data-auteur="howard buten"
+        data-annee="1989"
+        data-ordre="882">
+        <a href="/livre/882/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/885.webp" 
+              alt="Il faudra bien te couvrir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Il faudra bien te couvrir</h3>
+            <p>Howard BUTEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quand j&#39;avais cinq ans je m&#39;ai tué" 
+        data-auteur="howard buten"
+        data-annee="1981"
+        data-ordre="883">
+        <a href="/livre/883/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/886.webp" 
+              alt="Quand j&#39;avais cinq ans je m&#39;ai tué"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quand j&#39;avais cinq ans je m&#39;ai tué</h3>
+            <p>Howard BUTEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="il y a quelqu&#39;un là-dedans" 
+        data-auteur="howard buten"
+        data-annee="2003"
+        data-ordre="884">
+        <a href="/livre/884/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/887.webp" 
+              alt="Il y a quelqu&#39;un là-dedans"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Il y a quelqu&#39;un là-dedans</h3>
+            <p>Howard BUTEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la modification" 
+        data-auteur="michel butor"
+        data-annee="1985"
+        data-ordre="885">
+        <a href="/livre/885/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/888.webp" 
+              alt="La modification"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La modification</h3>
+            <p>Michel BUTOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="passage de milan" 
+        data-auteur="michel butor"
+        data-annee="1954"
+        data-ordre="886">
+        <a href="/livre/886/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/889.webp" 
+              alt="Passage de Milan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Passage de Milan</h3>
+            <p>Michel BUTOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le désert des tartares" 
+        data-auteur="dino buzatti"
+        data-annee="1991"
+        data-ordre="887">
+        <a href="/livre/887/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/890.webp" 
+              alt="Le désert des Tartares"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le désert des Tartares</h3>
+            <p>Dino BUZATTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le régiment part à l&#39;aube" 
+        data-auteur="dino buzatti"
+        data-annee="0"
+        data-ordre="888">
+        <a href="/livre/888/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/891.webp" 
+              alt="Le régiment part à l&#39;aube"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le régiment part à l&#39;aube</h3>
+            <p>Dino BUZATTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le k" 
+        data-auteur="dino buzatti"
+        data-annee="0"
+        data-ordre="889">
+        <a href="/livre/889/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/892.webp" 
+              alt="Le K"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le K</h3>
+            <p>Dino BUZATTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mystères à l&#39;italienne" 
+        data-auteur="dino buzatti"
+        data-annee="0"
+        data-ordre="890">
+        <a href="/livre/890/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/893.webp" 
+              alt="Mystères à l&#39;italienne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mystères à l&#39;italienne</h3>
+            <p>Dino BUZATTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nature morte" 
+        data-auteur="a.s. byatt"
+        data-annee="2001"
+        data-ordre="891">
+        <a href="/livre/891/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/894.webp" 
+              alt="Nature morte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nature morte</h3>
+            <p>A.S. BYATT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="confiteor" 
+        data-auteur="jaume cabre"
+        data-annee="2013"
+        data-ordre="892">
+        <a href="/livre/892/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/895.webp" 
+              alt="Confiteor"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Confiteor</h3>
+            <p>Jaume CABRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la havane pour un infante défunt" 
+        data-auteur="infante guillermo cabrera"
+        data-annee="1985"
+        data-ordre="893">
+        <a href="/livre/893/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/896.webp" 
+              alt="La Havane pour un infante défunt"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Havane pour un infante défunt</h3>
+            <p>INFANTE Guillermo CABRERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="voyages aux frontières de la vie" 
+        data-auteur="nathalie cabrol"
+        data-annee="2021"
+        data-ordre="894">
+        <a href="/livre/894/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/897.webp" 
+              alt="Voyages aux frontières de la vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Voyages aux frontières de la vie</h3>
+            <p>Nathalie CABROL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="allons au-devant de la vie :la naissance du temps des loisirs en 1936" 
+        data-auteur="benigno caceres"
+        data-annee="0"
+        data-ordre="895">
+        <a href="/livre/895/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/898.webp" 
+              alt="Allons au-devant de la vie :la naissance du temps des loisirs en 1936"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Allons au-devant de la vie :la naissance du temps des loisirs en 1936</h3>
+            <p>Benigno CACERES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la rencontre des hommes" 
+        data-auteur="bénigno caceres"
+        data-annee="1984"
+        data-ordre="896">
+        <a href="/livre/896/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/899.webp" 
+              alt="La rencontre des hommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La rencontre des hommes</h3>
+            <p>Bénigno CACERES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="contes et légendes de bretagne : les contes populaires" 
+        data-auteur="françois cadic"
+        data-annee="1914"
+        data-ordre="897">
+        <a href="/livre/897/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/900.webp" 
+              alt="Contes et légendes de Bretagne : les contes populaires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Contes et légendes de Bretagne : les contes populaires</h3>
+            <p>François CADIC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le hameau des mirabelliers" 
+        data-auteur="michel caffier"
+        data-annee="1998"
+        data-ordre="898">
+        <a href="/livre/898/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/901.webp" 
+              alt="Le hameau des mirabelliers"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le hameau des mirabelliers</h3>
+            <p>Michel CAFFIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le jour de congé" 
+        data-auteur="inès cagnati"
+        data-annee="1973"
+        data-ordre="899">
+        <a href="/livre/899/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/902.webp" 
+              alt="Le jour de congé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le jour de congé</h3>
+            <p>Inès CAGNATI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="génie la folle" 
+        data-auteur="inès cagnati"
+        data-annee="1979"
+        data-ordre="900">
+        <a href="/livre/900/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/903.webp" 
+              alt="Génie la Folle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Génie la Folle</h3>
+            <p>Inès CAGNATI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="coups de tête" 
+        data-auteur="james m. cain"
+        data-annee="1976"
+        data-ordre="901">
+        <a href="/livre/901/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/904.webp" 
+              alt="Coups de tête"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Coups de tête</h3>
+            <p>James M. CAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le facteur sonne toujours deux fois" 
+        data-auteur="james m. cain"
+        data-annee="2004"
+        data-ordre="902">
+        <a href="/livre/902/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/905.webp" 
+              alt="Le facteur sonne toujours deux fois"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le facteur sonne toujours deux fois</h3>
+            <p>James M. CAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mildred pierce" 
+        data-auteur="james m. cain"
+        data-annee="1941"
+        data-ordre="903">
+        <a href="/livre/903/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/906.webp" 
+              alt="Mildred Pierce"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mildred Pierce</h3>
+            <p>James M. CAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mécanique des femmes" 
+        data-auteur="louis calaferte"
+        data-annee="1994"
+        data-ordre="904">
+        <a href="/livre/904/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/907.webp" 
+              alt="La mécanique des femmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mécanique des femmes</h3>
+            <p>Louis CALAFERTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="promenade dans un parc" 
+        data-auteur="louis calaferte"
+        data-annee="1987"
+        data-ordre="905">
+        <a href="/livre/905/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/908.webp" 
+              alt="Promenade dans un parc"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Promenade dans un parc</h3>
+            <p>Louis CALAFERTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;incarnation" 
+        data-auteur="louis calaferte"
+        data-annee="1987"
+        data-ordre="906">
+        <a href="/livre/906/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/909.webp" 
+              alt="L&#39;incarnation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;incarnation</h3>
+            <p>Louis CALAFERTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lettres à sa fille (1877-1902)" 
+        data-auteur="jane calamity"
+        data-annee="1979"
+        data-ordre="907">
+        <a href="/livre/907/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/910.webp" 
+              alt="Lettres à sa fille (1877-1902)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lettres à sa fille (1877-1902)</h3>
+            <p>JANE CALAMITY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie est un songe" 
+        data-auteur="pedro calderon de la barca"
+        data-annee="1982"
+        data-ordre="908">
+        <a href="/livre/908/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/911.webp" 
+              alt="La vie est un songe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie est un songe</h3>
+            <p>Pedro Calderon de la Barca</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le quartier de medora" 
+        data-auteur="erskine caldwell"
+        data-annee="1973"
+        data-ordre="909">
+        <a href="/livre/909/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/912.webp" 
+              alt="Le quartier de Medora"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le quartier de Medora</h3>
+            <p>Erskine CALDWELL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ascenseur pour l&#39;échafaud" 
+        data-auteur="noël calef"
+        data-annee="1956"
+        data-ordre="910">
+        <a href="/livre/910/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/913.webp" 
+              alt="Ascenseur pour l&#39;échafaud"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ascenseur pour l&#39;échafaud</h3>
+            <p>Noël CALEF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le tout sur le tout" 
+        data-auteur="henri calet"
+        data-annee="1948"
+        data-ordre="911">
+        <a href="/livre/911/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/914.webp" 
+              alt="Le tout sur le tout"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le tout sur le tout</h3>
+            <p>Henri CALET</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-18/">← Précédent</a>
+    
+    
+    <span>Page 19 sur 153</span>
+    
+    
+      <a href="/catalogue/page-20/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

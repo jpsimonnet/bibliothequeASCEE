@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="passeur de vies" 
+        data-auteur="jacques salome"
+        data-annee="2000"
+        data-ordre="5424">
+        <a href="/livre/5424/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5437.webp" 
+              alt="Passeur de vies"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Passeur de vies</h3>
+            <p>Jacques SALOME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pourquoi est-il si difficile d&#39;être heureux" 
+        data-auteur="jacques salome"
+        data-annee="2007"
+        data-ordre="5425">
+        <a href="/livre/5425/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5438.webp" 
+              alt="Pourquoi est-il si difficile d&#39;être heureux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pourquoi est-il si difficile d&#39;être heureux</h3>
+            <p>Jacques SALOME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="t&#39;es toi quand tu parles" 
+        data-auteur="jacques salome"
+        data-annee="1991"
+        data-ordre="5426">
+        <a href="/livre/5426/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5439.webp" 
+              alt="T&#39;es toi quand tu parles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>T&#39;es toi quand tu parles</h3>
+            <p>Jacques SALOME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vivre avec les miens" 
+        data-auteur="jacques salome"
+        data-annee="2003"
+        data-ordre="5427">
+        <a href="/livre/5427/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5440.webp" 
+              alt="Vivre avec les miens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vivre avec les miens</h3>
+            <p>Jacques SALOME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="c’est comme ça, ne discute pas" 
+        data-auteur="jacques salome"
+        data-annee="2000"
+        data-ordre="5428">
+        <a href="/livre/5428/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5441.webp" 
+              alt="C’est comme ça, ne discute pas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>C’est comme ça, ne discute pas</h3>
+            <p>Jacques SALOME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="heureux qui communique(pour oser se dire et être entendu)" 
+        data-auteur="jacques salome"
+        data-annee="0"
+        data-ordre="5429">
+        <a href="/livre/5429/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5442.webp" 
+              alt="Heureux qui communique(Pour oser se dire et être entendu)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Heureux qui communique(Pour oser se dire et être entendu)</h3>
+            <p>Jacques SALOME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="parle-moi... j&#39;ai des choses à te dire" 
+        data-auteur="jacques salome"
+        data-annee="1982"
+        data-ordre="5430">
+        <a href="/livre/5430/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5443.webp" 
+              alt="Parle-moi... j&#39;ai des choses à te dire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Parle-moi... j&#39;ai des choses à te dire</h3>
+            <p>Jacques SALOME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un bonheur parfait" 
+        data-auteur="james salter"
+        data-annee="1999"
+        data-ordre="5431">
+        <a href="/livre/5431/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5444.webp" 
+              alt="Un bonheur parfait"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un bonheur parfait</h3>
+            <p>James SALTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un sport et un passe-temps" 
+        data-auteur="james salter"
+        data-annee="2008"
+        data-ordre="5432">
+        <a href="/livre/5432/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5445.webp" 
+              alt="Un sport et un passe-temps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un sport et un passe-temps</h3>
+            <p>James SALTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une vie à brûler" 
+        data-auteur="james salter"
+        data-annee="2001"
+        data-ordre="5433">
+        <a href="/livre/5433/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5446.webp" 
+              alt="Une vie à brûler"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une vie à brûler</h3>
+            <p>James SALTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="misayre ! misayre !" 
+        data-auteur="françois salvaing"
+        data-annee="1987"
+        data-ordre="5434">
+        <a href="/livre/5434/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5447.webp" 
+              alt="Misayre ! Misayre !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Misayre ! Misayre !</h3>
+            <p>François SALVAING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la déclaration" 
+        data-auteur="lydie salvayre"
+        data-annee="1990"
+        data-ordre="5435">
+        <a href="/livre/5435/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5448.webp" 
+              alt="La déclaration"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La déclaration</h3>
+            <p>Lydie SALVAYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la puissance des mouches" 
+        data-auteur="lydie salvayre"
+        data-annee="1995"
+        data-ordre="5436">
+        <a href="/livre/5436/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5449.webp" 
+              alt="La puissance des mouches"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La puissance des mouches</h3>
+            <p>Lydie SALVAYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les belles ames" 
+        data-auteur="lydie salvayre"
+        data-annee="2000"
+        data-ordre="5437">
+        <a href="/livre/5437/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5450.webp" 
+              alt="Les Belles Ames"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Belles Ames</h3>
+            <p>Lydie SALVAYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pas pleurer" 
+        data-auteur="lydie salvayre"
+        data-annee="2014"
+        data-ordre="5438">
+        <a href="/livre/5438/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5451.webp" 
+              alt="Pas pleurer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pas pleurer</h3>
+            <p>Lydie SALVAYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la compagnie des spectres" 
+        data-auteur="lydie salvayre"
+        data-annee="1997"
+        data-ordre="5439">
+        <a href="/livre/5439/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5452.webp" 
+              alt="La compagnie des spectres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La compagnie des spectres</h3>
+            <p>Lydie SALVAYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="portrait de l&#39;écrivain en animal domestique" 
+        data-auteur="lydie salvayre"
+        data-annee="2007"
+        data-ordre="5440">
+        <a href="/livre/5440/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5453.webp" 
+              alt="Portrait de l&#39;écrivain en animal domestique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Portrait de l&#39;écrivain en animal domestique</h3>
+            <p>Lydie SALVAYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fleuve qui nous emporte" 
+        data-auteur="josé luis sampedro"
+        data-annee="2019"
+        data-ordre="5441">
+        <a href="/livre/5441/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5454.webp" 
+              alt="Le fleuve qui nous emporte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fleuve qui nous emporte</h3>
+            <p>José Luis SAMPEDRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bacchanale chez la mère tatzi" 
+        data-auteur="san-antonio"
+        data-annee="1987"
+        data-ordre="5442">
+        <a href="/livre/5442/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5455.webp" 
+              alt="Bacchanale chez la mère Tatzi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bacchanale chez la mère Tatzi</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bouge ton pied que je vois la mer" 
+        data-auteur="san-antonio"
+        data-annee="2010"
+        data-ordre="5443">
+        <a href="/livre/5443/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5456.webp" 
+              alt="Bouge ton pied que je vois la mer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bouge ton pied que je vois la mer</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ca tourne au vinaigre" 
+        data-auteur="san-antonio"
+        data-annee="1984"
+        data-ordre="5444">
+        <a href="/livre/5444/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5457.webp" 
+              alt="Ca tourne au vinaigre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ca tourne au vinaigre</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chauds, les lapins !" 
+        data-auteur="san-antonio"
+        data-annee="1986"
+        data-ordre="5445">
+        <a href="/livre/5445/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5458.webp" 
+              alt="Chauds, les lapins !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chauds, les lapins !</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="des gueules d&#39;enterrement" 
+        data-auteur="san-antonio"
+        data-annee="1977"
+        data-ordre="5446">
+        <a href="/livre/5446/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5459.webp" 
+              alt="Des gueules d&#39;enterrement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Des gueules d&#39;enterrement</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="descendez-le à la prochaine" 
+        data-auteur="san-antonio"
+        data-annee="1977"
+        data-ordre="5447">
+        <a href="/livre/5447/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5460.webp" 
+              alt="Descendez-le à la prochaine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Descendez-le à la prochaine</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="en peignant la girafe" 
+        data-auteur="san-antonio"
+        data-annee="1980"
+        data-ordre="5448">
+        <a href="/livre/5448/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5461.webp" 
+              alt="En peignant la girafe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>En peignant la girafe</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la pute enchantée" 
+        data-auteur="san-antonio"
+        data-annee="2010"
+        data-ordre="5449">
+        <a href="/livre/5449/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5462.webp" 
+              alt="La pute enchantée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La pute enchantée</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maman, les petits bateaux…" 
+        data-auteur="san-antonio"
+        data-annee="1986"
+        data-ordre="5450">
+        <a href="/livre/5450/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5463.webp" 
+              alt="Maman, les petits bateaux…"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maman, les petits bateaux…</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="moi, vous me connaissez ?" 
+        data-auteur="san-antonio"
+        data-annee="1983"
+        data-ordre="5451">
+        <a href="/livre/5451/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5464.webp" 
+              alt="Moi, vous me connaissez ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Moi, vous me connaissez ?</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon culte sur la commode" 
+        data-auteur="san-antonio"
+        data-annee="1995"
+        data-ordre="5452">
+        <a href="/livre/5452/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5465.webp" 
+              alt="Mon culte sur la commode"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon culte sur la commode</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="si, signore !" 
+        data-auteur="san-antonio"
+        data-annee="1974"
+        data-ordre="5453">
+        <a href="/livre/5453/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5466.webp" 
+              alt="Si, signore !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Si, signore !</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tire-m&#39;en deux, c&#39;est pour offrir" 
+        data-auteur="san-antonio"
+        data-annee="2010"
+        data-ordre="5454">
+        <a href="/livre/5454/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5467.webp" 
+              alt="Tire-m&#39;en deux, c&#39;est pour offrir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tire-m&#39;en deux, c&#39;est pour offrir</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une banane dans l&#39;oreille" 
+        data-auteur="san-antonio"
+        data-annee="1977"
+        data-ordre="5455">
+        <a href="/livre/5455/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5468.webp" 
+              alt="Une banane dans l&#39;oreille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une banane dans l&#39;oreille</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="viens avec ton cierge" 
+        data-auteur="san-antonio"
+        data-annee="1989"
+        data-ordre="5456">
+        <a href="/livre/5456/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5469.webp" 
+              alt="Viens avec ton cierge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Viens avec ton cierge</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vol au-dessus d&#39;un lit de cocu" 
+        data-auteur="san-antonio"
+        data-annee="2011"
+        data-ordre="5457">
+        <a href="/livre/5457/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5470.webp" 
+              alt="Vol au-dessus d&#39;un lit de cocu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vol au-dessus d&#39;un lit de cocu</h3>
+            <p>SAN-ANTONIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la peau froide" 
+        data-auteur="pinol albert sanchez"
+        data-annee="2006"
+        data-ordre="5458">
+        <a href="/livre/5458/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5471.webp" 
+              alt="La peau froide"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La peau froide</h3>
+            <p>PINOL Albert SANCHEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le jour des abeilles" 
+        data-auteur="thomas sanchez"
+        data-annee="2001"
+        data-ordre="5459">
+        <a href="/livre/5459/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5472.webp" 
+              alt="Le jour des abeilles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le jour des abeilles</h3>
+            <p>Thomas SANCHEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="romans -  1830(indiana, valentine,
+  …)" 
+        data-auteur="george sand"
+        data-annee="1833"
+        data-ordre="5460">
+        <a href="/livre/5460/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5473.webp" 
+              alt="Romans -  1830(Indiana, Valentine,
+  …)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Romans -  1830(Indiana, Valentine,
+  …)</h3>
+            <p>George SAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mare au diable" 
+        data-auteur="george sand"
+        data-annee="1908"
+        data-ordre="5461">
+        <a href="/livre/5461/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5474.webp" 
+              alt="La mare au diable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mare au diable</h3>
+            <p>George SAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="froid aux yeux" 
+        data-auteur="john sandford"
+        data-annee="1994"
+        data-ordre="5462">
+        <a href="/livre/5462/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5475.webp" 
+              alt="Froid aux yeux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Froid aux yeux</h3>
+            <p>John SANDFORD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chambre des merveilles " 
+        data-auteur="julien sandrel"
+        data-annee="2018"
+        data-ordre="5463">
+        <a href="/livre/5463/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5476.webp" 
+              alt="La chambre des merveilles "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chambre des merveilles </h3>
+            <p>Julien SANDREL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le village de l’allemand" 
+        data-auteur="boualem sansal"
+        data-annee="2008"
+        data-ordre="5464">
+        <a href="/livre/5464/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5477.webp" 
+              alt="Le village de l’Allemand"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le village de l’Allemand</h3>
+            <p>Boualem SANSAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="2084  - la fin du monde" 
+        data-auteur="boualem sansal"
+        data-annee="2017"
+        data-ordre="5465">
+        <a href="/livre/5465/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5478.webp" 
+              alt="2084  - la fin du monde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>2084  - la fin du monde</h3>
+            <p>Boualem SANSAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="du bon usage de la lenteur" 
+        data-auteur="pierre sansot"
+        data-annee="1998"
+        data-ordre="5466">
+        <a href="/livre/5466/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5479.webp" 
+              alt="Du bon usage de la lenteur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Du bon usage de la lenteur</h3>
+            <p>Pierre SANSOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="echecs - les ouvertures" 
+        data-auteur="claude santoy"
+        data-annee="1983"
+        data-ordre="5467">
+        <a href="/livre/5467/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5480.webp" 
+              alt="Echecs - Les ouvertures"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Echecs - Les ouvertures</h3>
+            <p>Claude SANTOY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ils préféraient la lune" 
+        data-auteur="sapho"
+        data-annee="1987"
+        data-ordre="5468">
+        <a href="/livre/5468/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5481.webp" 
+              alt="Ils préféraient la lune"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ils préféraient la lune</h3>
+            <p>SAPHO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;art de la joie" 
+        data-auteur="g. sapienza"
+        data-annee="2018"
+        data-ordre="5469">
+        <a href="/livre/5469/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5482.webp" 
+              alt="L&#39;art de la joie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;art de la joie</h3>
+            <p>G. SAPIENZA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire du siège de lisbonne" 
+        data-auteur="josé saramago"
+        data-annee="1992"
+        data-ordre="5470">
+        <a href="/livre/5470/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5483.webp" 
+              alt="Histoire du siège de Lisbonne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire du siège de Lisbonne</h3>
+            <p>José SARAMAGO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;autre comme moi" 
+        data-auteur="josé saramago"
+        data-annee="2005"
+        data-ordre="5471">
+        <a href="/livre/5471/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5484.webp" 
+              alt="L&#39;autre comme moi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;autre comme moi</h3>
+            <p>José SARAMAGO</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-113/">← Précédent</a>
+    
+    
+    <span>Page 114 sur 153</span>
+    
+    
+      <a href="/catalogue/page-115/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

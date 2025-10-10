@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="voltaire" 
+        data-auteur="jean orieux"
+        data-annee="1977"
+        data-ordre="4608">
+        <a href="/livre/4608/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4620.webp" 
+              alt="Voltaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Voltaire</h3>
+            <p>Jean ORIEUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="catherine de médicis" 
+        data-auteur="jean orieux"
+        data-annee="1986"
+        data-ordre="4609">
+        <a href="/livre/4609/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4621.webp" 
+              alt="Catherine de Médicis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Catherine de Médicis</h3>
+            <p>Jean ORIEUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="talleyrand" 
+        data-auteur="jean orieux"
+        data-annee="1970"
+        data-ordre="4610">
+        <a href="/livre/4610/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4622.webp" 
+              alt="Talleyrand"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Talleyrand</h3>
+            <p>Jean ORIEUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le domaine du prince" 
+        data-auteur="laurence oriol"
+        data-annee="1990"
+        data-ordre="4611">
+        <a href="/livre/4611/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4623.webp" 
+              alt="Le domaine du Prince"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le domaine du Prince</h3>
+            <p>Laurence ORIOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les cent plus beaux poèmes de la langue française" 
+        data-auteur="jean orizet"
+        data-annee="2001"
+        data-ordre="4612">
+        <a href="/livre/4612/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4624.webp" 
+              alt="Les cent plus beaux poèmes de la langue française"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les cent plus beaux poèmes de la langue française</h3>
+            <p>Jean ORIZET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au plaisir de dieu" 
+        data-auteur="jean ormesson"
+        data-annee="1974"
+        data-ordre="4613">
+        <a href="/livre/4613/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4625.webp" 
+              alt="Au plaisir de Dieu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au plaisir de Dieu</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="casimir mène la grande vie" 
+        data-auteur="jean ormesson"
+        data-annee="1997"
+        data-ordre="4614">
+        <a href="/livre/4614/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4626.webp" 
+              alt="Casimir mène la grande vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Casimir mène la grande vie</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="et toi mon cœur pourquoi bats-tu ?" 
+        data-auteur="jean ormesson"
+        data-annee="2003"
+        data-ordre="4615">
+        <a href="/livre/4615/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4627.webp" 
+              alt="Et toi mon cœur pourquoi bats-tu ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Et toi mon cœur pourquoi bats-tu ?</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire du juif errant" 
+        data-auteur="jean ormesson"
+        data-annee="1990"
+        data-ordre="4616">
+        <a href="/livre/4616/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4628.webp" 
+              alt="Histoire du juif errant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire du juif errant</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’amour est un plaisir" 
+        data-auteur="jean ormesson"
+        data-annee="1991"
+        data-ordre="4617">
+        <a href="/livre/4617/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4629.webp" 
+              alt="L’amour est un plaisir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’amour est un plaisir</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la douane de mer" 
+        data-auteur="jean ormesson"
+        data-annee="0"
+        data-ordre="4618">
+        <a href="/livre/4618/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4630.webp" 
+              alt="La douane de mer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La douane de mer</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tous les hommes en sont fous" 
+        data-auteur="jean ormesson"
+        data-annee="1986"
+        data-ordre="4619">
+        <a href="/livre/4619/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4631.webp" 
+              alt="Tous les hommes en sont fous"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tous les hommes en sont fous</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vent du soir" 
+        data-auteur="jean ormesson"
+        data-annee="1985"
+        data-ordre="4620">
+        <a href="/livre/4620/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4632.webp" 
+              alt="Le vent du soir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vent du soir</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une autre histoire de la littérature française(2 tomes)" 
+        data-auteur="jean ormesson"
+        data-annee="1998"
+        data-ordre="4621">
+        <a href="/livre/4621/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4633.webp" 
+              alt="Une autre histoire de la littérature française(2 tomes)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une autre histoire de la littérature française(2 tomes)</h3>
+            <p>Jean ORMESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="monsieur gros bidon" 
+        data-auteur="samuel ornitz"
+        data-annee="2009"
+        data-ordre="4622">
+        <a href="/livre/4622/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4634.webp" 
+              alt="Monsieur Gros Bidon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Monsieur Gros Bidon</h3>
+            <p>Samuel ORNITZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="portrait d&#39;un homme heureux -andré le nôtre 1613-1700" 
+        data-auteur="erik orsenna"
+        data-annee="2015"
+        data-ordre="4623">
+        <a href="/livre/4623/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4635.webp" 
+              alt="Portrait d&#39;un homme heureux -André Le Nôtre 1613-1700"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Portrait d&#39;un homme heureux -André Le Nôtre 1613-1700</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;avenir de l&#39;eau" 
+        data-auteur="erik orsenna"
+        data-annee="2008"
+        data-ordre="4624">
+        <a href="/livre/4624/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4636.webp" 
+              alt="L&#39;avenir de l&#39;eau"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;avenir de l&#39;eau</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;entreprise des indes" 
+        data-auteur="erik orsenna"
+        data-annee="2010"
+        data-ordre="4625">
+        <a href="/livre/4625/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4637.webp" 
+              alt="L&#39;entreprise des Indes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;entreprise des Indes</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chanson de charles quint" 
+        data-auteur="erik orsenna"
+        data-annee="2008"
+        data-ordre="4626">
+        <a href="/livre/4626/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4638.webp" 
+              alt="La chanson de Charles Quint"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chanson de Charles Quint</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fabrique des mots" 
+        data-auteur="erik orsenna"
+        data-annee="2014"
+        data-ordre="4627">
+        <a href="/livre/4627/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4639.webp" 
+              alt="La fabrique des mots"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fabrique des mots</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie comme à lausanne" 
+        data-auteur="erik orsenna"
+        data-annee="1977"
+        data-ordre="4628">
+        <a href="/livre/4628/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4640.webp" 
+              alt="La vie comme à Lausanne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie comme à Lausanne</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mali,ô mali" 
+        data-auteur="erik orsenna"
+        data-annee="2014"
+        data-ordre="4629">
+        <a href="/livre/4629/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4641.webp" 
+              alt="Mali,ô Mali"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mali,ô Mali</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="portrait du gulf stream" 
+        data-auteur="erik orsenna"
+        data-annee="2005"
+        data-ordre="4630">
+        <a href="/livre/4630/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4642.webp" 
+              alt="Portrait du Gulf Stream"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Portrait du Gulf Stream</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une comédie française" 
+        data-auteur="erik orsenna"
+        data-annee="1980"
+        data-ordre="4631">
+        <a href="/livre/4631/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4643.webp" 
+              alt="Une comédie française"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une comédie française</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’origine de nos amours" 
+        data-auteur="erik orsenna"
+        data-annee="2016"
+        data-ordre="4632">
+        <a href="/livre/4632/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4644.webp" 
+              alt="L’origine de nos amours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’origine de nos amours</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="deux étés" 
+        data-auteur="erik orsenna"
+        data-annee="1997"
+        data-ordre="4633">
+        <a href="/livre/4633/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4645.webp" 
+              alt="Deux étés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Deux étés</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="grand amour" 
+        data-auteur="erik orsenna"
+        data-annee="1993"
+        data-ordre="4634">
+        <a href="/livre/4634/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4646.webp" 
+              alt="Grand amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Grand amour</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;exposition coloniale" 
+        data-auteur="erik orsenna"
+        data-annee="1988"
+        data-ordre="4635">
+        <a href="/livre/4635/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4647.webp" 
+              alt="L&#39;exposition coloniale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;exposition coloniale</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la grammaire est une chanson douce" 
+        data-auteur="erik orsenna"
+        data-annee="2001"
+        data-ordre="4636">
+        <a href="/livre/4636/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4648.webp" 
+              alt="La grammaire est une chanson douce"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La grammaire est une chanson douce</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la révolte des accents" 
+        data-auteur="erik orsenna"
+        data-annee="2007"
+        data-ordre="4637">
+        <a href="/livre/4637/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4649.webp" 
+              alt="La révolte des accents"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La révolte des accents</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chevaliers du subjonctif" 
+        data-auteur="erik orsenna"
+        data-annee="2004"
+        data-ordre="4638">
+        <a href="/livre/4638/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4650.webp" 
+              alt="Les chevaliers du subjonctif"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chevaliers du subjonctif</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="longtemps" 
+        data-auteur="erik orsenna"
+        data-annee="1998"
+        data-ordre="4639">
+        <a href="/livre/4639/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4651.webp" 
+              alt="Longtemps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Longtemps</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="madame bâ" 
+        data-auteur="erik orsenna"
+        data-annee="2005"
+        data-ordre="4640">
+        <a href="/livre/4640/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4652.webp" 
+              alt="Madame Bâ"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Madame Bâ</h3>
+            <p>Erik ORSENNA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="1984" 
+        data-auteur="georges orwell"
+        data-annee="2021"
+        data-ordre="4641">
+        <a href="/livre/4641/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4653.webp" 
+              alt="1984"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>1984</h3>
+            <p>Georges ORWELL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la ferme des animaux" 
+        data-auteur="georges orwell"
+        data-annee="2021"
+        data-ordre="4642">
+        <a href="/livre/4642/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4654.webp" 
+              alt="La ferme des animaux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La ferme des animaux</h3>
+            <p>Georges ORWELL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="luz ou le temps sauvage" 
+        data-auteur="elsa osorio"
+        data-annee="2000"
+        data-ordre="4643">
+        <a href="/livre/4643/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4655.webp" 
+              alt="Luz ou le temps sauvage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Luz ou le temps sauvage</h3>
+            <p>Elsa OSORIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tango" 
+        data-auteur="elsa osorio"
+        data-annee="2007"
+        data-ordre="4644">
+        <a href="/livre/4644/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4656.webp" 
+              alt="Tango"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tango</h3>
+            <p>Elsa OSORIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon grand appartement" 
+        data-auteur="christian oster"
+        data-annee="1999"
+        data-ordre="4645">
+        <a href="/livre/4645/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4657.webp" 
+              alt="Mon grand appartement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon grand appartement</h3>
+            <p>Christian OSTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rouler" 
+        data-auteur="christian oster"
+        data-annee="2011"
+        data-ordre="4646">
+        <a href="/livre/4646/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4658.webp" 
+              alt="Rouler"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rouler</h3>
+            <p>Christian OSTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gentlemen" 
+        data-auteur="klas ostergren"
+        data-annee="2007"
+        data-ordre="4647">
+        <a href="/livre/4647/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4659.webp" 
+              alt="Gentlemen"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gentlemen</h3>
+            <p>Klas OSTERGREN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bible" 
+        data-auteur="osty e./trinquet j."
+        data-annee="1973"
+        data-ordre="4648">
+        <a href="/livre/4648/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4660.webp" 
+              alt="La Bible"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Bible</h3>
+            <p>OSTY E./TRINQUET J.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="certaines n’avaient jamais vu la mer" 
+        data-auteur="julie otsuka"
+        data-annee="2013"
+        data-ordre="4649">
+        <a href="/livre/4649/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4661.webp" 
+              alt="Certaines n’avaient jamais vu la mer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Certaines n’avaient jamais vu la mer</h3>
+            <p>Julie OTSUKA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;éternel fiancé" 
+        data-auteur="jean-pierre otte"
+        data-annee="1989"
+        data-ordre="4650">
+        <a href="/livre/4650/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4662.webp" 
+              alt="L&#39;éternel fiancé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;éternel fiancé</h3>
+            <p>Jean-Pierre OTTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la sexualité d&#39;un plateau de fruits de mer" 
+        data-auteur="jean-pierre otte"
+        data-annee="2002"
+        data-ordre="4651">
+        <a href="/livre/4651/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4663.webp" 
+              alt="La sexualité d&#39;un plateau de fruits de mer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La sexualité d&#39;un plateau de fruits de mer</h3>
+            <p>Jean-Pierre OTTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la prisonnière" 
+        data-auteur="oufkir malika et fitoussi michèle"
+        data-annee="1999"
+        data-ordre="4652">
+        <a href="/livre/4652/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4664.webp" 
+              alt="La prisonnière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La prisonnière</h3>
+            <p>OUFKIR Malika et FITOUSSI Michèle</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sonietchka" 
+        data-auteur="ludmila oulitskaia"
+        data-annee="0"
+        data-ordre="4653">
+        <a href="/livre/4653/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4665.webp" 
+              alt="Sonietchka"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sonietchka</h3>
+            <p>Ludmila OULITSKAIA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="classé sans suite" 
+        data-auteur="patrick ourednik"
+        data-annee="0"
+        data-ordre="4654">
+        <a href="/livre/4654/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4666.webp" 
+              alt="Classé sans suite"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Classé sans suite</h3>
+            <p>Patrick OUREDNIK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="déloger l&#39;animal" 
+        data-auteur="véronique ovalde"
+        data-annee="2005"
+        data-ordre="4655">
+        <a href="/livre/4655/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4667.webp" 
+              alt="Déloger l&#39;animal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Déloger l&#39;animal</h3>
+            <p>Véronique OVALDE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-96/">← Précédent</a>
+    
+    
+    <span>Page 97 sur 153</span>
+    
+    
+      <a href="/catalogue/page-98/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le noël d&#39;hercule poirot" 
+        data-auteur="agatha christie"
+        data-annee="1946"
+        data-ordre="1200">
+        <a href="/livre/1200/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1203.webp" 
+              alt="Le Noël d&#39;Hercule Poirot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Noël d&#39;Hercule Poirot</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le secret de chimneys" 
+        data-auteur="agatha christie"
+        data-annee="1974"
+        data-ordre="1201">
+        <a href="/livre/1201/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1204.webp" 
+              alt="Le secret de Chimneys"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le secret de Chimneys</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les indiscrétions d&#39;hercule poirot" 
+        data-auteur="agatha christie"
+        data-annee="0"
+        data-ordre="1202">
+        <a href="/livre/1202/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1205.webp" 
+              alt="Les indiscrétions d&#39;Hercule Poirot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les indiscrétions d&#39;Hercule Poirot</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les pendules" 
+        data-auteur="agatha christie"
+        data-annee="1964"
+        data-ordre="1203">
+        <a href="/livre/1203/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1206.webp" 
+              alt="Les pendules"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les pendules</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les sept cadrans" 
+        data-auteur="agatha christie"
+        data-annee="2013"
+        data-ordre="1204">
+        <a href="/livre/1204/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1207.webp" 
+              alt="Les sept cadrans"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les sept cadrans</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marple, poirot, pyne... et les autres" 
+        data-auteur="agatha christie"
+        data-annee="1988"
+        data-ordre="1205">
+        <a href="/livre/1205/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1208.webp" 
+              alt="Marple, Poirot, Pyne... et les autres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marple, Poirot, Pyne... et les autres</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="meurtre en mésopotamie" 
+        data-auteur="agatha christie"
+        data-annee="2001"
+        data-ordre="1206">
+        <a href="/livre/1206/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1209.webp" 
+              alt="Meurtre en Mésopotamie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Meurtre en Mésopotamie</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="miss marple au club du mardi" 
+        data-auteur="agatha christie"
+        data-annee="2009"
+        data-ordre="1207">
+        <a href="/livre/1207/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1210.webp" 
+              alt="Miss Marple au club du mardi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Miss Marple au club du mardi</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon petit doigt m&#39;a dit" 
+        data-auteur="agatha christie"
+        data-annee="1970"
+        data-ordre="1208">
+        <a href="/livre/1208/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1211.webp" 
+              alt="Mon petit doigt m&#39;a dit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon petit doigt m&#39;a dit</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mr quinn en voyage" 
+        data-auteur="agatha christie"
+        data-annee="2015"
+        data-ordre="1209">
+        <a href="/livre/1209/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1212.webp" 
+              alt="Mr Quinn en voyage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mr Quinn en voyage</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pension vanilos" 
+        data-auteur="agatha christie"
+        data-annee="1952"
+        data-ordre="1210">
+        <a href="/livre/1210/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1213.webp" 
+              alt="Pension Vanilos"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pension Vanilos</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rendez-vous à bagdad" 
+        data-auteur="agatha christie"
+        data-annee="2013"
+        data-ordre="1211">
+        <a href="/livre/1211/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1214.webp" 
+              alt="Rendez-vous à Bagdad"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rendez-vous à Bagdad</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rendez-vous avec la mort" 
+        data-auteur="agatha christie"
+        data-annee="1975"
+        data-ordre="1212">
+        <a href="/livre/1212/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1215.webp" 
+              alt="Rendez-vous avec la mort"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rendez-vous avec la mort</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mort sur le nil" 
+        data-auteur="agatha christie"
+        data-annee="1977"
+        data-ordre="1213">
+        <a href="/livre/1213/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1216.webp" 
+              alt="Mort sur le Nil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mort sur le Nil</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le miroir du mort" 
+        data-auteur="agatha christie"
+        data-annee="1988"
+        data-ordre="1214">
+        <a href="/livre/1214/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1217.webp" 
+              alt="Le miroir du mort"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le miroir du mort</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amitié" 
+        data-auteur="ciceron"
+        data-annee="1998"
+        data-ordre="1215">
+        <a href="/livre/1215/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1218.webp" 
+              alt="L&#39;amitié"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amitié</h3>
+            <p>CICERON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="aveux et anathèmes" 
+        data-auteur="cioran"
+        data-annee="1987"
+        data-ordre="1216">
+        <a href="/livre/1216/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1219.webp" 
+              alt="Aveux et anathèmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Aveux et anathèmes</h3>
+            <p>CIORAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de l&#39;inconvénient d&#39;être né" 
+        data-auteur="cioran"
+        data-annee="1973"
+        data-ordre="1217">
+        <a href="/livre/1217/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1220.webp" 
+              alt="De l&#39;inconvénient d&#39;être né"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De l&#39;inconvénient d&#39;être né</h3>
+            <p>CIORAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lady sapiens" 
+        data-auteur="thomas cirotteau"
+        data-annee="2022"
+        data-ordre="1218">
+        <a href="/livre/1218/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1221.webp" 
+              alt="Lady Sapiens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lady Sapiens</h3>
+            <p>Thomas CIROTTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="brève vie de katherine mansfield" 
+        data-auteur="pietro citati"
+        data-annee="1991"
+        data-ordre="1219">
+        <a href="/livre/1219/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1222.webp" 
+              alt="Brève vie de Katherine Mansfield"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Brève vie de Katherine Mansfield</h3>
+            <p>Pietro CITATI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le pain noir" 
+        data-auteur="georges-emmanuel clancier"
+        data-annee="1956"
+        data-ordre="1220">
+        <a href="/livre/1220/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1223.webp" 
+              alt="Le pain noir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le pain noir</h3>
+            <p>Georges-Emmanuel CLANCIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la terre est un berceau" 
+        data-auteur="arthur c. clark"
+        data-annee="1993"
+        data-ordre="1221">
+        <a href="/livre/1221/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1224.webp" 
+              alt="La terre est un berceau"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La terre est un berceau</h3>
+            <p>Arthur C. CLARK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fantôme venu des profondeurs" 
+        data-auteur="arthur c. clark"
+        data-annee="1993"
+        data-ordre="1222">
+        <a href="/livre/1222/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1225.webp" 
+              alt="Le fantôme venu des profondeurs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fantôme venu des profondeurs</h3>
+            <p>Arthur C. CLARK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le nu(2 tomes)" 
+        data-auteur="kenneth clark"
+        data-annee="0"
+        data-ordre="1223">
+        <a href="/livre/1223/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1226.webp" 
+              alt="Le Nu(2 tomes)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Nu(2 tomes)</h3>
+            <p>Kenneth CLARK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="léonard de vinci" 
+        data-auteur="kenneth clark"
+        data-annee="2019"
+        data-ordre="1224">
+        <a href="/livre/1224/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1227.webp" 
+              alt="Léonard de Vinci"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Léonard de Vinci</h3>
+            <p>Kenneth CLARK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="2001 l&#39;odyssée de l&#39;espace" 
+        data-auteur="arthur c. clarke"
+        data-annee="0"
+        data-ordre="1225">
+        <a href="/livre/1225/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1228.webp" 
+              alt="2001 L&#39;odyssée de l&#39;espace"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>2001 L&#39;odyssée de l&#39;espace</h3>
+            <p>Arthur C. CLARKE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="god save la france" 
+        data-auteur="stephen clarke"
+        data-annee="2005"
+        data-ordre="1226">
+        <a href="/livre/1226/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1229.webp" 
+              alt="God save la France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>God save la France</h3>
+            <p>Stephen CLARKE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’annonce faite à marie" 
+        data-auteur="paul claudel"
+        data-annee="1940"
+        data-ordre="1227">
+        <a href="/livre/1227/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1230.webp" 
+              alt="L’annonce faite à Marie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’annonce faite à Marie</h3>
+            <p>Paul CLAUDEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’échange" 
+        data-auteur="paul claudel"
+        data-annee="1954"
+        data-ordre="1228">
+        <a href="/livre/1228/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1231.webp" 
+              alt="L’échange"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’échange</h3>
+            <p>Paul CLAUDEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="partage de midi" 
+        data-auteur="paul claudel"
+        data-annee="1908"
+        data-ordre="1229">
+        <a href="/livre/1229/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1232.webp" 
+              alt="Partage de midi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Partage de midi</h3>
+            <p>Paul CLAUDEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la petite fille de monsieur linh" 
+        data-auteur="philippe claudel"
+        data-annee="2007"
+        data-ordre="1230">
+        <a href="/livre/1230/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1233.webp" 
+              alt="La petite fille de Monsieur Linh"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La petite fille de Monsieur Linh</h3>
+            <p>Philippe CLAUDEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le rapport de brodeck" 
+        data-auteur="philippe claudel"
+        data-annee="2009"
+        data-ordre="1231">
+        <a href="/livre/1231/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1234.webp" 
+              alt="Le rapport de Brodeck"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le rapport de Brodeck</h3>
+            <p>Philippe CLAUDEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les âmes grises" 
+        data-auteur="philippe claudel"
+        data-annee="2006"
+        data-ordre="1232">
+        <a href="/livre/1232/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1235.webp" 
+              alt="Les âmes grises"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les âmes grises</h3>
+            <p>Philippe CLAUDEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le royaume du nord – 1. harricana" 
+        data-auteur="bernard clavel"
+        data-annee="1997"
+        data-ordre="1233">
+        <a href="/livre/1233/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1236.webp" 
+              alt="Le Royaume du Nord – 1. Harricana"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Royaume du Nord – 1. Harricana</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le royaume du nord – 2. l&#39;or de la terre" 
+        data-auteur="bernard clavel"
+        data-annee="1984"
+        data-ordre="1234">
+        <a href="/livre/1234/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1237.webp" 
+              alt="Le Royaume du Nord – 2. L&#39;or de la terre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Royaume du Nord – 2. L&#39;or de la terre</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le royaume du nord – 3. miséréré" 
+        data-auteur="bernard clavel"
+        data-annee="1989"
+        data-ordre="1235">
+        <a href="/livre/1235/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1238.webp" 
+              alt="Le Royaume du Nord – 3. Miséréré"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Royaume du Nord – 3. Miséréré</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le royaume du nord – 4. amarok" 
+        data-auteur="bernard clavel"
+        data-annee="2012"
+        data-ordre="1236">
+        <a href="/livre/1236/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1239.webp" 
+              alt="Le Royaume du Nord – 4. Amarok"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Royaume du Nord – 4. Amarok</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le royaume du nord – 5. l&#39;angélus du soir" 
+        data-auteur="bernard clavel"
+        data-annee="1991"
+        data-ordre="1237">
+        <a href="/livre/1237/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1240.webp" 
+              alt="Le Royaume du Nord – 5. L&#39;Angélus du soir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Royaume du Nord – 5. L&#39;Angélus du soir</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le royaume du nord – 6. maudits sauvages" 
+        data-auteur="bernard clavel"
+        data-annee="0"
+        data-ordre="1238">
+        <a href="/livre/1238/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1241.webp" 
+              alt="Le Royaume du Nord – 6. Maudits sauvages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Royaume du Nord – 6. Maudits sauvages</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les petits bonheurs" 
+        data-auteur="bernard clavel"
+        data-annee="1998"
+        data-ordre="1239">
+        <a href="/livre/1239/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1242.webp" 
+              alt="Les petits bonheurs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les petits bonheurs</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pirates du rhône" 
+        data-auteur="bernard clavel"
+        data-annee="1974"
+        data-ordre="1240">
+        <a href="/livre/1240/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1243.webp" 
+              alt="Pirates du Rhône"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pirates du Rhône</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cargo pour l&#39;enfer" 
+        data-auteur="bernard clavel"
+        data-annee="1993"
+        data-ordre="1241">
+        <a href="/livre/1241/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1244.webp" 
+              alt="Cargo pour l&#39;enfer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cargo pour l&#39;enfer</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoires de chiens" 
+        data-auteur="bernard clavel"
+        data-annee="1979"
+        data-ordre="1242">
+        <a href="/livre/1242/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1245.webp" 
+              alt="Histoires de chiens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoires de chiens</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’espagnol" 
+        data-auteur="bernard clavel"
+        data-annee="1959"
+        data-ordre="1243">
+        <a href="/livre/1243/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1246.webp" 
+              alt="L’Espagnol"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’Espagnol</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la guinguette" 
+        data-auteur="bernard clavel"
+        data-annee="1997"
+        data-ordre="1244">
+        <a href="/livre/1244/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1247.webp" 
+              alt="La guinguette"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La guinguette</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le carcajou" 
+        data-auteur="bernard clavel"
+        data-annee="1996"
+        data-ordre="1245">
+        <a href="/livre/1245/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1248.webp" 
+              alt="Le carcajou"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le carcajou</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le seigneur du fleuve" 
+        data-auteur="bernard clavel"
+        data-annee="1972"
+        data-ordre="1246">
+        <a href="/livre/1246/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1249.webp" 
+              alt="Le seigneur du fleuve"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le seigneur du fleuve</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voyage du père" 
+        data-auteur="bernard clavel"
+        data-annee="1965"
+        data-ordre="1247">
+        <a href="/livre/1247/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1250.webp" 
+              alt="Le voyage du père"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voyage du père</h3>
+            <p>Bernard CLAVEL</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-25/">← Précédent</a>
+    
+    
+    <span>Page 26 sur 153</span>
+    
+    
+      <a href="/catalogue/page-27/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

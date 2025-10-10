@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="la mandoline du capitaine corelli" 
+        data-auteur="louis de bernieres"
+        data-annee="2019"
+        data-ordre="576">
+        <a href="/livre/576/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/579.webp" 
+              alt="La mandoline du Capitaine Corelli"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mandoline du Capitaine Corelli</h3>
+            <p>Louis de BERNIERES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="petites crèmes" 
+        data-auteur="frédéric berque"
+        data-annee="2011"
+        data-ordre="577">
+        <a href="/livre/577/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/580.webp" 
+              alt="Petites crèmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Petites crèmes</h3>
+            <p>Frédéric BERQUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="autoportrait" 
+        data-auteur="claude berri"
+        data-annee="2003"
+        data-ordre="578">
+        <a href="/livre/578/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/581.webp" 
+              alt="Autoportrait"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Autoportrait</h3>
+            <p>Claude BERRI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le principe de l&#39;incertitude" 
+        data-auteur="agustina bessa-lus"
+        data-annee="0"
+        data-ordre="579">
+        <a href="/livre/579/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/582.webp" 
+              alt="Le principe de l&#39;incertitude"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le principe de l&#39;incertitude</h3>
+            <p>Agustina BESSA-LUS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dara" 
+        data-auteur="patrick besson"
+        data-annee="1985"
+        data-ordre="580">
+        <a href="/livre/580/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/583.webp" 
+              alt="Dara"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dara</h3>
+            <p>Patrick BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les braban" 
+        data-auteur="patrick besson"
+        data-annee="1995"
+        data-ordre="581">
+        <a href="/livre/581/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/584.webp" 
+              alt="Les Braban"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Braban</h3>
+            <p>Patrick BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="salade russe" 
+        data-auteur="patrick besson"
+        data-annee="1987"
+        data-ordre="582">
+        <a href="/livre/582/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/585.webp" 
+              alt="Salade russe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Salade russe</h3>
+            <p>Patrick BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="en l&#39;absence des hommes" 
+        data-auteur="philippe besson"
+        data-annee="2001"
+        data-ordre="583">
+        <a href="/livre/583/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/586.webp" 
+              alt="En l&#39;absence des hommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>En l&#39;absence des hommes</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la trahison de thomas spencer" 
+        data-auteur="philippe besson"
+        data-annee="2009"
+        data-ordre="584">
+        <a href="/livre/584/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/587.webp" 
+              alt="La trahison de Thomas Spencer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La trahison de Thomas Spencer</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un homme accidentel" 
+        data-auteur="philippe besson"
+        data-annee="2007"
+        data-ordre="585">
+        <a href="/livre/585/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/588.webp" 
+              alt="Un homme accidentel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un homme accidentel</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un instant d&#39;abandon" 
+        data-auteur="philippe besson"
+        data-annee="2005"
+        data-ordre="586">
+        <a href="/livre/586/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/589.webp" 
+              alt="Un instant d&#39;abandon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un instant d&#39;abandon</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;arrière saison" 
+        data-auteur="philippe besson"
+        data-annee="2002"
+        data-ordre="587">
+        <a href="/livre/587/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/590.webp" 
+              alt="L&#39;arrière saison"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;arrière saison</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison atlantique" 
+        data-auteur="philippe besson"
+        data-annee="2015"
+        data-ordre="588">
+        <a href="/livre/588/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/591.webp" 
+              alt="La maison Atlantique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison Atlantique</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les jours fragiles" 
+        data-auteur="philippe besson"
+        data-annee="2004"
+        data-ordre="589">
+        <a href="/livre/589/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/592.webp" 
+              alt="Les jours fragiles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les jours fragiles</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="son frère" 
+        data-auteur="philippe besson"
+        data-annee="2001"
+        data-ordre="590">
+        <a href="/livre/590/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/593.webp" 
+              alt="Son frère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Son frère</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un garçon d’italie" 
+        data-auteur="philippe besson"
+        data-annee="2003"
+        data-ordre="591">
+        <a href="/livre/591/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/594.webp" 
+              alt="Un garçon d’Italie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un garçon d’Italie</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une bonne raison de se tuer" 
+        data-auteur="philippe besson"
+        data-annee="2012"
+        data-ordre="592">
+        <a href="/livre/592/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/595.webp" 
+              alt="Une bonne raison de se tuer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une bonne raison de se tuer</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paris-briançon" 
+        data-auteur="philippe besson"
+        data-annee="2022"
+        data-ordre="593">
+        <a href="/livre/593/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/596.webp" 
+              alt="Paris-Briançon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paris-Briançon</h3>
+            <p>Philippe BESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la rage au coeur" 
+        data-auteur="ingrid betancourt"
+        data-annee="2001"
+        data-ordre="594">
+        <a href="/livre/594/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/597.webp" 
+              alt="La rage au coeur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La rage au coeur</h3>
+            <p>Ingrid BETANCOURT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la lecture et l’enfant" 
+        data-auteur="b./zelan k. bettelheim"
+        data-annee="1993"
+        data-ordre="595">
+        <a href="/livre/595/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/598.webp" 
+              alt="La lecture et l’enfant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La lecture et l’enfant</h3>
+            <p>B./ZELAN K. BETTELHEIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’amour ne suffit pas" 
+        data-auteur="bruno bettelheim"
+        data-annee="1950"
+        data-ordre="596">
+        <a href="/livre/596/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/599.webp" 
+              alt="L’amour ne suffit pas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’amour ne suffit pas</h3>
+            <p>Bruno BETTELHEIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la forteresse vide(l&#39;autisme infantile et la naissance du soi)" 
+        data-auteur="bruno bettelheim"
+        data-annee="1998"
+        data-ordre="597">
+        <a href="/livre/597/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/600.webp" 
+              alt="La forteresse vide(l&#39;autisme infantile et la naissance du soi)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La forteresse vide(l&#39;autisme infantile et la naissance du soi)</h3>
+            <p>Bruno BETTELHEIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le coeur conscient" 
+        data-auteur="bruno bettelheim"
+        data-annee="1972"
+        data-ordre="598">
+        <a href="/livre/598/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/601.webp" 
+              alt="Le coeur conscient"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le coeur conscient</h3>
+            <p>Bruno BETTELHEIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pour être des parents acceptables" 
+        data-auteur="bruno bettelheim"
+        data-annee="1987"
+        data-ordre="599">
+        <a href="/livre/599/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/602.webp" 
+              alt="Pour être des parents acceptables"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pour être des parents acceptables</h3>
+            <p>Bruno BETTELHEIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="psychanalyse des contes de fées" 
+        data-auteur="bruno bettelheim"
+        data-annee="1976"
+        data-ordre="600">
+        <a href="/livre/600/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/603.webp" 
+              alt="Psychanalyse des contes de fées"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Psychanalyse des contes de fées</h3>
+            <p>Bruno BETTELHEIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un lieu où renaître" 
+        data-auteur="bruno bettelheim"
+        data-annee="1975"
+        data-ordre="601">
+        <a href="/livre/601/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/604.webp" 
+              alt="Un lieu où renaître"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un lieu où renaître</h3>
+            <p>Bruno BETTELHEIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hôtel brasil" 
+        data-auteur="frei betto"
+        data-annee="2010"
+        data-ordre="602">
+        <a href="/livre/602/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/605.webp" 
+              alt="Hôtel Brasil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hôtel Brasil</h3>
+            <p>Frei BETTO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="entendez-vous dans les montagnes" 
+        data-auteur="maïssa bey"
+        data-annee="2002"
+        data-ordre="603">
+        <a href="/livre/603/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/606.webp" 
+              alt="Entendez-vous dans les montagnes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Entendez-vous dans les montagnes</h3>
+            <p>Maïssa BEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="surtout ne te retourne pas" 
+        data-auteur="maïssa bey"
+        data-annee="2005"
+        data-ordre="604">
+        <a href="/livre/604/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/607.webp" 
+              alt="Surtout ne te retourne pas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Surtout ne te retourne pas</h3>
+            <p>Maïssa BEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de la barbe à papa un jour de pluie" 
+        data-auteur="feiyu bi"
+        data-annee="2004"
+        data-ordre="605">
+        <a href="/livre/605/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/608.webp" 
+              alt="De la barbe à papa un jour de pluie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De la barbe à papa un jour de pluie</h3>
+            <p>FEIYU BI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les paroles la nuit" 
+        data-auteur="francesco biamonti"
+        data-annee="1999"
+        data-ordre="606">
+        <a href="/livre/606/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/609.webp" 
+              alt="Les paroles la nuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les paroles la nuit</h3>
+            <p>Francesco BIAMONTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie aigre" 
+        data-auteur="luciano bianciardi"
+        data-annee="1962"
+        data-ordre="607">
+        <a href="/livre/607/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/610.webp" 
+              alt="La vie aigre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie aigre</h3>
+            <p>Luciano BIANCIARDI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ce que la nuit raconte au jour" 
+        data-auteur="hector bianciotti"
+        data-annee="1992"
+        data-ordre="608">
+        <a href="/livre/608/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/611.webp" 
+              alt="Ce que la nuit raconte au jour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ce que la nuit raconte au jour</h3>
+            <p>Hector BIANCIOTTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="seules les larmes seront comptées" 
+        data-auteur="hector bianciotti"
+        data-annee="1991"
+        data-ordre="609">
+        <a href="/livre/609/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/612.webp" 
+              alt="Seules les larmes seront comptées"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Seules les larmes seront comptées</h3>
+            <p>Hector BIANCIOTTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le millénaire retrouvé(de l&#39;an 2000 à l&#39;an 1000 avant j.c.)" 
+        data-auteur="geoffrey bibby"
+        data-annee="1962"
+        data-ordre="610">
+        <a href="/livre/610/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/613.webp" 
+              alt="Le millénaire retrouvé(de l&#39;an 2000 à l&#39;an 1000 avant J.C.)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le millénaire retrouvé(de l&#39;an 2000 à l&#39;an 1000 avant J.C.)</h3>
+            <p>Geoffrey BIBBY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="malraux, la création d&#39;un destin" 
+        data-auteur="brighelli, rispail biet, brighelli, rispail"
+        data-annee="1992"
+        data-ordre="611">
+        <a href="/livre/611/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/614.webp" 
+              alt="Malraux, la création d&#39;un destin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Malraux, la création d&#39;un destin</h3>
+            <p>BRIGHELLI, RISPAIL BIET, BRIGHELLI, RISPAIL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chère madame ma fille cadette" 
+        data-auteur="raphaële billetdoux"
+        data-annee="2000"
+        data-ordre="612">
+        <a href="/livre/612/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/615.webp" 
+              alt="Chère Madame ma fille cadette"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chère Madame ma fille cadette</h3>
+            <p>Raphaële BILLETDOUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mes nuits sont plus belles que vos jours" 
+        data-auteur="raphaële billetdoux"
+        data-annee="1985"
+        data-ordre="613">
+        <a href="/livre/613/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/616.webp" 
+              alt="Mes nuits sont plus belles que vos jours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mes nuits sont plus belles que vos jours</h3>
+            <p>Raphaële BILLETDOUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="prends garde à la douceur des choses" 
+        data-auteur="raphaële billetdoux"
+        data-annee="1976"
+        data-ordre="614">
+        <a href="/livre/614/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/617.webp" 
+              alt="Prends garde à la douceur des choses"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Prends garde à la douceur des choses</h3>
+            <p>Raphaële BILLETDOUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le sang et les hommes" 
+        data-auteur="jacques-louis binet"
+        data-annee="1988"
+        data-ordre="615">
+        <a href="/livre/615/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/618.webp" 
+              alt="Le sang et les hommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le sang et les hommes</h3>
+            <p>Jacques-Louis BINET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hhhh" 
+        data-auteur="laurent binet"
+        data-annee="2011"
+        data-ordre="616">
+        <a href="/livre/616/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/619.webp" 
+              alt="HhhH"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>HhhH</h3>
+            <p>Laurent BINET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’invention de morel" 
+        data-auteur="casares adolfo bioy"
+        data-annee="1992"
+        data-ordre="617">
+        <a href="/livre/617/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/620.webp" 
+              alt="L’invention de Morel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’invention de Morel</h3>
+            <p>CASARES Adolfo BIOY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la lettre à helga" 
+        data-auteur="bergsveinn birgisson"
+        data-annee="2015"
+        data-ordre="618">
+        <a href="/livre/618/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/621.webp" 
+              alt="La lettre à Helga"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La lettre à Helga</h3>
+            <p>Bergsveinn BIRGISSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chat plume(60 écrivains parlent de leurs chats)" 
+        data-auteur="marcel / jajolet catherine bisiaux"
+        data-annee="1985"
+        data-ordre="619">
+        <a href="/livre/619/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/622.webp" 
+              alt="Chat plume(60 écrivains parlent de leurs chats)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chat plume(60 écrivains parlent de leurs chats)</h3>
+            <p>Marcel / JAJOLET Catherine BISIAUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le portail" 
+        data-auteur="françois bizot"
+        data-annee="2002"
+        data-ordre="620">
+        <a href="/livre/620/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/623.webp" 
+              alt="Le portail"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le portail</h3>
+            <p>François BIZOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la société des jeunes pianistes" 
+        data-auteur="ketil bjornstad"
+        data-annee="2008"
+        data-ordre="621">
+        <a href="/livre/621/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/624.webp" 
+              alt="La société des jeunes pianistes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La société des jeunes pianistes</h3>
+            <p>Ketil BJORNSTAD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="karoo boy" 
+        data-auteur="troy blacklaws"
+        data-annee="2004"
+        data-ordre="622">
+        <a href="/livre/622/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/625.webp" 
+              alt="Karoo Boy"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Karoo Boy</h3>
+            <p>Troy BLACKLAWS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="si vous recevez cette lettre" 
+        data-auteur="sarah blake"
+        data-annee="2011"
+        data-ordre="623">
+        <a href="/livre/623/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/626.webp" 
+              alt="Si vous recevez cette lettre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Si vous recevez cette lettre</h3>
+            <p>Sarah BLAKE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-12/">← Précédent</a>
+    
+    
+    <span>Page 13 sur 153</span>
+    
+    
+      <a href="/catalogue/page-14/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

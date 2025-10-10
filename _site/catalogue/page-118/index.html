@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="on dirait qu&#39;il va neiger" 
+        data-auteur="pascal sevran"
+        data-annee="2002"
+        data-ordre="5616">
+        <a href="/livre/5616/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5629.webp" 
+              alt="On dirait qu&#39;il va neiger"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>On dirait qu&#39;il va neiger</h3>
+            <p>Pascal SEVRAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="on s&#39;ennuyait le dimanche" 
+        data-auteur="pascal sevran"
+        data-annee="2003"
+        data-ordre="5617">
+        <a href="/livre/5617/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5630.webp" 
+              alt="On s&#39;ennuyait le dimanche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>On s&#39;ennuyait le dimanche</h3>
+            <p>Pascal SEVRAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cercle littéraire des amateurs d&#39;épluchures de patates" 
+        data-auteur="shaffer m.a. - barrows a."
+        data-annee="2018"
+        data-ordre="5618">
+        <a href="/livre/5618/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5631.webp" 
+              alt="Le cercle littéraire des amateurs d&#39;épluchures de patates"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cercle littéraire des amateurs d&#39;épluchures de patates</h3>
+            <p>SHAFFER M.A. - BARROWS A.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’apprenti sorcier" 
+        data-auteur="tahir shah"
+        data-annee="2001"
+        data-ordre="5619">
+        <a href="/livre/5619/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5632.webp" 
+              alt="L’apprenti sorcier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’apprenti sorcier</h3>
+            <p>Tahir SHAH</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hamlet, othello, macbeth" 
+        data-auteur="william shakespeare"
+        data-annee="1924"
+        data-ordre="5620">
+        <a href="/livre/5620/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5633.webp" 
+              alt="Hamlet, Othello, Macbeth"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hamlet, Othello, Macbeth</h3>
+            <p>William SHAKESPEARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jules césar - antoine et cléopâtre" 
+        data-auteur="william shakespeare"
+        data-annee="2012"
+        data-ordre="5621">
+        <a href="/livre/5621/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5634.webp" 
+              alt="Jules César - Antoine et Cléopâtre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jules César - Antoine et Cléopâtre</h3>
+            <p>William SHAKESPEARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le conte d’hiver" 
+        data-auteur="william shakespeare"
+        data-annee="2016"
+        data-ordre="5622">
+        <a href="/livre/5622/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5635.webp" 
+              alt="Le conte d’hiver"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le conte d’hiver</h3>
+            <p>William SHAKESPEARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="roméo et juliette -le songe d&#39;une nuit d&#39;été" 
+        data-auteur="william shakespeare"
+        data-annee="2018"
+        data-ordre="5623">
+        <a href="/livre/5623/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5636.webp" 
+              alt="Roméo et Juliette -Le songe d&#39;une nuit d&#39;été"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Roméo et Juliette -Le songe d&#39;une nuit d&#39;été</h3>
+            <p>William SHAKESPEARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la colère des aubergines" 
+        data-auteur="bulbul sharma"
+        data-annee="2002"
+        data-ordre="5624">
+        <a href="/livre/5624/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5637.webp" 
+              alt="La colère des aubergines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La colère des aubergines</h3>
+            <p>Bulbul SHARMA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="panique à porterhouse" 
+        data-auteur="tom sharpe"
+        data-annee="1998"
+        data-ordre="5625">
+        <a href="/livre/5625/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5638.webp" 
+              alt="Panique à Porterhouse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Panique à Porterhouse</h3>
+            <p>Tom SHARPE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="porterhouseou la vie de collège" 
+        data-auteur="tom sharpe"
+        data-annee="1988"
+        data-ordre="5626">
+        <a href="/livre/5626/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5639.webp" 
+              alt="Porterhouseou la vie de collège"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Porterhouseou la vie de collège</h3>
+            <p>Tom SHARPE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="frankenstein" 
+        data-auteur="mary shelley"
+        data-annee="1818"
+        data-ordre="5627">
+        <a href="/livre/5627/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5640.webp" 
+              alt="Frankenstein"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Frankenstein</h3>
+            <p>Mary SHELLEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="absolument dé-bor-dée !" 
+        data-auteur="zoé shepard"
+        data-annee="2011"
+        data-ordre="5628">
+        <a href="/livre/5628/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5641.webp" 
+              alt="Absolument dé-bor-dée !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Absolument dé-bor-dée !</h3>
+            <p>Zoé SHEPARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mémoire des pierres" 
+        data-auteur="carol shields"
+        data-annee="2009"
+        data-ordre="5629">
+        <a href="/livre/5629/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5642.webp" 
+              alt="La mémoire des pierres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mémoire des pierres</h3>
+            <p>Carol SHIELDS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pissarro" 
+        data-auteur="shikes r. / harper p."
+        data-annee="1980"
+        data-ordre="5630">
+        <a href="/livre/5630/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5643.webp" 
+              alt="Pissarro"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pissarro</h3>
+            <p>SHIKES R. / HARPER P.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le troisième reichdes origines à la chute – tomes 1 et 2" 
+        data-auteur="william l. shirer"
+        data-annee="1961"
+        data-ordre="5631">
+        <a href="/livre/5631/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5644.webp" 
+              alt="Le troisième Reichdes origines à la chute – tomes 1 et 2"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le troisième Reichdes origines à la chute – tomes 1 et 2</h3>
+            <p>William L. SHIRER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="naître coupable, naître victime" 
+        data-auteur="peter sichrovsky"
+        data-annee="1991"
+        data-ordre="5632">
+        <a href="/livre/5632/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5645.webp" 
+              alt="Naître coupable, naître victime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Naître coupable, naître victime</h3>
+            <p>Peter SICHROVSKY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pasolini - une vie" 
+        data-auteur="enzo siciliano"
+        data-annee="1984"
+        data-ordre="5633">
+        <a href="/livre/5633/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5646.webp" 
+              alt="Pasolini - Une vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pasolini - Une vie</h3>
+            <p>Enzo SICILIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quo vadis" 
+        data-auteur="henryk sienkiewicz"
+        data-annee="1896"
+        data-ordre="5634">
+        <a href="/livre/5634/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5647.webp" 
+              alt="Quo Vadis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quo Vadis</h3>
+            <p>Henryk SIENKIEWICZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;or des gouffres" 
+        data-auteur="michel siffre"
+        data-annee="1979"
+        data-ordre="5635">
+        <a href="/livre/5635/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5648.webp" 
+              alt="L&#39;or des gouffres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;or des gouffres</h3>
+            <p>Michel SIFFRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="blue moon" 
+        data-auteur="dominique sigaud"
+        data-annee="1998"
+        data-ordre="5636">
+        <a href="/livre/5636/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5649.webp" 
+              alt="Blue Moon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Blue Moon</h3>
+            <p>Dominique SIGAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie, là-bas, comme le cours de l&#39;oued" 
+        data-auteur="dominique sigaud"
+        data-annee="1997"
+        data-ordre="5637">
+        <a href="/livre/5637/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5650.webp" 
+              alt="La vie, là-bas, comme le cours de l&#39;oued"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie, là-bas, comme le cours de l&#39;oued</h3>
+            <p>Dominique SIGAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire du tourisme et des vacances" 
+        data-auteur="gilbert sigaux"
+        data-annee="1965"
+        data-ordre="5638">
+        <a href="/livre/5638/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5651.webp" 
+              alt="Histoire du tourisme et des vacances"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire du tourisme et des vacances</h3>
+            <p>Gilbert SIGAUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bleus sont les étés" 
+        data-auteur="christian signol"
+        data-annee="1998"
+        data-ordre="5639">
+        <a href="/livre/5639/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5652.webp" 
+              alt="Bleus sont les étés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bleus sont les étés</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ce que vivent les hommes : les noëls blancs" 
+        data-auteur="christian signol"
+        data-annee="2000"
+        data-ordre="5640">
+        <a href="/livre/5640/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5653.webp" 
+              alt="Ce que vivent les hommes : Les Noëls blancs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ce que vivent les hommes : Les Noëls blancs</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ce que vivent les hommes :2. les printemps de ce monde" 
+        data-auteur="christian signol"
+        data-annee="2002"
+        data-ordre="5641">
+        <a href="/livre/5641/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5654.webp" 
+              alt="Ce que vivent les hommes :2. Les printemps de ce monde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ce que vivent les hommes :2. Les printemps de ce monde</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la lumière des collines" 
+        data-auteur="christian signol"
+        data-annee="1997"
+        data-ordre="5642">
+        <a href="/livre/5642/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5655.webp" 
+              alt="La lumière des collines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La lumière des collines</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la rivière espérance" 
+        data-auteur="christian signol"
+        data-annee="2000"
+        data-ordre="5643">
+        <a href="/livre/5643/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5656.webp" 
+              alt="La rivière Espérance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La rivière Espérance</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la rivière espérance :2. le royaume du fleuve" 
+        data-auteur="christian signol"
+        data-annee="2010"
+        data-ordre="5644">
+        <a href="/livre/5644/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5657.webp" 
+              alt="La rivière Espérance :2. Le royaume du fleuve"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La rivière Espérance :2. Le royaume du fleuve</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la rivière espérance :3. l&#39;âme de la vallée" 
+        data-auteur="christian signol"
+        data-annee="2011"
+        data-ordre="5645">
+        <a href="/livre/5645/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5658.webp" 
+              alt="La rivière Espérance :3. L&#39;âme de la vallée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La rivière Espérance :3. L&#39;âme de la vallée</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les cailloux bleus" 
+        data-auteur="christian signol"
+        data-annee="1984"
+        data-ordre="5646">
+        <a href="/livre/5646/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5659.webp" 
+              alt="Les cailloux bleus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les cailloux bleus</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chemins d’étoiles" 
+        data-auteur="christian signol"
+        data-annee="1987"
+        data-ordre="5647">
+        <a href="/livre/5647/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5660.webp" 
+              alt="Les chemins d’étoiles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chemins d’étoiles</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chênes d&#39;or" 
+        data-auteur="christian signol"
+        data-annee="1999"
+        data-ordre="5648">
+        <a href="/livre/5648/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5661.webp" 
+              alt="Les chênes d&#39;or"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chênes d&#39;or</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marie des brebis" 
+        data-auteur="christian signol"
+        data-annee="1989"
+        data-ordre="5649">
+        <a href="/livre/5649/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5662.webp" 
+              alt="Marie des Brebis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marie des Brebis</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une année de neige" 
+        data-auteur="christian signol"
+        data-annee="2002"
+        data-ordre="5650">
+        <a href="/livre/5650/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5663.webp" 
+              alt="Une année de neige"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une année de neige</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une si belle école" 
+        data-auteur="christian signol"
+        data-annee="2010"
+        data-ordre="5651">
+        <a href="/livre/5651/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5664.webp" 
+              alt="Une si belle école"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une si belle école</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="même les arbres s&#39;en souviennent" 
+        data-auteur="christian signol"
+        data-annee="2019"
+        data-ordre="5652">
+        <a href="/livre/5652/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5665.webp" 
+              alt="Même les arbres s&#39;en souviennent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Même les arbres s&#39;en souviennent</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sur la terre comme au ciel" 
+        data-auteur="christian signol"
+        data-annee="2020"
+        data-ordre="5653">
+        <a href="/livre/5653/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5666.webp" 
+              alt="Sur la terre comme au ciel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sur la terre comme au ciel</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bonheurs d’enfance" 
+        data-auteur="christian signol"
+        data-annee="1996"
+        data-ordre="5654">
+        <a href="/livre/5654/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5667.webp" 
+              alt="Bonheurs d’enfance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bonheurs d’enfance</h3>
+            <p>Christian SIGNOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="adieu volodia" 
+        data-auteur="simone signoret"
+        data-annee="1985"
+        data-ordre="5655">
+        <a href="/livre/5655/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5668.webp" 
+              alt="Adieu Volodia"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Adieu Volodia</h3>
+            <p>Simone SIGNORET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le lendemain, elle était souriante..." 
+        data-auteur="simone signoret"
+        data-annee="1979"
+        data-ordre="5656">
+        <a href="/livre/5656/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5669.webp" 
+              alt="Le lendemain, elle était souriante..."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le lendemain, elle était souriante...</h3>
+            <p>Simone SIGNORET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je sais qui tu es" 
+        data-auteur="yrsa sigurdardottir"
+        data-annee="2013"
+        data-ordre="5657">
+        <a href="/livre/5657/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5670.webp" 
+              alt="Je sais qui tu es"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je sais qui tu es</h3>
+            <p>Yrsa SIGURDARDOTTIR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;euro" 
+        data-auteur="yves-thibault de silguy"
+        data-annee="1998"
+        data-ordre="5658">
+        <a href="/livre/5658/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5671.webp" 
+              alt="L&#39;euro"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;euro</h3>
+            <p>Yves-Thibault de SILGUY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le nez de cléopâtre" 
+        data-auteur="robert silverberg"
+        data-annee="1994"
+        data-ordre="5659">
+        <a href="/livre/5659/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5672.webp" 
+              alt="Le nez de Cléopâtre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le nez de Cléopâtre</h3>
+            <p>Robert SILVERBERG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les masques du temps" 
+        data-auteur="robert silverberg"
+        data-annee="1977"
+        data-ordre="5660">
+        <a href="/livre/5660/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5673.webp" 
+              alt="Les masques du temps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les masques du temps</h3>
+            <p>Robert SILVERBERG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la tour de verre" 
+        data-auteur="robert silverberg"
+        data-annee="1972"
+        data-ordre="5661">
+        <a href="/livre/5661/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5674.webp" 
+              alt="La tour de verre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La tour de verre</h3>
+            <p>Robert SILVERBERG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="trips" 
+        data-auteur="robert silverberg"
+        data-annee="1972"
+        data-ordre="5662">
+        <a href="/livre/5662/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5675.webp" 
+              alt="Trips"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Trips</h3>
+            <p>Robert SILVERBERG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dernier cimetière" 
+        data-auteur="clifford d. simak"
+        data-annee="1975"
+        data-ordre="5663">
+        <a href="/livre/5663/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5676.webp" 
+              alt="Le dernier cimetière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dernier cimetière</h3>
+            <p>Clifford D. SIMAK</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-117/">← Précédent</a>
+    
+    
+    <span>Page 118 sur 153</span>
+    
+    
+      <a href="/catalogue/page-119/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

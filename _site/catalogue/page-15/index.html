@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="camille et paul- la passion claudel" 
+        data-auteur="dominique bona"
+        data-annee="2008"
+        data-ordre="672">
+        <a href="/livre/672/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/675.webp" 
+              alt="Camille et Paul- La passion Claudel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Camille et Paul- La passion Claudel</h3>
+            <p>Dominique BONA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="romain gary" 
+        data-auteur="dominique bona"
+        data-annee="1987"
+        data-ordre="673">
+        <a href="/livre/673/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/676.webp" 
+              alt="Romain Gary"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Romain Gary</h3>
+            <p>Dominique BONA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le manuscrit de port ebène" 
+        data-auteur="dominique bona"
+        data-annee="1998"
+        data-ordre="674">
+        <a href="/livre/674/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/677.webp" 
+              alt="Le manuscrit de Port Ebène"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le manuscrit de Port Ebène</h3>
+            <p>Dominique BONA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="malika" 
+        data-auteur="dominique bona"
+        data-annee="1992"
+        data-ordre="675">
+        <a href="/livre/675/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/678.webp" 
+              alt="Malika"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Malika</h3>
+            <p>Dominique BONA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="van gogh" 
+        data-auteur="pascal bonafoux"
+        data-annee="1989"
+        data-ordre="676">
+        <a href="/livre/676/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/679.webp" 
+              alt="Van Gogh"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Van Gogh</h3>
+            <p>Pascal BONAFOUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gérard philipe" 
+        data-auteur="gérard bonal"
+        data-annee="1994"
+        data-ordre="677">
+        <a href="/livre/677/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/680.webp" 
+              alt="Gérard Philipe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gérard Philipe</h3>
+            <p>Gérard BONAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ardoise et la craie" 
+        data-auteur="gaston bonheur"
+        data-annee="1980"
+        data-ordre="678">
+        <a href="/livre/678/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/681.webp" 
+              alt="L&#39;ardoise et la craie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ardoise et la craie</h3>
+            <p>Gaston BONHEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la banque et les banquiers en france" 
+        data-auteur="hubert bonin"
+        data-annee="1992"
+        data-ordre="679">
+        <a href="/livre/679/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/682.webp" 
+              alt="La banque et les banquiers en France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La banque et les banquiers en France</h3>
+            <p>Hubert BONIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="naturel pour le meilleur et pour reste" 
+        data-auteur="bonnec sidonie et drucker marie"
+        data-annee="2019"
+        data-ordre="680">
+        <a href="/livre/680/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/683.webp" 
+              alt="NATUREL pour le meilleur et pour reste"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>NATUREL pour le meilleur et pour reste</h3>
+            <p>BONNEC Sidonie et DRUCKER Marie</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;heure présente" 
+        data-auteur="yves bonnefoy"
+        data-annee="2014"
+        data-ordre="681">
+        <a href="/livre/681/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/684.webp" 
+              alt="L&#39;heure présente"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;heure présente</h3>
+            <p>Yves BONNEFOY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chambre 2" 
+        data-auteur="julie bonnie"
+        data-annee="2013"
+        data-ordre="682">
+        <a href="/livre/682/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/685.webp" 
+              alt="Chambre 2"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chambre 2</h3>
+            <p>Julie BONNIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;équilibre des requins" 
+        data-auteur="caterina bonvicini"
+        data-annee="2010"
+        data-ordre="683">
+        <a href="/livre/683/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/686.webp" 
+              alt="L&#39;équilibre des requins"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;équilibre des requins</h3>
+            <p>Caterina BONVICINI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;architecture moderne" 
+        data-auteur="anne bony"
+        data-annee="2006"
+        data-ordre="684">
+        <a href="/livre/684/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/687.webp" 
+              alt="L&#39;architecture moderne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;architecture moderne</h3>
+            <p>Anne BONY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;enjomineur, 1793" 
+        data-auteur="pierre bordage"
+        data-annee="2010"
+        data-ordre="685">
+        <a href="/livre/685/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/688.webp" 
+              alt="L&#39;enjomineur, 1793"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;enjomineur, 1793</h3>
+            <p>Pierre BORDAGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chemins de damas" 
+        data-auteur="pierre bordage"
+        data-annee="2005"
+        data-ordre="686">
+        <a href="/livre/686/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/689.webp" 
+              alt="Les chemins de Damas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chemins de Damas</h3>
+            <p>Pierre BORDAGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jean le bon et son temps" 
+        data-auteur="georges bordonove"
+        data-annee="1980"
+        data-ordre="687">
+        <a href="/livre/687/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/690.webp" 
+              alt="Jean le Bon et son temps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jean le Bon et son temps</h3>
+            <p>Georges BORDONOVE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bûcher" 
+        data-auteur="georges bordonove"
+        data-annee="1957"
+        data-ordre="688">
+        <a href="/livre/688/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/691.webp" 
+              alt="Le bûcher"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bûcher</h3>
+            <p>Georges BORDONOVE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les armes à la main" 
+        data-auteur="georges bordonove"
+        data-annee="1955"
+        data-ordre="689">
+        <a href="/livre/689/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/692.webp" 
+              alt="Les armes à la main"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les armes à la main</h3>
+            <p>Georges BORDONOVE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois qui ont fait la france :henri iv" 
+        data-auteur="georges bordonove"
+        data-annee="2013"
+        data-ordre="690">
+        <a href="/livre/690/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/693.webp" 
+              alt="Les rois qui ont fait la France :Henri IV"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois qui ont fait la France :Henri IV</h3>
+            <p>Georges BORDONOVE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vercingétorix" 
+        data-auteur="georges bordonove"
+        data-annee="1959"
+        data-ordre="691">
+        <a href="/livre/691/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/694.webp" 
+              alt="Vercingétorix"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vercingétorix</h3>
+            <p>Georges BORDONOVE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="antoine et isabelle" 
+        data-auteur="vincent borel"
+        data-annee="2010"
+        data-ordre="692">
+        <a href="/livre/692/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/695.webp" 
+              alt="Antoine et Isabelle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Antoine et Isabelle</h3>
+            <p>Vincent BOREL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="baptiste" 
+        data-auteur="vincent borel"
+        data-annee="2002"
+        data-ordre="693">
+        <a href="/livre/693/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/696.webp" 
+              alt="Baptiste"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Baptiste</h3>
+            <p>Vincent BOREL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rimbaud en abyssinie" 
+        data-auteur="alain borer"
+        data-annee="1984"
+        data-ordre="694">
+        <a href="/livre/694/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/697.webp" 
+              alt="Rimbaud en Abyssinie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rimbaud en Abyssinie</h3>
+            <p>Alain BORER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un sieur rimbaud se disant négociant" 
+        data-auteur="alain borer"
+        data-annee="1984"
+        data-ordre="695">
+        <a href="/livre/695/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/698.webp" 
+              alt="Un sieur Rimbaud se disant négociant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un sieur Rimbaud se disant négociant</h3>
+            <p>Alain BORER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="six problèmes pour don isidro parodi" 
+        data-auteur="j. l. - adolfo b. casares borges"
+        data-annee="1980"
+        data-ordre="696">
+        <a href="/livre/696/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/699.webp" 
+              alt="Six problèmes pour Don Isidro Parodi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Six problèmes pour Don Isidro Parodi</h3>
+            <p>J. L. - Adolfo B. CASARES BORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fictions" 
+        data-auteur="jorge luis borges"
+        data-annee="1998"
+        data-ordre="697">
+        <a href="/livre/697/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/700.webp" 
+              alt="Fictions"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fictions</h3>
+            <p>Jorge Luis BORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="livre de préfacessuivi deessai d&#39;autobiographie" 
+        data-auteur="jorge luis borges"
+        data-annee="1980"
+        data-ordre="698">
+        <a href="/livre/698/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/701.webp" 
+              alt="Livre de préfacessuivi deEssai d&#39;autobiographie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Livre de préfacessuivi deEssai d&#39;autobiographie</h3>
+            <p>Jorge Luis BORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="entretien avec andré camp neuf essais sur borges" 
+        data-auteur="jorge luis borges"
+        data-annee="1999"
+        data-ordre="699">
+        <a href="/livre/699/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/702.webp" 
+              alt="Entretien avec André Camp Neuf essais sur Borges"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Entretien avec André Camp Neuf essais sur Borges</h3>
+            <p>Jorge Luis BORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le pied" 
+        data-auteur="jean-louis bory"
+        data-annee="1977"
+        data-ordre="700">
+        <a href="/livre/700/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/703.webp" 
+              alt="Le pied"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le pied</h3>
+            <p>Jean-Louis BORY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un prix d&#39;excellence" 
+        data-auteur="jean-louis bory"
+        data-annee="1988"
+        data-ordre="701">
+        <a href="/livre/701/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/704.webp" 
+              alt="Un prix d&#39;excellence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un prix d&#39;excellence</h3>
+            <p>Jean-Louis BORY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le mas théotime" 
+        data-auteur="henri bosco"
+        data-annee="1945"
+        data-ordre="702">
+        <a href="/livre/702/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/705.webp" 
+              alt="Le Mas Théotime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Mas Théotime</h3>
+            <p>Henri BOSCO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme qui aimait les zoos" 
+        data-auteur="malcolm bosse"
+        data-annee="1987"
+        data-ordre="703">
+        <a href="/livre/703/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/706.webp" 
+              alt="L&#39;homme qui aimait les zoos"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme qui aimait les zoos</h3>
+            <p>Malcolm BOSSE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les domestiques" 
+        data-auteur="gustavo bossert"
+        data-annee="2003"
+        data-ordre="704">
+        <a href="/livre/704/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/707.webp" 
+              alt="Les domestiques"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les domestiques</h3>
+            <p>Gustavo BOSSERT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="petite philosophie de l&#39;amour" 
+        data-auteur="alain de botton"
+        data-annee="1997"
+        data-ordre="705">
+        <a href="/livre/705/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/708.webp" 
+              alt="Petite philosophie de l&#39;amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Petite philosophie de l&#39;amour</h3>
+            <p>Alain de BOTTON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;hôpital" 
+        data-auteur="ahmed bouanani"
+        data-annee="1990"
+        data-ordre="706">
+        <a href="/livre/706/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/709.webp" 
+              alt="L&#39;hôpital"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;hôpital</h3>
+            <p>Ahmed BOUANANI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="choses dites de profil" 
+        data-auteur="huguette bouchardeau"
+        data-annee="1988"
+        data-ordre="707">
+        <a href="/livre/707/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/710.webp" 
+              alt="Choses dites de profil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Choses dites de profil</h3>
+            <p>Huguette BOUCHARDEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rose noël" 
+        data-auteur="huguette bouchardeau"
+        data-annee="1990"
+        data-ordre="708">
+        <a href="/livre/708/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/711.webp" 
+              alt="Rose Noël"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rose Noël</h3>
+            <p>Huguette BOUCHARDEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les combattants du petit bonheur" 
+        data-auteur="alphonse boudard"
+        data-annee="1977"
+        data-ordre="709">
+        <a href="/livre/709/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/712.webp" 
+              alt="Les combattants du petit bonheur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les combattants du petit bonheur</h3>
+            <p>Alphonse BOUDARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les enfants de chœur" 
+        data-auteur="alphonse boudard"
+        data-annee="1982"
+        data-ordre="710">
+        <a href="/livre/710/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/713.webp" 
+              alt="Les enfants de chœur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les enfants de chœur</h3>
+            <p>Alphonse BOUDARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;hôpital" 
+        data-auteur="alphonse boudard"
+        data-annee="1974"
+        data-ordre="711">
+        <a href="/livre/711/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/714.webp" 
+              alt="L&#39;hôpital"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;hôpital</h3>
+            <p>Alphonse BOUDARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la cerise" 
+        data-auteur="alphonse boudard"
+        data-annee="1963"
+        data-ordre="712">
+        <a href="/livre/712/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/715.webp" 
+              alt="La cerise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La cerise</h3>
+            <p>Alphonse BOUDARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fermeture" 
+        data-auteur="alphonse boudard"
+        data-annee="1986"
+        data-ordre="713">
+        <a href="/livre/713/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/716.webp" 
+              alt="La fermeture"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fermeture</h3>
+            <p>Alphonse BOUDARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le café du pauvre" 
+        data-auteur="alphonse boudard"
+        data-annee="1983"
+        data-ordre="714">
+        <a href="/livre/714/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/717.webp" 
+              alt="Le café du pauvre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le café du pauvre</h3>
+            <p>Alphonse BOUDARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mourir d&#39;enfance" 
+        data-auteur="alphonse boudard"
+        data-annee="1995"
+        data-ordre="715">
+        <a href="/livre/715/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/718.webp" 
+              alt="Mourir d&#39;enfance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mourir d&#39;enfance</h3>
+            <p>Alphonse BOUDARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les croix de paille" 
+        data-auteur="philippe bouin"
+        data-annee="2000"
+        data-ordre="716">
+        <a href="/livre/716/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/719.webp" 
+              alt="Les croix de paille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les croix de paille</h3>
+            <p>Philippe BOUIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jules bouc" 
+        data-auteur="daniel boulanger"
+        data-annee="1987"
+        data-ordre="717">
+        <a href="/livre/717/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/720.webp" 
+              alt="Jules Bouc"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jules Bouc</h3>
+            <p>Daniel BOULANGER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chemin des caracoles" 
+        data-auteur="daniel boulanger"
+        data-annee="1966"
+        data-ordre="718">
+        <a href="/livre/718/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/721.webp" 
+              alt="Le chemin des caracoles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chemin des caracoles</h3>
+            <p>Daniel BOULANGER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la toison d&#39;or – le paradis" 
+        data-auteur="daniel boulanger"
+        data-annee="1987"
+        data-ordre="719">
+        <a href="/livre/719/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/722.webp" 
+              alt="La Toison d&#39;Or – Le Paradis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Toison d&#39;Or – Le Paradis</h3>
+            <p>Daniel BOULANGER</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-14/">← Précédent</a>
+    
+    
+    <span>Page 15 sur 153</span>
+    
+    
+      <a href="/catalogue/page-16/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

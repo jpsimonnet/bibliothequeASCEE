@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="chaos calme" 
+        data-auteur="sandro veronesi"
+        data-annee="2008"
+        data-ordre="6288">
+        <a href="/livre/6288/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6301.webp" 
+              alt="Chaos calme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chaos calme</h3>
+            <p>Sandro VERONESI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="xy" 
+        data-auteur="pierre very"
+        data-annee="0"
+        data-ordre="6289">
+        <a href="/livre/6289/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6302.webp" 
+              alt="XY"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>XY</h3>
+            <p>PIERRE VERY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;assassinat du père noël" 
+        data-auteur="stanley vestal"
+        data-annee="0"
+        data-ordre="6290">
+        <a href="/livre/6290/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6303.webp" 
+              alt="L&#39;assassinat du père Noël"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;assassinat du père Noël</h3>
+            <p>Stanley VESTAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sitting bull" 
+        data-auteur="alexandre vialatte"
+        data-annee="1908"
+        data-ordre="6291">
+        <a href="/livre/6291/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6304.webp" 
+              alt="Sitting Bull"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sitting Bull</h3>
+            <p>Alexandre VIALATTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="salomé" 
+        data-auteur="boris vian"
+        data-annee="1965"
+        data-ordre="6292">
+        <a href="/livre/6292/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6305.webp" 
+              alt="Salomé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Salomé</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="et on tuera tous les affreux" 
+        data-auteur="boris vian"
+        data-annee="1965"
+        data-ordre="6293">
+        <a href="/livre/6293/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6306.webp" 
+              alt="Et on tuera tous les affreux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Et on tuera tous les affreux</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’arrache-coeur" 
+        data-auteur="boris vian"
+        data-annee="1962"
+        data-ordre="6294">
+        <a href="/livre/6294/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6307.webp" 
+              alt="L’arrache-coeur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’arrache-coeur</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le loup-garou" 
+        data-auteur="boris vian"
+        data-annee="1970"
+        data-ordre="6295">
+        <a href="/livre/6295/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6308.webp" 
+              alt="Le loup-garou"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le loup-garou</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="en avant la zizique" 
+        data-auteur="boris vian"
+        data-annee="1966"
+        data-ordre="6296">
+        <a href="/livre/6296/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6309.webp" 
+              alt="En avant la zizique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>En avant la zizique</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j&#39;irai cracher sur vos tombes" 
+        data-auteur="boris vian"
+        data-annee="1973"
+        data-ordre="6297">
+        <a href="/livre/6297/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6310.webp" 
+              alt="J&#39;irai cracher sur vos tombes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J&#39;irai cracher sur vos tombes</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;automne à pékin" 
+        data-auteur="boris vian"
+        data-annee="1956"
+        data-ordre="6298">
+        <a href="/livre/6298/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6311.webp" 
+              alt="L&#39;automne à Pékin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;automne à Pékin</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;écume des jours" 
+        data-auteur="boris vian"
+        data-annee="1963"
+        data-ordre="6299">
+        <a href="/livre/6299/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6312.webp" 
+              alt="L&#39;écume des jours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;écume des jours</h3>
+            <p>Boris VIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;herbe rouge" 
+        data-auteur="pierre viansson-ponte"
+        data-annee="0"
+        data-ordre="6300">
+        <a href="/livre/6300/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6313.webp" 
+              alt="L&#39;herbe rouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;herbe rouge</h3>
+            <p>Pierre VIANSSON-PONTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lettre ouverte aux hommes politiques" 
+        data-auteur="jean viard"
+        data-annee="2018"
+        data-ordre="6301">
+        <a href="/livre/6301/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6314.webp" 
+              alt="Lettre ouverte aux hommes politiques"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lettre ouverte aux hommes politiques</h3>
+            <p>Jean VIARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="blizzards, aventures par -50°" 
+        data-auteur="paul-emile victor"
+        data-annee="2015"
+        data-ordre="6302">
+        <a href="/livre/6302/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6315.webp" 
+              alt="Blizzards, aventures par -50°"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Blizzards, aventures par -50°</h3>
+            <p>Paul-Emile VICTOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;iglou" 
+        data-auteur="paul-emile victor"
+        data-annee="1987"
+        data-ordre="6303">
+        <a href="/livre/6303/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6316.webp" 
+              alt="L&#39;iglou"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;iglou</h3>
+            <p>Paul-Emile VICTOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="penser les vacances" 
+        data-auteur="paul-emile victor"
+        data-annee="2015"
+        data-ordre="6304">
+        <a href="/livre/6304/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6317.webp" 
+              alt="Penser les vacances"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Penser les vacances</h3>
+            <p>Paul-Emile VICTOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mansarde" 
+        data-auteur="tanguy viel"
+        data-annee="2012"
+        data-ordre="6305">
+        <a href="/livre/6305/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6318.webp" 
+              alt="La mansarde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mansarde</h3>
+            <p>Tanguy VIEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cinéma" 
+        data-auteur="tanguy viel"
+        data-annee="1999"
+        data-ordre="6306">
+        <a href="/livre/6306/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6319.webp" 
+              alt="Cinéma"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cinéma</h3>
+            <p>Tanguy VIEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’absolue perfection du crime" 
+        data-auteur="tanguy viel"
+        data-annee="0"
+        data-ordre="6307">
+        <a href="/livre/6307/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6320.webp" 
+              alt="L’absolue perfection du crime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’absolue perfection du crime</h3>
+            <p>Tanguy VIEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;apocalypse joyeuseexposition centre pompidou 1986" 
+        data-auteur="delphine de vigan"
+        data-annee="0"
+        data-ordre="6308">
+        <a href="/livre/6308/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6321.webp" 
+              alt="L&#39;apocalypse joyeuseExposition Centre Pompidou 1986"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;apocalypse joyeuseExposition Centre Pompidou 1986</h3>
+            <p>Delphine de VIGAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="no et moi" 
+        data-auteur="delphine de vigan"
+        data-annee="2007"
+        data-ordre="6309">
+        <a href="/livre/6309/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6322.webp" 
+              alt="No et moi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>No et moi</h3>
+            <p>Delphine de VIGAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rien ne s&#39;oppose à la nuit" 
+        data-auteur="delphine de vigan"
+        data-annee="2011"
+        data-ordre="6310">
+        <a href="/livre/6310/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6323.webp" 
+              alt="Rien ne s&#39;oppose à la nuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rien ne s&#39;oppose à la nuit</h3>
+            <p>Delphine de VIGAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les enfants sont rois" 
+        data-auteur="delphine de vigan"
+        data-annee="2021"
+        data-ordre="6311">
+        <a href="/livre/6311/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6325.webp" 
+              alt="Les enfants sont rois"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les enfants sont rois</h3>
+            <p>Delphine de VIGAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les heures souterraines" 
+        data-auteur="delphine de vigan"
+        data-annee="2009"
+        data-ordre="6312">
+        <a href="/livre/6312/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6326.webp" 
+              alt="Les heures souterraines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les heures souterraines</h3>
+            <p>Delphine de VIGAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="d’après une histoire vraie" 
+        data-auteur="philippe et stéphane vigand"
+        data-annee="1998"
+        data-ordre="6313">
+        <a href="/livre/6313/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6327.webp" 
+              alt="D’après une histoire vraie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>D’après une histoire vraie</h3>
+            <p>Philippe et Stéphane VIGAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="putain de silence" 
+        data-auteur="guillaume vigneault"
+        data-annee="1998"
+        data-ordre="6314">
+        <a href="/livre/6314/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6328.webp" 
+              alt="Putain de silence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Putain de silence</h3>
+            <p>Guillaume VIGNEAULT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voyage vertical" 
+        data-auteur="enrique vila-matas"
+        data-annee="2002"
+        data-ordre="6315">
+        <a href="/livre/6315/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6329.webp" 
+              alt="Le voyage vertical"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voyage vertical</h3>
+            <p>Enrique VILA-MATAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chercher le vent" 
+        data-auteur="enrique vila-matas"
+        data-annee="2020"
+        data-ordre="6316">
+        <a href="/livre/6316/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6330.webp" 
+              alt="Chercher le vent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chercher le vent</h3>
+            <p>Enrique VILA-MATAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paris ne finit jamais" 
+        data-auteur="philippe vilain"
+        data-annee="2015"
+        data-ordre="6317">
+        <a href="/livre/6317/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6331.webp" 
+              alt="Paris ne finit jamais"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paris ne finit jamais</h3>
+            <p>Philippe VILAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme infidèle" 
+        data-auteur="pierre vilar"
+        data-annee="2011"
+        data-ordre="6318">
+        <a href="/livre/6318/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6332.webp" 
+              alt="La femme infidèle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme infidèle</h3>
+            <p>Pierre VILAR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="entrée du diable à barbèsville" 
+        data-auteur="marc villard"
+        data-annee="2007"
+        data-ordre="6319">
+        <a href="/livre/6319/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6333.webp" 
+              alt="Entrée du diable à Barbèsville"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Entrée du diable à Barbèsville</h3>
+            <p>Marc VILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gangsta rap" 
+        data-auteur="marc villard"
+        data-annee="2000"
+        data-ordre="6320">
+        <a href="/livre/6320/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6334.webp" 
+              alt="Gangsta rap"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gangsta rap</h3>
+            <p>Marc VILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="or et monnaie dans l&#39;histoire 1450-1920" 
+        data-auteur="marc villard"
+        data-annee="1942"
+        data-ordre="6321">
+        <a href="/livre/6321/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6335.webp" 
+              alt="Or et monnaie dans l&#39;Histoire 1450-1920"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Or et monnaie dans l&#39;Histoire 1450-1920</h3>
+            <p>Marc VILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rebelles de la nuit" 
+        data-auteur="villiers de l&#39; isle-adam"
+        data-annee="1922"
+        data-ordre="6322">
+        <a href="/livre/6322/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6336.webp" 
+              alt="Rebelles de la nuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rebelles de la nuit</h3>
+            <p>VILLIERS de l&#39; ISLE-ADAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="contes cruels" 
+        data-auteur="jean-baptiste de vilmorin"
+        data-annee="1977"
+        data-ordre="6323">
+        <a href="/livre/6323/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6337.webp" 
+              alt="Contes cruels"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Contes cruels</h3>
+            <p>Jean-Baptiste de VILMORIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le lit à colonnes" 
+        data-auteur="louise de vilmorin"
+        data-annee="1970"
+        data-ordre="6324">
+        <a href="/livre/6324/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6338.webp" 
+              alt="Le lit à colonnes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le lit à colonnes</h3>
+            <p>Louise de VILMORIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le jardin des hommes" 
+        data-auteur="louise de vilmorin"
+        data-annee="1991"
+        data-ordre="6325">
+        <a href="/livre/6325/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6339.webp" 
+              alt="Le jardin des hommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le jardin des hommes</h3>
+            <p>Louise de VILMORIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bivouacs" 
+        data-auteur="nicole viloteau"
+        data-annee="1999"
+        data-ordre="6326">
+        <a href="/livre/6326/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6340.webp" 
+              alt="Bivouacs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bivouacs</h3>
+            <p>Nicole VILOTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme aux serpents" 
+        data-auteur="nicole viloteau"
+        data-annee="2000"
+        data-ordre="6327">
+        <a href="/livre/6327/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6341.webp" 
+              alt="La femme aux serpents"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme aux serpents</h3>
+            <p>Nicole VILOTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la lettre dans un taxi" 
+        data-auteur="nicole viloteau"
+        data-annee="1958"
+        data-ordre="6328">
+        <a href="/livre/6328/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6342.webp" 
+              alt="La lettre dans un taxi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La lettre dans un taxi</h3>
+            <p>Nicole VILOTEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les dragons de komodo" 
+        data-auteur="henri vincenot"
+        data-annee="2000"
+        data-ordre="6329">
+        <a href="/livre/6329/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6343.webp" 
+              alt="Les dragons de Komodo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les dragons de Komodo</h3>
+            <p>Henri VINCENOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;œuvre de chair" 
+        data-auteur="henri vincenot"
+        data-annee="1986"
+        data-ordre="6330">
+        <a href="/livre/6330/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6344.webp" 
+              alt="L&#39;œuvre de chair"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;œuvre de chair</h3>
+            <p>Henri VINCENOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la billebaude" 
+        data-auteur="henri vincenot"
+        data-annee="1978"
+        data-ordre="6331">
+        <a href="/livre/6331/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6345.webp" 
+              alt="La billebaude"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La billebaude</h3>
+            <p>Henri VINCENOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le sang de l&#39;atlas" 
+        data-auteur="henri vincenot"
+        data-annee="1975"
+        data-ordre="6332">
+        <a href="/livre/6332/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6346.webp" 
+              alt="Le sang de l&#39;Atlas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le sang de l&#39;Atlas</h3>
+            <p>Henri VINCENOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoires d&#39;un enfant du rail" 
+        data-auteur="henri vincenot"
+        data-annee="1980"
+        data-ordre="6333">
+        <a href="/livre/6333/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6347.webp" 
+              alt="Mémoires d&#39;un enfant du rail"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoires d&#39;un enfant du rail</h3>
+            <p>Henri VINCENOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="récits des friches et des bois" 
+        data-auteur="jean-daniel vincent"
+        data-annee="0"
+        data-ordre="6334">
+        <a href="/livre/6334/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6348.webp" 
+              alt="Récits des friches et des bois"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Récits des friches et des bois</h3>
+            <p>Jean-Daniel VINCENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="biologie des passions" 
+        data-auteur="gabriel vinet"
+        data-annee="1986"
+        data-ordre="6335">
+        <a href="/livre/6335/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6349.webp" 
+              alt="Biologie des passions"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Biologie des passions</h3>
+            <p>Gabriel VINET</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-131/">← Précédent</a>
+    
+    
+    <span>Page 132 sur 153</span>
+    
+    
+      <a href="/catalogue/page-133/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="aurélien" 
+        data-auteur="louis aragon"
+        data-annee="0"
+        data-ordre="144">
+        <a href="/livre/144/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/146.webp" 
+              alt="Aurélien"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Aurélien</h3>
+            <p>Louis ARAGON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la défense de l&#39;infini" 
+        data-auteur="louis aragon"
+        data-annee="0"
+        data-ordre="145">
+        <a href="/livre/145/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/147.webp" 
+              alt="La défense de l&#39;infini"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La défense de l&#39;infini</h3>
+            <p>Louis ARAGON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le paysan de paris" 
+        data-auteur="louis aragon"
+        data-annee="0"
+        data-ordre="146">
+        <a href="/livre/146/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/148.webp" 
+              alt="Le paysan de Paris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le paysan de Paris</h3>
+            <p>Louis ARAGON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les yeux d&#39;elsa" 
+        data-auteur="louis aragon"
+        data-annee="0"
+        data-ordre="147">
+        <a href="/livre/147/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/149.webp" 
+              alt="Les yeux d&#39;Elsa"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les yeux d&#39;Elsa</h3>
+            <p>Louis ARAGON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="on n&#39;y voit rien" 
+        data-auteur="daniel arasse"
+        data-annee="0"
+        data-ordre="148">
+        <a href="/livre/148/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/150.webp" 
+              alt="On n&#39;y voit rien"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>On n&#39;y voit rien</h3>
+            <p>Daniel ARASSE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le turquetto" 
+        data-auteur="metin arditi"
+        data-annee="2011"
+        data-ordre="149">
+        <a href="/livre/149/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/151.webp" 
+              alt="Le Turquetto"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Turquetto</h3>
+            <p>Metin ARDITI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire des populations françaises" 
+        data-auteur="philippe aries"
+        data-annee="1948"
+        data-ordre="150">
+        <a href="/livre/150/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/152.webp" 
+              alt="Histoire des populations françaises"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire des populations françaises</h3>
+            <p>Philippe ARIES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la cense aux alouettes" 
+        data-auteur="marie-paule armand"
+        data-annee="2017"
+        data-ordre="151">
+        <a href="/livre/151/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/153.webp" 
+              alt="La cense aux alouettes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La cense aux alouettes</h3>
+            <p>Marie-Paule ARMAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le salaire de la peur" 
+        data-auteur="georges arnaud"
+        data-annee="1950"
+        data-ordre="152">
+        <a href="/livre/152/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/154.webp" 
+              alt="Le salaire de la peur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le salaire de la peur</h3>
+            <p>Georges ARNAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="avril enchanté" 
+        data-auteur="elizabeth von arnim"
+        data-annee="2023"
+        data-ordre="153">
+        <a href="/livre/153/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/155.webp" 
+              alt="Avril enchanté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Avril enchanté</h3>
+            <p>Elizabeth von ARNIM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ami de la famille" 
+        data-auteur="christine arnothy"
+        data-annee="1984"
+        data-ordre="154">
+        <a href="/livre/154/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/156.webp" 
+              alt="L&#39;ami de la famille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ami de la famille</h3>
+            <p>Christine ARNOTHY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la piste africaine" 
+        data-auteur="christine arnothy"
+        data-annee="1997"
+        data-ordre="155">
+        <a href="/livre/155/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/157.webp" 
+              alt="La piste africaine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La piste africaine</h3>
+            <p>Christine ARNOTHY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la saison des américains" 
+        data-auteur="christine arnothy"
+        data-annee="1964"
+        data-ordre="156">
+        <a href="/livre/156/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/158.webp" 
+              alt="La saison des américains"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La saison des américains</h3>
+            <p>Christine ARNOTHY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="on ne fait jamais vraiment ce que l&#39;on veut" 
+        data-auteur="christine arnothy"
+        data-annee="2003"
+        data-ordre="157">
+        <a href="/livre/157/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/159.webp" 
+              alt="On ne fait jamais vraiment ce que l&#39;on veut"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>On ne fait jamais vraiment ce que l&#39;on veut</h3>
+            <p>Christine ARNOTHY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vent africain" 
+        data-auteur="christine arnothy"
+        data-annee="1989"
+        data-ordre="158">
+        <a href="/livre/158/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/160.webp" 
+              alt="Vent africain"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vent africain</h3>
+            <p>Christine ARNOTHY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le spectateur engagé" 
+        data-auteur="raymond aron"
+        data-annee="1981"
+        data-ordre="159">
+        <a href="/livre/159/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/161.webp" 
+              alt="Le spectateur engagé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le spectateur engagé</h3>
+            <p>Raymond ARON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon frère italien" 
+        data-auteur="giovanni arpino"
+        data-annee="2011"
+        data-ordre="160">
+        <a href="/livre/160/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/162.webp" 
+              alt="Mon frère italien"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon frère italien</h3>
+            <p>Giovanni ARPINO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;escadron guillotine" 
+        data-auteur="guillermo arriaga"
+        data-annee="2006"
+        data-ordre="161">
+        <a href="/livre/161/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/163.webp" 
+              alt="L&#39;escadron guillotine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;escadron guillotine</h3>
+            <p>Guillermo ARRIAGA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="emmanuelle" 
+        data-auteur="emmanuelle arsan"
+        data-annee="1967"
+        data-ordre="162">
+        <a href="/livre/162/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/164.webp" 
+              alt="Emmanuelle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Emmanuelle</h3>
+            <p>Emmanuelle ARSAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lily" 
+        data-auteur="daniel arsand"
+        data-annee="2002"
+        data-ordre="163">
+        <a href="/livre/163/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/165.webp" 
+              alt="Lily"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lily</h3>
+            <p>Daniel ARSAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le moine" 
+        data-auteur="antonin artaud"
+        data-annee="1975"
+        data-ordre="164">
+        <a href="/livre/164/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/166.webp" 
+              alt="Le moine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le moine</h3>
+            <p>Antonin ARTAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nouveaux écrits de rodez" 
+        data-auteur="antonin artaud"
+        data-annee="1977"
+        data-ordre="165">
+        <a href="/livre/165/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/167.webp" 
+              alt="Nouveaux écrits de Rodez"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nouveaux écrits de Rodez</h3>
+            <p>Antonin ARTAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="2 degrés de trop" 
+        data-auteur="yann arthus-bertrand"
+        data-annee="2009"
+        data-ordre="166">
+        <a href="/livre/166/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/168.webp" 
+              alt="2 degrés de trop"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>2 degrés de trop</h3>
+            <p>Yann ARTHUS-BERTRAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="365 jours pour réfléchir à notre terre" 
+        data-auteur="yann arthus-bertrand"
+        data-annee="2006"
+        data-ordre="167">
+        <a href="/livre/167/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/169.webp" 
+              alt="365 jours pour réfléchir à notre terre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>365 jours pour réfléchir à notre terre</h3>
+            <p>Yann ARTHUS-BERTRAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="azazel" 
+        data-auteur="isaac asimov"
+        data-annee="1988"
+        data-ordre="168">
+        <a href="/livre/168/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/170.webp" 
+              alt="Azazel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Azazel</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="face aux feux du soleil" 
+        data-auteur="isaac asimov"
+        data-annee="2018"
+        data-ordre="169">
+        <a href="/livre/169/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/171.webp" 
+              alt="Face aux feux du soleil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Face aux feux du soleil</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fondation" 
+        data-auteur="isaac asimov"
+        data-annee="1989"
+        data-ordre="170">
+        <a href="/livre/170/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/172.webp" 
+              alt="Fondation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fondation</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fondation et empire" 
+        data-auteur="isaac asimov"
+        data-annee="1965"
+        data-ordre="171">
+        <a href="/livre/171/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/173.webp" 
+              alt="Fondation et empire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fondation et empire</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fondation foudroyée" 
+        data-auteur="isaac asimov"
+        data-annee="2023"
+        data-ordre="172">
+        <a href="/livre/172/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/174.webp" 
+              alt="Fondation foudroyée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fondation foudroyée</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amour vous connaissez ?" 
+        data-auteur="isaac asimov"
+        data-annee="1970"
+        data-ordre="173">
+        <a href="/livre/173/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/175.webp" 
+              alt="L&#39;amour vous connaissez ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amour vous connaissez ?</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;avenir commence demain" 
+        data-auteur="isaac asimov"
+        data-annee="2008"
+        data-ordre="174">
+        <a href="/livre/174/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/176.webp" 
+              alt="L&#39;avenir commence demain"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;avenir commence demain</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fin de l&#39;éternité" 
+        data-auteur="isaac asimov"
+        data-annee="1970"
+        data-ordre="175">
+        <a href="/livre/175/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/177.webp" 
+              alt="La fin de l&#39;éternité"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fin de l&#39;éternité</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mère des mondes" 
+        data-auteur="isaac asimov"
+        data-annee="1992"
+        data-ordre="176">
+        <a href="/livre/176/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/178.webp" 
+              alt="La mère des mondes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mère des mondes</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le robot qui rêvait" 
+        data-auteur="isaac asimov"
+        data-annee="2018"
+        data-ordre="177">
+        <a href="/livre/177/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/179.webp" 
+              alt="Le robot qui rêvait"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le robot qui rêvait</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les robots de l&#39;aube 1" 
+        data-auteur="isaac asimov"
+        data-annee="2000"
+        data-ordre="178">
+        <a href="/livre/178/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/180.webp" 
+              alt="Les robots de l&#39;aube 1"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les robots de l&#39;aube 1</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les robots de l&#39;aube 2" 
+        data-auteur="isaac asimov"
+        data-annee="2000"
+        data-ordre="179">
+        <a href="/livre/179/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/181.webp" 
+              alt="Les robots de l&#39;aube 2"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les robots de l&#39;aube 2</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les vents du changement" 
+        data-auteur="isaac asimov"
+        data-annee="2016"
+        data-ordre="180">
+        <a href="/livre/180/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/182.webp" 
+              alt="Les vents du changement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les vents du changement</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="némésis" 
+        data-auteur="isaac asimov"
+        data-annee="1989"
+        data-ordre="181">
+        <a href="/livre/181/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/183.webp" 
+              alt="Némésis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Némésis</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="seconde fondation" 
+        data-auteur="isaac asimov"
+        data-annee="1965"
+        data-ordre="182">
+        <a href="/livre/182/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/184.webp" 
+              alt="Seconde fondation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Seconde fondation</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="terre et fondation" 
+        data-auteur="isaac asimov"
+        data-annee="2000"
+        data-ordre="183">
+        <a href="/livre/183/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/185.webp" 
+              alt="Terre et fondation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Terre et fondation</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tyrann" 
+        data-auteur="isaac asimov"
+        data-annee="1992"
+        data-ordre="184">
+        <a href="/livre/184/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/186.webp" 
+              alt="Tyrann"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tyrann</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="légende (azazel ii)" 
+        data-auteur="isaac asimov"
+        data-annee="1999"
+        data-ordre="185">
+        <a href="/livre/185/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/187.webp" 
+              alt="Légende (Azazel II)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Légende (Azazel II)</h3>
+            <p>Isaac ASIMOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une éminence grise : jean jardin 1904-1976" 
+        data-auteur="pierre assouline"
+        data-annee="2014"
+        data-ordre="186">
+        <a href="/livre/186/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/188.webp" 
+              alt="Une éminence grise : Jean Jardin 1904-1976"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une éminence grise : Jean Jardin 1904-1976</h3>
+            <p>Pierre ASSOULINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="albert londres" 
+        data-auteur="pierre assouline"
+        data-annee="1988"
+        data-ordre="187">
+        <a href="/livre/187/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/189.webp" 
+              alt="Albert Londres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Albert Londres</h3>
+            <p>Pierre ASSOULINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gaston gallimard" 
+        data-auteur="pierre assouline"
+        data-annee="1984"
+        data-ordre="188">
+        <a href="/livre/188/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/190.webp" 
+              alt="Gaston Gallimard"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gaston Gallimard</h3>
+            <p>Pierre ASSOULINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme de l&#39;art : d.h. kahnweiler" 
+        data-auteur="pierre assouline"
+        data-annee="1989"
+        data-ordre="189">
+        <a href="/livre/189/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/191.webp" 
+              alt="L&#39;homme de l&#39;art : D.H. Kahnweiler"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme de l&#39;art : D.H. Kahnweiler</h3>
+            <p>Pierre ASSOULINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dernier des camondo" 
+        data-auteur="pierre assouline"
+        data-annee="1997"
+        data-ordre="190">
+        <a href="/livre/190/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/192.webp" 
+              alt="Le dernier des Camondo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dernier des Camondo</h3>
+            <p>Pierre ASSOULINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lutetia" 
+        data-auteur="pierre assouline"
+        data-annee="2005"
+        data-ordre="191">
+        <a href="/livre/191/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/193.webp" 
+              alt="Lutetia"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lutetia</h3>
+            <p>Pierre ASSOULINE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-3/">← Précédent</a>
+    
+    
+    <span>Page 4 sur 153</span>
+    
+    
+      <a href="/catalogue/page-5/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

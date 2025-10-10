@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="les loukoums" 
+        data-auteur="yves navarre"
+        data-annee="1973"
+        data-ordre="4464">
+        <a href="/livre/4464/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4476.webp" 
+              alt="Les loukoums"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les loukoums</h3>
+            <p>Yves NAVARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le noir et le rouge" 
+        data-auteur="catherine nay"
+        data-annee="1984"
+        data-ordre="4465">
+        <a href="/livre/4465/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4477.webp" 
+              alt="Le noir et le rouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le noir et le rouge</h3>
+            <p>Catherine NAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les sept mitterrand" 
+        data-auteur="catherine nay"
+        data-annee="1988"
+        data-ordre="4466">
+        <a href="/livre/4466/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4478.webp" 
+              alt="Les sept Mitterrand"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les sept Mitterrand</h3>
+            <p>Catherine NAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hilda" 
+        data-auteur="marie ndiaye"
+        data-annee="1999"
+        data-ordre="4467">
+        <a href="/livre/4467/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4479.webp" 
+              alt="Hilda"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hilda</h3>
+            <p>Marie NDIAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ladivine" 
+        data-auteur="marie ndiaye"
+        data-annee="2013"
+        data-ordre="4468">
+        <a href="/livre/4468/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4480.webp" 
+              alt="Ladivine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ladivine</h3>
+            <p>Marie NDIAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="trois femmes puissantes" 
+        data-auteur="marie ndiaye"
+        data-annee="2009"
+        data-ordre="4469">
+        <a href="/livre/4469/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4481.webp" 
+              alt="Trois femmes puissantes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Trois femmes puissantes</h3>
+            <p>Marie NDIAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la cheffe, roman d’une cuisinière" 
+        data-auteur="marie ndiaye"
+        data-annee="2016"
+        data-ordre="4470">
+        <a href="/livre/4470/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4482.webp" 
+              alt="La Cheffe, roman d’une cuisinière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Cheffe, roman d’une cuisinière</h3>
+            <p>Marie NDIAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="en famille" 
+        data-auteur="marie ndiaye"
+        data-annee="1990"
+        data-ordre="4471">
+        <a href="/livre/4471/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4483.webp" 
+              alt="En famille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>En famille</h3>
+            <p>Marie NDIAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rosie carpe" 
+        data-auteur="marie ndiaye"
+        data-annee="2001"
+        data-ordre="4472">
+        <a href="/livre/4472/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4484.webp" 
+              alt="Rosie Carpe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rosie Carpe</h3>
+            <p>Marie NDIAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ma vie et mes prisons" 
+        data-auteur="pandit nehru"
+        data-annee="1952"
+        data-ordre="4473">
+        <a href="/livre/4473/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4485.webp" 
+              alt="Ma vie et mes prisons"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ma vie et mes prisons</h3>
+            <p>Pandit NEHRU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la faute du président loubet" 
+        data-auteur="jacques neirynck"
+        data-annee="2020"
+        data-ordre="4474">
+        <a href="/livre/4474/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4486.webp" 
+              alt="La faute du président Loubet"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La faute du président Loubet</h3>
+            <p>Jacques NEIRYNCK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le crime du prince de galles" 
+        data-auteur="jacques neirynck"
+        data-annee="2008"
+        data-ordre="4475">
+        <a href="/livre/4475/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4487.webp" 
+              alt="Le crime du Prince de Galles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le crime du Prince de Galles</h3>
+            <p>Jacques NEIRYNCK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jézabel" 
+        data-auteur="irène nemirovsky"
+        data-annee="2005"
+        data-ordre="4476">
+        <a href="/livre/4476/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4488.webp" 
+              alt="Jézabel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jézabel</h3>
+            <p>Irène NEMIROVSKY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="david golder" 
+        data-auteur="irène nemirovsky"
+        data-annee="1929"
+        data-ordre="4477">
+        <a href="/livre/4477/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4489.webp" 
+              alt="David Golder"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>David Golder</h3>
+            <p>Irène NEMIROVSKY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bal" 
+        data-auteur="irène nemirovsky"
+        data-annee="1985"
+        data-ordre="4478">
+        <a href="/livre/4478/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4490.webp" 
+              alt="Le bal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bal</h3>
+            <p>Irène NEMIROVSKY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="suite française" 
+        data-auteur="irène nemirovsky"
+        data-annee="2004"
+        data-ordre="4479">
+        <a href="/livre/4479/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4491.webp" 
+              alt="Suite française"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Suite française</h3>
+            <p>Irène NEMIROVSKY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j’avoue que j’ai vécu" 
+        data-auteur="pablo neruda"
+        data-annee="1987"
+        data-ordre="4480">
+        <a href="/livre/4480/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4492.webp" 
+              alt="J’avoue que j’ai vécu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J’avoue que j’ai vécu</h3>
+            <p>Pablo NERUDA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la rose détachéeet autres poèmes" 
+        data-auteur="pablo neruda"
+        data-annee="2004"
+        data-ordre="4481">
+        <a href="/livre/4481/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4493.webp" 
+              alt="La rose détachéeet autres poèmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La rose détachéeet autres poèmes</h3>
+            <p>Pablo NERUDA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les vers du capitainesuivi dela centaine d&#39;amour" 
+        data-auteur="pablo neruda"
+        data-annee="1984"
+        data-ordre="4482">
+        <a href="/livre/4482/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4494.webp" 
+              alt="Les vers du Capitainesuivi deLa centaine d&#39;amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les vers du Capitainesuivi deLa centaine d&#39;amour</h3>
+            <p>Pablo NERUDA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les filles du feusuivi deaurélia" 
+        data-auteur="gérard de nerval"
+        data-annee="2012"
+        data-ordre="4483">
+        <a href="/livre/4483/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4495.webp" 
+              alt="Les filles du feusuivi deAurélia"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les filles du feusuivi deAurélia</h3>
+            <p>Gérard de NERVAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="voyage en orient(4 tomes)" 
+        data-auteur="gérard de nerval"
+        data-annee="2012"
+        data-ordre="4484">
+        <a href="/livre/4484/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4496.webp" 
+              alt="Voyage en Orient(4 tomes)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Voyage en Orient(4 tomes)</h3>
+            <p>Gérard de NERVAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="retour à la grande ombre" 
+        data-auteur="hakan nesser"
+        data-annee="2005"
+        data-ordre="4485">
+        <a href="/livre/4485/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4497.webp" 
+              alt="Retour à la grande ombre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Retour à la grande ombre</h3>
+            <p>Hakan NESSER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pétaleset autres histoires embarrassantes" 
+        data-auteur="guadalupe nettel"
+        data-annee="2009"
+        data-ordre="4486">
+        <a href="/livre/4486/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4498.webp" 
+              alt="Pétaleset autres histoires embarrassantes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pétaleset autres histoires embarrassantes</h3>
+            <p>Guadalupe NETTEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="flétrissure" 
+        data-auteur="nele neuhaus"
+        data-annee="2012"
+        data-ordre="4487">
+        <a href="/livre/4487/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4499.webp" 
+              alt="Flétrissure"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Flétrissure</h3>
+            <p>Nele NEUHAUS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la petite française" 
+        data-auteur="eric neuhoff"
+        data-annee="1997"
+        data-ordre="4488">
+        <a href="/livre/4488/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4500.webp" 
+              alt="La petite Française"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La petite Française</h3>
+            <p>Eric NEUHOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les hanches de laetitia" 
+        data-auteur="eric neuhoff"
+        data-annee="1998"
+        data-ordre="4489">
+        <a href="/livre/4489/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4501.webp" 
+              alt="Les hanches de Laetitia"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les hanches de Laetitia</h3>
+            <p>Eric NEUHOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un bien fou" 
+        data-auteur="eric neuhoff"
+        data-annee="2001"
+        data-ordre="4490">
+        <a href="/livre/4490/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4502.webp" 
+              alt="Un bien fou"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un bien fou</h3>
+            <p>Eric NEUHOFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cercle magique" 
+        data-auteur="katherine neville"
+        data-annee="2004"
+        data-ordre="4491">
+        <a href="/livre/4491/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4503.webp" 
+              alt="Le cercle magique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cercle magique</h3>
+            <p>Katherine NEVILLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le feu sacré" 
+        data-auteur="katherine neville"
+        data-annee="2009"
+        data-ordre="4492">
+        <a href="/livre/4492/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4504.webp" 
+              alt="Le feu sacré"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le feu sacré</h3>
+            <p>Katherine NEVILLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le huit" 
+        data-auteur="katherine neville"
+        data-annee="2009"
+        data-ordre="4493">
+        <a href="/livre/4493/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4505.webp" 
+              alt="Le Huit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Huit</h3>
+            <p>Katherine NEVILLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="comment j&#39;ai raté mes vacances" 
+        data-auteur="geoff nicholson"
+        data-annee="2007"
+        data-ordre="4494">
+        <a href="/livre/4494/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4506.webp" 
+              alt="Comment j&#39;ai raté mes vacances"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Comment j&#39;ai raté mes vacances</h3>
+            <p>Geoff NICHOLSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="par delà le bien et le mal" 
+        data-auteur="nietzche"
+        data-annee="1913"
+        data-ordre="4495">
+        <a href="/livre/4495/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4507.webp" 
+              alt="Par delà le bien et le mal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Par delà le bien et le mal</h3>
+            <p>NIETZCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ainsi parlait zarathoustra" 
+        data-auteur="nietzche"
+        data-annee="2017"
+        data-ordre="4496">
+        <a href="/livre/4496/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4508.webp" 
+              alt="Ainsi parlait Zarathoustra"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ainsi parlait Zarathoustra</h3>
+            <p>NIETZCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la nouvelle pornographie" 
+        data-auteur="marie nimier"
+        data-annee="2000"
+        data-ordre="4497">
+        <a href="/livre/4497/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4509.webp" 
+              alt="La nouvelle pornographie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La nouvelle pornographie</h3>
+            <p>Marie NIMIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la reine du silence" 
+        data-auteur="marie nimier"
+        data-annee="2004"
+        data-ordre="4498">
+        <a href="/livre/4498/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4510.webp" 
+              alt="La Reine du silence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Reine du silence</h3>
+            <p>Marie NIMIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="photo-photo" 
+        data-auteur="marie nimier"
+        data-annee="2010"
+        data-ordre="4499">
+        <a href="/livre/4499/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4511.webp" 
+              alt="Photo-Photo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Photo-Photo</h3>
+            <p>Marie NIMIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire d’un amour" 
+        data-auteur="roger nimier"
+        data-annee="1953"
+        data-ordre="4500">
+        <a href="/livre/4500/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4512.webp" 
+              alt="Histoire d’un amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire d’un amour</h3>
+            <p>Roger NIMIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal 1931-1934" 
+        data-auteur="anaïs nin"
+        data-annee="1969"
+        data-ordre="4501">
+        <a href="/livre/4501/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4513.webp" 
+              alt="Journal 1931-1934"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal 1931-1934</h3>
+            <p>Anaïs NIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal 1934-1939" 
+        data-auteur="anaïs nin"
+        data-annee="1974"
+        data-ordre="4502">
+        <a href="/livre/4502/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4514.webp" 
+              alt="Journal 1934-1939"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal 1934-1939</h3>
+            <p>Anaïs NIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal 1939-1944" 
+        data-auteur="anaïs nin"
+        data-annee="1974"
+        data-ordre="4503">
+        <a href="/livre/4503/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4515.webp" 
+              alt="Journal 1939-1944"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal 1939-1944</h3>
+            <p>Anaïs NIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal 1947-1955" 
+        data-auteur="anaïs nin"
+        data-annee="1997"
+        data-ordre="4504">
+        <a href="/livre/4504/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4516.webp" 
+              alt="Journal 1947-1955"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal 1947-1955</h3>
+            <p>Anaïs NIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal 1955-1966" 
+        data-auteur="anaïs nin"
+        data-annee="1977"
+        data-ordre="4505">
+        <a href="/livre/4505/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4517.webp" 
+              alt="Journal 1955-1966"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal 1955-1966</h3>
+            <p>Anaïs NIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="enfant terrible" 
+        data-auteur="john niven"
+        data-annee="2015"
+        data-ordre="4506">
+        <a href="/livre/4506/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4518.webp" 
+              alt="Enfant terrible"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Enfant terrible</h3>
+            <p>John NIVEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="horsita" 
+        data-auteur="lorette nobecourt"
+        data-annee="2001"
+        data-ordre="4507">
+        <a href="/livre/4507/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4519.webp" 
+              alt="Horsita"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Horsita</h3>
+            <p>Lorette NOBECOURT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de la résistance en france de 1940 à 1945 -la première année - juin 1940 – juin 1941" 
+        data-auteur="henri nogueres"
+        data-annee="1967"
+        data-ordre="4508">
+        <a href="/livre/4508/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4520.webp" 
+              alt="Histoire de la Résistance en France de 1940 à 1945 -La première année - Juin 1940 – Juin 1941"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de la Résistance en France de 1940 à 1945 -La première année - Juin 1940 – Juin 1941</h3>
+            <p>Henri NOGUERES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lénine dada" 
+        data-auteur="dominique noguez"
+        data-annee="2007"
+        data-ordre="4509">
+        <a href="/livre/4509/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4521.webp" 
+              alt="Lénine dada"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lénine dada</h3>
+            <p>Dominique NOGUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="amour noir" 
+        data-auteur="dominique noguez"
+        data-annee="1997"
+        data-ordre="4510">
+        <a href="/livre/4510/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4522.webp" 
+              alt="Amour noir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Amour noir</h3>
+            <p>Dominique NOGUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="initiation aux échecs" 
+        data-auteur="michel noir"
+        data-annee="2005"
+        data-ordre="4511">
+        <a href="/livre/4511/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4523.webp" 
+              alt="Initiation aux échecs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Initiation aux échecs</h3>
+            <p>Michel NOIR</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-93/">← Précédent</a>
+    
+    
+    <span>Page 94 sur 153</span>
+    
+    
+      <a href="/catalogue/page-95/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

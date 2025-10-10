@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="grasse carcasse" 
+        data-auteur="manu larcenet"
+        data-annee="2009"
+        data-ordre="7008">
+        <a href="/livre/7008/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7024.webp" 
+              alt="Grasse carcasse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Grasse carcasse</h3>
+            <p>Manu Larcenet</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;apocalypse selon saint jacky" 
+        data-auteur="manu larcenet"
+        data-annee="2011"
+        data-ordre="7009">
+        <a href="/livre/7009/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7025.webp" 
+              alt="L&#39;apocalypse selon saint jacky"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;apocalypse selon saint jacky</h3>
+            <p>Manu Larcenet</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la tête la premiere " 
+        data-auteur="manu larcenet"
+        data-annee="0"
+        data-ordre="7010">
+        <a href="/livre/7010/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7026.webp" 
+              alt="La tête la premiere "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La tête la premiere </h3>
+            <p>Manu Larcenet</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pourvu que les bouddhistes se trompent " 
+        data-auteur="manu larcenet"
+        data-annee="2014"
+        data-ordre="7011">
+        <a href="/livre/7011/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7027.webp" 
+              alt="Pourvu que les bouddhistes se trompent "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pourvu que les bouddhistes se trompent </h3>
+            <p>Manu Larcenet</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;hacheleme que j&#39;aime" 
+        data-auteur="caza"
+        data-annee="1979"
+        data-ordre="7012">
+        <a href="/livre/7012/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7028.webp" 
+              alt="L&#39;hacheleme que j&#39;aime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;hacheleme que j&#39;aime</h3>
+            <p>Caza</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="scenes de la vie de banlieue" 
+        data-auteur="caza"
+        data-annee="1991"
+        data-ordre="7013">
+        <a href="/livre/7013/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7029.webp" 
+              alt="Scenes de la vie de banlieue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Scenes de la vie de banlieue</h3>
+            <p>Caza</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le guide des grands-parents" 
+        data-auteur="grenon goupil "
+        data-annee="2000"
+        data-ordre="7014">
+        <a href="/livre/7014/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7030.webp" 
+              alt="Le guide des grands-parents"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le guide des grands-parents</h3>
+            <p>Grenon Goupil </p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le guide de la cinquantaine " 
+        data-auteur="tépaz guillon"
+        data-annee="1998"
+        data-ordre="7015">
+        <a href="/livre/7015/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7031.webp" 
+              alt="le guide de la cinquantaine "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>le guide de la cinquantaine </h3>
+            <p>Tépaz Guillon</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="guide du jeune père" 
+        data-auteur="goupil "
+        data-annee="1998"
+        data-ordre="7016">
+        <a href="/livre/7016/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7032.webp" 
+              alt="Guide du jeune père"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Guide du jeune père</h3>
+            <p>Goupil </p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le soleil nait derriere le louvre " 
+        data-auteur="leo malet-moynot"
+        data-annee="2007"
+        data-ordre="7017">
+        <a href="/livre/7017/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7033.webp" 
+              alt="le soleil nait derriere le louvre "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>le soleil nait derriere le louvre </h3>
+            <p>Leo Malet-moynot</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoires d&#39;un privé " 
+        data-auteur="alack sinner "
+        data-annee="0"
+        data-ordre="7018">
+        <a href="/livre/7018/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7034.webp" 
+              alt="mémoires d&#39;un privé "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>mémoires d&#39;un privé </h3>
+            <p>Alack Sinner </p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gandhi" 
+        data-auteur="brocal remohi"
+        data-annee="1987"
+        data-ordre="7019">
+        <a href="/livre/7019/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7035.webp" 
+              alt="Gandhi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gandhi</h3>
+            <p>Brocal Remohi</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="monsieur tendre" 
+        data-auteur="gégé"
+        data-annee="1984"
+        data-ordre="7020">
+        <a href="/livre/7020/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7036.webp" 
+              alt="Monsieur tendre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Monsieur tendre</h3>
+            <p>Gégé</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les loups" 
+        data-auteur="michel riu"
+        data-annee="1982"
+        data-ordre="7021">
+        <a href="/livre/7021/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7037.webp" 
+              alt="Les loups"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les loups</h3>
+            <p>Michel Riu</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hammett" 
+        data-auteur="jean dufaux  marc malès"
+        data-annee="1997"
+        data-ordre="7022">
+        <a href="/livre/7022/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7038.webp" 
+              alt="Hammett"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hammett</h3>
+            <p>Jean dufaux  Marc Malès</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fax de sarajevo" 
+        data-auteur="joe kubert"
+        data-annee="1997"
+        data-ordre="7023">
+        <a href="/livre/7023/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7039.webp" 
+              alt="Fax de sarajevo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fax de sarajevo</h3>
+            <p>Joe Kubert</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme a la valise" 
+        data-auteur="gossens"
+        data-annee="0"
+        data-ordre="7024">
+        <a href="/livre/7024/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7040.webp" 
+              alt="L&#39;homme a la valise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme a la valise</h3>
+            <p>Gossens</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les princesses aussi vont au petit coin" 
+        data-auteur="chabouté"
+        data-annee="2011"
+        data-ordre="7025">
+        <a href="/livre/7025/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7041.webp" 
+              alt="les princesses aussi vont au petit coin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>les princesses aussi vont au petit coin</h3>
+            <p>Chabouté</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tout seul" 
+        data-auteur="chabouté"
+        data-annee="2008"
+        data-ordre="7026">
+        <a href="/livre/7026/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7042.webp" 
+              alt="Tout seul"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tout seul</h3>
+            <p>Chabouté</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la marie en plastique" 
+        data-auteur="prudhomme et rabaté "
+        data-annee="2015"
+        data-ordre="7027">
+        <a href="/livre/7027/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7043.webp" 
+              alt="La marie en plastique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La marie en plastique</h3>
+            <p>Prudhomme et Rabaté </p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le petit rien tout neuf avec un ventre jaune " 
+        data-auteur="rabaté"
+        data-annee="2009"
+        data-ordre="7028">
+        <a href="/livre/7028/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7044.webp" 
+              alt="le petit rien tout neuf avec un ventre jaune "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>le petit rien tout neuf avec un ventre jaune </h3>
+            <p>Rabaté</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="stigmates" 
+        data-auteur="mattoti piersanti"
+        data-annee="1998"
+        data-ordre="7029">
+        <a href="/livre/7029/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7045.webp" 
+              alt="Stigmates"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Stigmates</h3>
+            <p>Mattoti Piersanti</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mauvais genre " 
+        data-auteur="chloé cruchaudet"
+        data-annee="2013"
+        data-ordre="7030">
+        <a href="/livre/7030/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7046.webp" 
+              alt="Mauvais genre "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mauvais genre </h3>
+            <p>Chloé cruchaudet</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pillules bleues " 
+        data-auteur="trederik peeters"
+        data-annee="0"
+        data-ordre="7031">
+        <a href="/livre/7031/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7047.webp" 
+              alt="Pillules Bleues "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pillules Bleues </h3>
+            <p>Trederik Peeters</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cinq mille kilomètres par secondes" 
+        data-auteur="manuele fior"
+        data-annee="2015"
+        data-ordre="7032">
+        <a href="/livre/7032/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7048.webp" 
+              alt="Cinq mille kilomètres par secondes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cinq mille kilomètres par secondes</h3>
+            <p>Manuele Fior</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="catharsis" 
+        data-auteur="luz"
+        data-annee="2015"
+        data-ordre="7033">
+        <a href="/livre/7033/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7049.webp" 
+              alt="Catharsis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Catharsis</h3>
+            <p>Luz</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les quatres fleuves" 
+        data-auteur="fred vargas / baudouin"
+        data-annee="2015"
+        data-ordre="7034">
+        <a href="/livre/7034/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7050.webp" 
+              alt="Les quatres fleuves"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les quatres fleuves</h3>
+            <p>Fred Vargas / Baudouin</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la revanche de bane " 
+        data-auteur="chuck dixon / graham nolan"
+        data-annee="2019"
+        data-ordre="7035">
+        <a href="/livre/7035/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7051.webp" 
+              alt="La revanche de Bane "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La revanche de Bane </h3>
+            <p>Chuck Dixon / Graham Nolan</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bran ruz" 
+        data-auteur="auclair / deschamps"
+        data-annee="1993"
+        data-ordre="7036">
+        <a href="/livre/7036/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7052.webp" 
+              alt="Bran ruz"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bran ruz</h3>
+            <p>Auclair / Deschamps</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ile de satan" 
+        data-auteur="hans.g"
+        data-annee="1982"
+        data-ordre="7037">
+        <a href="/livre/7037/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7053.webp" 
+              alt="L&#39;ile de satan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ile de satan</h3>
+            <p>Hans.G</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les 7 péchés capitaux" 
+        data-auteur="ha!"
+        data-annee="2020"
+        data-ordre="7038">
+        <a href="/livre/7038/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7054.webp" 
+              alt="les 7 péchés capitaux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>les 7 péchés capitaux</h3>
+            <p>Ha!</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="agrippine et l&#39;ancêtre" 
+        data-auteur="claire brétecher"
+        data-annee="2007"
+        data-ordre="7039">
+        <a href="/livre/7039/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7055.webp" 
+              alt="Agrippine et l&#39;ancêtre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Agrippine et l&#39;ancêtre</h3>
+            <p>Claire Brétecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a l&#39;ombre des tours mortes" 
+        data-auteur="art spiegelman"
+        data-annee="2008"
+        data-ordre="7040">
+        <a href="/livre/7040/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7056.webp" 
+              alt="A l&#39;ombre des tours mortes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A l&#39;ombre des tours mortes</h3>
+            <p>Art Spiegelman</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pascin" 
+        data-auteur="star joann"
+        data-annee="2003"
+        data-ordre="7041">
+        <a href="/livre/7041/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7057.webp" 
+              alt="Pascin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pascin</h3>
+            <p>Star Joann</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mourir partir revenir le jeu des hirondelles " 
+        data-auteur="abirached zeina"
+        data-annee="2017"
+        data-ordre="7042">
+        <a href="/livre/7042/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7058.webp" 
+              alt="Mourir partir revenir le jeu des hirondelles "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mourir partir revenir le jeu des hirondelles </h3>
+            <p>Abirached Zeina</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="portugal" 
+        data-auteur="pedrosa"
+        data-annee="2011"
+        data-ordre="7043">
+        <a href="/livre/7043/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7059.webp" 
+              alt="Portugal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Portugal</h3>
+            <p>Pedrosa</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme piege " 
+        data-auteur="enki bilal"
+        data-annee="2005"
+        data-ordre="7044">
+        <a href="/livre/7044/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7061.webp" 
+              alt="La femme piege "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme piege </h3>
+            <p>Enki Bilal</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="froid équateur" 
+        data-auteur="enki bilal"
+        data-annee="2002"
+        data-ordre="7045">
+        <a href="/livre/7045/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7062.webp" 
+              alt="Froid équateur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Froid équateur</h3>
+            <p>Enki Bilal</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la foire aux immortels " 
+        data-auteur="enki bilal"
+        data-annee="1990"
+        data-ordre="7046">
+        <a href="/livre/7046/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7063.webp" 
+              alt="La foire aux immortels "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La foire aux immortels </h3>
+            <p>Enki Bilal</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un siècle d&#39;amour " 
+        data-auteur="enki bilal"
+        data-annee="1999"
+        data-ordre="7047">
+        <a href="/livre/7047/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7064.webp" 
+              alt="Un siècle d&#39;amour "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un siècle d&#39;amour </h3>
+            <p>Enki Bilal</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fin du monde est pour se soir " 
+        data-auteur="rené pétillon"
+        data-annee="1986"
+        data-ordre="7048">
+        <a href="/livre/7048/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7065.webp" 
+              alt="La fin du monde est pour se soir "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fin du monde est pour se soir </h3>
+            <p>René Pétillon</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chien des basketville" 
+        data-auteur="rené pétillon"
+        data-annee="1984"
+        data-ordre="7049">
+        <a href="/livre/7049/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7066.webp" 
+              alt="Le chien des basketville"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chien des basketville</h3>
+            <p>René Pétillon</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bons baisers de corse et d&#39;ailleurs" 
+        data-auteur="rené pétillon"
+        data-annee="2003"
+        data-ordre="7050">
+        <a href="/livre/7050/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7067.webp" 
+              alt="Bons baisers de Corse et d&#39;ailleurs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bons baisers de Corse et d&#39;ailleurs</h3>
+            <p>René Pétillon</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="120, rue de la gare " 
+        data-auteur="tardi - leo malet"
+        data-annee="1997"
+        data-ordre="7051">
+        <a href="/livre/7051/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7068.webp" 
+              alt="120, rue de la gare "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>120, rue de la gare </h3>
+            <p>Tardi - Leo Malet</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le demon des glaces" 
+        data-auteur="jacques tardi"
+        data-annee="2001"
+        data-ordre="7052">
+        <a href="/livre/7052/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7069.webp" 
+              alt="le demon des glaces"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>le demon des glaces</h3>
+            <p>Jacques Tardi</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la débauche" 
+        data-auteur="tardi - pennac"
+        data-annee="0"
+        data-ordre="7053">
+        <a href="/livre/7053/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7070.webp" 
+              alt="La débauche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La débauche</h3>
+            <p>Tardi - Pennac</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le secret de la salamandre" 
+        data-auteur="jacques tardi"
+        data-annee="2018"
+        data-ordre="7054">
+        <a href="/livre/7054/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7071.webp" 
+              alt="le secret de la salamandre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>le secret de la salamandre</h3>
+            <p>Jacques Tardi</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="adèle et la bête" 
+        data-auteur="jacques tardi"
+        data-annee="1976"
+        data-ordre="7055">
+        <a href="/livre/7055/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7072.webp" 
+              alt="Adèle et la bête"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Adèle et la bête</h3>
+            <p>Jacques Tardi</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-146/">← Précédent</a>
+    
+    
+    <span>Page 147 sur 153</span>
+    
+    
+      <a href="/catalogue/page-148/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

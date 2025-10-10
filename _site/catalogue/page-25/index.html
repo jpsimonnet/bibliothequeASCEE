@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le dernier crâne de monsieur sade" 
+        data-auteur="jacques chessex"
+        data-annee="2010"
+        data-ordre="1152">
+        <a href="/livre/1152/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1155.webp" 
+              alt="Le dernier crâne de Monsieur Sade"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dernier crâne de Monsieur Sade</h3>
+            <p>Jacques CHESSEX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un juif pour l&#39;exemple" 
+        data-auteur="jacques chessex"
+        data-annee="2009"
+        data-ordre="1153">
+        <a href="/livre/1153/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1156.webp" 
+              alt="Un juif pour l&#39;exemple"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un juif pour l&#39;exemple</h3>
+            <p>Jacques CHESSEX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="trucs et astuces du jardinier bio" 
+        data-auteur="frédérique chevalier"
+        data-annee="2013"
+        data-ordre="1154">
+        <a href="/livre/1154/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1157.webp" 
+              alt="Trucs et astuces du jardinier bio"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Trucs et astuces du jardinier bio</h3>
+            <p>Frédérique CHEVALIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les parisiens" 
+        data-auteur="louis chevalier"
+        data-annee="1967"
+        data-ordre="1155">
+        <a href="/livre/1155/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1158.webp" 
+              alt="Les Parisiens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Parisiens</h3>
+            <p>Louis CHEVALIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la dame à la licorne" 
+        data-auteur="tracy chevalier"
+        data-annee="2003"
+        data-ordre="1156">
+        <a href="/livre/1156/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1159.webp" 
+              alt="La Dame à la Licorne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Dame à la Licorne</h3>
+            <p>Tracy CHEVALIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la jeune fille à la perle" 
+        data-auteur="tracy chevalier"
+        data-annee="2004"
+        data-ordre="1157">
+        <a href="/livre/1157/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1160.webp" 
+              alt="La jeune fille à la perle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La jeune fille à la perle</h3>
+            <p>Tracy CHEVALIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="impératrice joséphine(correspondance 1782-1814)" 
+        data-auteur="bernard chevallier"
+        data-annee="1999"
+        data-ordre="1158">
+        <a href="/livre/1158/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1161.webp" 
+              alt="Impératrice Joséphine(correspondance 1782-1814)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Impératrice Joséphine(correspondance 1782-1814)</h3>
+            <p>Bernard CHEVALLIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de la franc-maçonnerie française -tomes 2 et 3" 
+        data-auteur="pierre chevallier"
+        data-annee="1974"
+        data-ordre="1159">
+        <a href="/livre/1159/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1162.webp" 
+              alt="Histoire de la Franc-Maçonnerie française -Tomes 2 et 3"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de la Franc-Maçonnerie française -Tomes 2 et 3</h3>
+            <p>Pierre CHEVALLIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="défis républicains" 
+        data-auteur="jean-pierre chevenement"
+        data-annee="2004"
+        data-ordre="1160">
+        <a href="/livre/1160/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1163.webp" 
+              alt="Défis républicains"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Défis républicains</h3>
+            <p>Jean-Pierre CHEVENEMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vaillant petit tailleur" 
+        data-auteur="eric chevillard"
+        data-annee="2003"
+        data-ordre="1161">
+        <a href="/livre/1161/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1164.webp" 
+              alt="Le vaillant petit tailleur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vaillant petit tailleur</h3>
+            <p>Eric CHEVILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="louis xv" 
+        data-auteur="jean-françois chiappe"
+        data-annee="1996"
+        data-ordre="1162">
+        <a href="/livre/1162/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1165.webp" 
+              alt="Louis XV"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Louis XV</h3>
+            <p>Jean-François CHIAPPE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="louis xvi - l&#39;otage" 
+        data-auteur="jean-françois chiappe"
+        data-annee="1987"
+        data-ordre="1163">
+        <a href="/livre/1163/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1166.webp" 
+              alt="Louis XVI - L&#39;otage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Louis XVI - L&#39;otage</h3>
+            <p>Jean-François CHIAPPE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="louis xvi - le prince" 
+        data-auteur="jean-françois chiappe"
+        data-annee="1987"
+        data-ordre="1164">
+        <a href="/livre/1164/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1167.webp" 
+              alt="Louis XVI - Le prince"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Louis XVI - Le prince</h3>
+            <p>Jean-François CHIAPPE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="louis xvi - le roi" 
+        data-auteur="jean-françois chiappe"
+        data-annee="1987"
+        data-ordre="1165">
+        <a href="/livre/1165/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1168.webp" 
+              alt="Louis XVI - Le roi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Louis XVI - Le roi</h3>
+            <p>Jean-François CHIAPPE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="push the push button" 
+        data-auteur="fanny chiarello"
+        data-annee="2006"
+        data-ordre="1166">
+        <a href="/livre/1166/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1169.webp" 
+              alt="Push the push button"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Push the push button</h3>
+            <p>Fanny CHIARELLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;espoir fait vivre" 
+        data-auteur="lee child"
+        data-annee="2012"
+        data-ordre="1167">
+        <a href="/livre/1167/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1170.webp" 
+              alt="L&#39;espoir fait vivre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;espoir fait vivre</h3>
+            <p>Lee CHILD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un visiteur pour ophélie" 
+        data-auteur="lee child"
+        data-annee="2001"
+        data-ordre="1168">
+        <a href="/livre/1168/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1171.webp" 
+              alt="Un visiteur pour Ophélie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un visiteur pour Ophélie</h3>
+            <p>Lee CHILD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="elle savait" 
+        data-auteur="lee child"
+        data-annee="2010"
+        data-ordre="1169">
+        <a href="/livre/1169/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1172.webp" 
+              alt="Elle savait"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Elle savait</h3>
+            <p>Lee CHILD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="conversation" 
+        data-auteur="b./carolis (de) p. chirac"
+        data-annee="2002"
+        data-ordre="1170">
+        <a href="/livre/1170/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1173.webp" 
+              alt="Conversation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Conversation</h3>
+            <p>B./CAROLIS (de) P. CHIRAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le modèle" 
+        data-auteur="lars saabye chistensen"
+        data-annee="0"
+        data-ordre="1171">
+        <a href="/livre/1171/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1174.webp" 
+              alt="Le modèle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le modèle</h3>
+            <p>Lars Saabye CHISTENSEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cercle du karma" 
+        data-auteur="kunzang choden"
+        data-annee="2011"
+        data-ordre="1172">
+        <a href="/livre/1172/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1175.webp" 
+              alt="Le cercle du Karma"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cercle du Karma</h3>
+            <p>Kunzang CHODEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoires" 
+        data-auteur="abbé de choisy"
+        data-annee="1966"
+        data-ordre="1173">
+        <a href="/livre/1173/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1176.webp" 
+              alt="Mémoires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoires</h3>
+            <p>Abbé de CHOISY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une place au soleil" 
+        data-auteur="driss chraibi"
+        data-annee="1993"
+        data-ordre="1174">
+        <a href="/livre/1174/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1177.webp" 
+              alt="Une place au soleil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une place au soleil</h3>
+            <p>Driss CHRAIBI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="perceval ou le roman du graal" 
+        data-auteur="de troyes chretien"
+        data-annee="1960"
+        data-ordre="1175">
+        <a href="/livre/1175/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1178.webp" 
+              alt="Perceval ou le roman du Graal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Perceval ou le roman du Graal</h3>
+            <p>DE TROYES CHRETIEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cinq petits cochons" 
+        data-auteur="agatha christie"
+        data-annee="1986"
+        data-ordre="1176">
+        <a href="/livre/1176/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1179.webp" 
+              alt="Cinq petits cochons"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cinq petits cochons</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un cadavre dans la bibliothèque" 
+        data-auteur="agatha christie"
+        data-annee="2013"
+        data-ordre="1177">
+        <a href="/livre/1177/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1180.webp" 
+              alt="Un cadavre dans la bibliothèque"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un cadavre dans la bibliothèque</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je ne suis pas coupable" 
+        data-auteur="agatha christie"
+        data-annee="1944"
+        data-ordre="1178">
+        <a href="/livre/1178/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1181.webp" 
+              alt="Je ne suis pas coupable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je ne suis pas coupable</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mystérieuse affaire de styles" 
+        data-auteur="agatha christie"
+        data-annee="1932"
+        data-ordre="1179">
+        <a href="/livre/1179/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1182.webp" 
+              alt="La mystérieuse affaire de styles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mystérieuse affaire de styles</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="némésis" 
+        data-auteur="agatha christie"
+        data-annee="1970"
+        data-ordre="1180">
+        <a href="/livre/1180/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1183.webp" 
+              alt="Némésis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Némésis</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a.b.c. contre poirot" 
+        data-auteur="agatha christie"
+        data-annee="2013"
+        data-ordre="1181">
+        <a href="/livre/1181/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1184.webp" 
+              alt="A.B.C. contre Poirot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A.B.C. contre Poirot</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cartes sur table" 
+        data-auteur="agatha christie"
+        data-annee="1939"
+        data-ordre="1182">
+        <a href="/livre/1182/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1185.webp" 
+              alt="Cartes sur table"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cartes sur table</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dix petits nègres" 
+        data-auteur="agatha christie"
+        data-annee="2017"
+        data-ordre="1183">
+        <a href="/livre/1183/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1186.webp" 
+              alt="Dix petits nègres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dix petits nègres</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="drame en trois actes" 
+        data-auteur="agatha christie"
+        data-annee="1960"
+        data-ordre="1184">
+        <a href="/livre/1184/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1187.webp" 
+              alt="Drame en trois actes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Drame en trois actes</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jeux de glace" 
+        data-auteur="agatha christie"
+        data-annee="2015"
+        data-ordre="1185">
+        <a href="/livre/1185/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1188.webp" 
+              alt="Jeux de glace"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jeux de glace</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;heure zéro" 
+        data-auteur="agatha christie"
+        data-annee="1947"
+        data-ordre="1186">
+        <a href="/livre/1186/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1189.webp" 
+              alt="L&#39;heure zéro"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;heure zéro</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme au complet marron" 
+        data-auteur="agatha christie"
+        data-annee="1930"
+        data-ordre="1187">
+        <a href="/livre/1187/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1190.webp" 
+              alt="L&#39;homme au complet marron"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme au complet marron</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la dernière énigme" 
+        data-auteur="agatha christie"
+        data-annee="2014"
+        data-ordre="1188">
+        <a href="/livre/1188/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1191.webp" 
+              alt="La dernière énigme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La dernière énigme</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison biscornue" 
+        data-auteur="agatha christie"
+        data-annee="1975"
+        data-ordre="1189">
+        <a href="/livre/1189/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1192.webp" 
+              alt="La maison biscornue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison biscornue</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison du péril" 
+        data-auteur="agatha christie"
+        data-annee="2015"
+        data-ordre="1190">
+        <a href="/livre/1190/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1193.webp" 
+              alt="La maison du péril"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison du péril</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mort dans les nuages" 
+        data-auteur="agatha christie"
+        data-annee="1978"
+        data-ordre="1191">
+        <a href="/livre/1191/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1194.webp" 
+              alt="La mort dans les nuages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mort dans les nuages</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mort n&#39;est pas une fin" 
+        data-auteur="agatha christie"
+        data-annee="1962"
+        data-ordre="1192">
+        <a href="/livre/1192/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1195.webp" 
+              alt="La mort n&#39;est pas une fin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mort n&#39;est pas une fin</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bal de la victoire" 
+        data-auteur="agatha christie"
+        data-annee="2015"
+        data-ordre="1193">
+        <a href="/livre/1193/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1196.webp" 
+              alt="Le bal de la victoire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bal de la victoire</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat et les pigeons" 
+        data-auteur="agatha christie"
+        data-annee="2013"
+        data-ordre="1194">
+        <a href="/livre/1194/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1197.webp" 
+              alt="Le chat et les pigeons"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat et les pigeons</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cheval à bascule" 
+        data-auteur="agatha christie"
+        data-annee="2014"
+        data-ordre="1195">
+        <a href="/livre/1195/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1198.webp" 
+              alt="Le cheval à bascule"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cheval à bascule</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le crime de l’orient-express" 
+        data-auteur="agatha christie"
+        data-annee="1978"
+        data-ordre="1196">
+        <a href="/livre/1196/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1199.webp" 
+              alt="Le crime de l’Orient-Express"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le crime de l’Orient-Express</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le flux et le reflux" 
+        data-auteur="agatha christie"
+        data-annee="1979"
+        data-ordre="1197">
+        <a href="/livre/1197/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1200.webp" 
+              alt="Le flux et le reflux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le flux et le reflux</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le meurtre de roger ackroyd" 
+        data-auteur="agatha christie"
+        data-annee="2013"
+        data-ordre="1198">
+        <a href="/livre/1198/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1201.webp" 
+              alt="Le meurtre de Roger Ackroyd"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le meurtre de Roger Ackroyd</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le miroir se brisa" 
+        data-auteur="agatha christie"
+        data-annee="1966"
+        data-ordre="1199">
+        <a href="/livre/1199/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1202.webp" 
+              alt="Le miroir se brisa"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le miroir se brisa</h3>
+            <p>Agatha CHRISTIE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-24/">← Précédent</a>
+    
+    
+    <span>Page 25 sur 153</span>
+    
+    
+      <a href="/catalogue/page-26/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

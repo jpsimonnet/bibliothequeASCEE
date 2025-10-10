@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="dans les forêts de sibérie" 
+        data-auteur="sylvain tesson"
+        data-annee="2013"
+        data-ordre="5952">
+        <a href="/livre/5952/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5965.webp" 
+              alt="Dans les forêts de Sibérie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans les forêts de Sibérie</h3>
+            <p>Sylvain TESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="géographie de l’instant" 
+        data-auteur="sylvain tesson"
+        data-annee="2012"
+        data-ordre="5953">
+        <a href="/livre/5953/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5966.webp" 
+              alt="Géographie de l’instant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Géographie de l’instant</h3>
+            <p>Sylvain TESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la panthère des neiges" 
+        data-auteur="sylvain tesson"
+        data-annee="2019"
+        data-ordre="5954">
+        <a href="/livre/5954/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5967.webp" 
+              alt="La panthère des neiges"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La panthère des neiges</h3>
+            <p>Sylvain TESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;honneur :sentiment et principe moral" 
+        data-auteur="sylvain tesson"
+        data-annee="2019"
+        data-ordre="5955">
+        <a href="/livre/5955/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5968.webp" 
+              alt="L&#39;Honneur :Sentiment et principe moral"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;Honneur :Sentiment et principe moral</h3>
+            <p>Sylvain TESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je, françois villon" 
+        data-auteur="jean teule"
+        data-annee="2006"
+        data-ordre="5956">
+        <a href="/livre/5956/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5969.webp" 
+              alt="Je, François Villon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je, François Villon</h3>
+            <p>Jean TEULE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le montespan" 
+        data-auteur="jean teule"
+        data-annee="1970"
+        data-ordre="5957">
+        <a href="/livre/5957/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5970.webp" 
+              alt="Le Montespan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Montespan</h3>
+            <p>Jean TEULE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gamines" 
+        data-auteur="jean teule"
+        data-annee="0"
+        data-ordre="5958">
+        <a href="/livre/5958/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5971.webp" 
+              alt="Gamines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gamines</h3>
+            <p>Jean TEULE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le magasin des suicides" 
+        data-auteur="jean teule"
+        data-annee="2007"
+        data-ordre="5959">
+        <a href="/livre/5959/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5972.webp" 
+              alt="Le magasin des suicides"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le magasin des suicides</h3>
+            <p>Jean TEULE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mangez-le si vous voulez" 
+        data-auteur="jean teule"
+        data-annee="2009"
+        data-ordre="5960">
+        <a href="/livre/5960/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5973.webp" 
+              alt="Mangez-le si vous voulez"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mangez-le si vous voulez</h3>
+            <p>Jean TEULE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="azincourt par temps de pluie " 
+        data-auteur="jean teule"
+        data-annee="0"
+        data-ordre="5961">
+        <a href="/livre/5961/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5974.webp" 
+              alt="Azincourt par temps de pluie "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Azincourt par temps de pluie </h3>
+            <p>Jean TEULE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="héloïse, ouille !" 
+        data-auteur="walter s. tevis"
+        data-annee="0"
+        data-ordre="5962">
+        <a href="/livre/5962/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5975.webp" 
+              alt="Héloïse, ouille !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Héloïse, ouille !</h3>
+            <p>Walter S. TEVIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;arnaqueur" 
+        data-auteur="shashi tharoor"
+        data-annee="1994"
+        data-ordre="5963">
+        <a href="/livre/5963/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5976.webp" 
+              alt="L&#39;arnaqueur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;arnaqueur</h3>
+            <p>Shashi THAROOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="show business" 
+        data-auteur="johan theorin"
+        data-annee="0"
+        data-ordre="5964">
+        <a href="/livre/5964/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5977.webp" 
+              alt="Show Business"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Show Business</h3>
+            <p>Johan THEORIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chicago loop" 
+        data-auteur="paul theroux"
+        data-annee="1849"
+        data-ordre="5965">
+        <a href="/livre/5965/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5978.webp" 
+              alt="Chicago loop"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chicago loop</h3>
+            <p>Paul THEROUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;heure trouble" 
+        data-auteur="paul theroux"
+        data-annee="1980"
+        data-ordre="5966">
+        <a href="/livre/5966/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5979.webp" 
+              alt="L&#39;heure trouble"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;heure trouble</h3>
+            <p>Paul THEROUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="patagonie express" 
+        data-auteur="wilfred thesiger"
+        data-annee="2006"
+        data-ordre="5967">
+        <a href="/livre/5967/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5980.webp" 
+              alt="Patagonie express"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Patagonie express</h3>
+            <p>Wilfred THESIGER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le désert des déserts" 
+        data-auteur="pham thi hoai"
+        data-annee="1990"
+        data-ordre="5968">
+        <a href="/livre/5968/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5981.webp" 
+              alt="Le désert des déserts"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le désert des déserts</h3>
+            <p>Pham THI HOAI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la messagère de cristal" 
+        data-auteur="jacques thibau"
+        data-annee="0"
+        data-ordre="5969">
+        <a href="/livre/5969/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5982.webp" 
+              alt="La messagère de Cristal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La messagère de Cristal</h3>
+            <p>Jacques THIBAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le temps de saint-domingue(l&#39;esclavage et 
+    la révolution française)" 
+        data-auteur="philippe thiebaut"
+        data-annee="0"
+        data-ordre="5970">
+        <a href="/livre/5970/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5983.webp" 
+              alt="Le temps de Saint-Domingue(l&#39;esclavage et 
+    la Révolution française)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le temps de Saint-Domingue(l&#39;esclavage et 
+    la Révolution française)</h3>
+            <p>Philippe THIEBAUT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gaudi, bâtisseur visionnaire – découverte gallimard" 
+        data-auteur="walter thiede"
+        data-annee="0"
+        data-ordre="5971">
+        <a href="/livre/5971/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5984.webp" 
+              alt="Gaudi, Bâtisseur visionnaire – Découverte Gallimard"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gaudi, Bâtisseur visionnaire – Découverte Gallimard</h3>
+            <p>Walter THIEDE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="oiseaux de nos régions" 
+        data-auteur="danielle thiery"
+        data-annee="2003"
+        data-ordre="5972">
+        <a href="/livre/5972/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5985.webp" 
+              alt="Oiseaux de nos régions"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Oiseaux de nos régions</h3>
+            <p>Danielle THIERY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="norferville" 
+        data-auteur="franck thilliez"
+        data-annee="2021"
+        data-ordre="5973">
+        <a href="/livre/5973/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5986.webp" 
+              alt="Norferville"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Norferville</h3>
+            <p>Franck THILLIEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la faille" 
+        data-auteur="franck thilliez"
+        data-annee="2023"
+        data-ordre="5974">
+        <a href="/livre/5974/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5987.webp" 
+              alt="La faille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La faille</h3>
+            <p>Franck THILLIEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="labyrinthes" 
+        data-auteur="franck thilliez"
+        data-annee="2022"
+        data-ordre="5975">
+        <a href="/livre/5975/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5988.webp" 
+              alt="Labyrinthes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Labyrinthes</h3>
+            <p>Franck THILLIEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="origine inconnue" 
+        data-auteur="franck thilliez"
+        data-annee="2019"
+        data-ordre="5976">
+        <a href="/livre/5976/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5989.webp" 
+              alt="Origine inconnue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Origine inconnue</h3>
+            <p>Franck THILLIEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chambre des morts" 
+        data-auteur="franck thilliez"
+        data-annee="2006"
+        data-ordre="5977">
+        <a href="/livre/5977/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5990.webp" 
+              alt="La chambre des morts"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chambre des morts</h3>
+            <p>Franck THILLIEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’échange des princesses" 
+        data-auteur="chantal thomas"
+        data-annee="2013"
+        data-ordre="5978">
+        <a href="/livre/5978/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5991.webp" 
+              alt="L’échange des princesses"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’échange des princesses</h3>
+            <p>Chantal THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la reine scélérate(marie-antoinette dans les pamphlets)" 
+        data-auteur="chantal thomas"
+        data-annee="2008"
+        data-ordre="5979">
+        <a href="/livre/5979/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5992.webp" 
+              alt="La reine scélérate(Marie-Antoinette dans les pamphlets)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La reine scélérate(Marie-Antoinette dans les pamphlets)</h3>
+            <p>Chantal THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chambre des morts" 
+        data-auteur="chantal thomas"
+        data-annee="2024"
+        data-ordre="5980">
+        <a href="/livre/5980/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5993.webp" 
+              alt="La chambre des morts"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chambre des morts</h3>
+            <p>Chantal THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les adieux à la reine" 
+        data-auteur="dylan thomas"
+        data-annee="2003"
+        data-ordre="5981">
+        <a href="/livre/5981/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5994.webp" 
+              alt="Les adieux à la Reine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les adieux à la Reine</h3>
+            <p>Dylan THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="portrait de l&#39;artiste en jeune chien" 
+        data-auteur="henri thomas"
+        data-annee="1996"
+        data-ordre="5982">
+        <a href="/livre/5982/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5995.webp" 
+              alt="Portrait de l&#39;artiste en jeune chien"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Portrait de l&#39;artiste en jeune chien</h3>
+            <p>Henri THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="john perkins" 
+        data-auteur="henri thomas"
+        data-annee="1992"
+        data-ordre="5983">
+        <a href="/livre/5983/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5996.webp" 
+              alt="John Perkins"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>John Perkins</h3>
+            <p>Henri THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le promontoire" 
+        data-auteur="henri thomas"
+        data-annee="1961"
+        data-ordre="5984">
+        <a href="/livre/5984/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5997.webp" 
+              alt="Le promontoire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le promontoire</h3>
+            <p>Henri THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de la guerre d&#39;espagne –tome 1" 
+        data-auteur="hugh thomas"
+        data-annee="1965"
+        data-ordre="5985">
+        <a href="/livre/5985/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5998.webp" 
+              alt="Histoire de la guerre d&#39;Espagne –Tome 1"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de la guerre d&#39;Espagne –Tome 1</h3>
+            <p>Hugh THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le seau à charbon" 
+        data-auteur="hugh thomas"
+        data-annee="1940"
+        data-ordre="5986">
+        <a href="/livre/5986/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5999.webp" 
+              alt="Le seau à charbon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le seau à charbon</h3>
+            <p>Hugh THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de la guerre d&#39;espagne –tome 2" 
+        data-auteur="sandra thomas"
+        data-annee="0"
+        data-ordre="5987">
+        <a href="/livre/5987/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6000.webp" 
+              alt="Histoire de la guerre d&#39;Espagne –Tome 2"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de la guerre d&#39;Espagne –Tome 2</h3>
+            <p>Sandra THOMAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la barbaresque" 
+        data-auteur="carlene thompson"
+        data-annee="2006"
+        data-ordre="5988">
+        <a href="/livre/5988/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6001.webp" 
+              alt="La barbaresque"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La barbaresque</h3>
+            <p>Carlene THOMPSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="si elle devait mourir" 
+        data-auteur="jim thomson"
+        data-annee="0"
+        data-ordre="5989">
+        <a href="/livre/5989/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6002.webp" 
+              alt="Si elle devait mourir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Si elle devait mourir</h3>
+            <p>Jim THOMSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’échappée" 
+        data-auteur="jim thomson"
+        data-annee="0"
+        data-ordre="5990">
+        <a href="/livre/5990/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6003.webp" 
+              alt="L’échappée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’échappée</h3>
+            <p>Jim THOMSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rage noire" 
+        data-auteur="jim thomson"
+        data-annee="1988"
+        data-ordre="5991">
+        <a href="/livre/5991/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6004.webp" 
+              alt="Rage noire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rage noire</h3>
+            <p>Jim THOMSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un nid de crotales" 
+        data-auteur="jim thomson"
+        data-annee="1799"
+        data-ordre="5992">
+        <a href="/livre/5992/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6005.webp" 
+              alt="Un nid de crotales"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un nid de crotales</h3>
+            <p>Jim THOMSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pottsville, 1280 habitants" 
+        data-auteur="june thomson"
+        data-annee="0"
+        data-ordre="5993">
+        <a href="/livre/5993/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6006.webp" 
+              alt="Pottsville, 1280 habitants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pottsville, 1280 habitants</h3>
+            <p>June THOMSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le crime de hollowfield" 
+        data-auteur="arni thorarinsson"
+        data-annee="2016"
+        data-ordre="5994">
+        <a href="/livre/5994/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6007.webp" 
+              alt="Le crime de Hollowfield"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le crime de Hollowfield</h3>
+            <p>Arni THORARINSSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le temps de la sorcière" 
+        data-auteur="arni thorarinsson"
+        data-annee="2013"
+        data-ordre="5995">
+        <a href="/livre/5995/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6008.webp" 
+              alt="Le temps de la sorcière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le temps de la sorcière</h3>
+            <p>Arni THORARINSSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le temps de la sorcière" 
+        data-auteur="newton thornburg"
+        data-annee="0"
+        data-ordre="5996">
+        <a href="/livre/5996/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6009.webp" 
+              alt="Le temps de la sorcière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le temps de la sorcière</h3>
+            <p>Newton THORNBURG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les dames de marlow enquêtent" 
+        data-auteur="robert thorogood"
+        data-annee="2021"
+        data-ordre="5997">
+        <a href="/livre/5997/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6010.webp" 
+              alt="Les dames de Marlow enquêtent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les dames de Marlow enquêtent</h3>
+            <p>Robert THOROGOOD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="scènes du cœur" 
+        data-auteur="greta, svante thunberg"
+        data-annee="2019"
+        data-ordre="5998">
+        <a href="/livre/5998/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6011.webp" 
+              alt="Scènes du cœur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Scènes du cœur</h3>
+            <p>Greta, Svante THUNBERG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fin de fiesta à santa barbara" 
+        data-auteur="judith thurman"
+        data-annee="0"
+        data-ordre="5999">
+        <a href="/livre/5999/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6012.webp" 
+              alt="Fin de fiesta à Santa Barbara"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fin de fiesta à Santa Barbara</h3>
+            <p>Judith THURMAN</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-124/">← Précédent</a>
+    
+    
+    <span>Page 125 sur 153</span>
+    
+    
+      <a href="/catalogue/page-126/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

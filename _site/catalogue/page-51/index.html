@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="napoléon :3. l’empereur des rois" 
+        data-auteur="max gallo"
+        data-annee="2002"
+        data-ordre="2400">
+        <a href="/livre/2400/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2411.webp" 
+              alt="Napoléon :3. L’empereur des rois"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Napoléon :3. L’empereur des rois</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="napoléon :4. l’immortel de sainte-hélène" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2401">
+        <a href="/livre/2401/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2412.webp" 
+              alt="Napoléon :4. L’immortel de Sainte-Hélène"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Napoléon :4. L’immortel de Sainte-Hélène</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le jardin des oliviers" 
+        data-auteur="max gallo"
+        data-annee="1999"
+        data-ordre="2402">
+        <a href="/livre/2402/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2413.webp" 
+              alt="Le jardin des oliviers"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le jardin des oliviers</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les patriotes –1. l&#39;ombre et la nuit" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2403">
+        <a href="/livre/2403/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2414.webp" 
+              alt="Les patriotes –1. L&#39;ombre et la nuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les patriotes –1. L&#39;ombre et la nuit</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les patriotes –2. la flamme ne s&#39;éteindra pas" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2404">
+        <a href="/livre/2404/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2415.webp" 
+              alt="Les patriotes –2. La Flamme ne s&#39;éteindra pas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les patriotes –2. La Flamme ne s&#39;éteindra pas</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les patriotes –3. le prix du sang" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2405">
+        <a href="/livre/2405/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2416.webp" 
+              alt="Les patriotes –3. Le prix du sang"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les patriotes –3. Le prix du sang</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les patriotes –4. dans l&#39;honneur et par la victoire" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2406">
+        <a href="/livre/2406/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2417.webp" 
+              alt="Les patriotes –4. Dans l&#39;honneur et par la victoire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les patriotes –4. Dans l&#39;honneur et par la victoire</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bleu blanc rouge : 1. mariella" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2407">
+        <a href="/livre/2407/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2418.webp" 
+              alt="Bleu Blanc Rouge : 1. Mariella"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bleu Blanc Rouge : 1. Mariella</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bleu blanc rouge :2. mathilde" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2408">
+        <a href="/livre/2408/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2419.webp" 
+              alt="Bleu Blanc Rouge :2. Mathilde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bleu Blanc Rouge :2. Mathilde</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bleu blanc rouge :3. sarah" 
+        data-auteur="max gallo"
+        data-annee="2001"
+        data-ordre="2409">
+        <a href="/livre/2409/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2420.webp" 
+              alt="Bleu Blanc Rouge :3. Sarah"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bleu Blanc Rouge :3. Sarah</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ambitieuse" 
+        data-auteur="max gallo"
+        data-annee="1995"
+        data-ordre="2410">
+        <a href="/livre/2410/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2421.webp" 
+              alt="L&#39;ambitieuse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ambitieuse</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’amour au temps des solitudes" 
+        data-auteur="max gallo"
+        data-annee="1992"
+        data-ordre="2411">
+        <a href="/livre/2411/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2422.webp" 
+              alt="L’amour au temps des solitudes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’amour au temps des solitudes</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la baie des anges - la promenade des anglais - le palais des fêtes" 
+        data-auteur="max gallo"
+        data-annee="1982"
+        data-ordre="2412">
+        <a href="/livre/2412/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2423.webp" 
+              alt="La baie des anges - La promenade des Anglais - Le palais des fêtes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La baie des anges - La promenade des Anglais - Le palais des fêtes</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fontaine des innocents" 
+        data-auteur="max gallo"
+        data-annee="1992"
+        data-ordre="2413">
+        <a href="/livre/2413/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2424.webp" 
+              alt="La fontaine des innocents"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fontaine des innocents</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le regard des femmes" 
+        data-auteur="max gallo"
+        data-annee="1991"
+        data-ordre="2414">
+        <a href="/livre/2414/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2425.webp" 
+              alt="Le regard des femmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le regard des femmes</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les hommes naissent tous le même jour–01. aurore" 
+        data-auteur="max gallo"
+        data-annee="0"
+        data-ordre="2415">
+        <a href="/livre/2415/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2426.webp" 
+              alt="Les hommes naissent tous le même jour–01. Aurore"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les hommes naissent tous le même jour–01. Aurore</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les hommes naissent tous le même jour –02. crépuscule" 
+        data-auteur="max gallo"
+        data-annee="0"
+        data-ordre="2416">
+        <a href="/livre/2416/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2427.webp" 
+              alt="Les hommes naissent tous le même jour –02. Crépuscule"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les hommes naissent tous le même jour –02. Crépuscule</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="que sont les siècles pour la mer" 
+        data-auteur="max gallo"
+        data-annee="1977"
+        data-ordre="2417">
+        <a href="/livre/2417/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2428.webp" 
+              alt="Que sont les siècles pour la mer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Que sont les siècles pour la mer</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un crime très ordinaire" 
+        data-auteur="max gallo"
+        data-annee="1982"
+        data-ordre="2418">
+        <a href="/livre/2418/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2429.webp" 
+              alt="Un crime très ordinaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un crime très ordinaire</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="forsyte saga" 
+        data-auteur="john galsworthy"
+        data-annee="1898"
+        data-ordre="2419">
+        <a href="/livre/2419/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2430.webp" 
+              alt="Forsyte Saga"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Forsyte Saga</h3>
+            <p>John GALSWORTHY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tous les hommes sont frères" 
+        data-auteur="gandhi"
+        data-annee="1969"
+        data-ordre="2420">
+        <a href="/livre/2420/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2431.webp" 
+              alt="Tous les hommes sont frères"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tous les hommes sont frères</h3>
+            <p>GANDHI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans la main du diable" 
+        data-auteur="anne-marie garat"
+        data-annee="2006"
+        data-ordre="2421">
+        <a href="/livre/2421/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2432.webp" 
+              alt="Dans la main du diable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans la main du diable</h3>
+            <p>Anne-Marie GARAT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’enfant des ténèbres" 
+        data-auteur="anne-marie garat"
+        data-annee="2008"
+        data-ordre="2422">
+        <a href="/livre/2422/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2433.webp" 
+              alt="L’enfant des ténèbres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’enfant des ténèbres</h3>
+            <p>Anne-Marie GARAT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="photos de familles – un roman de l&#39;album" 
+        data-auteur="anne-marie garat"
+        data-annee="2017"
+        data-ordre="2423">
+        <a href="/livre/2423/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2434.webp" 
+              alt="Photos de familles – Un roman de l&#39;album"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Photos de familles – Un roman de l&#39;album</h3>
+            <p>Anne-Marie GARAT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poésie ii (romancero gitan...)" 
+        data-auteur="federico garcia lorca"
+        data-annee="2013"
+        data-ordre="2424">
+        <a href="/livre/2424/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2435.webp" 
+              alt="Poésie II (Romancero gitan...)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poésie II (Romancero gitan...)</h3>
+            <p>Federico GARCIA LORCA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poésies i- 1921-1922" 
+        data-auteur="federico garcia lorca"
+        data-annee="0"
+        data-ordre="2425">
+        <a href="/livre/2425/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2436.webp" 
+              alt="Poésies I- 1921-1922"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poésies I- 1921-1922</h3>
+            <p>Federico GARCIA LORCA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison de bernarda- les noces de sang" 
+        data-auteur="federico garcia lorca"
+        data-annee="2014"
+        data-ordre="2426">
+        <a href="/livre/2426/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2437.webp" 
+              alt="La maison de Bernarda- Les noces de sang"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison de Bernarda- Les noces de sang</h3>
+            <p>Federico GARCIA LORCA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vivre pour la raconter" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2003"
+        data-ordre="2427">
+        <a href="/livre/2427/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2438.webp" 
+              alt="Vivre pour la raconter"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vivre pour la raconter</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de l&#39;amour et d&#39;autres démons" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2014"
+        data-ordre="2428">
+        <a href="/livre/2428/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2439.webp" 
+              alt="De l&#39;amour et d&#39;autres démons"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De l&#39;amour et d&#39;autres démons</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mala hora" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="1962"
+        data-ordre="2429">
+        <a href="/livre/2429/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2440.webp" 
+              alt="La Mala Hora"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Mala Hora</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cent ans de solitude" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2012"
+        data-ordre="2430">
+        <a href="/livre/2430/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2441.webp" 
+              alt="Cent ans de solitude"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cent ans de solitude</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chronique d&#39;une mort annoncée" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="1987"
+        data-ordre="2431">
+        <a href="/livre/2431/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2442.webp" 
+              alt="Chronique d&#39;une mort annoncée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chronique d&#39;une mort annoncée</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="douze contes vagabonds" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2020"
+        data-ordre="2432">
+        <a href="/livre/2432/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2443.webp" 
+              alt="Douze contes vagabonds"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Douze contes vagabonds</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal d’un enlèvement" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2022"
+        data-ordre="2433">
+        <a href="/livre/2433/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2444.webp" 
+              alt="Journal d’un enlèvement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal d’un enlèvement</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amour aux temps du choléra" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="1988"
+        data-ordre="2434">
+        <a href="/livre/2434/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2445.webp" 
+              alt="L&#39;amour aux temps du choléra"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amour aux temps du choléra</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;automne du patriarche" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2022"
+        data-ordre="2435">
+        <a href="/livre/2435/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2446.webp" 
+              alt="L&#39;automne du patriarche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;automne du patriarche</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;incroyable et triste histoire de la candide erendira et de sa grand-mère diabolique" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2022"
+        data-ordre="2436">
+        <a href="/livre/2436/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2447.webp" 
+              alt="L&#39;incroyable et triste histoire de la candide Erendira et de sa grand-mère diabolique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;incroyable et triste histoire de la candide Erendira et de sa grand-mère diabolique</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le général dans son labyrinthe" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2020"
+        data-ordre="2437">
+        <a href="/livre/2437/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2448.webp" 
+              alt="Le général dans son labyrinthe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le général dans son labyrinthe</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoire de mes putains tristes" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2005"
+        data-ordre="2438">
+        <a href="/livre/2438/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2449.webp" 
+              alt="Mémoire de mes putains tristes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoire de mes putains tristes</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="récit d&#39;un naufragé" 
+        data-auteur="gabriel garcia marquez"
+        data-annee="2022"
+        data-ordre="2439">
+        <a href="/livre/2439/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2450.webp" 
+              alt="Récit d&#39;un naufragé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Récit d&#39;un naufragé</h3>
+            <p>Gabriel GARCIA MARQUEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la meilleure part des hommes" 
+        data-auteur="tristan garcia"
+        data-annee="2008"
+        data-ordre="2440">
+        <a href="/livre/2440/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2451.webp" 
+              alt="La meilleure part des hommes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La meilleure part des hommes</h3>
+            <p>Tristan GARCIA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bon anniversaire, gabriel ?" 
+        data-auteur="luiz alfredo garcia-roza"
+        data-annee="2006"
+        data-ordre="2441">
+        <a href="/livre/2441/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2452.webp" 
+              alt="Bon anniversaire, Gabriel ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bon anniversaire, Gabriel ?</h3>
+            <p>Luiz Alfredo GARCIA-ROZA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="olivier" 
+        data-auteur="jérome garcin"
+        data-annee="2011"
+        data-ordre="2442">
+        <a href="/livre/2442/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2453.webp" 
+              alt="Olivier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Olivier</h3>
+            <p>Jérome GARCIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bartabas, roman" 
+        data-auteur="jérôme garcin"
+        data-annee="2014"
+        data-ordre="2443">
+        <a href="/livre/2443/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2454.webp" 
+              alt="Bartabas, roman"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bartabas, roman</h3>
+            <p>Jérôme GARCIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="c&#39;était tous les jours tempête" 
+        data-auteur="jérôme garcin"
+        data-annee="2002"
+        data-ordre="2444">
+        <a href="/livre/2444/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2455.webp" 
+              alt="C&#39;était tous les jours tempête"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>C&#39;était tous les jours tempête</h3>
+            <p>Jérôme GARCIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chute de cheval" 
+        data-auteur="jérôme garcin"
+        data-annee="2000"
+        data-ordre="2445">
+        <a href="/livre/2445/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2456.webp" 
+              alt="La chute de cheval"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chute de cheval</h3>
+            <p>Jérôme GARCIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voyant" 
+        data-auteur="jérôme garcin"
+        data-annee="2015"
+        data-ordre="2446">
+        <a href="/livre/2446/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2457.webp" 
+              alt="Le voyant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voyant</h3>
+            <p>Jérôme GARCIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="théâtre intime" 
+        data-auteur="jérôme garcin"
+        data-annee="2003"
+        data-ordre="2447">
+        <a href="/livre/2447/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2458.webp" 
+              alt="Théâtre intime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Théâtre intime</h3>
+            <p>Jérôme GARCIN</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-50/">← Précédent</a>
+    
+    
+    <span>Page 51 sur 153</span>
+    
+    
+      <a href="/catalogue/page-52/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

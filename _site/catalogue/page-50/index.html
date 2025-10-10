@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="premier de cordée" 
+        data-auteur="roger frison-roche"
+        data-annee="1941"
+        data-ordre="2352">
+        <a href="/livre/2352/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2362.webp" 
+              alt="Premier de cordée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Premier de cordée</h3>
+            <p>Roger FRISON-ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="retour à la montagne" 
+        data-auteur="roger frison-roche"
+        data-annee="1957"
+        data-ordre="2353">
+        <a href="/livre/2353/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2363.webp" 
+              alt="Retour à la montagne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Retour à la montagne</h3>
+            <p>Roger FRISON-ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="roberto succo" 
+        data-auteur="pascale froment"
+        data-annee="2001"
+        data-ordre="2354">
+        <a href="/livre/2354/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2364.webp" 
+              alt="Roberto Succo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Roberto Succo</h3>
+            <p>Pascale FROMENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="avoir ou être ?" 
+        data-auteur="erich fromm"
+        data-annee="1978"
+        data-ordre="2355">
+        <a href="/livre/2355/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2365.webp" 
+              alt="Avoir ou être ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Avoir ou être ?</h3>
+            <p>Erich FROMM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la prédominance du crétin" 
+        data-auteur="fruttero &amp; lucentini"
+        data-annee="1988"
+        data-ordre="2356">
+        <a href="/livre/2356/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2366.webp" 
+              alt="La prédominance du crétin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La prédominance du crétin</h3>
+            <p>FRUTTERO &amp; LUCENTINI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amant sans domicile fixe" 
+        data-auteur="fruttero &amp; lucentini"
+        data-annee="1995"
+        data-ordre="2357">
+        <a href="/livre/2357/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2367.webp" 
+              alt="L&#39;amant sans domicile fixe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amant sans domicile fixe</h3>
+            <p>FRUTTERO &amp; LUCENTINI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme du dimanche" 
+        data-auteur="fruttero &amp; lucentini"
+        data-annee="1975"
+        data-ordre="2358">
+        <a href="/livre/2358/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2368.webp" 
+              alt="La femme du dimanche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme du dimanche</h3>
+            <p>FRUTTERO &amp; LUCENTINI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;hippopotame" 
+        data-auteur="stephen fry"
+        data-annee="2000"
+        data-ordre="2359">
+        <a href="/livre/2359/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2369.webp" 
+              alt="L&#39;hippopotame"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;hippopotame</h3>
+            <p>Stephen FRY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la santé de la future maman" 
+        data-auteur="rené frydman"
+        data-annee="2009"
+        data-ordre="2360">
+        <a href="/livre/2360/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2370.webp" 
+              alt="La santé de la future maman"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La santé de la future maman</h3>
+            <p>René FRYDMAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les préparations à la naissance" 
+        data-auteur="rené frydman"
+        data-annee="2013"
+        data-ordre="2361">
+        <a href="/livre/2361/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2371.webp" 
+              alt="Les préparations à la naissance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les préparations à la naissance</h3>
+            <p>René FRYDMAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la saga des médicis: 1. contessina" 
+        data-auteur="sarah frydman"
+        data-annee="1992"
+        data-ordre="2362">
+        <a href="/livre/2362/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2372.webp" 
+              alt="La saga des Médicis: 1. Contessina"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La saga des Médicis: 1. Contessina</h3>
+            <p>Sarah FRYDMAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la saga des médicis: 2. le lys de florence" 
+        data-auteur="sarah frydman"
+        data-annee="2005"
+        data-ordre="2363">
+        <a href="/livre/2363/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2373.webp" 
+              alt="La saga des Médicis: 2. Le lys de Florence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La saga des Médicis: 2. Le lys de Florence</h3>
+            <p>Sarah FRYDMAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la saga des médicis : 3. lorenzo ou la fin des médicis" 
+        data-auteur="sarah frydman"
+        data-annee="2014"
+        data-ordre="2364">
+        <a href="/livre/2364/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2374.webp" 
+              alt="La saga des Médicis : 3. Lorenzo ou la fin des Médicis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La saga des Médicis : 3. Lorenzo ou la fin des Médicis</h3>
+            <p>Sarah FRYDMAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vieux gringo" 
+        data-auteur="carlos fuentes"
+        data-annee="2002"
+        data-ordre="2365">
+        <a href="/livre/2365/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2375.webp" 
+              alt="Le vieux gringo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vieux gringo</h3>
+            <p>Carlos FUENTES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les années avec laura diaz" 
+        data-auteur="carlos fuentes"
+        data-annee="2001"
+        data-ordre="2366">
+        <a href="/livre/2366/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2376.webp" 
+              alt="Les années avec Laura Diaz"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les années avec Laura Diaz</h3>
+            <p>Carlos FUENTES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mort d&#39;artemio cruz" 
+        data-auteur="carlos fuentes"
+        data-annee="1976"
+        data-ordre="2367">
+        <a href="/livre/2367/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2377.webp" 
+              alt="La mort d&#39;Artemio Cruz"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mort d&#39;Artemio Cruz</h3>
+            <p>Carlos FUENTES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="narayama" 
+        data-auteur="shishirô fukazawa"
+        data-annee="1959"
+        data-ordre="2368">
+        <a href="/livre/2368/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2378.webp" 
+              alt="Narayama"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Narayama</h3>
+            <p>Shishirô FUKAZAWA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nuages flottants" 
+        data-auteur="hayashi fumiko"
+        data-annee="2005"
+        data-ordre="2369">
+        <a href="/livre/2369/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2379.webp" 
+              alt="Nuages flottants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nuages flottants</h3>
+            <p>Hayashi FUMIKO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sanctuaire maudit" 
+        data-auteur="france fyfield"
+        data-annee="2007"
+        data-ordre="2370">
+        <a href="/livre/2370/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2380.webp" 
+              alt="Sanctuaire maudit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sanctuaire maudit</h3>
+            <p>France FYFIELD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le mystère de la patience" 
+        data-auteur="jostein gaarder"
+        data-annee="1996"
+        data-ordre="2371">
+        <a href="/livre/2371/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2381.webp" 
+              alt="Le Mystère de la patience"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Mystère de la patience</h3>
+            <p>Jostein GAARDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maya" 
+        data-auteur="jostein gaarder"
+        data-annee="1999"
+        data-ordre="2372">
+        <a href="/livre/2372/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2382.webp" 
+              alt="Maya"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maya</h3>
+            <p>Jostein GAARDER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le monde de sophie" 
+        data-auteur="jostein gaardner"
+        data-annee="1995"
+        data-ordre="2373">
+        <a href="/livre/2373/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2383.webp" 
+              alt="Le monde de Sophie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le monde de Sophie</h3>
+            <p>Jostein GAARDNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;affaire lerouge" 
+        data-auteur="emile gaboriau"
+        data-annee="1800"
+        data-ordre="2374">
+        <a href="/livre/2374/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2384.webp" 
+              alt="L&#39;affaire Lerouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;affaire Lerouge</h3>
+            <p>Emile GABORIAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="siloé" 
+        data-auteur="paul gadenne"
+        data-annee="1974"
+        data-ordre="2375">
+        <a href="/livre/2375/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2386.webp" 
+              alt="Siloé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Siloé</h3>
+            <p>Paul GADENNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tout sur tout – petit dictionnaire de l&#39;insolite et du sourire" 
+        data-auteur="claude gagniere"
+        data-annee="0"
+        data-ordre="2376">
+        <a href="/livre/2376/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2387.webp" 
+              alt="Tout sur tout – Petit dictionnaire de l&#39;insolite et du sourire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tout sur tout – Petit dictionnaire de l&#39;insolite et du sourire</h3>
+            <p>Claude GAGNIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mes aventures en haute-savoie" 
+        data-auteur="jacques gaillard"
+        data-annee="2004"
+        data-ordre="2377">
+        <a href="/livre/2377/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2388.webp" 
+              alt="Mes aventures en Haute-Savoie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mes aventures en Haute-Savoie</h3>
+            <p>Jacques GAILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="k.622" 
+        data-auteur="christian gailly"
+        data-annee="1989"
+        data-ordre="2378">
+        <a href="/livre/2378/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2389.webp" 
+              alt="K.622"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>K.622</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la passion de martin fissel-brandt" 
+        data-auteur="christian gailly"
+        data-annee="1998"
+        data-ordre="2379">
+        <a href="/livre/2379/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2390.webp" 
+              alt="La passion de Martin Fissel-Brandt"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La passion de Martin Fissel-Brandt</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les évadés" 
+        data-auteur="christian gailly"
+        data-annee="1997"
+        data-ordre="2380">
+        <a href="/livre/2380/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2391.webp" 
+              alt="Les évadés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les évadés</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les oubliés" 
+        data-auteur="christian gailly"
+        data-annee="2007"
+        data-ordre="2381">
+        <a href="/livre/2381/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2392.webp" 
+              alt="Les oubliés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les oubliés</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lily et braine" 
+        data-auteur="christian gailly"
+        data-annee="2010"
+        data-ordre="2382">
+        <a href="/livre/2382/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2393.webp" 
+              alt="Lily et Braine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lily et Braine</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="be-bop" 
+        data-auteur="christian gailly"
+        data-annee="1995"
+        data-ordre="2383">
+        <a href="/livre/2383/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2394.webp" 
+              alt="Be-Bop"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Be-Bop</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dernier amour" 
+        data-auteur="christian gailly"
+        data-annee="2004"
+        data-ordre="2384">
+        <a href="/livre/2384/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2395.webp" 
+              alt="Dernier amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dernier amour</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un soir au club" 
+        data-auteur="christian gailly"
+        data-annee="2001"
+        data-ordre="2385">
+        <a href="/livre/2385/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2396.webp" 
+              alt="Un soir au club"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un soir au club</h3>
+            <p>Christian GAILLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="colère en louisiane" 
+        data-auteur="ernest j. gaines"
+        data-annee="1989"
+        data-ordre="2386">
+        <a href="/livre/2386/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2397.webp" 
+              alt="Colère en Louisiane"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Colère en Louisiane</h3>
+            <p>Ernest J. GAINES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les veines ouvertes de l&#39;amérique latine" 
+        data-auteur="eduardo galeano"
+        data-annee="1971"
+        data-ordre="2387">
+        <a href="/livre/2387/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2398.webp" 
+              alt="Les veines ouvertes de l&#39;Amérique latine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les veines ouvertes de l&#39;Amérique latine</h3>
+            <p>Eduardo GALEANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="voyageurs en souffrance" 
+        data-auteur="mavis gallant"
+        data-annee="1996"
+        data-ordre="2388">
+        <a href="/livre/2388/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2399.webp" 
+              alt="Voyageurs en souffrance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Voyageurs en souffrance</h3>
+            <p>Mavis GALLANT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les déferlantes" 
+        data-auteur="claudie gallay"
+        data-annee="2008"
+        data-ordre="2389">
+        <a href="/livre/2389/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2400.webp" 
+              alt="Les Déferlantes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Déferlantes</h3>
+            <p>Claudie GALLAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une part de ciel" 
+        data-auteur="claudie gallay"
+        data-annee="2013"
+        data-ordre="2390">
+        <a href="/livre/2390/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2401.webp" 
+              alt="Une part de ciel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une part de ciel</h3>
+            <p>Claudie GALLAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maximilien robespierre. histoire d&#39;une solitude" 
+        data-auteur="max gallo"
+        data-annee="1998"
+        data-ordre="2391">
+        <a href="/livre/2391/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2402.webp" 
+              alt="Maximilien Robespierre. Histoire d&#39;une solitude"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maximilien Robespierre. Histoire d&#39;une solitude</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="1918 la terrible victoire" 
+        data-auteur="max gallo"
+        data-annee="2013"
+        data-ordre="2392">
+        <a href="/livre/2392/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2403.webp" 
+              alt="1918 La terrible victoire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>1918 La terrible victoire</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de gaulle :1. l&#39;appel du destin" 
+        data-auteur="max gallo"
+        data-annee="2012"
+        data-ordre="2393">
+        <a href="/livre/2393/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2404.webp" 
+              alt="De Gaulle :1. L&#39;appel du destin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De Gaulle :1. L&#39;appel du destin</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de gaulle :2. la solitude du combattant" 
+        data-auteur="max gallo"
+        data-annee="2012"
+        data-ordre="2394">
+        <a href="/livre/2394/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2405.webp" 
+              alt="De Gaulle :2. La solitude du combattant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De Gaulle :2. La solitude du combattant</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de gaulle: 3. le premier des français" 
+        data-auteur="max gallo"
+        data-annee="2012"
+        data-ordre="2395">
+        <a href="/livre/2395/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2406.webp" 
+              alt="De Gaulle: 3. Le premier des Français"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De Gaulle: 3. Le premier des Français</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de gaulle :4. la statue du commandeur" 
+        data-auteur="max gallo"
+        data-annee="2000"
+        data-ordre="2396">
+        <a href="/livre/2396/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2407.webp" 
+              alt="De Gaulle :4. La statue du commandeur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De Gaulle :4. La statue du commandeur</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand jaurès" 
+        data-auteur="max gallo"
+        data-annee="1984"
+        data-ordre="2397">
+        <a href="/livre/2397/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2408.webp" 
+              alt="Le grand Jaurès"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le grand Jaurès</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="napoléon :1. le chant du départ" 
+        data-auteur="max gallo"
+        data-annee="2002"
+        data-ordre="2398">
+        <a href="/livre/2398/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2409.webp" 
+              alt="Napoléon :1. Le chant du départ"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Napoléon :1. Le chant du départ</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="napoléon :2. le soleil d’austerlitz" 
+        data-auteur="max gallo"
+        data-annee="1998"
+        data-ordre="2399">
+        <a href="/livre/2399/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2410.webp" 
+              alt="Napoléon :2. Le soleil d’Austerlitz"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Napoléon :2. Le soleil d’Austerlitz</h3>
+            <p>Max GALLO</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-49/">← Précédent</a>
+    
+    
+    <span>Page 50 sur 153</span>
+    
+    
+      <a href="/catalogue/page-51/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="la vouivre" 
+        data-auteur="marcel ayme"
+        data-annee="1943"
+        data-ordre="288">
+        <a href="/livre/288/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/290.webp" 
+              alt="La vouivre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vouivre</h3>
+            <p>Marcel AYME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la tête des autres" 
+        data-auteur="marcel ayme"
+        data-annee="1952"
+        data-ordre="289">
+        <a href="/livre/289/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/291.webp" 
+              alt="La tête des autres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La tête des autres</h3>
+            <p>Marcel AYME</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la troisième république" 
+        data-auteur="azema j.p. - winock m."
+        data-annee="1970"
+        data-ordre="290">
+        <a href="/livre/290/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/292.webp" 
+              alt="La troisième République"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La troisième République</h3>
+            <p>AZEMA J.P. - WINOCK M.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une si longue lettre" 
+        data-auteur="mariama ba"
+        data-annee="1980"
+        data-ordre="291">
+        <a href="/livre/291/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/293.webp" 
+              alt="Une si longue lettre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une si longue lettre</h3>
+            <p>Mariama BA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voile démystifié" 
+        data-auteur="leila babes"
+        data-annee="2004"
+        data-ordre="292">
+        <a href="/livre/292/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/294.webp" 
+              alt="Le voile démystifié"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voile démystifié</h3>
+            <p>Leila BABES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je me prépare à accoucher" 
+        data-auteur="béatrice baby"
+        data-annee="2005"
+        data-ordre="293">
+        <a href="/livre/293/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/295.webp" 
+              alt="Je me prépare à accoucher"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je me prépare à accoucher</h3>
+            <p>Béatrice BABY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maintenant" 
+        data-auteur="lauren bacall"
+        data-annee="1995"
+        data-ordre="294">
+        <a href="/livre/294/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/296.webp" 
+              alt="Maintenant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maintenant</h3>
+            <p>Lauren BACALL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;eau et les rêves" 
+        data-auteur="gaston bachelard"
+        data-annee="1942"
+        data-ordre="295">
+        <a href="/livre/295/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/297.webp" 
+              alt="L&#39;eau et les rêves"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;eau et les rêves</h3>
+            <p>Gaston BACHELARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la psychanalyse du feu" 
+        data-auteur="gaston bachelard"
+        data-annee="1938"
+        data-ordre="296">
+        <a href="/livre/296/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/298.webp" 
+              alt="La psychanalyse du feu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La psychanalyse du feu</h3>
+            <p>Gaston BACHELARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le droit de rêver" 
+        data-auteur="gaston bachelard"
+        data-annee="1970"
+        data-ordre="297">
+        <a href="/livre/297/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/299.webp" 
+              alt="Le droit de rêver"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le droit de rêver</h3>
+            <p>Gaston BACHELARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;enfer de matignon" 
+        data-auteur="raphaëlle bacque"
+        data-annee="2008"
+        data-ordre="298">
+        <a href="/livre/298/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/300.webp" 
+              alt="L&#39;enfer de Matignon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;enfer de Matignon</h3>
+            <p>Raphaëlle BACQUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le développement durable tout simplement !" 
+        data-auteur="farid baddache"
+        data-annee="2011"
+        data-ordre="299">
+        <a href="/livre/299/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/301.webp" 
+              alt="Le développement durable tout simplement !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le développement durable tout simplement !</h3>
+            <p>Farid BADDACHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mme du châtelet, mme d&#39;epinay ou l&#39;ambition féminine au xviii° siècle" 
+        data-auteur="elisabeth badinter"
+        data-annee="2006"
+        data-ordre="300">
+        <a href="/livre/300/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/302.webp" 
+              alt="Mme du Châtelet, Mme d&#39;Epinay ou l&#39;ambition féminine au XVIII° siècle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mme du Châtelet, Mme d&#39;Epinay ou l&#39;ambition féminine au XVIII° siècle</h3>
+            <p>Elisabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;un est l&#39;autre" 
+        data-auteur="elisabeth badinter"
+        data-annee="2002"
+        data-ordre="301">
+        <a href="/livre/301/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/303.webp" 
+              alt="L&#39;un est l&#39;autre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;un est l&#39;autre</h3>
+            <p>Elisabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le conflitla femme et la mère" 
+        data-auteur="elisabeth badinter"
+        data-annee="2010"
+        data-ordre="302">
+        <a href="/livre/302/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/304.webp" 
+              alt="Le conflitla femme et la mère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le conflitla femme et la mère</h3>
+            <p>Elisabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amour en plus" 
+        data-auteur="elisabeth badinter"
+        data-annee="1984"
+        data-ordre="303">
+        <a href="/livre/303/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/305.webp" 
+              alt="L&#39;amour en plus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amour en plus</h3>
+            <p>Elisabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="xy - de l’identité masculine" 
+        data-auteur="elisabeth badinter"
+        data-annee="1992"
+        data-ordre="304">
+        <a href="/livre/304/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/306.webp" 
+              alt="XY - De l’identité masculine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>XY - De l’identité masculine</h3>
+            <p>Elisabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a.l. thomas – diderot - madame d&#39;epinay :qu&#39;est-ce qu&#39;une femme ?" 
+        data-auteur="elisabeth badinter"
+        data-annee="2020"
+        data-ordre="305">
+        <a href="/livre/305/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/307.webp" 
+              alt="A.L. Thomas – Diderot - Madame d&#39;EPINAY :Qu&#39;est-ce qu&#39;une femme ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A.L. Thomas – Diderot - Madame d&#39;EPINAY :Qu&#39;est-ce qu&#39;une femme ?</h3>
+            <p>Elisabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="condorcet" 
+        data-auteur="elizabeth et robert badinter"
+        data-annee="2014"
+        data-ordre="306">
+        <a href="/livre/306/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/308.webp" 
+              alt="Condorcet"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Condorcet</h3>
+            <p>Elizabeth et Robert BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="correspondance inédite de condorcet
+     et madame suard 1771-1791" 
+        data-auteur="elizabeth badinter"
+        data-annee="2008"
+        data-ordre="307">
+        <a href="/livre/307/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/309.webp" 
+              alt="Correspondance inédite de Condorcet
+     et Madame Suard 1771-1791"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Correspondance inédite de Condorcet
+     et Madame Suard 1771-1791</h3>
+            <p>Elizabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paroles d&#39;hommes 1790-1793" 
+        data-auteur="elizabeth badinter"
+        data-annee="2012"
+        data-ordre="308">
+        <a href="/livre/308/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/310.webp" 
+              alt="Paroles d&#39;hommes 1790-1793"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paroles d&#39;hommes 1790-1793</h3>
+            <p>Elizabeth BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la prison républicaine" 
+        data-auteur="robert badinter"
+        data-annee="1992"
+        data-ordre="309">
+        <a href="/livre/309/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/311.webp" 
+              alt="La prison républicaine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La prison républicaine</h3>
+            <p>Robert BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;abolition" 
+        data-auteur="robert badinter"
+        data-annee="2002"
+        data-ordre="310">
+        <a href="/livre/310/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/312.webp" 
+              alt="L&#39;abolition"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;abolition</h3>
+            <p>Robert BADINTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;énigme de la vénus hottentote" 
+        data-auteur="gérard badou"
+        data-annee="2002"
+        data-ordre="311">
+        <a href="/livre/311/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/313.webp" 
+              alt="L&#39;énigme de la Vénus Hottentote"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;énigme de la Vénus Hottentote</h3>
+            <p>Gérard BADOU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="et une voix pour chanter..." 
+        data-auteur="joan baez"
+        data-annee="1988"
+        data-ordre="312">
+        <a href="/livre/312/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/314.webp" 
+              alt="Et une voix pour chanter..."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Et une voix pour chanter...</h3>
+            <p>Joan BAEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="simone de beauvoir" 
+        data-auteur="deirdre bair"
+        data-annee="1990"
+        data-ordre="313">
+        <a href="/livre/313/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/315.webp" 
+              alt="Simone de Beauvoir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Simone de Beauvoir</h3>
+            <p>Deirdre BAIR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="me reconnais-tu ?" 
+        data-auteur="andrea bajani"
+        data-annee="2014"
+        data-ordre="314">
+        <a href="/livre/314/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/316.webp" 
+              alt="Me reconnais-tu ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Me reconnais-tu ?</h3>
+            <p>Andrea BAJANI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="comme si j’avais des ailes" 
+        data-auteur="chet baker"
+        data-annee="0"
+        data-ordre="315">
+        <a href="/livre/315/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/317.webp" 
+              alt="Comme si j’avais des ailes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Comme si j’avais des ailes</h3>
+            <p>Chet BAKER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le détour" 
+        data-auteur="gerbrand bakker"
+        data-annee="2014"
+        data-ordre="316">
+        <a href="/livre/316/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/318.webp" 
+              alt="Le détour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le détour</h3>
+            <p>Gerbrand BAKKER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="coluche" 
+        data-auteur="l. / waks f. balandras"
+        data-annee="0"
+        data-ordre="317">
+        <a href="/livre/317/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/319.webp" 
+              alt="Coluche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Coluche</h3>
+            <p>L. / WAKS F. BALANDRAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="millenium people" 
+        data-auteur="j.g. ballard"
+        data-annee="2005"
+        data-ordre="318">
+        <a href="/livre/318/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/320.webp" 
+              alt="Millenium People"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Millenium People</h3>
+            <p>J.G. BALLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a la conquête du mont blanc" 
+        data-auteur="yves ballu"
+        data-annee="1986"
+        data-ordre="319">
+        <a href="/livre/319/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/321.webp" 
+              alt="A la conquête du Mont Blanc"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A la conquête du Mont Blanc</h3>
+            <p>Yves BALLU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme de trente ans" 
+        data-auteur="honoré de balzac"
+        data-annee="1856"
+        data-ordre="320">
+        <a href="/livre/320/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/322.webp" 
+              alt="La femme de trente ans"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme de trente ans</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le lys dans la vallée" 
+        data-auteur="honoré de balzac"
+        data-annee="1839"
+        data-ordre="321">
+        <a href="/livre/321/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/323.webp" 
+              alt="Le lys dans la vallée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le lys dans la vallée</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chouans" 
+        data-auteur="honoré de balzac"
+        data-annee="1834"
+        data-ordre="322">
+        <a href="/livre/322/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/324.webp" 
+              alt="Les chouans"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chouans</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les employés" 
+        data-auteur="honoré de balzac"
+        data-annee="1892"
+        data-ordre="323">
+        <a href="/livre/323/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/325.webp" 
+              alt="Les employés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les employés</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="philosophie de la vie conjugale" 
+        data-auteur="honoré de balzac"
+        data-annee="2011"
+        data-ordre="324">
+        <a href="/livre/324/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/326.webp" 
+              alt="Philosophie de la vie conjugale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Philosophie de la vie conjugale</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="césar birotteau" 
+        data-auteur="honoré de balzac"
+        data-annee="1800"
+        data-ordre="325">
+        <a href="/livre/325/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/327.webp" 
+              alt="César Birotteau"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>César Birotteau</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="eugénie grandet" 
+        data-auteur="honoré de balzac"
+        data-annee="1868"
+        data-ordre="326">
+        <a href="/livre/326/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/328.webp" 
+              alt="Eugénie Grandet"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Eugénie Grandet</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="illusions perdues" 
+        data-auteur="honoré de balzac"
+        data-annee="1837"
+        data-ordre="327">
+        <a href="/livre/327/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/329.webp" 
+              alt="Illusions perdues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Illusions perdues</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;anonyme ou ni père ni mère" 
+        data-auteur="honoré de balzac"
+        data-annee="2003"
+        data-ordre="328">
+        <a href="/livre/328/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/330.webp" 
+              alt="L&#39;anonyme ou ni père ni mère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;anonyme ou ni père ni mère</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la comédie humaine (ii) :modeste mignon - 
+    un début dans la vie" 
+        data-auteur="honoré de balzac"
+        data-annee="1912"
+        data-ordre="329">
+        <a href="/livre/329/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/331.webp" 
+              alt="La comédie humaine (II) :Modeste Mignon - 
+    Un début dans la vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La comédie humaine (II) :Modeste Mignon - 
+    Un début dans la vie</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la comédie humaine (vii) :le contrat de  mariage - honorine - ursule miroüet" 
+        data-auteur="honoré de balzac"
+        data-annee="1988"
+        data-ordre="330">
+        <a href="/livre/330/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/332.webp" 
+              alt="La comédie humaine (VII) :Le contrat de  mariage - Honorine - Ursule Miroüet"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La comédie humaine (VII) :Le contrat de  mariage - Honorine - Ursule Miroüet</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la cousine bette" 
+        data-auteur="honoré de balzac"
+        data-annee="1888"
+        data-ordre="331">
+        <a href="/livre/331/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/333.webp" 
+              alt="La cousine Bette"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La cousine Bette</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la duchesse de langeaissuivi dela fille aux yeux d’or" 
+        data-auteur="honoré de balzac"
+        data-annee="1972"
+        data-ordre="332">
+        <a href="/livre/332/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/334.webp" 
+              alt="La duchesse de Langeaissuivi deLa fille aux yeux d’or"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La duchesse de Langeaissuivi deLa fille aux yeux d’or</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison du chat-qui-peloteet autresscènes de la vie privée" 
+        data-auteur="honoré de balzac"
+        data-annee="2015"
+        data-ordre="333">
+        <a href="/livre/333/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/335.webp" 
+              alt="La maison du chat-qui-peloteet autresScènes de la vie privée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison du chat-qui-peloteet autresScènes de la vie privée</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la peau de chagrin" 
+        data-auteur="honoré de balzac"
+        data-annee="1800"
+        data-ordre="334">
+        <a href="/livre/334/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/336.webp" 
+              alt="La peau de chagrin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La peau de chagrin</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la rabouilleuse" 
+        data-auteur="honoré de balzac"
+        data-annee="1966"
+        data-ordre="335">
+        <a href="/livre/335/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/337.webp" 
+              alt="La rabouilleuse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La rabouilleuse</h3>
+            <p>Honoré de BALZAC</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-6/">← Précédent</a>
+    
+    
+    <span>Page 7 sur 153</span>
+    
+    
+      <a href="/catalogue/page-8/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

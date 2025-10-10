@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="bandini" 
+        data-auteur="john fante"
+        data-annee="1938"
+        data-ordre="2160">
+        <a href="/livre/2160/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2164.webp" 
+              alt="Bandini"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bandini</h3>
+            <p>John FANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="demande à la poussière" 
+        data-auteur="john fante"
+        data-annee="2002"
+        data-ordre="2161">
+        <a href="/livre/2161/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2165.webp" 
+              alt="Demande à la poussière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Demande à la poussière</h3>
+            <p>John FANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;orgie" 
+        data-auteur="john fante"
+        data-annee="2002"
+        data-ordre="2162">
+        <a href="/livre/2162/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2166.webp" 
+              alt="L&#39;orgie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;orgie</h3>
+            <p>John FANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vin de la jeunesse" 
+        data-auteur="john fante"
+        data-annee="1986"
+        data-ordre="2163">
+        <a href="/livre/2163/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2167.webp" 
+              alt="Le vin de la jeunesse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vin de la jeunesse</h3>
+            <p>John FANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon chien stupide" 
+        data-auteur="john fante"
+        data-annee="1989"
+        data-ordre="2164">
+        <a href="/livre/2164/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2168.webp" 
+              alt="Mon chien stupide"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon chien stupide</h3>
+            <p>John FANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le maître d&#39;heure" 
+        data-auteur="claude faraggi"
+        data-annee="1975"
+        data-ordre="2165">
+        <a href="/livre/2165/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2169.webp" 
+              alt="Le maître d&#39;heure"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le maître d&#39;heure</h3>
+            <p>Claude FARAGGI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le piéton de paris" 
+        data-auteur="léon-paul fargue"
+        data-annee="1939"
+        data-ordre="2166">
+        <a href="/livre/2166/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2170.webp" 
+              alt="Le piéton de Paris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le piéton de Paris</h3>
+            <p>Léon-Paul FARGUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j&#39;étais derrière toi" 
+        data-auteur="nicolas fargues"
+        data-annee="2006"
+        data-ordre="2167">
+        <a href="/livre/2167/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2171.webp" 
+              alt="J&#39;étais derrière toi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J&#39;étais derrière toi</h3>
+            <p>Nicolas FARGUES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rade terminus" 
+        data-auteur="nicolas fargues"
+        data-annee="2004"
+        data-ordre="2168">
+        <a href="/livre/2168/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2172.webp" 
+              alt="Rade terminus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rade terminus</h3>
+            <p>Nicolas FARGUES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tu verras" 
+        data-auteur="nicolas fargues"
+        data-annee="2011"
+        data-ordre="2169">
+        <a href="/livre/2169/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2173.webp" 
+              alt="Tu verras"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tu verras</h3>
+            <p>Nicolas FARGUES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="budapest 1956" 
+        data-auteur="andré farkas"
+        data-annee="2006"
+        data-ordre="2170">
+        <a href="/livre/2170/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2174.webp" 
+              alt="Budapest 1956"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Budapest 1956</h3>
+            <p>André FARKAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fleuve de l&#39;éternité" 
+        data-auteur="philip josé farmer"
+        data-annee="1992"
+        data-ordre="2171">
+        <a href="/livre/2171/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2175.webp" 
+              alt="Le fleuve de l&#39;éternité"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fleuve de l&#39;éternité</h3>
+            <p>Philip José FARMER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le labyrinthe magique" 
+        data-auteur="philip josé farmer"
+        data-annee="1986"
+        data-ordre="2172">
+        <a href="/livre/2172/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2176.webp" 
+              alt="Le labyrinthe magique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le labyrinthe magique</h3>
+            <p>Philip José FARMER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le noir dessein" 
+        data-auteur="philip josé farmer"
+        data-annee="1986"
+        data-ordre="2173">
+        <a href="/livre/2173/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2177.webp" 
+              alt="Le noir dessein"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le noir dessein</h3>
+            <p>Philip José FARMER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chemins de bourges" 
+        data-auteur="solange fasquelle"
+        data-annee="1986"
+        data-ordre="2174">
+        <a href="/livre/2174/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2178.webp" 
+              alt="Les chemins de Bourges"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chemins de Bourges</h3>
+            <p>Solange FASQUELLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les routes de rome" 
+        data-auteur="solange fasquelle"
+        data-annee="1986"
+        data-ordre="2175">
+        <a href="/livre/2175/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2179.webp" 
+              alt="Les routes de Rome"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les routes de Rome</h3>
+            <p>Solange FASQUELLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les marionnettes" 
+        data-auteur="william faulkner"
+        data-annee="1977"
+        data-ordre="2176">
+        <a href="/livre/2176/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2180.webp" 
+              alt="Les marionnettes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les marionnettes</h3>
+            <p>William FAULKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tandis que j&#39;agonise" 
+        data-auteur="william faulkner"
+        data-annee="1934"
+        data-ordre="2177">
+        <a href="/livre/2177/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2181.webp" 
+              alt="Tandis que j&#39;agonise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tandis que j&#39;agonise</h3>
+            <p>William FAULKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’intrus" 
+        data-auteur="william faulkner"
+        data-annee="1952"
+        data-ordre="2178">
+        <a href="/livre/2178/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2182.webp" 
+              alt="L’intrus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’intrus</h3>
+            <p>William FAULKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bruit et la fureur" 
+        data-auteur="william faulkner"
+        data-annee="1996"
+        data-ordre="2179">
+        <a href="/livre/2179/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2183.webp" 
+              alt="Le bruit et la fureur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bruit et la fureur</h3>
+            <p>William FAULKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de l&#39;art (n°1-2-3-4-5)" 
+        data-auteur="elie faure"
+        data-annee="0"
+        data-ordre="2180">
+        <a href="/livre/2180/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2184.webp" 
+              alt="Histoire de l&#39;Art (n°1-2-3-4-5)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de l&#39;Art (n°1-2-3-4-5)</h3>
+            <p>Elie FAURE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="louis xi" 
+        data-auteur="jean favier"
+        data-annee="2001"
+        data-ordre="2181">
+        <a href="/livre/2181/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2185.webp" 
+              alt="Louis XI"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Louis XI</h3>
+            <p>Jean FAVIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la justice révolutionnaire" 
+        data-auteur="jean-françois fayard"
+        data-annee="1987"
+        data-ordre="2182">
+        <a href="/livre/2182/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2186.webp" 
+              alt="La justice révolutionnaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La justice révolutionnaire</h3>
+            <p>Jean-François FAYARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="petit pays" 
+        data-auteur="gaël faye"
+        data-annee="2016"
+        data-ordre="2183">
+        <a href="/livre/2183/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2187.webp" 
+              alt="Petit pays"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Petit pays</h3>
+            <p>Gaël FAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nouveau discours à la nation européenne" 
+        data-auteur="guillaume faye"
+        data-annee="1985"
+        data-ordre="2184">
+        <a href="/livre/2184/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2188.webp" 
+              alt="Nouveau discours à la nation européenne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nouveau discours à la nation européenne</h3>
+            <p>Guillaume FAYE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la terre et le sang" 
+        data-auteur="mouloud feraoun"
+        data-annee="1953"
+        data-ordre="2185">
+        <a href="/livre/2185/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2189.webp" 
+              alt="La terre et le sang"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La terre et le sang</h3>
+            <p>Mouloud FERAOUN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fils du pauvre" 
+        data-auteur="mouloud feraoun"
+        data-annee="1950"
+        data-ordre="2186">
+        <a href="/livre/2186/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2190.webp" 
+              alt="Le fils du pauvre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fils du pauvre</h3>
+            <p>Mouloud FERAOUN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="contes d’une grand-mère chinoise" 
+        data-auteur="yveline feray"
+        data-annee="2013"
+        data-ordre="2187">
+        <a href="/livre/2187/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2191.webp" 
+              alt="Contes d’une grand-mère chinoise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Contes d’une grand-mère chinoise</h3>
+            <p>Yveline FERAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mapuche" 
+        data-auteur="caryl ferey"
+        data-annee="2012"
+        data-ordre="2188">
+        <a href="/livre/2188/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2192.webp" 
+              alt="Mapuche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mapuche</h3>
+            <p>Caryl FEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="utu" 
+        data-auteur="caryl ferey"
+        data-annee="2004"
+        data-ordre="2189">
+        <a href="/livre/2189/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2193.webp" 
+              alt="Utu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Utu</h3>
+            <p>Caryl FEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="zulu" 
+        data-auteur="caryl ferey"
+        data-annee="2010"
+        data-ordre="2190">
+        <a href="/livre/2190/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2194.webp" 
+              alt="Zulu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Zulu</h3>
+            <p>Caryl FEREY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fille sauvage" 
+        data-auteur="jim fergus"
+        data-annee="2004"
+        data-ordre="2191">
+        <a href="/livre/2191/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2195.webp" 
+              alt="La fille sauvage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fille sauvage</h3>
+            <p>Jim FERGUS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marie-blanche" 
+        data-auteur="jim fergus"
+        data-annee="2011"
+        data-ordre="2192">
+        <a href="/livre/2192/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2196.webp" 
+              alt="Marie-Blanche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marie-Blanche</h3>
+            <p>Jim FERGUS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mille femmes blanches" 
+        data-auteur="jim fergus"
+        data-annee="2000"
+        data-ordre="2193">
+        <a href="/livre/2193/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2197.webp" 
+              alt="Mille femmes blanches"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mille femmes blanches</h3>
+            <p>Jim FERGUS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bonne et la mauvaise peinture" 
+        data-auteur="andré fermigier"
+        data-annee="2002"
+        data-ordre="2194">
+        <a href="/livre/2194/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2198.webp" 
+              alt="La bonne et la mauvaise peinture"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bonne et la mauvaise peinture</h3>
+            <p>André FERMIGIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="eisenstein" 
+        data-auteur="dominique fernandez"
+        data-annee="1975"
+        data-ordre="2195">
+        <a href="/livre/2195/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2199.webp" 
+              alt="Eisenstein"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Eisenstein</h3>
+            <p>Dominique FERNANDEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="avec tolstoï" 
+        data-auteur="dominique fernandez"
+        data-annee="2010"
+        data-ordre="2196">
+        <a href="/livre/2196/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2200.webp" 
+              alt="Avec Tolstoï"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Avec Tolstoï</h3>
+            <p>Dominique FERNANDEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dernier des médicis" 
+        data-auteur="dominique fernandez"
+        data-annee="1994"
+        data-ordre="2197">
+        <a href="/livre/2197/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2201.webp" 
+              alt="Le dernier des Médicis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dernier des Médicis</h3>
+            <p>Dominique FERNANDEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans la main de l&#39;ange" 
+        data-auteur="dominique fernandez"
+        data-annee="1982"
+        data-ordre="2198">
+        <a href="/livre/2198/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2202.webp" 
+              alt="Dans la main de l&#39;ange"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans la main de l&#39;ange</h3>
+            <p>Dominique FERNANDEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="porfirio et constance" 
+        data-auteur="dominique fernandez"
+        data-annee="1991"
+        data-ordre="2199">
+        <a href="/livre/2199/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2203.webp" 
+              alt="Porfirio et Constance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Porfirio et Constance</h3>
+            <p>Dominique FERNANDEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;étoile rose" 
+        data-auteur="dominique fernandez"
+        data-annee="1978"
+        data-ordre="2200">
+        <a href="/livre/2200/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2204.webp" 
+              alt="L&#39;étoile rose"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;étoile rose</h3>
+            <p>Dominique FERNANDEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="porporinoou les mystères de naples" 
+        data-auteur="dominique fernandez"
+        data-annee="2014"
+        data-ordre="2201">
+        <a href="/livre/2201/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2205.webp" 
+              alt="Porporinoou les mystères de Naples"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Porporinoou les mystères de Naples</h3>
+            <p>Dominique FERNANDEZ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans la guerre" 
+        data-auteur="alice ferney"
+        data-annee="2003"
+        data-ordre="2202">
+        <a href="/livre/2202/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2206.webp" 
+              alt="Dans la guerre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans la guerre</h3>
+            <p>Alice FERNEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="grâce et dénuement" 
+        data-auteur="alice ferney"
+        data-annee="1997"
+        data-ordre="2203">
+        <a href="/livre/2203/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2207.webp" 
+              alt="Grâce et dénuement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Grâce et dénuement</h3>
+            <p>Alice FERNEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la conversation amoureuse" 
+        data-auteur="alice ferney"
+        data-annee="2000"
+        data-ordre="2204">
+        <a href="/livre/2204/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2208.webp" 
+              alt="La conversation amoureuse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La conversation amoureuse</h3>
+            <p>Alice FERNEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le règne du vivant" 
+        data-auteur="alice ferney"
+        data-annee="2014"
+        data-ordre="2205">
+        <a href="/livre/2205/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2209.webp" 
+              alt="Le règne du vivant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le règne du vivant</h3>
+            <p>Alice FERNEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’amie prodigieuse" 
+        data-auteur="elena ferrante"
+        data-annee="2018"
+        data-ordre="2206">
+        <a href="/livre/2206/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2210.webp" 
+              alt="L’amie prodigieuse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’amie prodigieuse</h3>
+            <p>Elena FERRANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’amie prodigieuse ii :le nouveau nom" 
+        data-auteur="elena ferrante"
+        data-annee="2018"
+        data-ordre="2207">
+        <a href="/livre/2207/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/2211.webp" 
+              alt="L’amie prodigieuse II :Le nouveau nom"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’amie prodigieuse II :Le nouveau nom</h3>
+            <p>Elena FERRANTE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-45/">← Précédent</a>
+    
+    
+    <span>Page 46 sur 153</span>
+    
+    
+      <a href="/catalogue/page-47/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

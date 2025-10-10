@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="la colline aux cyprès" 
+        data-auteur="louis bromfield"
+        data-annee="1949"
+        data-ordre="816">
+        <a href="/livre/816/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/819.webp" 
+              alt="La colline aux cyprès"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La colline aux cyprès</h3>
+            <p>Louis BROMFIELD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les hauts de hurle-vent" 
+        data-auteur="emily bronte"
+        data-annee="1925"
+        data-ordre="817">
+        <a href="/livre/817/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/820.webp" 
+              alt="Les hauts de Hurle-Vent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les hauts de Hurle-Vent</h3>
+            <p>Emily BRONTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hôtel du lac" 
+        data-auteur="anita brookner"
+        data-annee="1984"
+        data-ordre="818">
+        <a href="/livre/818/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/821.webp" 
+              alt="Hôtel du Lac"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hôtel du Lac</h3>
+            <p>Anita BROOKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="du feu par les naseaux" 
+        data-auteur="carter brown"
+        data-annee="1971"
+        data-ordre="819">
+        <a href="/livre/819/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/822.webp" 
+              alt="Du feu par les naseaux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Du feu par les naseaux</h3>
+            <p>Carter BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la sirène au ciné" 
+        data-auteur="carter brown"
+        data-annee="1977"
+        data-ordre="820">
+        <a href="/livre/820/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/823.webp" 
+              alt="La sirène au ciné"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La sirène au ciné</h3>
+            <p>Carter BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le péché capiteux" 
+        data-auteur="carter brown"
+        data-annee="1971"
+        data-ordre="821">
+        <a href="/livre/821/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/824.webp" 
+              alt="Le péché capiteux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le péché capiteux</h3>
+            <p>Carter BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lieutenant al wheeler : le cochon qui rêvasse" 
+        data-auteur="carter brown"
+        data-annee="0"
+        data-ordre="822">
+        <a href="/livre/822/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/825.webp" 
+              alt="Lieutenant Al Wheeler : le cochon qui rêvasse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lieutenant Al Wheeler : le cochon qui rêvasse</h3>
+            <p>Carter BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="se méfier des contrefaçons" 
+        data-auteur="carter brown"
+        data-annee="1963"
+        data-ordre="823">
+        <a href="/livre/823/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/826.webp" 
+              alt="Se méfier des contrefaçons"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Se méfier des contrefaçons</h3>
+            <p>Carter BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="da vinci code" 
+        data-auteur="dan brown"
+        data-annee="2003"
+        data-ordre="824">
+        <a href="/livre/824/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/827.webp" 
+              alt="Da Vinci code"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Da Vinci code</h3>
+            <p>Dan BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fille de nulle part" 
+        data-auteur="fredric brown"
+        data-annee="1979"
+        data-ordre="825">
+        <a href="/livre/825/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/828.webp" 
+              alt="La fille de nulle part"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fille de nulle part</h3>
+            <p>Fredric BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la nuit du jabberwock" 
+        data-auteur="fredric brown"
+        data-annee="1975"
+        data-ordre="826">
+        <a href="/livre/826/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/829.webp" 
+              alt="La nuit du Jabberwock"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La nuit du Jabberwock</h3>
+            <p>Fredric BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vieille canaille (meurtres en filigrane)" 
+        data-auteur="fredric brown"
+        data-annee="1963"
+        data-ordre="827">
+        <a href="/livre/827/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/830.webp" 
+              alt="Vieille canaille (meurtres en filigrane)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vieille canaille (meurtres en filigrane)</h3>
+            <p>Fredric BROWN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amour du prochain" 
+        data-auteur="pascal bruckner"
+        data-annee="2005"
+        data-ordre="828">
+        <a href="/livre/828/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/831.webp" 
+              alt="L&#39;amour du prochain"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amour du prochain</h3>
+            <p>Pascal BRUCKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le divin enfant" 
+        data-auteur="pascal bruckner"
+        data-annee="1992"
+        data-ordre="829">
+        <a href="/livre/829/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/832.webp" 
+              alt="Le divin enfant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le divin enfant</h3>
+            <p>Pascal BRUCKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les voleurs de beauté" 
+        data-auteur="pascal bruckner"
+        data-annee="1997"
+        data-ordre="830">
+        <a href="/livre/830/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/833.webp" 
+              alt="Les voleurs de beauté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les voleurs de beauté</h3>
+            <p>Pascal BRUCKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;euphorie perpétuelle" 
+        data-auteur="pascal bruckner"
+        data-annee="2000"
+        data-ordre="831">
+        <a href="/livre/831/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/834.webp" 
+              alt="L&#39;euphorie perpétuelle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;euphorie perpétuelle</h3>
+            <p>Pascal BRUCKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le mariage d&#39;amour a-t-il échoué ?" 
+        data-auteur="pascal bruckner"
+        data-annee="2010"
+        data-ordre="832">
+        <a href="/livre/832/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/835.webp" 
+              alt="Le mariage d&#39;amour a-t-il échoué ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le mariage d&#39;amour a-t-il échoué ?</h3>
+            <p>Pascal BRUCKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la tentation de l’innocence" 
+        data-auteur="pascal bruckner"
+        data-annee="1995"
+        data-ordre="833">
+        <a href="/livre/833/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/836.webp" 
+              alt="La tentation de l’innocence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La tentation de l’innocence</h3>
+            <p>Pascal BRUCKNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="delirium tremens" 
+        data-auteur="ken bruen"
+        data-annee="2004"
+        data-ordre="834">
+        <a href="/livre/834/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/837.webp" 
+              alt="Delirium Tremens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Delirium Tremens</h3>
+            <p>Ken BRUEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dramaturge" 
+        data-auteur="ken bruen"
+        data-annee="2022"
+        data-ordre="835">
+        <a href="/livre/835/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/838.webp" 
+              alt="Le dramaturge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dramaturge</h3>
+            <p>Ken BRUEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le martyre des magdalènes" 
+        data-auteur="ken bruen"
+        data-annee="2006"
+        data-ordre="836">
+        <a href="/livre/836/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/839.webp" 
+              alt="Le martyre des Magdalènes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le martyre des Magdalènes</h3>
+            <p>Ken BRUEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="r&amp;b – le mutant apprivoisé" 
+        data-auteur="ken bruen"
+        data-annee="2005"
+        data-ordre="837">
+        <a href="/livre/837/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/840.webp" 
+              alt="R&amp;B – Le Mutant apprivoisé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>R&amp;B – Le Mutant apprivoisé</h3>
+            <p>Ken BRUEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="toxic blues" 
+        data-auteur="ken bruen"
+        data-annee="2005"
+        data-ordre="838">
+        <a href="/livre/838/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/841.webp" 
+              alt="Toxic Blues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Toxic Blues</h3>
+            <p>Ken BRUEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la main droite du diable" 
+        data-auteur="ken bruen"
+        data-annee="2008"
+        data-ordre="839">
+        <a href="/livre/839/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/842.webp" 
+              alt="La main droite du diable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La main droite du diable</h3>
+            <p>Ken BRUEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoires de la forêt - les souvenirs de ferdinand taupe" 
+        data-auteur="mickaël brun-arnaud"
+        data-annee="2022"
+        data-ordre="840">
+        <a href="/livre/840/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/843.webp" 
+              alt="Mémoires de la forêt - Les souvenirs de Ferdinand Taupe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoires de la forêt - Les souvenirs de Ferdinand Taupe</h3>
+            <p>Mickaël BRUN-ARNAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="restez zen" 
+        data-auteur="henri brunel"
+        data-annee="2002"
+        data-ordre="841">
+        <a href="/livre/841/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/844.webp" 
+              alt="Restez zen"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Restez zen</h3>
+            <p>Henri BRUNEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gabin" 
+        data-auteur="andré brunelin"
+        data-annee="1987"
+        data-ordre="842">
+        <a href="/livre/842/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/845.webp" 
+              alt="Gabin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gabin</h3>
+            <p>André BRUNELIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les mots aux origines étonnantes" 
+        data-auteur="sylvie brunet"
+        data-annee="2023"
+        data-ordre="843">
+        <a href="/livre/843/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/846.webp" 
+              alt="Les mots aux origines étonnantes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les mots aux origines étonnantes</h3>
+            <p>Sylvie BRUNET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ère des miracles" 
+        data-auteur="john brunner"
+        data-annee="1977"
+        data-ordre="844">
+        <a href="/livre/844/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/847.webp" 
+              alt="L&#39;ère des miracles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ère des miracles</h3>
+            <p>John BRUNNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les dramaturges de yan" 
+        data-auteur="john brunner"
+        data-annee="1995"
+        data-ordre="845">
+        <a href="/livre/845/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/848.webp" 
+              alt="Les dramaturges de Yan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les dramaturges de Yan</h3>
+            <p>John BRUNNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le tour de france par deux enfants" 
+        data-auteur="g. bruno"
+        data-annee="1901"
+        data-ordre="846">
+        <a href="/livre/846/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/849.webp" 
+              alt="Le tour de France par deux enfants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le tour de France par deux enfants</h3>
+            <p>G. BRUNO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les ombres du jardin" 
+        data-auteur="serge brussolo"
+        data-annee="1996"
+        data-ordre="847">
+        <a href="/livre/847/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/850.webp" 
+              alt="Les ombres du jardin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les ombres du jardin</h3>
+            <p>Serge BRUSSOLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cauchemar à louer" 
+        data-auteur="serge brussolo"
+        data-annee="2001"
+        data-ordre="848">
+        <a href="/livre/848/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/851.webp" 
+              alt="Cauchemar à louer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cauchemar à louer</h3>
+            <p>Serge BRUSSOLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la chambre indienne" 
+        data-auteur="serge brussolo"
+        data-annee="2000"
+        data-ordre="849">
+        <a href="/livre/849/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/852.webp" 
+              alt="La chambre indienne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La chambre indienne</h3>
+            <p>Serge BRUSSOLO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="guide triste de paris" 
+        data-auteur="alfredo bryce-echenique"
+        data-annee="2003"
+        data-ordre="850">
+        <a href="/livre/850/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/853.webp" 
+              alt="Guide triste de Paris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Guide triste de Paris</h3>
+            <p>Alfredo BRYCE-ECHENIQUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la felicidad ah ! ah ! ah !" 
+        data-auteur="alfredo bryce-echenique"
+        data-annee="0"
+        data-ordre="851">
+        <a href="/livre/851/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/854.webp" 
+              alt="La felicidad ah ! ah ! ah !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La felicidad ah ! ah ! ah !</h3>
+            <p>Alfredo BRYCE-ECHENIQUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="budapest" 
+        data-auteur="chico buarque"
+        data-annee="2004"
+        data-ordre="852">
+        <a href="/livre/852/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/855.webp" 
+              alt="Budapest"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Budapest</h3>
+            <p>Chico BUARQUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="court-circuit" 
+        data-auteur="chico buarque"
+        data-annee="1997"
+        data-ordre="853">
+        <a href="/livre/853/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/856.webp" 
+              alt="Court-circuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Court-circuit</h3>
+            <p>Chico BUARQUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="déportée en sibérie" 
+        data-auteur="margarete buber-neumann"
+        data-annee="1949"
+        data-ordre="854">
+        <a href="/livre/854/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/857.webp" 
+              alt="Déportée en Sibérie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Déportée en Sibérie</h3>
+            <p>Margarete BUBER-NEUMANN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="milena" 
+        data-auteur="margarete buber-neumann"
+        data-annee="1963"
+        data-ordre="855">
+        <a href="/livre/855/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/858.webp" 
+              alt="Milena"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Milena</h3>
+            <p>Margarete BUBER-NEUMANN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je suis né aujourd&#39;hui au lever du jour" 
+        data-auteur="jorge bucay"
+        data-annee="2005"
+        data-ordre="856">
+        <a href="/livre/856/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/859.webp" 
+              alt="Je suis né aujourd&#39;hui au lever du jour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je suis né aujourd&#39;hui au lever du jour</h3>
+            <p>Jorge BUCAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="impératrice de chine" 
+        data-auteur="pearl buck"
+        data-annee="1956"
+        data-ordre="857">
+        <a href="/livre/857/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/860.webp" 
+              alt="Impératrice de Chine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Impératrice de Chine</h3>
+            <p>Pearl BUCK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mère" 
+        data-auteur="pearl buck"
+        data-annee="1964"
+        data-ordre="858">
+        <a href="/livre/858/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/861.webp" 
+              alt="La mère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mère</h3>
+            <p>Pearl BUCK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vent d&#39;est, vent d&#39;ouest" 
+        data-auteur="pearl buck"
+        data-annee="0"
+        data-ordre="859">
+        <a href="/livre/859/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/862.webp" 
+              alt="Vent d&#39;Est, vent d&#39;Ouest"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vent d&#39;Est, vent d&#39;Ouest</h3>
+            <p>Pearl BUCK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="contes de la folie ordinaire" 
+        data-auteur="charles bukowski"
+        data-annee="0"
+        data-ordre="860">
+        <a href="/livre/860/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/863.webp" 
+              alt="Contes de la folie ordinaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Contes de la folie ordinaire</h3>
+            <p>Charles BUKOWSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hollywood" 
+        data-auteur="charles bukowski"
+        data-annee="1989"
+        data-ordre="861">
+        <a href="/livre/861/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/864.webp" 
+              alt="Hollywood"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hollywood</h3>
+            <p>Charles BUKOWSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le ragout du septuagénaire" 
+        data-auteur="charles bukowski"
+        data-annee="1999"
+        data-ordre="862">
+        <a href="/livre/862/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/865.webp" 
+              alt="Le ragout du septuagénaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le ragout du septuagénaire</h3>
+            <p>Charles BUKOWSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les hommes de proie" 
+        data-auteur="edward bunker"
+        data-annee="1997"
+        data-ordre="863">
+        <a href="/livre/863/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/866.webp" 
+              alt="Les hommes de proie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les hommes de proie</h3>
+            <p>Edward BUNKER</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-17/">← Précédent</a>
+    
+    
+    <span>Page 18 sur 153</span>
+    
+    
+      <a href="/catalogue/page-19/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

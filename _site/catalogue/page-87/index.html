@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="un abri en ce monde" 
+        data-auteur="morris  mary mcgarry"
+        data-annee="2005"
+        data-ordre="4128">
+        <a href="/livre/4128/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4140.webp" 
+              alt="Un abri en ce monde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un abri en ce monde</h3>
+            <p>MORRIS  Mary McGARRY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fiona range" 
+        data-auteur="morris mary mcgarry"
+        data-annee="2000"
+        data-ordre="4129">
+        <a href="/livre/4129/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4141.webp" 
+              alt="Fiona Range"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fiona Range</h3>
+            <p>MORRIS Mary McGARRY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mélodie du temps ordinaire" 
+        data-auteur="morris mary mcgarry"
+        data-annee="1999"
+        data-ordre="4130">
+        <a href="/livre/4130/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4142.webp" 
+              alt="Mélodie du temps ordinaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mélodie du temps ordinaire</h3>
+            <p>MORRIS Mary McGARRY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la belle vie" 
+        data-auteur="jay mcinerney"
+        data-annee="2008"
+        data-ordre="4131">
+        <a href="/livre/4131/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4143.webp" 
+              alt="La belle vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La belle vie</h3>
+            <p>Jay McINERNEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="trente ans et des poussières" 
+        data-auteur="jay mcinerney"
+        data-annee="1993"
+        data-ordre="4132">
+        <a href="/livre/4132/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4144.webp" 
+              alt="Trente ans et des poussières"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Trente ans et des poussières</h3>
+            <p>Jay McINERNEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="eureka street" 
+        data-auteur="wilson robert mcliam"
+        data-annee="1997"
+        data-ordre="4133">
+        <a href="/livre/4133/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4145.webp" 
+              alt="Eureka Street"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Eureka Street</h3>
+            <p>WILSON Robert McLIAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la douleur de manfred" 
+        data-auteur="wilson robert mcliam"
+        data-annee="2003"
+        data-ordre="4134">
+        <a href="/livre/4134/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4146.webp" 
+              alt="La douleur de Manfred"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La douleur de Manfred</h3>
+            <p>WILSON Robert McLIAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les dépossédés" 
+        data-auteur="wilson robert mcliam"
+        data-annee="2017"
+        data-ordre="4135">
+        <a href="/livre/4135/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4147.webp" 
+              alt="Les dépossédés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les dépossédés</h3>
+            <p>WILSON Robert McLIAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ripley bogle" 
+        data-auteur="wilson robert mcliam"
+        data-annee="1989"
+        data-ordre="4136">
+        <a href="/livre/4136/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4148.webp" 
+              alt="Ripley Bogle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ripley Bogle</h3>
+            <p>WILSON Robert McLIAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un acte d&#39;amour" 
+        data-auteur="james meek"
+        data-annee="2008"
+        data-ordre="4137">
+        <a href="/livre/4137/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4149.webp" 
+              alt="Un acte d&#39;amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un acte d&#39;amour</h3>
+            <p>James MEEK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le serpent et l&#39;échelle" 
+        data-auteur="gita mehta"
+        data-annee="1997"
+        data-ordre="4138">
+        <a href="/livre/4138/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4150.webp" 
+              alt="Le serpent et l&#39;échelle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le serpent et l&#39;échelle</h3>
+            <p>Gita MEHTA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bombay maximum city" 
+        data-auteur="suketu mehta"
+        data-annee="2004"
+        data-ordre="4139">
+        <a href="/livre/4139/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4151.webp" 
+              alt="Bombay maximum city"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bombay maximum city</h3>
+            <p>Suketu MEHTA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la torture" 
+        data-auteur="alec mellor"
+        data-annee="1949"
+        data-ordre="4140">
+        <a href="/livre/4140/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4152.webp" 
+              alt="La torture"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La torture</h3>
+            <p>Alec MELLOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ceci est mon corps" 
+        data-auteur="filipa melo"
+        data-annee="2004"
+        data-ordre="4141">
+        <a href="/livre/4141/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4153.webp" 
+              alt="Ceci est mon corps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ceci est mon corps</h3>
+            <p>Filipa MELO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="moby dick" 
+        data-auteur="herman melville"
+        data-annee="1851"
+        data-ordre="4142">
+        <a href="/livre/4142/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4154.webp" 
+              alt="Moby Dick"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Moby Dick</h3>
+            <p>Herman MELVILLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poèmes de guerre" 
+        data-auteur="herman melville"
+        data-annee="1991"
+        data-ordre="4143">
+        <a href="/livre/4143/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4155.webp" 
+              alt="Poèmes de guerre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poèmes de guerre</h3>
+            <p>Herman MELVILLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="agar" 
+        data-auteur="albert memmi"
+        data-annee="1963"
+        data-ordre="4144">
+        <a href="/livre/4144/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4156.webp" 
+              alt="Agar"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Agar</h3>
+            <p>Albert MEMMI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ecrivains francophones du maghreb" 
+        data-auteur="albert memmi"
+        data-annee="1985"
+        data-ordre="4145">
+        <a href="/livre/4145/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4157.webp" 
+              alt="Ecrivains francophones du Maghreb"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ecrivains francophones du Maghreb</h3>
+            <p>Albert MEMMI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme dominé" 
+        data-auteur="albert memmi"
+        data-annee="1968"
+        data-ordre="4146">
+        <a href="/livre/4146/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4158.webp" 
+              alt="L&#39;homme dominé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme dominé</h3>
+            <p>Albert MEMMI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la statue de sel" 
+        data-auteur="albert memmi"
+        data-annee="1953"
+        data-ordre="4147">
+        <a href="/livre/4147/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4159.webp" 
+              alt="La statue de sel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La statue de sel</h3>
+            <p>Albert MEMMI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bonheurs" 
+        data-auteur="albert memmi"
+        data-annee="1992"
+        data-ordre="4148">
+        <a href="/livre/4148/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4160.webp" 
+              alt="Bonheurs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bonheurs</h3>
+            <p>Albert MEMMI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les disparus" 
+        data-auteur="daniel mendelsohn"
+        data-annee="2008"
+        data-ordre="4149">
+        <a href="/livre/4149/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4161.webp" 
+              alt="Les disparus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les disparus</h3>
+            <p>Daniel MENDELSOHN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="liberté, liberté chérie" 
+        data-auteur="france pierre mendes"
+        data-annee="1943"
+        data-ordre="4150">
+        <a href="/livre/4150/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4162.webp" 
+              alt="Liberté, liberté chérie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Liberté, liberté chérie</h3>
+            <p>FRANCE Pierre MENDES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="choisir" 
+        data-auteur="france pierre mendes"
+        data-annee="1974"
+        data-ordre="4151">
+        <a href="/livre/4151/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4163.webp" 
+              alt="Choisir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Choisir</h3>
+            <p>FRANCE Pierre MENDES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’artiste des dames" 
+        data-auteur="eduardo mendoza"
+        data-annee="2002"
+        data-ordre="4152">
+        <a href="/livre/4152/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4164.webp" 
+              alt="L’artiste des dames"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’artiste des dames</h3>
+            <p>Eduardo MENDOZA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la grande embrouille" 
+        data-auteur="eduardo mendoza"
+        data-annee="2013"
+        data-ordre="4153">
+        <a href="/livre/4153/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4165.webp" 
+              alt="La grande embrouille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La grande embrouille</h3>
+            <p>Eduardo MENDOZA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le mystère de la crypte ensorcelée" 
+        data-auteur="eduardo mendoza"
+        data-annee="1982"
+        data-ordre="4154">
+        <a href="/livre/4154/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4166.webp" 
+              alt="Le mystère de la crypte ensorcelée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le mystère de la crypte ensorcelée</h3>
+            <p>Eduardo MENDOZA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une comédie légère" 
+        data-auteur="eduardo mendoza"
+        data-annee="1998"
+        data-ordre="4155">
+        <a href="/livre/4155/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4167.webp" 
+              alt="Une comédie légère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une comédie légère</h3>
+            <p>Eduardo MENDOZA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les belles choses que porte le ciel" 
+        data-auteur="dinaw mengestu"
+        data-annee="2009"
+        data-ordre="4156">
+        <a href="/livre/4156/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4168.webp" 
+              alt="Les belles choses que porte le ciel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les belles choses que porte le ciel</h3>
+            <p>Dinaw MENGESTU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pialat" 
+        data-auteur="pascal merigeau"
+        data-annee="2003"
+        data-ordre="4157">
+        <a href="/livre/4157/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4169.webp" 
+              alt="Pialat"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pialat</h3>
+            <p>Pascal MERIGEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="carmen" 
+        data-auteur="prosper merimee"
+        data-annee="1800"
+        data-ordre="4158">
+        <a href="/livre/4158/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4170.webp" 
+              alt="Carmen"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Carmen</h3>
+            <p>Prosper MERIMEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="colomba" 
+        data-auteur="prosper merimee"
+        data-annee="1845"
+        data-ordre="4159">
+        <a href="/livre/4159/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4171.webp" 
+              alt="Colomba"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Colomba</h3>
+            <p>Prosper MERIMEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vénus d&#39;illeet autres nouvelles" 
+        data-auteur="prosper merimee"
+        data-annee="1982"
+        data-ordre="4160">
+        <a href="/livre/4160/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4172.webp" 
+              alt="La vénus d&#39;Illeet autres nouvelles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vénus d&#39;Illeet autres nouvelles</h3>
+            <p>Prosper MERIMEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="seul, invaincu" 
+        data-auteur="loïc merle"
+        data-annee="2015"
+        data-ordre="4161">
+        <a href="/livre/4161/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4173.webp" 
+              alt="Seul, invaincu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Seul, invaincu</h3>
+            <p>Loïc MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="john lennonla ballade inachevée" 
+        data-auteur="pierre merle"
+        data-annee="2000"
+        data-ordre="4162">
+        <a href="/livre/4162/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4174.webp" 
+              alt="John Lennonla ballade inachevée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>John Lennonla ballade inachevée</h3>
+            <p>Pierre MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 01." 
+        data-auteur="robert merle"
+        data-annee="1992"
+        data-ordre="4163">
+        <a href="/livre/4163/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4175.webp" 
+              alt="Fortune de France : 01."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 01.</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france :02. en nos vertes années" 
+        data-auteur="robert merle"
+        data-annee="1997"
+        data-ordre="4164">
+        <a href="/livre/4164/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4176.webp" 
+              alt="Fortune de France :02. En nos vertes années"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France :02. En nos vertes années</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 03. paris ma bonne ville" 
+        data-auteur="robert merle"
+        data-annee="1981"
+        data-ordre="4165">
+        <a href="/livre/4165/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4177.webp" 
+              alt="Fortune de France : 03. Paris ma bonne ville"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 03. Paris ma bonne ville</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france :04. le prince que voilà" 
+        data-auteur="robert merle"
+        data-annee="1982"
+        data-ordre="4166">
+        <a href="/livre/4166/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4178.webp" 
+              alt="Fortune de France :04. Le prince que voilà"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France :04. Le prince que voilà</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france :05. la violente amour" 
+        data-auteur="robert merle"
+        data-annee="1989"
+        data-ordre="4167">
+        <a href="/livre/4167/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4179.webp" 
+              alt="Fortune de France :05. La violente amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France :05. La violente amour</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 06. la pique du jour" 
+        data-auteur="robert merle"
+        data-annee="1992"
+        data-ordre="4168">
+        <a href="/livre/4168/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4180.webp" 
+              alt="Fortune de France : 06. La pique du jour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 06. La pique du jour</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 09. les roses de la vie" 
+        data-auteur="robert merle"
+        data-annee="1995"
+        data-ordre="4169">
+        <a href="/livre/4169/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4181.webp" 
+              alt="Fortune de France : 09. Les roses de la vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 09. Les roses de la vie</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 10. le lys et la pourpre" 
+        data-auteur="robert merle"
+        data-annee="1998"
+        data-ordre="4170">
+        <a href="/livre/4170/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4182.webp" 
+              alt="Fortune de France : 10. Le lys et la pourpre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 10. Le lys et la pourpre</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 11. la gloire et les périls" 
+        data-auteur="robert merle"
+        data-annee="2001"
+        data-ordre="4171">
+        <a href="/livre/4171/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4183.webp" 
+              alt="Fortune de France : 11. La gloire et les périls"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 11. La gloire et les périls</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 12. complots et cabales" 
+        data-auteur="robert merle"
+        data-annee="2001"
+        data-ordre="4172">
+        <a href="/livre/4172/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4184.webp" 
+              alt="Fortune de France : 12. Complots et cabales"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 12. Complots et cabales</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’idole" 
+        data-auteur="robert merle"
+        data-annee="1988"
+        data-ordre="4173">
+        <a href="/livre/4173/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4185.webp" 
+              alt="L’idole"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’idole</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="derrière la vitre" 
+        data-auteur="robert merle"
+        data-annee="1970"
+        data-ordre="4174">
+        <a href="/livre/4174/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4186.webp" 
+              alt="Derrière la vitre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Derrière la vitre</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="week-end à zuydcoote" 
+        data-auteur="robert merle"
+        data-annee="1949"
+        data-ordre="4175">
+        <a href="/livre/4175/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4187.webp" 
+              alt="Week-end à Zuydcoote"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Week-end à Zuydcoote</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-86/">← Précédent</a>
+    
+    
+    <span>Page 87 sur 153</span>
+    
+    
+      <a href="/catalogue/page-88/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

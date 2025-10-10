@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="je veux devenir moine zen" 
+        data-auteur="kiyohiro miura"
+        data-annee="2002"
+        data-ordre="4272">
+        <a href="/livre/4272/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4284.webp" 
+              alt="Je veux devenir moine zen"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je veux devenir moine zen</h3>
+            <p>Kiyohiro MIURA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le maître a de plus en plus d&#39;humour" 
+        data-auteur="yan mo"
+        data-annee="2006"
+        data-ordre="4273">
+        <a href="/livre/4273/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4285.webp" 
+              alt="Le maître a de plus en plus d&#39;humour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le maître a de plus en plus d&#39;humour</h3>
+            <p>YAN MO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la haine antisémite" 
+        data-auteur="moati serge et raspiengeas jean-claude"
+        data-annee="1991"
+        data-ordre="4274">
+        <a href="/livre/4274/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4286.webp" 
+              alt="La haine antisémite"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La haine antisémite</h3>
+            <p>MOATI Serge et RASPIENGEAS Jean-Claude</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="accident nocturne" 
+        data-auteur="patrick modiano"
+        data-annee="2003"
+        data-ordre="4275">
+        <a href="/livre/4275/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4287.webp" 
+              alt="Accident nocturne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Accident nocturne</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans le café de la jeunesse perdue" 
+        data-auteur="patrick modiano"
+        data-annee="2005"
+        data-ordre="4276">
+        <a href="/livre/4276/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4288.webp" 
+              alt="Dans le café de la jeunesse perdue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans le café de la jeunesse perdue</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de si braves garçons" 
+        data-auteur="patrick modiano"
+        data-annee="1982"
+        data-ordre="4277">
+        <a href="/livre/4277/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4289.webp" 
+              alt="De si braves garçons"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De si braves garçons</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="des inconnues" 
+        data-auteur="patrick modiano"
+        data-annee="1999"
+        data-ordre="4278">
+        <a href="/livre/4278/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4290.webp" 
+              alt="Des inconnues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Des inconnues</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dimanches d&#39;août" 
+        data-auteur="patrick modiano"
+        data-annee="1986"
+        data-ordre="4279">
+        <a href="/livre/4279/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4291.webp" 
+              alt="Dimanches d&#39;août"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dimanches d&#39;août</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dora bruder" 
+        data-auteur="patrick modiano"
+        data-annee="1997"
+        data-ordre="4280">
+        <a href="/livre/4280/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4292.webp" 
+              alt="Dora Bruder"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dora Bruder</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="du plus loin de l&#39;oubli" 
+        data-auteur="patrick modiano"
+        data-annee="1996"
+        data-ordre="4281">
+        <a href="/livre/4281/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4293.webp" 
+              alt="Du plus loin de l&#39;oubli"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Du plus loin de l&#39;oubli</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fleurs de ruine" 
+        data-auteur="patrick modiano"
+        data-annee="1991"
+        data-ordre="4282">
+        <a href="/livre/4282/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4294.webp" 
+              alt="Fleurs de ruine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fleurs de ruine</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;horizon" 
+        data-auteur="patrick modiano"
+        data-annee="2010"
+        data-ordre="4283">
+        <a href="/livre/4283/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4295.webp" 
+              alt="L&#39;horizon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;horizon</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’herbe des nuits" 
+        data-auteur="patrick modiano"
+        data-annee="2014"
+        data-ordre="4284">
+        <a href="/livre/4284/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4296.webp" 
+              alt="L’herbe des nuits"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’herbe des nuits</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la petite bijou" 
+        data-auteur="patrick modiano"
+        data-annee="2001"
+        data-ordre="4285">
+        <a href="/livre/4285/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4297.webp" 
+              alt="La petite Bijou"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La petite Bijou</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la place de l&#39;étoile" 
+        data-auteur="patrick modiano"
+        data-annee="1968"
+        data-ordre="4286">
+        <a href="/livre/4286/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4298.webp" 
+              alt="La place de l&#39;étoile"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La place de l&#39;étoile</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="livret de famille" 
+        data-auteur="patrick modiano"
+        data-annee="1977"
+        data-ordre="4287">
+        <a href="/livre/4287/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4299.webp" 
+              alt="Livret de famille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Livret de famille</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pour que tu ne te perdes pas dans le quartier" 
+        data-auteur="patrick modiano"
+        data-annee="2016"
+        data-ordre="4288">
+        <a href="/livre/4288/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4300.webp" 
+              alt="Pour que tu ne te perdes pas dans le quartier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pour que tu ne te perdes pas dans le quartier</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quartier perdu" 
+        data-auteur="patrick modiano"
+        data-annee="1984"
+        data-ordre="4289">
+        <a href="/livre/4289/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4301.webp" 
+              alt="Quartier perdu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quartier perdu</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="remise de peine" 
+        data-auteur="patrick modiano"
+        data-annee="1989"
+        data-ordre="4290">
+        <a href="/livre/4290/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4302.webp" 
+              alt="Remise de peine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Remise de peine</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="remise de peine - fleurs de ruine - chien de printemps" 
+        data-auteur="patrick modiano"
+        data-annee="2013"
+        data-ordre="4291">
+        <a href="/livre/4291/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4303.webp" 
+              alt="Remise de peine - Fleurs de ruine - Chien de printemps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Remise de peine - Fleurs de ruine - Chien de printemps</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un cirque passe" 
+        data-auteur="patrick modiano"
+        data-annee="1992"
+        data-ordre="4292">
+        <a href="/livre/4292/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4304.webp" 
+              alt="Un cirque passe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un cirque passe</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un pédigree" 
+        data-auteur="patrick modiano"
+        data-annee="2005"
+        data-ordre="4293">
+        <a href="/livre/4293/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4305.webp" 
+              alt="Un pédigree"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un pédigree</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une jeunesse" 
+        data-auteur="patrick modiano"
+        data-annee="1981"
+        data-ordre="4294">
+        <a href="/livre/4294/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4306.webp" 
+              alt="Une jeunesse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une jeunesse</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="voyage de noces" 
+        data-auteur="patrick modiano"
+        data-annee="1990"
+        data-ordre="4295">
+        <a href="/livre/4295/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4307.webp" 
+              alt="Voyage de noces"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Voyage de noces</h3>
+            <p>Patrick MODIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chambre 207" 
+        data-auteur="kgebetli moele"
+        data-annee="2010"
+        data-ordre="4296">
+        <a href="/livre/4296/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4308.webp" 
+              alt="Chambre 207"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chambre 207</h3>
+            <p>Kgebetli MOELE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la maison du père" 
+        data-auteur="michel mohrt"
+        data-annee="1979"
+        data-ordre="4297">
+        <a href="/livre/4297/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4309.webp" 
+              alt="La maison du père"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La maison du père</h3>
+            <p>Michel MOHRT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le télésiège" 
+        data-auteur="michel mohrt"
+        data-annee="1989"
+        data-ordre="4298">
+        <a href="/livre/4298/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4310.webp" 
+              alt="Le télésiège"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le télésiège</h3>
+            <p>Michel MOHRT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="trucs et astuces pour une maison écolo" 
+        data-auteur="guylaine moi"
+        data-annee="2006"
+        data-ordre="4299">
+        <a href="/livre/4299/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4311.webp" 
+              alt="Trucs et Astuces pour une maison écolo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Trucs et Astuces pour une maison écolo</h3>
+            <p>Guylaine MOI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le guetteur d&#39;ombre" 
+        data-auteur="pierre moinot"
+        data-annee="1979"
+        data-ordre="4300">
+        <a href="/livre/4300/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4312.webp" 
+              alt="Le guetteur d&#39;ombre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le guetteur d&#39;ombre</h3>
+            <p>Pierre MOINOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="podium" 
+        data-auteur="yann moix"
+        data-annee="2004"
+        data-ordre="4301">
+        <a href="/livre/4301/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4313.webp" 
+              alt="Podium"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Podium</h3>
+            <p>Yann MOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une simple lettre d’amour" 
+        data-auteur="yann moix"
+        data-annee="2015"
+        data-ordre="4302">
+        <a href="/livre/4302/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4314.webp" 
+              alt="Une simple lettre d’amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une simple lettre d’amour</h3>
+            <p>Yann MOIX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les hommes qui marchent" 
+        data-auteur="malika mokeddem"
+        data-annee="1990"
+        data-ordre="4303">
+        <a href="/livre/4303/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4315.webp" 
+              alt="Les hommes qui marchent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les hommes qui marchent</h3>
+            <p>Malika MOKEDDEM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la 7ème femme" 
+        data-auteur="frédérique molay"
+        data-annee="2012"
+        data-ordre="4304">
+        <a href="/livre/4304/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4316.webp" 
+              alt="La 7ème femme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La 7ème femme</h3>
+            <p>Frédérique MOLAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dom juanou le festin de pierre" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1924"
+        data-ordre="4305">
+        <a href="/livre/4305/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4317.webp" 
+              alt="Dom Juanou Le festin de Pierre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dom Juanou Le festin de Pierre</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;école des femmes" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1950"
+        data-ordre="4306">
+        <a href="/livre/4306/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4318.webp" 
+              alt="L&#39;école des femmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;école des femmes</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bourgeois gentilhomme - les femmes savantes - le malade imaginaire" 
+        data-auteur="j.b.p. moliere"
+        data-annee="2020"
+        data-ordre="4307">
+        <a href="/livre/4307/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4319.webp" 
+              alt="Le bourgeois gentilhomme - Les femmes savantes - Le malade imaginaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bourgeois gentilhomme - Les femmes savantes - Le malade imaginaire</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le malade imaginaire" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1772"
+        data-ordre="4308">
+        <a href="/livre/4308/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4320.webp" 
+              alt="Le malade imaginaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le malade imaginaire</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le misanthrope" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1817"
+        data-ordre="4309">
+        <a href="/livre/4309/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4321.webp" 
+              alt="Le misanthrope"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le misanthrope</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le tartuffe" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1933"
+        data-ordre="4310">
+        <a href="/livre/4310/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4322.webp" 
+              alt="Le Tartuffe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Tartuffe</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les femmes savantes" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1900"
+        data-ordre="4311">
+        <a href="/livre/4311/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4323.webp" 
+              alt="Les femmes savantes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les femmes savantes</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les fourberies de scapin" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1892"
+        data-ordre="4312">
+        <a href="/livre/4312/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4324.webp" 
+              alt="Les fourberies de Scapin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les fourberies de Scapin</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les précieuses ridicules" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1876"
+        data-ordre="4313">
+        <a href="/livre/4313/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4325.webp" 
+              alt="Les précieuses ridicules"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les précieuses ridicules</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="œuvres complètes" 
+        data-auteur="j.b.p. moliere"
+        data-annee="1825"
+        data-ordre="4314">
+        <a href="/livre/4314/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4326.webp" 
+              alt="Œuvres complètes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Œuvres complètes</h3>
+            <p>J.B.P. MOLIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="brel, le livre du souvenir" 
+        data-auteur="martin monestier"
+        data-annee="1978"
+        data-ordre="4315">
+        <a href="/livre/4315/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4327.webp" 
+              alt="Brel, le livre du souvenir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Brel, le livre du souvenir</h3>
+            <p>Martin MONESTIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la croisière du hachich" 
+        data-auteur="henry de monfreid"
+        data-annee="1966"
+        data-ordre="4316">
+        <a href="/livre/4316/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4328.webp" 
+              alt="La croisière du hachich"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La croisière du hachich</h3>
+            <p>Henry de MONFREID</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cimetière des éléphants" 
+        data-auteur="henry de monfreid"
+        data-annee="1994"
+        data-ordre="4317">
+        <a href="/livre/4317/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4329.webp" 
+              alt="Le cimetière des éléphants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cimetière des éléphants</h3>
+            <p>Henry de MONFREID</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les secrets de la mer rouge" 
+        data-auteur="henry de monfreid"
+        data-annee="1932"
+        data-ordre="4318">
+        <a href="/livre/4318/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4330.webp" 
+              alt="Les secrets de la Mer Rouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les secrets de la Mer Rouge</h3>
+            <p>Henry de MONFREID</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pilleurs d&#39;épaves" 
+        data-auteur="henry de monfreid"
+        data-annee="1972"
+        data-ordre="4319">
+        <a href="/livre/4319/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4331.webp" 
+              alt="Pilleurs d&#39;épaves"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pilleurs d&#39;épaves</h3>
+            <p>Henry de MONFREID</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-89/">← Précédent</a>
+    
+    
+    <span>Page 90 sur 153</span>
+    
+    
+      <a href="/catalogue/page-91/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

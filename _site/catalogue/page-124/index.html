@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="histoires" 
+        data-auteur="tacite"
+        data-annee="1921"
+        data-ordre="5904">
+        <a href="/livre/5904/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5917.webp" 
+              alt="Histoires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoires</h3>
+            <p>TACITE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="oeuvres complètes(tome premier)" 
+        data-auteur="rabindranath tagore"
+        data-annee="1961"
+        data-ordre="5905">
+        <a href="/livre/5905/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5918.webp" 
+              alt="Oeuvres complètes(tome premier)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Oeuvres complètes(tome premier)</h3>
+            <p>Rabindranath TAGORE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vagabond et autres histoires" 
+        data-auteur="abdellah taia"
+        data-annee="0"
+        data-ordre="5906">
+        <a href="/livre/5906/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5919.webp" 
+              alt="Le vagabond et autres histoires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vagabond et autres histoires</h3>
+            <p>Abdellah TAIA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le rouge du tarbouche" 
+        data-auteur="ii paco ignacio taibo"
+        data-annee="2021"
+        data-ordre="5907">
+        <a href="/livre/5907/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5920.webp" 
+              alt="Le rouge du tarbouche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le rouge du tarbouche</h3>
+            <p>II Paco Ignacio TAIBO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je paie pas le loyer, je fais grève !" 
+        data-auteur="don c. talayesva"
+        data-annee="0"
+        data-ordre="5908">
+        <a href="/livre/5908/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5921.webp" 
+              alt="Je paie pas le loyer, je fais grève !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je paie pas le loyer, je fais grève !</h3>
+            <p>Don C. TALAYESVA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="soleil hopi" 
+        data-auteur="hake talbot"
+        data-annee="0"
+        data-ordre="5909">
+        <a href="/livre/5909/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5922.webp" 
+              alt="Soleil Hopi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Soleil Hopi</h3>
+            <p>Hake TALBOT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au seuil de l’abîme" 
+        data-auteur="frank tallis"
+        data-annee="2013"
+        data-ordre="5910">
+        <a href="/livre/5910/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5923.webp" 
+              alt="Au seuil de l’abîme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au seuil de l’abîme</h3>
+            <p>Frank TALLIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="du sang sur vienne" 
+        data-auteur="frank tallis"
+        data-annee="2018"
+        data-ordre="5911">
+        <a href="/livre/5911/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5924.webp" 
+              alt="Du sang sur Vienne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Du sang sur Vienne</h3>
+            <p>Frank TALLIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la tête dans les nuages" 
+        data-auteur="susanna tamaro"
+        data-annee="1997"
+        data-ordre="5912">
+        <a href="/livre/5912/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5925.webp" 
+              alt="La tête dans les nuages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La tête dans les nuages</h3>
+            <p>Susanna TAMARO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a" 
+        data-auteur="susanna tamaro"
+        data-annee="1999"
+        data-ordre="5913">
+        <a href="/livre/5913/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5926.webp" 
+              alt="a"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>a</h3>
+            <p>Susanna TAMARO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="va où ton coeur te porte" 
+        data-auteur="junichirô tanizaki"
+        data-annee="2019"
+        data-ordre="5914">
+        <a href="/livre/5914/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5927.webp" 
+              alt="Va où ton coeur te porte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Va où ton coeur te porte</h3>
+            <p>Junichirô TANIZAKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="eloge de l&#39;ombre" 
+        data-auteur="junichirô tanizaki"
+        data-annee="1977"
+        data-ordre="5915">
+        <a href="/livre/5915/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5928.webp" 
+              alt="Eloge de l&#39;ombre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Eloge de l&#39;ombre</h3>
+            <p>Junichirô TANIZAKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal d&#39;un vieux fou" 
+        data-auteur="junichirô tanizaki"
+        data-annee="0"
+        data-ordre="5916">
+        <a href="/livre/5916/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5929.webp" 
+              alt="Journal d&#39;un vieux fou"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal d&#39;un vieux fou</h3>
+            <p>Junichirô TANIZAKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la confession impudique" 
+        data-auteur="junichirô tanizaki"
+        data-annee="1963"
+        data-ordre="5917">
+        <a href="/livre/5917/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5930.webp" 
+              alt="La confession impudique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La confession impudique</h3>
+            <p>Junichirô TANIZAKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat, son maître et ses deux maîtresses" 
+        data-auteur="junichirô tanizaki"
+        data-annee="1994"
+        data-ordre="5918">
+        <a href="/livre/5918/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5931.webp" 
+              alt="Le chat, son maître et ses deux maîtresses"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat, son maître et ses deux maîtresses</h3>
+            <p>Junichirô TANIZAKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="svastika" 
+        data-auteur="dorothea tanning"
+        data-annee="0"
+        data-ordre="5919">
+        <a href="/livre/5919/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5932.webp" 
+              alt="Svastika"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Svastika</h3>
+            <p>Dorothea TANNING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="birthday" 
+        data-auteur="l. victor tapie"
+        data-annee="0"
+        data-ordre="5920">
+        <a href="/livre/5920/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5933.webp" 
+              alt="Birthday"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Birthday</h3>
+            <p>L. Victor TAPIE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="baroque et classicisme" 
+        data-auteur="tardieu"
+        data-annee="1961"
+        data-ordre="5921">
+        <a href="/livre/5921/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5934.webp" 
+              alt="Baroque et classicisme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Baroque et classicisme</h3>
+            <p>TARDIEU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="forêts des hommes- tropiques saccagés ou sauvés ?" 
+        data-auteur="laurence tardieu"
+        data-annee="1992"
+        data-ordre="5922">
+        <a href="/livre/5922/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5935.webp" 
+              alt="Forêts des hommes- Tropiques saccagés ou sauvés ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Forêts des hommes- Tropiques saccagés ou sauvés ?</h3>
+            <p>Laurence TARDIEU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la confusion des peines" 
+        data-auteur="laurence tardieu"
+        data-annee="2011"
+        data-ordre="5923">
+        <a href="/livre/5923/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5936.webp" 
+              alt="La confusion des peines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La confusion des peines</h3>
+            <p>Laurence TARDIEU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="puisque rien ne dure" 
+        data-auteur="tardieu laurence – aude samama"
+        data-annee="2006"
+        data-ordre="5924">
+        <a href="/livre/5924/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5937.webp" 
+              alt="Puisque rien ne dure"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Puisque rien ne dure</h3>
+            <p>TARDIEU Laurence – Aude SAMAMA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chardonneret" 
+        data-auteur="donna tartt"
+        data-annee="2014"
+        data-ordre="5925">
+        <a href="/livre/5925/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5938.webp" 
+              alt="Le chardonneret"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chardonneret</h3>
+            <p>Donna TARTT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a l&#39;abandon" 
+        data-auteur="donna tartt"
+        data-annee="2014"
+        data-ordre="5926">
+        <a href="/livre/5926/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5939.webp" 
+              alt="A l&#39;abandon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A l&#39;abandon</h3>
+            <p>Donna TARTT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le maître des illusions" 
+        data-auteur="michel taube"
+        data-annee="2009"
+        data-ordre="5927">
+        <a href="/livre/5927/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5940.webp" 
+              alt="Le maître des illusions"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le maître des illusions</h3>
+            <p>Michel TAUBE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jade" 
+        data-auteur="michel tauriac"
+        data-annee="1986"
+        data-ordre="5928">
+        <a href="/livre/5928/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5941.webp" 
+              alt="Jade"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jade</h3>
+            <p>Michel TAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amérique qui tue : la peine de mort aux usa" 
+        data-auteur="michel tauriac"
+        data-annee="0"
+        data-ordre="5929">
+        <a href="/livre/5929/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5942.webp" 
+              alt="L&#39;Amérique qui tue : la peine de mort aux USA"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;Amérique qui tue : la peine de mort aux USA</h3>
+            <p>Michel TAURIAC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les bas noirs" 
+        data-auteur="tavares rodrigues urbano"
+        data-annee="1959"
+        data-ordre="5930">
+        <a href="/livre/5930/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5943.webp" 
+              alt="Les bas noirs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les bas noirs</h3>
+            <p>TAVARES RODRIGUES Urbano</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tu ne tueras point" 
+        data-auteur="kressmann taylor"
+        data-annee="0"
+        data-ordre="5931">
+        <a href="/livre/5931/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5944.webp" 
+              alt="Tu ne tueras point"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tu ne tueras point</h3>
+            <p>Kressmann TAYLOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="inconnu à cette adresse" 
+        data-auteur="kressmann taylor"
+        data-annee="2003"
+        data-ordre="5932">
+        <a href="/livre/5932/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5945.webp" 
+              alt="Inconnu à cette adresse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Inconnu à cette adresse</h3>
+            <p>Kressmann TAYLOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jour sans retour" 
+        data-auteur="haroun tazieff"
+        data-annee="1992"
+        data-ordre="5933">
+        <a href="/livre/5933/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5946.webp" 
+              alt="Jour sans retour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jour sans retour</h3>
+            <p>Haroun TAZIEFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoires de volcans" 
+        data-auteur="haroun tazieff"
+        data-annee="1966"
+        data-ordre="5934">
+        <a href="/livre/5934/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5947.webp" 
+              alt="Histoires de volcans"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoires de volcans</h3>
+            <p>Haroun TAZIEFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quand la terre tremble" 
+        data-auteur="haroun tazieff"
+        data-annee="1962"
+        data-ordre="5935">
+        <a href="/livre/5935/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5948.webp" 
+              alt="Quand la terre tremble"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quand la terre tremble</h3>
+            <p>Haroun TAZIEFF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’ile de sakhaline" 
+        data-auteur="anton tchekhov"
+        data-annee="2005"
+        data-ordre="5936">
+        <a href="/livre/5936/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5949.webp" 
+              alt="L’Ile de Sakhaline"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’Ile de Sakhaline</h3>
+            <p>Anton TCHEKHOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la steppeet autres nouvelles" 
+        data-auteur="anton tchekhov"
+        data-annee="2006"
+        data-ordre="5937">
+        <a href="/livre/5937/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5950.webp" 
+              alt="La steppeet autres nouvelles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La steppeet autres nouvelles</h3>
+            <p>Anton TCHEKHOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la terre va-t-elle cesser de tourner ?" 
+        data-auteur="anton tchekhov"
+        data-annee="2023"
+        data-ordre="5938">
+        <a href="/livre/5938/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5951.webp" 
+              alt="La terre va-t-elle cesser de tourner ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La terre va-t-elle cesser de tourner ?</h3>
+            <p>Anton TCHEKHOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la cerisaie" 
+        data-auteur="anton tchekhov"
+        data-annee="1981"
+        data-ordre="5939">
+        <a href="/livre/5939/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5952.webp" 
+              alt="La cerisaie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La cerisaie</h3>
+            <p>Anton TCHEKHOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="théâtre complet i:la mouette - ce fou de platonov - ivanov..." 
+        data-auteur="anton tchekhov"
+        data-annee="2007"
+        data-ordre="5940">
+        <a href="/livre/5940/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5953.webp" 
+              alt="Théâtre complet I:La mouette - Ce fou de Platonov - Ivanov..."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Théâtre complet I:La mouette - Ce fou de Platonov - Ivanov...</h3>
+            <p>Anton TCHEKHOV</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="théâtre complet ii:la cerisaie – le sauvage – oncle vania …" 
+        data-auteur="lydia tchoukovskaia"
+        data-annee="0"
+        data-ordre="5941">
+        <a href="/livre/5941/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5954.webp" 
+              alt="Théâtre complet II:La Cerisaie – Le Sauvage – Oncle Vania …"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Théâtre complet II:La Cerisaie – Le Sauvage – Oncle Vania …</h3>
+            <p>Lydia TCHOUKOVSKAIA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="entretiens avec anna akhmatova" 
+        data-auteur="pierre teilhard de chardin"
+        data-annee="1957"
+        data-ordre="5942">
+        <a href="/livre/5942/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5955.webp" 
+              alt="Entretiens avec Anna Akhmatova"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Entretiens avec Anna Akhmatova</h3>
+            <p>Pierre TEILHARD de CHARDIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la place de l&#39;homme dans la nature" 
+        data-auteur="ania teillard"
+        data-annee="1979"
+        data-ordre="5943">
+        <a href="/livre/5943/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5956.webp" 
+              alt="La place de l&#39;homme dans la nature"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La place de l&#39;homme dans la nature</h3>
+            <p>Ania TEILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ce que disent les rêves" 
+        data-auteur="tarun j. tejpal"
+        data-annee="2012"
+        data-ordre="5944">
+        <a href="/livre/5944/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5957.webp" 
+              alt="Ce que disent les rêves"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ce que disent les rêves</h3>
+            <p>Tarun J. TEJPAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="loin de chandigarh" 
+        data-auteur="hors série telerama"
+        data-annee="2005"
+        data-ordre="5945">
+        <a href="/livre/5945/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5958.webp" 
+              alt="Loin de Chandigarh"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Loin de Chandigarh</h3>
+            <p>hors série TELERAMA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marilyn" 
+        data-auteur="boston teran"
+        data-annee="2007"
+        data-ordre="5946">
+        <a href="/livre/5946/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5959.webp" 
+              alt="Marilyn"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marilyn</h3>
+            <p>Boston TERAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="satan dans le désert" 
+        data-auteur="boston teran"
+        data-annee="2005"
+        data-ordre="5947">
+        <a href="/livre/5947/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5960.webp" 
+              alt="Satan dans le désert"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Satan dans le désert</h3>
+            <p>Boston TERAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="trois femmes" 
+        data-auteur="eugène terraillon"
+        data-annee="1981"
+        data-ordre="5948">
+        <a href="/livre/5948/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5961.webp" 
+              alt="Trois femmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Trois femmes</h3>
+            <p>Eugène TERRAILLON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="berezina" 
+        data-auteur="sylvain tesson"
+        data-annee="2015"
+        data-ordre="5949">
+        <a href="/livre/5949/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5962.webp" 
+              alt="Berezina"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Berezina</h3>
+            <p>Sylvain TESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sur les chemins noirs" 
+        data-auteur="sylvain tesson"
+        data-annee="2019"
+        data-ordre="5950">
+        <a href="/livre/5950/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5963.webp" 
+              alt="Sur les chemins noirs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sur les chemins noirs</h3>
+            <p>Sylvain TESSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="aphorismes sous la lune et autres pensées sauvages" 
+        data-auteur="sylvain tesson"
+        data-annee="2008"
+        data-ordre="5951">
+        <a href="/livre/5951/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5964.webp" 
+              alt="Aphorismes sous la lune et autres pensées sauvages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Aphorismes sous la lune et autres pensées sauvages</h3>
+            <p>Sylvain TESSON</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-123/">← Précédent</a>
+    
+    
+    <span>Page 124 sur 153</span>
+    
+    
+      <a href="/catalogue/page-125/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

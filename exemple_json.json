@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "nom": "Le non de Klara",
+    "auteur": "Soazig AARON",
+    "resume": "Une fillette juive rescapée de la Shoah refuse de parler. Un médecin tente de la guérir en découvrant son histoire.",
+    "type": "Littérature française",
+    "isbn": "",
+    "annee": "0",
+    "pages": "",
+    "langues": "",
+    "couverture_url": "https://bnum.din.gouv.fr/mdrive/index.php/s/CtDLGZw5GxpyZWr/download?path=&files=1.webp"
+  },
+  {
+    "id": "2",
+    "nom": "Le gang de la clef à molette",
+    "auteur": "Edward ABBEY",
+    "resume": "Un groupe d'écologistes radicaux lutte contre la destruction de la nature par les industriels dans l'Ouest américain.",
+    "type": "Littérature étrangère",
+    "isbn": "",
+    "annee": "0",
+    "pages": "",
+    "langues": "",
+    "couverture_url": "https://bnum.din.gouv.fr/mdrive/index.php/s/CtDLGZw5GxpyZWr/download?path=&files=2.webp"
+  },
+  {
+    "id": "3",
+    "nom": "Amour toujours !",
+    "auteur": "L' Abbé Pierre",
+    "resume": "Recueil de textes de l'Abbé Pierre sur l'amour, la tendresse, et la dignité humaine.",
+    "type": "Spiritualité",
+    "isbn": "",
+    "annee": "0",
+    "pages": "",
+    "langues": "",
+    "couverture_url": "https://bnum.din.gouv.fr/mdrive/index.php/s/CtDLGZw5GxpyZWr/download?path=&files=3.webp"
+  }
+]

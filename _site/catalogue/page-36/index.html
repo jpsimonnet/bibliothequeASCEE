@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="la dernière nuit" 
+        data-auteur="didier decoin"
+        data-annee="1978"
+        data-ordre="1680">
+        <a href="/livre/1680/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1683.webp" 
+              alt="La dernière nuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La dernière nuit</h3>
+            <p>Didier DECOIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un policeman" 
+        data-auteur="didier decoin"
+        data-annee="1975"
+        data-ordre="1681">
+        <a href="/livre/1681/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1684.webp" 
+              alt="Un policeman"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un policeman</h3>
+            <p>Didier DECOIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="autopsie d&#39;une étoile" 
+        data-auteur="didier decoin"
+        data-annee="1987"
+        data-ordre="1682">
+        <a href="/livre/1682/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1685.webp" 
+              alt="Autopsie d&#39;une étoile"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Autopsie d&#39;une étoile</h3>
+            <p>Didier DECOIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="docile" 
+        data-auteur="didier decoin"
+        data-annee="1994"
+        data-ordre="1683">
+        <a href="/livre/1683/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1686.webp" 
+              alt="Docile"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Docile</h3>
+            <p>Didier DECOIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme de chambre du titanic" 
+        data-auteur="didier decoin"
+        data-annee="1991"
+        data-ordre="1684">
+        <a href="/livre/1684/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1687.webp" 
+              alt="La femme de chambre du Titanic"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme de chambre du Titanic</h3>
+            <p>Didier DECOIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="louise" 
+        data-auteur="didier decoin"
+        data-annee="1998"
+        data-ordre="1685">
+        <a href="/livre/1685/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1688.webp" 
+              alt="Louise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Louise</h3>
+            <p>Didier DECOIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les privilèges" 
+        data-auteur="jonathan dee"
+        data-annee="2011"
+        data-ordre="1686">
+        <a href="/livre/1686/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1689.webp" 
+              alt="Les privilèges"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les privilèges</h3>
+            <p>Jonathan DEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="robinson crusoé" 
+        data-auteur="daniel defoe"
+        data-annee="1719"
+        data-ordre="1687">
+        <a href="/livre/1687/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1690.webp" 
+              alt="Robinson Crusoé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Robinson Crusoé</h3>
+            <p>Daniel DEFOE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la hire ou la colère de jehanne" 
+        data-auteur="régine deforges"
+        data-annee="2005"
+        data-ordre="1688">
+        <a href="/livre/1688/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1691.webp" 
+              alt="La Hire ou la colère de Jehanne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Hire ou la colère de Jehanne</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la révolte des nonnes" 
+        data-auteur="régine deforges"
+        data-annee="1981"
+        data-ordre="1689">
+        <a href="/livre/1689/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1692.webp" 
+              alt="La révolte des Nonnes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La révolte des Nonnes</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="blanche et lucie" 
+        data-auteur="régine deforges"
+        data-annee="1999"
+        data-ordre="1690">
+        <a href="/livre/1690/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1693.webp" 
+              alt="Blanche et Lucie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Blanche et Lucie</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 08. alger, ville blanche" 
+        data-auteur="régine deforges"
+        data-annee="2001"
+        data-ordre="1691">
+        <a href="/livre/1691/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1694.webp" 
+              alt="La bicyclette bleue – 08. Alger, ville blanche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 08. Alger, ville blanche</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pour l&#39;amour de marie salat" 
+        data-auteur="régine deforges"
+        data-annee="2003"
+        data-ordre="1692">
+        <a href="/livre/1692/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1695.webp" 
+              alt="Pour l&#39;amour de Marie Salat"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pour l&#39;amour de Marie Salat</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 01" 
+        data-auteur="régine deforges"
+        data-annee="2014"
+        data-ordre="1693">
+        <a href="/livre/1693/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1696.webp" 
+              alt="La bicyclette bleue – 01"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 01</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 02. 101, avenue henri-martin" 
+        data-auteur="régine deforges"
+        data-annee="2022"
+        data-ordre="1694">
+        <a href="/livre/1694/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1697.webp" 
+              alt="La bicyclette bleue – 02. 101, avenue Henri-Martin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 02. 101, avenue Henri-Martin</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 03.  le
+  diable en rit encore" 
+        data-auteur="régine deforges"
+        data-annee="1996"
+        data-ordre="1695">
+        <a href="/livre/1695/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1698.webp" 
+              alt="La bicyclette bleue – 03.  Le
+  diable en rit encore"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 03.  Le
+  diable en rit encore</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 04. noir tango" 
+        data-auteur="régine deforges"
+        data-annee="1991"
+        data-ordre="1696">
+        <a href="/livre/1696/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1699.webp" 
+              alt="La bicyclette bleue – 04. Noir tango"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 04. Noir tango</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 05. rue de la soie" 
+        data-auteur="régine deforges"
+        data-annee="2014"
+        data-ordre="1697">
+        <a href="/livre/1697/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1700.webp" 
+              alt="La bicyclette bleue – 05. Rue de la Soie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 05. Rue de la Soie</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 06. la dernière colline" 
+        data-auteur="régine deforges"
+        data-annee="1983"
+        data-ordre="1698">
+        <a href="/livre/1698/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1701.webp" 
+              alt="La bicyclette bleue – 06. La dernière colline"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 06. La dernière colline</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bicyclette bleue – 07. cuba libre !" 
+        data-auteur="régine deforges"
+        data-annee="1991"
+        data-ordre="1699">
+        <a href="/livre/1699/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1702.webp" 
+              alt="La bicyclette bleue – 07. Cuba libre !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bicyclette bleue – 07. Cuba libre !</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le collier de perles" 
+        data-auteur="régine deforges"
+        data-annee="2004"
+        data-ordre="1700">
+        <a href="/livre/1700/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1703.webp" 
+              alt="Le collier de perles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le collier de perles</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sous le ciel de novgorod" 
+        data-auteur="régine deforges"
+        data-annee="1988"
+        data-ordre="1701">
+        <a href="/livre/1701/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1704.webp" 
+              alt="Sous le ciel de Novgorod"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sous le ciel de Novgorod</h3>
+            <p>Régine DEFORGES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la violence à l&#39;école" 
+        data-auteur="bernard defrance"
+        data-annee="1988"
+        data-ordre="1702">
+        <a href="/livre/1702/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1705.webp" 
+              alt="La violence à l&#39;école"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La violence à l&#39;école</h3>
+            <p>Bernard DEFRANCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la france, l’allemagne et le traité de l’elysée" 
+        data-auteur="defrance c. - pfeil u."
+        data-annee="2012"
+        data-ordre="1703">
+        <a href="/livre/1703/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1706.webp" 
+              alt="La France, l’Allemagne et le traité de l’Elysée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La France, l’Allemagne et le traité de l’Elysée</h3>
+            <p>DEFRANCE C. - PFEIL U.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="souffrance en francela banalisation de l&#39;injustice sociale" 
+        data-auteur="christophe dejours"
+        data-annee="2015"
+        data-ordre="1704">
+        <a href="/livre/1704/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1707.webp" 
+              alt="Souffrance en FranceLa banalisation de l&#39;injustice sociale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Souffrance en FranceLa banalisation de l&#39;injustice sociale</h3>
+            <p>Christophe DEJOURS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jules vernes- le rêve du progrès" 
+        data-auteur="jean-paul dekiss"
+        data-annee="1991"
+        data-ordre="1705">
+        <a href="/livre/1705/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1708.webp" 
+              alt="Jules Vernes- le rêve du progrès"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jules Vernes- le rêve du progrès</h3>
+            <p>Jean-Paul DEKISS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la madone des sleepings" 
+        data-auteur="maurice dekobra"
+        data-annee="1967"
+        data-ordre="1706">
+        <a href="/livre/1706/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1709.webp" 
+              alt="La Madone des sleepings"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Madone des sleepings</h3>
+            <p>Maurice DEKOBRA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;écrivain de la famille" 
+        data-auteur="grégoire delacourt"
+        data-annee="2011"
+        data-ordre="1707">
+        <a href="/livre/1707/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1710.webp" 
+              alt="L&#39;écrivain de la famille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;écrivain de la famille</h3>
+            <p>Grégoire DELACOURT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la liste de mes envies" 
+        data-auteur="grégoire delacourt"
+        data-annee="2012"
+        data-ordre="1708">
+        <a href="/livre/1708/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1711.webp" 
+              alt="La liste de mes envies"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La liste de mes envies</h3>
+            <p>Grégoire DELACOURT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la première chose qu’on regarde" 
+        data-auteur="grégoire delacourt"
+        data-annee="2013"
+        data-ordre="1709">
+        <a href="/livre/1709/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1712.webp" 
+              alt="La première chose qu’on regarde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La première chose qu’on regarde</h3>
+            <p>Grégoire DELACOURT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="on ne voyait que le bonheur" 
+        data-auteur="grégoire delacourt"
+        data-annee="2014"
+        data-ordre="1710">
+        <a href="/livre/1710/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1713.webp" 
+              alt="On ne voyait que le bonheur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>On ne voyait que le bonheur</h3>
+            <p>Grégoire DELACOURT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les quatre saisons de l ‘été" 
+        data-auteur="grégoire delacourt"
+        data-annee="2015"
+        data-ordre="1711">
+        <a href="/livre/1711/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1714.webp" 
+              alt="Les quatre saisons de l ‘été"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les quatre saisons de l ‘été</h3>
+            <p>Grégoire DELACOURT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="famille et résilience" 
+        data-auteur="delage michel - cyrulnik boris"
+        data-annee="2023"
+        data-ordre="1712">
+        <a href="/livre/1712/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1715.webp" 
+              alt="Famille et résilience"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Famille et résilience</h3>
+            <p>DELAGE Michel - CYRULNIK Boris</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le prénom" 
+        data-auteur="delaporte m. - la patelliere (de) a."
+        data-annee="2010"
+        data-ordre="1713">
+        <a href="/livre/1713/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1716.webp" 
+              alt="Le prénom"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le prénom</h3>
+            <p>DELAPORTE M. - LA PATELLIERE (de) A.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les épices – histoire, description et usage des différents épices, aromates et condiments" 
+        data-auteur="pierre delaveau"
+        data-annee="1987"
+        data-ordre="1714">
+        <a href="/livre/1714/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1717.webp" 
+              alt="Les épices – histoire, description et usage des différents épices, aromates et condiments"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les épices – histoire, description et usage des différents épices, aromates et condiments</h3>
+            <p>Pierre DELAVEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="giacomettialberto et diegol&#39;histoire cachée" 
+        data-auteur="claude delay"
+        data-annee="2007"
+        data-ordre="1715">
+        <a href="/livre/1715/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1718.webp" 
+              alt="GiacomettiAlberto et Diegol&#39;histoire cachée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>GiacomettiAlberto et Diegol&#39;histoire cachée</h3>
+            <p>Claude DELAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="minuit sur les jeux" 
+        data-auteur="florence delay"
+        data-annee="1973"
+        data-ordre="1716">
+        <a href="/livre/1716/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1719.webp" 
+              alt="Minuit sur les jeux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Minuit sur les jeux</h3>
+            <p>Florence DELAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une femme" 
+        data-auteur="anne delbee"
+        data-annee="1982"
+        data-ordre="1717">
+        <a href="/livre/1717/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1720.webp" 
+              alt="Une femme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une femme</h3>
+            <p>Anne DELBEE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="enregistrements pirates" 
+        data-auteur="philippe delerm"
+        data-annee="2004"
+        data-ordre="1718">
+        <a href="/livre/1718/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1721.webp" 
+              alt="Enregistrements pirates"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Enregistrements pirates</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la sieste assassinée" 
+        data-auteur="philippe delerm"
+        data-annee="2001"
+        data-ordre="1719">
+        <a href="/livre/1719/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1722.webp" 
+              alt="La sieste assassinée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La sieste assassinée</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le portique" 
+        data-auteur="philippe delerm"
+        data-annee="1999"
+        data-ordre="1720">
+        <a href="/livre/1720/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1723.webp" 
+              alt="Le portique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le portique</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paris l&#39;instant" 
+        data-auteur="philippe delerm"
+        data-annee="2002"
+        data-ordre="1721">
+        <a href="/livre/1721/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1724.webp" 
+              alt="Paris l&#39;instant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paris l&#39;instant</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sundborn ou les jours de lumière" 
+        data-auteur="philippe delerm"
+        data-annee="1996"
+        data-ordre="1722">
+        <a href="/livre/1722/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1725.webp" 
+              alt="Sundborn ou les jours de lumière"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sundborn ou les jours de lumière</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="il avait plu tout le dimanche" 
+        data-auteur="philippe delerm"
+        data-annee="1998"
+        data-ordre="1723">
+        <a href="/livre/1723/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1726.webp" 
+              alt="Il avait plu tout le dimanche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Il avait plu tout le dimanche</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la première gorgée de bière et autres plaisirs minuscules" 
+        data-auteur="philippe delerm"
+        data-annee="2017"
+        data-ordre="1724">
+        <a href="/livre/1724/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1727.webp" 
+              alt="La première gorgée de bière et autres plaisirs minuscules"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La première gorgée de bière et autres plaisirs minuscules</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chemins nous inventent" 
+        data-auteur="philippe delerm"
+        data-annee="1999"
+        data-ordre="1725">
+        <a href="/livre/1725/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1728.webp" 
+              alt="Les chemins nous inventent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chemins nous inventent</h3>
+            <p>Philippe DELERM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;inde continent rebelle" 
+        data-auteur="guy deleury"
+        data-annee="2000"
+        data-ordre="1726">
+        <a href="/livre/1726/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1729.webp" 
+              alt="L&#39;Inde continent rebelle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;Inde continent rebelle</h3>
+            <p>Guy DELEURY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cosmopolis" 
+        data-auteur="don delillo"
+        data-annee="2003"
+        data-ordre="1727">
+        <a href="/livre/1727/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1730.webp" 
+              alt="Cosmopolis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cosmopolis</h3>
+            <p>Don DELILLO</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-35/">← Précédent</a>
+    
+    
+    <span>Page 36 sur 153</span>
+    
+    
+      <a href="/catalogue/page-37/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

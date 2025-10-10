@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le droit au plaisir" 
+        data-auteur="pierre pallardy"
+        data-annee="1994"
+        data-ordre="4704">
+        <a href="/livre/4704/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4716.webp" 
+              alt="Le droit au plaisir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le droit au plaisir</h3>
+            <p>Pierre PALLARDY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la véritable identité de la joconde" 
+        data-auteur="giuseppe pallenti"
+        data-annee="2006"
+        data-ordre="4705">
+        <a href="/livre/4705/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4717.webp" 
+              alt="La véritable identité de la Joconde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La véritable identité de la Joconde</h3>
+            <p>Giuseppe PALLENTI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;énigme du persan gris" 
+        data-auteur="stuart palmer"
+        data-annee="1932"
+        data-ordre="4706">
+        <a href="/livre/4706/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4718.webp" 
+              alt="L&#39;énigme du persan gris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;énigme du persan gris</h3>
+            <p>Stuart PALMER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="si tu manges un citron sans faire de grimaces" 
+        data-auteur="sergi pamies"
+        data-annee="2008"
+        data-ordre="4707">
+        <a href="/livre/4707/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4719.webp" 
+              alt="Si tu manges un citron sans faire de grimaces"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Si tu manges un citron sans faire de grimaces</h3>
+            <p>Sergi PAMIES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="istanbul" 
+        data-auteur="orhan pamuk"
+        data-annee="2003"
+        data-ordre="4708">
+        <a href="/livre/4708/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4720.webp" 
+              alt="Istanbul"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Istanbul</h3>
+            <p>Orhan PAMUK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon nom est rouge" 
+        data-auteur="orhan pamuk"
+        data-annee="2012"
+        data-ordre="4709">
+        <a href="/livre/4709/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4721.webp" 
+              alt="Mon nom est rouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon nom est rouge</h3>
+            <p>Orhan PAMUK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="et monter lentement dans un immense amour" 
+        data-auteur="katherine pancol"
+        data-annee="2001"
+        data-ordre="4710">
+        <a href="/livre/4710/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4722.webp" 
+              alt="Et monter lentement dans un immense amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Et monter lentement dans un immense amour</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j&#39;étais là avant" 
+        data-auteur="katherine pancol"
+        data-annee="1999"
+        data-ordre="4711">
+        <a href="/livre/4711/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4723.webp" 
+              alt="J&#39;étais là avant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J&#39;étais là avant</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la valse lente des tortues" 
+        data-auteur="katherine pancol"
+        data-annee="2008"
+        data-ordre="4712">
+        <a href="/livre/4712/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4724.webp" 
+              alt="La valse lente des tortues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La valse lente des tortues</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les écureuils de central park sont tristes le lundi" 
+        data-auteur="katherine pancol"
+        data-annee="2011"
+        data-ordre="4713">
+        <a href="/livre/4713/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4725.webp" 
+              alt="Les écureuils de Central Park sont tristes le lundi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les écureuils de Central Park sont tristes le lundi</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les yeux jaunes des crocodiles" 
+        data-auteur="katherine pancol"
+        data-annee="2006"
+        data-ordre="4714">
+        <a href="/livre/4714/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4726.webp" 
+              alt="Les yeux jaunes des crocodiles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les yeux jaunes des crocodiles</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="moi d&#39;abord" 
+        data-auteur="katherine pancol"
+        data-annee="1979"
+        data-ordre="4715">
+        <a href="/livre/4715/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4727.webp" 
+              alt="Moi d&#39;abord"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Moi d&#39;abord</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vu de l&#39;extérieur" 
+        data-auteur="katherine pancol"
+        data-annee="1994"
+        data-ordre="4716">
+        <a href="/livre/4716/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4728.webp" 
+              alt="Vu de l&#39;extérieur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vu de l&#39;extérieur</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="eugène et moi" 
+        data-auteur="katherine pancol"
+        data-annee="2020"
+        data-ordre="4717">
+        <a href="/livre/4717/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4729.webp" 
+              alt="Eugène et moi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Eugène et moi</h3>
+            <p>Katherine PANCOL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="long séjour" 
+        data-auteur="jean-noël pancrazi"
+        data-annee="2000"
+        data-ordre="4718">
+        <a href="/livre/4718/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4730.webp" 
+              alt="Long séjour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Long séjour</h3>
+            <p>Jean-Noël PANCRAZI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="madame arnoul" 
+        data-auteur="jean-noël pancrazi"
+        data-annee="1995"
+        data-ordre="4719">
+        <a href="/livre/4719/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4731.webp" 
+              alt="Madame Arnoul"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Madame Arnoul</h3>
+            <p>Jean-Noël PANCRAZI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tout est passé si vite" 
+        data-auteur="jean-noël pancrazi"
+        data-annee="2003"
+        data-ordre="4720">
+        <a href="/livre/4720/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4732.webp" 
+              alt="Tout est passé si vite"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tout est passé si vite</h3>
+            <p>Jean-Noël PANCRAZI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’élimination" 
+        data-auteur="panh rithy – ch. bataille"
+        data-annee="2012"
+        data-ordre="4721">
+        <a href="/livre/4721/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4733.webp" 
+              alt="L’élimination"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’élimination</h3>
+            <p>PANH Rithy – Ch. BATAILLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;utopie verte" 
+        data-auteur="philippe paraire"
+        data-annee="1992"
+        data-ordre="4722">
+        <a href="/livre/4722/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4734.webp" 
+              alt="L&#39;utopie verte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;utopie verte</h3>
+            <p>Philippe PARAIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="avant, pendant, après" 
+        data-auteur="jean-marc parisis"
+        data-annee="2007"
+        data-ordre="4723">
+        <a href="/livre/4723/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4735.webp" 
+              alt="Avant, pendant, après"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Avant, pendant, après</h3>
+            <p>Jean-Marc PARISIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les aimants" 
+        data-auteur="jean-marc parisis"
+        data-annee="2009"
+        data-ordre="4724">
+        <a href="/livre/4724/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4736.webp" 
+              alt="Les aimants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les aimants</h3>
+            <p>Jean-Marc PARISIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;affaire nicolas le floch" 
+        data-auteur="jean-françois parot"
+        data-annee="2002"
+        data-ordre="4725">
+        <a href="/livre/4725/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4737.webp" 
+              alt="L&#39;affaire Nicolas Le Floch"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;affaire Nicolas Le Floch</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;énigme des blancs-manteaux" 
+        data-auteur="jean-françois parot"
+        data-annee="2001"
+        data-ordre="4726">
+        <a href="/livre/4726/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4738.webp" 
+              alt="L&#39;énigme des Blancs-manteaux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;énigme des Blancs-manteaux</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme au ventre de plomb" 
+        data-auteur="jean-françois parot"
+        data-annee="2000"
+        data-ordre="4727">
+        <a href="/livre/4727/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4739.webp" 
+              alt="L&#39;homme au ventre de plomb"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme au ventre de plomb</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;honneur de sartine" 
+        data-auteur="jean-françois parot"
+        data-annee="2011"
+        data-ordre="4728">
+        <a href="/livre/4728/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4740.webp" 
+              alt="L&#39;honneur de Sartine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;honneur de Sartine</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cadavre anglais" 
+        data-auteur="jean-françois parot"
+        data-annee="2007"
+        data-ordre="4729">
+        <a href="/livre/4729/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4741.webp" 
+              alt="Le cadavre anglais"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cadavre anglais</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le crime de l&#39;hôtel saint-florentin" 
+        data-auteur="jean-françois parot"
+        data-annee="2004"
+        data-ordre="4730">
+        <a href="/livre/4730/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4742.webp" 
+              alt="Le crime de l&#39;hôtel Saint-Florentin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le crime de l&#39;hôtel Saint-Florentin</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fantôme de la rue royale" 
+        data-auteur="jean-françois parot"
+        data-annee="2003"
+        data-ordre="4731">
+        <a href="/livre/4731/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4743.webp" 
+              alt="Le fantôme de la rue Royale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fantôme de la rue Royale</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le noyé du grand canal" 
+        data-auteur="jean-françois parot"
+        data-annee="2010"
+        data-ordre="4732">
+        <a href="/livre/4732/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4744.webp" 
+              alt="Le noyé du Grand Canal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le noyé du Grand Canal</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le sang des farines" 
+        data-auteur="jean-françois parot"
+        data-annee="2005"
+        data-ordre="4733">
+        <a href="/livre/4733/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4745.webp" 
+              alt="Le sang des farines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le sang des farines</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’enquête russe" 
+        data-auteur="jean-françois parot"
+        data-annee="2012"
+        data-ordre="4734">
+        <a href="/livre/4734/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4746.webp" 
+              alt="L’enquête russe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’enquête russe</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la pyramide de glace" 
+        data-auteur="jean-françois parot"
+        data-annee="2014"
+        data-ordre="4735">
+        <a href="/livre/4735/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4747.webp" 
+              alt="La pyramide de glace"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La pyramide de glace</h3>
+            <p>Jean-François PAROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les provinciales" 
+        data-auteur="blaise pascal"
+        data-annee="1656"
+        data-ordre="4736">
+        <a href="/livre/4736/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4748.webp" 
+              alt="Les Provinciales"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Provinciales</h3>
+            <p>Blaise PASCAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pensées" 
+        data-auteur="blaise pascal"
+        data-annee="1670"
+        data-ordre="4737">
+        <a href="/livre/4737/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4749.webp" 
+              alt="Pensées"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pensées</h3>
+            <p>Blaise PASCAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a quoi sert le couple ?" 
+        data-auteur="willy pasini"
+        data-annee="1996"
+        data-ordre="4738">
+        <a href="/livre/4738/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4750.webp" 
+              alt="A quoi sert le couple ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A quoi sert le couple ?</h3>
+            <p>Willy PASINI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’odeur de l’inde" 
+        data-auteur="pier paolo pasolini"
+        data-annee="2020"
+        data-ordre="4739">
+        <a href="/livre/4739/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4751.webp" 
+              alt="L’odeur de l’Inde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’odeur de l’Inde</h3>
+            <p>Pier Paolo PASOLINI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="théorème" 
+        data-auteur="pier paolo pasolini"
+        data-annee="1988"
+        data-ordre="4740">
+        <a href="/livre/4740/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4752.webp" 
+              alt="Théorème"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Théorème</h3>
+            <p>Pier Paolo PASOLINI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le docteur jivago" 
+        data-auteur="boris pasternak"
+        data-annee="2023"
+        data-ordre="4741">
+        <a href="/livre/4741/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4753.webp" 
+              alt="Le docteur Jivago"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le docteur Jivago</h3>
+            <p>Boris PASTERNAK</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le manuscrit d’anastase" 
+        data-auteur="claude pasteur"
+        data-annee="1986"
+        data-ordre="4742">
+        <a href="/livre/4742/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4754.webp" 
+              alt="Le manuscrit d’Anastase"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le manuscrit d’Anastase</h3>
+            <p>Claude PASTEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le médecin du pape" 
+        data-auteur="claude pasteur"
+        data-annee="1985"
+        data-ordre="4743">
+        <a href="/livre/4743/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4755.webp" 
+              alt="Le médecin du Pape"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le médecin du Pape</h3>
+            <p>Claude PASTEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="comptoir des océans – histoires de marins" 
+        data-auteur="jéromine pasteur"
+        data-annee="2009"
+        data-ordre="4744">
+        <a href="/livre/4744/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4756.webp" 
+              alt="Comptoir des océans – Histoires de marins"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Comptoir des océans – Histoires de marins</h3>
+            <p>Jéromine PASTEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ashaninkas" 
+        data-auteur="jéromine pasteur"
+        data-annee="1994"
+        data-ordre="4745">
+        <a href="/livre/4745/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4757.webp" 
+              alt="Ashaninkas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ashaninkas</h3>
+            <p>Jéromine PASTEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les animaux célèbres" 
+        data-auteur="michel pastoureau"
+        data-annee="2008"
+        data-ordre="4746">
+        <a href="/livre/4746/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4758.webp" 
+              alt="Les animaux célèbres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les animaux célèbres</h3>
+            <p>Michel PASTOUREAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le masque de l&#39;araignée" 
+        data-auteur="james patterson"
+        data-annee="1993"
+        data-ordre="4747">
+        <a href="/livre/4747/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4759.webp" 
+              alt="Le masque de l&#39;araignée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le masque de l&#39;araignée</h3>
+            <p>James PATTERSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le premier qui meurt" 
+        data-auteur="james patterson"
+        data-annee="2020"
+        data-ordre="4748">
+        <a href="/livre/4748/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4760.webp" 
+              alt="Le premier qui meurt"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le premier qui meurt</h3>
+            <p>James PATTERSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;exclusion - l&#39;état des savoirs" 
+        data-auteur="serge paugam"
+        data-annee="1996"
+        data-ordre="4749">
+        <a href="/livre/4749/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4761.webp" 
+              alt="L&#39;exclusion - l&#39;état des savoirs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;exclusion - l&#39;état des savoirs</h3>
+            <p>Serge PAUGAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le passé" 
+        data-auteur="alain pauls"
+        data-annee="2015"
+        data-ordre="4750">
+        <a href="/livre/4750/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4762.webp" 
+              alt="Le passé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le passé</h3>
+            <p>Alain PAULS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la lune et les feux" 
+        data-auteur="cesare pavese"
+        data-annee="1965"
+        data-ordre="4751">
+        <a href="/livre/4751/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4763.webp" 
+              alt="La lune et les feux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La lune et les feux</h3>
+            <p>Cesare PAVESE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-98/">← Précédent</a>
+    
+    
+    <span>Page 99 sur 153</span>
+    
+    
+      <a href="/catalogue/page-100/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

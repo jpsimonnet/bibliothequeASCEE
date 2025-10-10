@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand cahier" 
+        data-auteur="agota kristof"
+        data-annee="1986"
+        data-ordre="3456">
+        <a href="/livre/3456/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3468.webp" 
+              alt="Le grand cahier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le grand cahier</h3>
+            <p>Agota KRISTOF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le troisième mensonge" 
+        data-auteur="agota kristof"
+        data-annee="1991"
+        data-ordre="3457">
+        <a href="/livre/3457/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3469.webp" 
+              alt="Le troisième mensonge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le troisième mensonge</h3>
+            <p>Agota KRISTOF</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ishi" 
+        data-auteur="théodora kroeber"
+        data-annee="1961"
+        data-ordre="3458">
+        <a href="/livre/3458/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3470.webp" 
+              alt="Ishi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ishi</h3>
+            <p>Théodora KROEBER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;envie d&#39;aller mieux" 
+        data-auteur="krotenberg a. et patry l."
+        data-annee="2012"
+        data-ordre="3459">
+        <a href="/livre/3459/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3471.webp" 
+              alt="L&#39;envie d&#39;aller mieux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;envie d&#39;aller mieux</h3>
+            <p>KROTENBERG A. et PATRY L.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoires de vie, mémoires d’éternité" 
+        data-auteur="elisabeth kubler-ross"
+        data-annee="1998"
+        data-ordre="3460">
+        <a href="/livre/3460/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3472.webp" 
+              alt="Mémoires de vie, mémoires d’éternité"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoires de vie, mémoires d’éternité</h3>
+            <p>Elisabeth KUBLER-ROSS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fête de l’insignifiance" 
+        data-auteur="milan kundera"
+        data-annee="2007"
+        data-ordre="3461">
+        <a href="/livre/3461/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3473.webp" 
+              alt="La fête de l’insignifiance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fête de l’insignifiance</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;identité" 
+        data-auteur="milan kundera"
+        data-annee="1997"
+        data-ordre="3462">
+        <a href="/livre/3462/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3474.webp" 
+              alt="L&#39;identité"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;identité</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ignorance" 
+        data-auteur="milan kundera"
+        data-annee="2000"
+        data-ordre="3463">
+        <a href="/livre/3463/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3475.webp" 
+              alt="L&#39;ignorance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;ignorance</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la lenteur" 
+        data-auteur="milan kundera"
+        data-annee="1994"
+        data-ordre="3464">
+        <a href="/livre/3464/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3476.webp" 
+              alt="La lenteur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La lenteur</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la plaisanterie" 
+        data-auteur="milan kundera"
+        data-annee="2017"
+        data-ordre="3465">
+        <a href="/livre/3465/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3477.webp" 
+              alt="La plaisanterie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La plaisanterie</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la valse aux adieux" 
+        data-auteur="milan kundera"
+        data-annee="2021"
+        data-ordre="3466">
+        <a href="/livre/3466/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3478.webp" 
+              alt="La valse aux adieux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La valse aux adieux</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le livre du rire et de l’oubli" 
+        data-auteur="milan kundera"
+        data-annee="1979"
+        data-ordre="3467">
+        <a href="/livre/3467/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3479.webp" 
+              alt="Le livre du rire et de l’oubli"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le livre du rire et de l’oubli</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="risibles amours" 
+        data-auteur="milan kundera"
+        data-annee="2011"
+        data-ordre="3468">
+        <a href="/livre/3468/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3480.webp" 
+              alt="Risibles amours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Risibles amours</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;insoutenable légèreté de l&#39;être" 
+        data-auteur="milan kundera"
+        data-annee="2007"
+        data-ordre="3469">
+        <a href="/livre/3469/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3481.webp" 
+              alt="L&#39;insoutenable légèreté de l&#39;être"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;insoutenable légèreté de l&#39;être</h3>
+            <p>Milan KUNDERA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="intimité" 
+        data-auteur="hanif kureishi"
+        data-annee="1998"
+        data-ordre="3470">
+        <a href="/livre/3470/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3482.webp" 
+              alt="Intimité"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Intimité</h3>
+            <p>Hanif KUREISHI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dernier mot" 
+        data-auteur="hanif kureishi"
+        data-annee="2014"
+        data-ordre="3471">
+        <a href="/livre/3471/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3483.webp" 
+              alt="Le dernier mot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dernier mot</h3>
+            <p>Hanif KUREISHI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le poisson mouillé" 
+        data-auteur="volker kutscher"
+        data-annee="2010"
+        data-ordre="3472">
+        <a href="/livre/3472/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3484.webp" 
+              alt="Le poisson mouillé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le poisson mouillé</h3>
+            <p>Volker KUTSCHER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="plantes aromatiques et culinaires" 
+        data-auteur="jan kybal"
+        data-annee="1981"
+        data-ordre="3473">
+        <a href="/livre/3473/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3485.webp" 
+              alt="Plantes aromatiques et culinaires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Plantes aromatiques et culinaires</h3>
+            <p>Jan KYBAL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la communale" 
+        data-auteur="jean l&#39;hote"
+        data-annee="1959"
+        data-ordre="3474">
+        <a href="/livre/3474/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3486.webp" 
+              alt="La Communale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Communale</h3>
+            <p>Jean L&#39;HOTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les caractères" 
+        data-auteur="bruyere la"
+        data-annee="1872"
+        data-ordre="3475">
+        <a href="/livre/3475/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3487.webp" 
+              alt="Les caractères"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les caractères</h3>
+            <p>BRUYERE LA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fables" 
+        data-auteur="jean de la fontaine"
+        data-annee="1678"
+        data-ordre="3476">
+        <a href="/livre/3476/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3488.webp" 
+              alt="Fables"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fables</h3>
+            <p>jean de LA FONTAINE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cœur de pierre" 
+        data-auteur="lynda la plante"
+        data-annee="1999"
+        data-ordre="3477">
+        <a href="/livre/3477/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3489.webp" 
+              alt="Cœur de pierre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cœur de pierre</h3>
+            <p>Lynda LA PLANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="conte cruel" 
+        data-auteur="lynda la plante"
+        data-annee="2003"
+        data-ordre="3478">
+        <a href="/livre/3478/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3490.webp" 
+              alt="Conte cruel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Conte cruel</h3>
+            <p>Lynda LA PLANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="coup de froid" 
+        data-auteur="lynda la plante"
+        data-annee="1996"
+        data-ordre="3479">
+        <a href="/livre/3479/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3491.webp" 
+              alt="Coup de froid"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Coup de froid</h3>
+            <p>Lynda LA PLANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="insoupconnable" 
+        data-auteur="lynda la plante"
+        data-annee="2006"
+        data-ordre="3480">
+        <a href="/livre/3480/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3492.webp" 
+              alt="Insoupconnable"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Insoupconnable</h3>
+            <p>Lynda LA PLANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="royal flush" 
+        data-auteur="lynda la plante"
+        data-annee="2014"
+        data-ordre="3481">
+        <a href="/livre/3481/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3493.webp" 
+              alt="Royal Flush"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Royal Flush</h3>
+            <p>Lynda LA PLANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sang froid" 
+        data-auteur="lynda la plante"
+        data-annee="1998"
+        data-ordre="3482">
+        <a href="/livre/3482/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3494.webp" 
+              alt="Sang froid"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sang froid</h3>
+            <p>Lynda LA PLANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="suspect numéro un" 
+        data-auteur="lynda la plante"
+        data-annee="1995"
+        data-ordre="3483">
+        <a href="/livre/3483/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3495.webp" 
+              alt="Suspect numéro un"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Suspect numéro un</h3>
+            <p>Lynda LA PLANTE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maximes et mémoires" 
+        data-auteur="françois de la rochefoucauld"
+        data-annee="1964"
+        data-ordre="3484">
+        <a href="/livre/3484/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3496.webp" 
+              alt="Maximes et mémoires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maximes et mémoires</h3>
+            <p>François de LA ROCHEFOUCAULD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voyage de monsieur perrichon" 
+        data-auteur="labiche"
+        data-annee="1888"
+        data-ordre="3485">
+        <a href="/livre/3485/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3497.webp" 
+              alt="Le voyage de Monsieur Perrichon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voyage de Monsieur Perrichon</h3>
+            <p>LABICHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un chapeau de paille d’italie" 
+        data-auteur="labiche"
+        data-annee="2001"
+        data-ordre="3486">
+        <a href="/livre/3486/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3498.webp" 
+              alt="Un chapeau de paille d’Italie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un chapeau de paille d’Italie</h3>
+            <p>LABICHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je connais gens de toutes sortes" 
+        data-auteur="philippe labro"
+        data-annee="2002"
+        data-ordre="3487">
+        <a href="/livre/3487/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3499.webp" 
+              alt="Je connais gens de toutes sortes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je connais gens de toutes sortes</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la traversée" 
+        data-auteur="philippe labro"
+        data-annee="1998"
+        data-ordre="3488">
+        <a href="/livre/3488/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3500.webp" 
+              alt="La traversée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La traversée</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les gens" 
+        data-auteur="philippe labro"
+        data-annee="2010"
+        data-ordre="3489">
+        <a href="/livre/3489/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3501.webp" 
+              alt="Les gens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les gens</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tomber sept fois, se relever huit" 
+        data-auteur="philippe labro"
+        data-annee="2003"
+        data-ordre="3490">
+        <a href="/livre/3490/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3502.webp" 
+              alt="Tomber sept fois, se relever huit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tomber sept fois, se relever huit</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un été dans l&#39;ouest" 
+        data-auteur="philippe labro"
+        data-annee="1988"
+        data-ordre="3491">
+        <a href="/livre/3491/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3503.webp" 
+              alt="Un été dans l&#39;Ouest"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un été dans l&#39;Ouest</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;étudiant étranger" 
+        data-auteur="philippe labro"
+        data-annee="1976"
+        data-ordre="3492">
+        <a href="/livre/3492/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3504.webp" 
+              alt="L&#39;étudiant étranger"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;étudiant étranger</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le petit garçon" 
+        data-auteur="philippe labro"
+        data-annee="1990"
+        data-ordre="3493">
+        <a href="/livre/3493/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3505.webp" 
+              alt="Le petit garçon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le petit garçon</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="manuella" 
+        data-auteur="philippe labro"
+        data-annee="1999"
+        data-ordre="3494">
+        <a href="/livre/3494/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3506.webp" 
+              alt="Manuella"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Manuella</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quinze ans" 
+        data-auteur="philippe labro"
+        data-annee="1992"
+        data-ordre="3495">
+        <a href="/livre/3495/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3507.webp" 
+              alt="Quinze ans"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quinze ans</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j&#39;irais nager dans plus de rivières" 
+        data-auteur="philippe labro"
+        data-annee="2020"
+        data-ordre="3496">
+        <a href="/livre/3496/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3508.webp" 
+              alt="J&#39;irais nager dans plus de rivières"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J&#39;irais nager dans plus de rivières</h3>
+            <p>Philippe LABRO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ecrits i et ii" 
+        data-auteur="jacques lacan"
+        data-annee="1966"
+        data-ordre="3497">
+        <a href="/livre/3497/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3509.webp" 
+              alt="Ecrits I et II"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ecrits I et II</h3>
+            <p>Jacques LACAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au cœur des mythologies(en suivant les dieux)" 
+        data-auteur="jacques lacarriere"
+        data-annee="1998"
+        data-ordre="3498">
+        <a href="/livre/3498/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3510.webp" 
+              alt="Au cœur des mythologies(en suivant les Dieux)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au cœur des mythologies(en suivant les Dieux)</h3>
+            <p>Jacques LACARRIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;été grec" 
+        data-auteur="jacques lacarriere"
+        data-annee="1976"
+        data-ordre="3499">
+        <a href="/livre/3499/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3511.webp" 
+              alt="L&#39;été grec"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;été grec</h3>
+            <p>Jacques LACARRIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le pays sous l&#39;écorce" 
+        data-auteur="jacques lacarriere"
+        data-annee="1980"
+        data-ordre="3500">
+        <a href="/livre/3500/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3512.webp" 
+              alt="Le pays sous l&#39;écorce"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le pays sous l&#39;écorce</h3>
+            <p>Jacques LACARRIERE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la princesse des glaces" 
+        data-auteur="camilla lackberg"
+        data-annee="2011"
+        data-ordre="3501">
+        <a href="/livre/3501/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3513.webp" 
+              alt="La princesse des glaces"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La princesse des glaces</h3>
+            <p>Camilla LACKBERG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les liaisons dangereuses" 
+        data-auteur="choderlos de laclos"
+        data-annee="1782"
+        data-ordre="3502">
+        <a href="/livre/3502/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3514.webp" 
+              alt="Les liaisons dangereuses"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les liaisons dangereuses</h3>
+            <p>Choderlos de LACLOS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="secrets et vertus de l&#39;huile d&#39;olive" 
+        data-auteur="lacoste sophie/chamoux simone"
+        data-annee="2021"
+        data-ordre="3503">
+        <a href="/livre/3503/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3515.webp" 
+              alt="Secrets et vertus de l&#39;huile d&#39;Olive"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Secrets et vertus de l&#39;huile d&#39;Olive</h3>
+            <p>LACOSTE Sophie/CHAMOUX Simone</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-72/">← Précédent</a>
+    
+    
+    <span>Page 73 sur 153</span>
+    
+    
+      <a href="/catalogue/page-74/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

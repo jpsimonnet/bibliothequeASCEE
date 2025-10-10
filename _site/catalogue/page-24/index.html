@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="le marteau sans maître" 
+        data-auteur="rené char"
+        data-annee="1999"
+        data-ordre="1104">
+        <a href="/livre/1104/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1107.webp" 
+              alt="Le marteau sans maître"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le marteau sans maître</h3>
+            <p>René CHAR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poèmes en archipel" 
+        data-auteur="rené char"
+        data-annee="2007"
+        data-ordre="1105">
+        <a href="/livre/1105/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1108.webp" 
+              alt="Poèmes en archipel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poèmes en archipel</h3>
+            <p>René CHAR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="recherche de la base et du sommet" 
+        data-auteur="rené char"
+        data-annee="1977"
+        data-ordre="1106">
+        <a href="/livre/1106/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1109.webp" 
+              alt="Recherche de la base et du sommet"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Recherche de la base et du sommet</h3>
+            <p>René CHAR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand guide marabout du bridge" 
+        data-auteur="michel/duguet michel charlemagne"
+        data-annee="2012"
+        data-ordre="1107">
+        <a href="/livre/1107/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1110.webp" 
+              alt="Le grand guide Marabout du bridge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le grand guide Marabout du bridge</h3>
+            <p>Michel/DUGUET Michel CHARLEMAGNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="isabelle du désert" 
+        data-auteur="edmonde charles-roux"
+        data-annee="2003"
+        data-ordre="1108">
+        <a href="/livre/1108/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1111.webp" 
+              alt="Isabelle du désert"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Isabelle du désert</h3>
+            <p>Edmonde CHARLES-ROUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un désir d&#39;orient(la jeunesse d&#39;isabelle eberhardt)" 
+        data-auteur="edmonde charles-roux"
+        data-annee="1989"
+        data-ordre="1109">
+        <a href="/livre/1109/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1112.webp" 
+              alt="Un désir d&#39;Orient(la jeunesse d&#39;Isabelle Eberhardt)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un désir d&#39;Orient(la jeunesse d&#39;Isabelle Eberhardt)</h3>
+            <p>Edmonde CHARLES-ROUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="elle, adrienne" 
+        data-auteur="edmonde charles-roux"
+        data-annee="1971"
+        data-ordre="1110">
+        <a href="/livre/1110/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1113.webp" 
+              alt="Elle, Adrienne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Elle, Adrienne</h3>
+            <p>Edmonde CHARLES-ROUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une enfance sicilienne" 
+        data-auteur="edmonde charles-roux"
+        data-annee="1982"
+        data-ordre="1111">
+        <a href="/livre/1111/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1114.webp" 
+              alt="Une enfance sicilienne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une enfance sicilienne</h3>
+            <p>Edmonde CHARLES-ROUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="stavisky, les secrets du scandale" 
+        data-auteur="j.m. -  montarron m. charlier"
+        data-annee="1974"
+        data-ordre="1112">
+        <a href="/livre/1112/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1115.webp" 
+              alt="Stavisky, les secrets du scandale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Stavisky, les secrets du scandale</h3>
+            <p>J.M. -  MONTARRON M. CHARLIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="bonne nuit, doux prince" 
+        data-auteur="pierre charras"
+        data-annee="2006"
+        data-ordre="1113">
+        <a href="/livre/1113/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1116.webp" 
+              alt="Bonne nuit, doux prince"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Bonne nuit, doux prince</h3>
+            <p>Pierre CHARRAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dix-neuf secondes" 
+        data-auteur="pierre charras"
+        data-annee="2003"
+        data-ordre="1114">
+        <a href="/livre/1114/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1117.webp" 
+              alt="Dix-neuf secondes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dix-neuf secondes</h3>
+            <p>Pierre CHARRAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="the one" 
+        data-auteur="dan chartier"
+        data-annee="2001"
+        data-ordre="1115">
+        <a href="/livre/1115/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1118.webp" 
+              alt="The One"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>The One</h3>
+            <p>Dan CHARTIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="kermesse à manhattan" 
+        data-auteur="jerome charyn"
+        data-annee="2001"
+        data-ordre="1116">
+        <a href="/livre/1116/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1119.webp" 
+              alt="Kermesse à Manhattan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Kermesse à Manhattan</h3>
+            <p>Jerome CHARYN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un bon flic" 
+        data-auteur="jerome charyn"
+        data-annee="1993"
+        data-ordre="1117">
+        <a href="/livre/1117/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1120.webp" 
+              alt="Un bon flic"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un bon flic</h3>
+            <p>Jerome CHARYN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="12 chinetoques et une souris" 
+        data-auteur="james hadley chase"
+        data-annee="1996"
+        data-ordre="1118">
+        <a href="/livre/1118/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1121.webp" 
+              alt="12 chinetoques et une souris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>12 chinetoques et une souris</h3>
+            <p>James Hadley CHASE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="c&#39;est ma tournée" 
+        data-auteur="james hadley chase"
+        data-annee="1986"
+        data-ordre="1119">
+        <a href="/livre/1119/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1122.webp" 
+              alt="C&#39;est ma tournée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>C&#39;est ma tournée</h3>
+            <p>James Hadley CHASE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="en galère" 
+        data-auteur="james hadley chase"
+        data-annee="1997"
+        data-ordre="1120">
+        <a href="/livre/1120/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1123.webp" 
+              alt="En galère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>En galère</h3>
+            <p>James Hadley CHASE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pas d&#39;orchidées pour miss blendish" 
+        data-auteur="james hadley chase"
+        data-annee="1995"
+        data-ordre="1121">
+        <a href="/livre/1121/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1124.webp" 
+              alt="Pas d&#39;orchidées pour Miss Blendish"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pas d&#39;orchidées pour Miss Blendish</h3>
+            <p>James Hadley CHASE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un hippie sur la route" 
+        data-auteur="james hadley chase"
+        data-annee="1997"
+        data-ordre="1122">
+        <a href="/livre/1122/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1125.webp" 
+              alt="Un hippie sur la route"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un hippie sur la route</h3>
+            <p>James Hadley CHASE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="voir venise... et crever" 
+        data-auteur="james hadley chase"
+        data-annee="1973"
+        data-ordre="1123">
+        <a href="/livre/1123/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1126.webp" 
+              alt="Voir Venise... et crever"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Voir Venise... et crever</h3>
+            <p>James Hadley CHASE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="atala -  rené - le dernier des abencerage" 
+        data-auteur="de chateaubriand"
+        data-annee="1945"
+        data-ordre="1124">
+        <a href="/livre/1124/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1127.webp" 
+              alt="Atala -  René - Le dernier des Abencerage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Atala -  René - Le dernier des Abencerage</h3>
+            <p>de CHATEAUBRIAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoires d&#39;outre-tombe(tome i)" 
+        data-auteur="de chateaubriand"
+        data-annee="2021"
+        data-ordre="1125">
+        <a href="/livre/1125/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1128.webp" 
+              alt="Mémoires d&#39;outre-tombe(tome I)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoires d&#39;outre-tombe(tome I)</h3>
+            <p>de CHATEAUBRIAND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="discours sur le bonheur" 
+        data-auteur="madame du chatelet"
+        data-annee="2014"
+        data-ordre="1126">
+        <a href="/livre/1126/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1129.webp" 
+              alt="Discours sur le bonheur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Discours sur le bonheur</h3>
+            <p>Madame du CHATELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la dame en bleu" 
+        data-auteur="noëlle chatelet"
+        data-annee="1996"
+        data-ordre="1127">
+        <a href="/livre/1127/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1130.webp" 
+              alt="La dame en bleu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La dame en bleu</h3>
+            <p>Noëlle CHATELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la dernière leçon" 
+        data-auteur="noëlle chatelet"
+        data-annee="2004"
+        data-ordre="1128">
+        <a href="/livre/1128/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1131.webp" 
+              alt="La dernière leçon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La dernière leçon</h3>
+            <p>Noëlle CHATELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme coquelicot" 
+        data-auteur="noëlle chatelet"
+        data-annee="1999"
+        data-ordre="1129">
+        <a href="/livre/1129/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1132.webp" 
+              alt="La femme coquelicot"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme coquelicot</h3>
+            <p>Noëlle CHATELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la petite aux tournesols" 
+        data-auteur="noëlle chatelet"
+        data-annee="1999"
+        data-ordre="1130">
+        <a href="/livre/1130/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1133.webp" 
+              alt="La petite aux tournesols"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La petite aux tournesols</h3>
+            <p>Noëlle CHATELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la tête en bas" 
+        data-auteur="noëlle chatelet"
+        data-annee="2002"
+        data-ordre="1131">
+        <a href="/livre/1131/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1134.webp" 
+              alt="La tête en bas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La tête en bas</h3>
+            <p>Noëlle CHATELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="in tenebris" 
+        data-auteur="maxime chattam"
+        data-annee="2002"
+        data-ordre="1132">
+        <a href="/livre/1132/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1135.webp" 
+              alt="In tenebris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>In tenebris</h3>
+            <p>Maxime CHATTAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="maléfices" 
+        data-auteur="maxime chattam"
+        data-annee="2005"
+        data-ordre="1133">
+        <a href="/livre/1133/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1136.webp" 
+              alt="Maléfices"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Maléfices</h3>
+            <p>Maxime CHATTAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;âme du mal" 
+        data-auteur="maxime chattam"
+        data-annee="2002"
+        data-ordre="1134">
+        <a href="/livre/1134/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1137.webp" 
+              alt="L&#39;âme du mal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;âme du mal</h3>
+            <p>Maxime CHATTAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la conjuration primitive" 
+        data-auteur="maxime chattam"
+        data-annee="2013"
+        data-ordre="1135">
+        <a href="/livre/1135/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1138.webp" 
+              alt="La conjuration primitive"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La conjuration primitive</h3>
+            <p>Maxime CHATTAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la france" 
+        data-auteur="pierre chaunu"
+        data-annee="1982"
+        data-ordre="1136">
+        <a href="/livre/1136/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1139.webp" 
+              alt="La France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La France</h3>
+            <p>Pierre CHAUNU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le développement durable –produire pour tous, protéger la planète" 
+        data-auteur="loïc chauveau"
+        data-annee="2006"
+        data-ordre="1137">
+        <a href="/livre/1137/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1140.webp" 
+              alt="Le développement durable –Produire pour tous, protéger la planète"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le développement durable –Produire pour tous, protéger la planète</h3>
+            <p>Loïc CHAUVEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="elisa" 
+        data-auteur="jacques chauvire"
+        data-annee="2003"
+        data-ordre="1138">
+        <a href="/livre/1138/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1141.webp" 
+              alt="Elisa"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Elisa</h3>
+            <p>Jacques CHAUVIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="massacre en septembre" 
+        data-auteur="jacques chauvire"
+        data-annee="2006"
+        data-ordre="1139">
+        <a href="/livre/1139/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1142.webp" 
+              alt="Massacre en septembre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Massacre en septembre</h3>
+            <p>Jacques CHAUVIRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a la mort, à la vie" 
+        data-auteur="andrée chedid"
+        data-annee="1998"
+        data-ordre="1140">
+        <a href="/livre/1140/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1143.webp" 
+              alt="A la mort, à la vie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A la mort, à la vie</h3>
+            <p>Andrée CHEDID</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;enfant multiple" 
+        data-auteur="andrée chedid"
+        data-annee="1998"
+        data-ordre="1141">
+        <a href="/livre/1141/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1144.webp" 
+              alt="L&#39;enfant multiple"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;enfant multiple</h3>
+            <p>Andrée CHEDID</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’autre" 
+        data-auteur="andrée chedid"
+        data-annee="1992"
+        data-ordre="1142">
+        <a href="/livre/1142/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1145.webp" 
+              alt="L’autre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’autre</h3>
+            <p>Andrée CHEDID</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le message" 
+        data-auteur="andrée chedid"
+        data-annee="2000"
+        data-ordre="1143">
+        <a href="/livre/1143/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1146.webp" 
+              alt="Le message"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le message</h3>
+            <p>Andrée CHEDID</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="déjeuner de famille" 
+        data-auteur="john cheever"
+        data-annee="2009"
+        data-ordre="1144">
+        <a href="/livre/1144/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1147.webp" 
+              alt="Déjeuner de famille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Déjeuner de famille</h3>
+            <p>John CHEEVER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="insomnies" 
+        data-auteur="john cheever"
+        data-annee="2000"
+        data-ordre="1145">
+        <a href="/livre/1145/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1148.webp" 
+              alt="Insomnies"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Insomnies</h3>
+            <p>John CHEEVER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les lumières de bullet park" 
+        data-auteur="john cheever"
+        data-annee="2003"
+        data-ordre="1146">
+        <a href="/livre/1146/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1149.webp" 
+              alt="Les lumières de Bullet Park"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les lumières de Bullet Park</h3>
+            <p>John CHEEVER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="on dirait vraiment le paradis" 
+        data-auteur="john cheever"
+        data-annee="2009"
+        data-ordre="1147">
+        <a href="/livre/1147/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1150.webp" 
+              alt="On dirait vraiment le paradis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>On dirait vraiment le paradis</h3>
+            <p>John CHEEVER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="perdre son chemin" 
+        data-auteur="a.      cheng"
+        data-annee="2001"
+        data-ordre="1148">
+        <a href="/livre/1148/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1151.webp" 
+              alt="Perdre son chemin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Perdre son chemin</h3>
+            <p>A.      CHENG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dit de tianyi" 
+        data-auteur="françois cheng"
+        data-annee="1998"
+        data-ordre="1149">
+        <a href="/livre/1149/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1152.webp" 
+              alt="Le dit de Tianyi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dit de Tianyi</h3>
+            <p>François CHENG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’éternité n’est pas de trop" 
+        data-auteur="françois cheng"
+        data-annee="2004"
+        data-ordre="1150">
+        <a href="/livre/1150/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1153.webp" 
+              alt="L’éternité n’est pas de trop"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’éternité n’est pas de trop</h3>
+            <p>François CHENG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jonas" 
+        data-auteur="jacques chessex"
+        data-annee="1987"
+        data-ordre="1151">
+        <a href="/livre/1151/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1154.webp" 
+              alt="Jonas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jonas</h3>
+            <p>Jacques CHESSEX</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-23/">← Précédent</a>
+    
+    
+    <span>Page 24 sur 153</span>
+    
+    
+      <a href="/catalogue/page-25/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

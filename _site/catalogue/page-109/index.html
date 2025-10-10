@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="œuvres –des ardennes au désert" 
+        data-auteur="arthur rimbaud"
+        data-annee="1998"
+        data-ordre="5184">
+        <a href="/livre/5184/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5197.webp" 
+              alt="Œuvres –Des Ardennes au Désert"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Œuvres –Des Ardennes au Désert</h3>
+            <p>Arthur RIMBAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poésies – une saison en enfer – illuminations" 
+        data-auteur="arthur rimbaud"
+        data-annee="1998"
+        data-ordre="5185">
+        <a href="/livre/5185/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5198.webp" 
+              alt="Poésies – Une saison en enfer – Illuminations"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poésies – Une saison en enfer – Illuminations</h3>
+            <p>Arthur RIMBAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="poésies complètes" 
+        data-auteur="arthur rimbaud"
+        data-annee="2012"
+        data-ordre="5186">
+        <a href="/livre/5186/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5199.webp" 
+              alt="Poésies complètes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Poésies complètes</h3>
+            <p>Arthur RIMBAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="oeuvres poétiques" 
+        data-auteur="arthur rimbaud"
+        data-annee="1964"
+        data-ordre="5187">
+        <a href="/livre/5187/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5200.webp" 
+              alt="Oeuvres poétiques"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Oeuvres poétiques</h3>
+            <p>Arthur RIMBAUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les dames de france" 
+        data-auteur="angelo rinaldi"
+        data-annee="1977"
+        data-ordre="5188">
+        <a href="/livre/5188/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5201.webp" 
+              alt="Les dames de France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les dames de France</h3>
+            <p>Angelo RINALDI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les jardins du consulat" 
+        data-auteur="angelo rinaldi"
+        data-annee="1984"
+        data-ordre="5189">
+        <a href="/livre/5189/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5202.webp" 
+              alt="Les jardins du Consulat"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les jardins du Consulat</h3>
+            <p>Angelo RINALDI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les jours ne s&#39;en vont pas longtemps" 
+        data-auteur="angelo rinaldi"
+        data-annee="1993"
+        data-ordre="5190">
+        <a href="/livre/5190/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5203.webp" 
+              alt="Les jours ne s&#39;en vont pas longtemps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les jours ne s&#39;en vont pas longtemps</h3>
+            <p>Angelo RINALDI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les roses de pline" 
+        data-auteur="angelo rinaldi"
+        data-annee="1987"
+        data-ordre="5191">
+        <a href="/livre/5191/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5204.webp" 
+              alt="Les roses de Pline"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les roses de Pline</h3>
+            <p>Angelo RINALDI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le perchoir du perroquet" 
+        data-auteur="michel rio"
+        data-annee="1983"
+        data-ordre="5192">
+        <a href="/livre/5192/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5205.webp" 
+              alt="Le perchoir du perroquet"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le perchoir du perroquet</h3>
+            <p>Michel RIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="faux pas" 
+        data-auteur="michel rio"
+        data-annee="1991"
+        data-ordre="5193">
+        <a href="/livre/5193/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5206.webp" 
+              alt="Faux pas"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Faux pas</h3>
+            <p>Michel RIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les surréalistes(une génération entre le rêve et l&#39;action)" 
+        data-auteur="jean-luc rispail"
+        data-annee="1991"
+        data-ordre="5194">
+        <a href="/livre/5194/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5207.webp" 
+              alt="Les surréalistes(une génération entre le rêve et l&#39;action)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les surréalistes(une génération entre le rêve et l&#39;action)</h3>
+            <p>Jean-Luc RISPAIL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;éclat dans l&#39;abime" 
+        data-auteur="manuel rivas"
+        data-annee="2004"
+        data-ordre="5195">
+        <a href="/livre/5195/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5208.webp" 
+              alt="L&#39;éclat dans l&#39;abime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;éclat dans l&#39;abime</h3>
+            <p>Manuel RIVAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la langue des papillonset autres nouvelles" 
+        data-auteur="manuel rivas"
+        data-annee="2003"
+        data-ordre="5196">
+        <a href="/livre/5196/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5209.webp" 
+              alt="La langue des papillonset autres nouvelles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La langue des papillonset autres nouvelles</h3>
+            <p>Manuel RIVAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le crayon du charpentier" 
+        data-auteur="manuel rivas"
+        data-annee="2000"
+        data-ordre="5197">
+        <a href="/livre/5197/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5210.webp" 
+              alt="Le crayon du charpentier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le crayon du charpentier</h3>
+            <p>Manuel RIVAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fleur d’agonie" 
+        data-auteur="christine de rivoyre"
+        data-annee="1970"
+        data-ordre="5198">
+        <a href="/livre/5198/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5211.webp" 
+              alt="Fleur d’agonie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fleur d’agonie</h3>
+            <p>Christine de RIVOYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les sultans" 
+        data-auteur="christine de rivoyre"
+        data-annee="1964"
+        data-ordre="5199">
+        <a href="/livre/5199/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5212.webp" 
+              alt="Les sultans"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les sultans</h3>
+            <p>Christine de RIVOYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="reine-mère" 
+        data-auteur="christine de rivoyre"
+        data-annee="1986"
+        data-ordre="5200">
+        <a href="/livre/5200/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5213.webp" 
+              alt="Reine-Mère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Reine-Mère</h3>
+            <p>Christine de RIVOYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="picassoet les maîtres –galeries nationales du grand palais paris 2009" 
+        data-auteur="réunion des musées nationaux)"
+        data-annee="0"
+        data-ordre="5201">
+        <a href="/livre/5201/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5214.webp" 
+              alt="Picassoet les maîtres –Galeries nationales du Grand Palais Paris 2009"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Picassoet les maîtres –Galeries nationales du Grand Palais Paris 2009</h3>
+            <p>Réunion des musées nationaux)</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="toulouse-lautrec –galeries nationales du grand palais paris 1992" 
+        data-auteur="réunion des musées nationaux)"
+        data-annee="0"
+        data-ordre="5202">
+        <a href="/livre/5202/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5215.webp" 
+              alt="Toulouse-Lautrec –Galeries nationales du Grand Palais Paris 1992"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Toulouse-Lautrec –Galeries nationales du Grand Palais Paris 1992</h3>
+            <p>Réunion des musées nationaux)</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la  maison de rendez-vous" 
+        data-auteur="alain robbe-grillet"
+        data-annee="1925"
+        data-ordre="5203">
+        <a href="/livre/5203/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5216.webp" 
+              alt="La  maison de rendez-vous"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La  maison de rendez-vous</h3>
+            <p>Alain ROBBE-GRILLET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la reprise" 
+        data-auteur="alain robbe-grillet"
+        data-annee="2001"
+        data-ordre="5204">
+        <a href="/livre/5204/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5217.webp" 
+              alt="La reprise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La reprise</h3>
+            <p>Alain ROBBE-GRILLET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le méchant" 
+        data-auteur="jacques robert"
+        data-annee="1984"
+        data-ordre="5205">
+        <a href="/livre/5205/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5218.webp" 
+              alt="Le méchant"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le méchant</h3>
+            <p>Jacques ROBERT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les démons de minuit" 
+        data-auteur="jacques robert"
+        data-annee="1977"
+        data-ordre="5206">
+        <a href="/livre/5206/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5219.webp" 
+              alt="Les démons de minuit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les démons de minuit</h3>
+            <p>Jacques ROBERT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ma clé des champs" 
+        data-auteur="jacques robert"
+        data-annee="1976"
+        data-ordre="5207">
+        <a href="/livre/5207/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5220.webp" 
+              alt="Ma clé des champs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ma clé des champs</h3>
+            <p>Jacques ROBERT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="céline secret" 
+        data-auteur="robert v./destouches l."
+        data-annee="2001"
+        data-ordre="5208">
+        <a href="/livre/5208/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5221.webp" 
+              alt="Céline secret"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Céline secret</h3>
+            <p>ROBERT V./DESTOUCHES L.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="shantaram" 
+        data-auteur="gregory david roberts"
+        data-annee="2004"
+        data-ordre="5209">
+        <a href="/livre/5209/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5222.webp" 
+              alt="Shantaram"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Shantaram</h3>
+            <p>Gregory David ROBERTS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les enfants de fortune" 
+        data-auteur="jean-marc roberts"
+        data-annee="1978"
+        data-ordre="5210">
+        <a href="/livre/5210/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5223.webp" 
+              alt="Les enfants de fortune"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les enfants de fortune</h3>
+            <p>Jean-Marc ROBERTS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="monsieur pinocchio" 
+        data-auteur="jean-marc roberts"
+        data-annee="1991"
+        data-ordre="5211">
+        <a href="/livre/5211/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5224.webp" 
+              alt="Monsieur Pinocchio"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Monsieur Pinocchio</h3>
+            <p>Jean-Marc ROBERTS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="portrait craché" 
+        data-auteur="jean-marc roberts"
+        data-annee="1983"
+        data-ordre="5212">
+        <a href="/livre/5212/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5225.webp" 
+              alt="Portrait craché"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Portrait craché</h3>
+            <p>Jean-Marc ROBERTS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="affaires étrangères" 
+        data-auteur="jean-marc roberts"
+        data-annee="1979"
+        data-ordre="5213">
+        <a href="/livre/5213/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5226.webp" 
+              alt="Affaires étrangères"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Affaires étrangères</h3>
+            <p>Jean-Marc ROBERTS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une petite femme" 
+        data-auteur="jean-marc roberts"
+        data-annee="1998"
+        data-ordre="5214">
+        <a href="/livre/5214/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5227.webp" 
+              alt="Une petite femme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une petite femme</h3>
+            <p>Jean-Marc ROBERTS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fragile" 
+        data-auteur="muriel robin"
+        data-annee="2005"
+        data-ordre="5215">
+        <a href="/livre/5215/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5228.webp" 
+              alt="Fragile"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fragile</h3>
+            <p>Muriel ROBIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mars la bleue" 
+        data-auteur="kim stanley robinson"
+        data-annee="2006"
+        data-ordre="5216">
+        <a href="/livre/5216/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5229.webp" 
+              alt="Mars la Bleue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mars la Bleue</h3>
+            <p>Kim Stanley ROBINSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mars la rouge" 
+        data-auteur="kim stanley robinson"
+        data-annee="2018"
+        data-ordre="5217">
+        <a href="/livre/5217/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5230.webp" 
+              alt="Mars la Rouge"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mars la Rouge</h3>
+            <p>Kim Stanley ROBINSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mars la verte" 
+        data-auteur="kim stanley robinson"
+        data-annee="2018"
+        data-ordre="5218">
+        <a href="/livre/5218/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5231.webp" 
+              alt="Mars la Verte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mars la Verte</h3>
+            <p>Kim Stanley ROBINSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le coup au cœur" 
+        data-auteur="peter robinson"
+        data-annee="2007"
+        data-ordre="5219">
+        <a href="/livre/5219/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5232.webp" 
+              alt="Le coup au cœur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le coup au cœur</h3>
+            <p>Peter ROBINSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le rocher aux corbeaux" 
+        data-auteur="peter robinson"
+        data-annee="2013"
+        data-ordre="5220">
+        <a href="/livre/5220/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5233.webp" 
+              alt="Le rocher aux corbeaux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le rocher aux corbeaux</h3>
+            <p>Peter ROBINSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;herbe des ruines" 
+        data-auteur="emmanuel robles"
+        data-annee="1994"
+        data-ordre="5221">
+        <a href="/livre/5221/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5234.webp" 
+              alt="L&#39;herbe des ruines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;herbe des ruines</h3>
+            <p>Emmanuel ROBLES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la remontée du fleuve" 
+        data-auteur="emmanuel robles"
+        data-annee="1964"
+        data-ordre="5222">
+        <a href="/livre/5222/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5235.webp" 
+              alt="La remontée du fleuve"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La remontée du fleuve</h3>
+            <p>Emmanuel ROBLES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les sirènes" 
+        data-auteur="emmanuel robles"
+        data-annee="1977"
+        data-ordre="5223">
+        <a href="/livre/5223/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5236.webp" 
+              alt="Les sirènes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les sirènes</h3>
+            <p>Emmanuel ROBLES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un printemps d&#39;italie" 
+        data-auteur="emmanuel robles"
+        data-annee="1970"
+        data-ordre="5224">
+        <a href="/livre/5224/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5237.webp" 
+              alt="Un printemps d&#39;Italie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un printemps d&#39;Italie</h3>
+            <p>Emmanuel ROBLES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="montserrat" 
+        data-auteur="emmanuel robles"
+        data-annee="1949"
+        data-ordre="5225">
+        <a href="/livre/5225/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5238.webp" 
+              alt="Montserrat"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Montserrat</h3>
+            <p>Emmanuel ROBLES</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le suspect" 
+        data-auteur="michael robotham"
+        data-annee="2017"
+        data-ordre="5226">
+        <a href="/livre/5226/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5239.webp" 
+              alt="Le suspect"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le suspect</h3>
+            <p>Michael ROBOTHAM</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="si la gauche savait" 
+        data-auteur="michel rocard"
+        data-annee="2005"
+        data-ordre="5227">
+        <a href="/livre/5227/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5240.webp" 
+              alt="Si la Gauche savait"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Si la Gauche savait</h3>
+            <p>Michel ROCARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le bestiaire des philosophes" 
+        data-auteur="roche c/barrere j-j"
+        data-annee="2001"
+        data-ordre="5228">
+        <a href="/livre/5228/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5241.webp" 
+              alt="Le bestiaire des philosophes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le bestiaire des philosophes</h3>
+            <p>ROCHE C/BARRERE J-J</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cancer" 
+        data-auteur="pr. henri roche"
+        data-annee="1790"
+        data-ordre="5229">
+        <a href="/livre/5229/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5242.webp" 
+              alt="Le cancer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cancer</h3>
+            <p>Pr. Henri ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jules et jim" 
+        data-auteur="henri-pierre roche"
+        data-annee="1979"
+        data-ordre="5230">
+        <a href="/livre/5230/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5243.webp" 
+              alt="Jules et Jim"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jules et Jim</h3>
+            <p>Henri-Pierre ROCHE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le repos du guerrier" 
+        data-auteur="christiane rochefort"
+        data-annee="1958"
+        data-ordre="5231">
+        <a href="/livre/5231/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/5244.webp" 
+              alt="Le repos du guerrier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le repos du guerrier</h3>
+            <p>Christiane ROCHEFORT</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-108/">← Précédent</a>
+    
+    
+    <span>Page 109 sur 153</span>
+    
+    
+      <a href="/catalogue/page-110/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme-sœur" 
+        data-auteur="patrick lapeyre"
+        data-annee="2003"
+        data-ordre="3552">
+        <a href="/livre/3552/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3564.webp" 
+              alt="L&#39;homme-sœur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme-sœur</h3>
+            <p>Patrick LAPEYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie est brève et le désir sans fin" 
+        data-auteur="patrick lapeyre"
+        data-annee="2010"
+        data-ordre="3553">
+        <a href="/livre/3553/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3565.webp" 
+              alt="La vie est brève et le désir sans fin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie est brève et le désir sans fin</h3>
+            <p>Patrick LAPEYRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la lionne du boulevard" 
+        data-auteur="alexandra lapierre"
+        data-annee="1984"
+        data-ordre="3554">
+        <a href="/livre/3554/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3566.webp" 
+              alt="La lionne du boulevard"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La lionne du boulevard</h3>
+            <p>Alexandra LAPIERRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="o jerusalem(2 tomes)" 
+        data-auteur="lapierre d./ collins larry"
+        data-annee="1971"
+        data-ordre="3555">
+        <a href="/livre/3555/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3567.webp" 
+              alt="O Jerusalem(2 tomes)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>O Jerusalem(2 tomes)</h3>
+            <p>LAPIERRE D./ COLLINS Larry</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paris brûle-t-il ?" 
+        data-auteur="lapierre d./ collins larry"
+        data-annee="1967"
+        data-ordre="3556">
+        <a href="/livre/3556/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3568.webp" 
+              alt="Paris brûle-t-il ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paris brûle-t-il ?</h3>
+            <p>LAPIERRE D./ COLLINS Larry</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cette nuit la liberté" 
+        data-auteur="lapierre d./ collins larry"
+        data-annee="2004"
+        data-ordre="3557">
+        <a href="/livre/3557/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3569.webp" 
+              alt="Cette nuit la liberté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cette nuit la liberté</h3>
+            <p>LAPIERRE D./ COLLINS Larry</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="il était minuit cinq à bhopal" 
+        data-auteur="lapierre d./moro javier"
+        data-annee="2001"
+        data-ordre="3558">
+        <a href="/livre/3558/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3570.webp" 
+              alt="Il était minuit cinq à Bhopal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Il était minuit cinq à Bhopal</h3>
+            <p>LAPIERRE D./MORO Javier</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la cité de la joie" 
+        data-auteur="dominique lapierre"
+        data-annee="1985"
+        data-ordre="3559">
+        <a href="/livre/3559/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3571.webp" 
+              alt="La cité de la joie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La cité de la joie</h3>
+            <p>Dominique LAPIERRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’âne et l’abeille" 
+        data-auteur="gilles lapouge"
+        data-annee="2014"
+        data-ordre="3560">
+        <a href="/livre/3560/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3572.webp" 
+              alt="L’âne et l’abeille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’âne et l’abeille</h3>
+            <p>Gilles LAPOUGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paroles d’algériens" 
+        data-auteur="waciny laredj"
+        data-annee="2017"
+        data-ordre="3561">
+        <a href="/livre/3561/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3573.webp" 
+              alt="Paroles d’Algériens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paroles d’Algériens</h3>
+            <p>Waciny LAREDJ</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de l’art– du moyen-age à nos jours" 
+        data-auteur="larousse"
+        data-annee="1867"
+        data-ordre="3562">
+        <a href="/livre/3562/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3574.webp" 
+              alt="Histoire de l’Art– du Moyen-Age à nos jours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de l’Art– du Moyen-Age à nos jours</h3>
+            <p>LAROUSSE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la généalogie – histoire et pratique" 
+        data-auteur="joseph valynseele"
+        data-annee="1992"
+        data-ordre="3563">
+        <a href="/livre/3563/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3575.webp" 
+              alt="La généalogie – histoire et pratique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La généalogie – histoire et pratique</h3>
+            <p>Joseph Valynseele</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="millenium -3. la reine dans le palais des courants d&#39;air" 
+        data-auteur="stieg larsson"
+        data-annee="2013"
+        data-ordre="3564">
+        <a href="/livre/3564/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3576.webp" 
+              alt="Millenium -3. La Reine dans le palais des courants d&#39;air"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Millenium -3. La Reine dans le palais des courants d&#39;air</h3>
+            <p>Stieg LARSSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="millenium -1. les hommes qui n&#39;aimaient pas les femmes" 
+        data-auteur="stieg larsson"
+        data-annee="2006"
+        data-ordre="3565">
+        <a href="/livre/3565/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3577.webp" 
+              alt="Millenium -1. Les hommes qui n&#39;aimaient pas les femmes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Millenium -1. Les hommes qui n&#39;aimaient pas les femmes</h3>
+            <p>Stieg LARSSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="millenium -2. la fille qui rêvait d&#39;un bidon d&#39;essence et d&#39;une allumette" 
+        data-auteur="stieg larsson"
+        data-annee="2015"
+        data-ordre="3566">
+        <a href="/livre/3566/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3578.webp" 
+              alt="Millenium -2. La fille qui rêvait d&#39;un bidon d&#39;essence et d&#39;une allumette"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Millenium -2. La fille qui rêvait d&#39;un bidon d&#39;essence et d&#39;une allumette</h3>
+            <p>Stieg LARSSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le passé composé" 
+        data-auteur="jacques-henri lartigue"
+        data-annee="1987"
+        data-ordre="3567">
+        <a href="/livre/3567/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3579.webp" 
+              alt="Le passé composé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le passé composé</h3>
+            <p>Jacques-Henri LARTIGUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pleins feux sur victor hugo" 
+        data-auteur="arnaud laster"
+        data-annee="1981"
+        data-ordre="3568">
+        <a href="/livre/3568/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3580.webp" 
+              alt="Pleins feux sur Victor Hugo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pleins feux sur Victor Hugo</h3>
+            <p>Arnaud LASTER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le théorème du parapluie" 
+        data-auteur="mickaël launey"
+        data-annee="2020"
+        data-ordre="3569">
+        <a href="/livre/3569/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3581.webp" 
+              alt="Le théorème du parapluie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le théorème du parapluie</h3>
+            <p>Mickaël LAUNEY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans ces bras-là" 
+        data-auteur="camille laurens"
+        data-annee="2000"
+        data-ordre="3570">
+        <a href="/livre/3570/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3582.webp" 
+              alt="Dans ces bras-là"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans ces bras-là</h3>
+            <p>Camille LAURENS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amour, roman" 
+        data-auteur="camille laurens"
+        data-annee="2003"
+        data-ordre="3571">
+        <a href="/livre/3571/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3583.webp" 
+              alt="L&#39;amour, roman"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amour, roman</h3>
+            <p>Camille LAURENS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les travaux d’hercule" 
+        data-auteur="camille laurens"
+        data-annee="1994"
+        data-ordre="3572">
+        <a href="/livre/3572/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3584.webp" 
+              alt="Les travaux d’Hercule"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les travaux d’Hercule</h3>
+            <p>Camille LAURENS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dormeur debout" 
+        data-auteur="jacques laurent"
+        data-annee="1986"
+        data-ordre="3573">
+        <a href="/livre/3573/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3585.webp" 
+              alt="Le dormeur debout"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dormeur debout</h3>
+            <p>Jacques LAURENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le français en cage" 
+        data-auteur="jacques laurent"
+        data-annee="1988"
+        data-ordre="3574">
+        <a href="/livre/3574/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3586.webp" 
+              alt="Le français en cage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le français en cage</h3>
+            <p>Jacques LAURENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le miroir aux tiroirs" 
+        data-auteur="jacques laurent"
+        data-annee="1990"
+        data-ordre="3575">
+        <a href="/livre/3575/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3587.webp" 
+              alt="Le miroir aux tiroirs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le miroir aux tiroirs</h3>
+            <p>Jacques LAURENT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les chants de maldoror" 
+        data-auteur="lautreamont"
+        data-annee="1943"
+        data-ordre="3576">
+        <a href="/livre/3576/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3588.webp" 
+              alt="Les chants de Maldoror"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les chants de Maldoror</h3>
+            <p>LAUTREAMONT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;amant de lady chatterley" 
+        data-auteur="d.h. lawrence"
+        data-annee="1992"
+        data-ordre="3577">
+        <a href="/livre/3577/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3589.webp" 
+              alt="L&#39;amant de Lady Chatterley"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;amant de Lady Chatterley</h3>
+            <p>D.H. LAWRENCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le serpent à plumes" 
+        data-auteur="d.h. lawrence"
+        data-annee="1984"
+        data-ordre="3578">
+        <a href="/livre/3578/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3590.webp" 
+              alt="Le serpent à plumes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le serpent à plumes</h3>
+            <p>D.H. LAWRENCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les sept piliers de la sagesse" 
+        data-auteur="t.e. lawrence"
+        data-annee="1936"
+        data-ordre="3579">
+        <a href="/livre/3579/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3591.webp" 
+              alt="Les sept piliers de la sagesse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les sept piliers de la sagesse</h3>
+            <p>T.E. LAWRENCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la constance du jardinier" 
+        data-auteur="john le carre"
+        data-annee="2001"
+        data-ordre="3580">
+        <a href="/livre/3580/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3592.webp" 
+              alt="La constance du jardinier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La constance du jardinier</h3>
+            <p>John LE CARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la taupe" 
+        data-auteur="john le carre"
+        data-annee="1974"
+        data-ordre="3581">
+        <a href="/livre/3581/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3593.webp" 
+              alt="La taupe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La taupe</h3>
+            <p>John LE CARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le miroir aux espions" 
+        data-auteur="john le carre"
+        data-annee="1982"
+        data-ordre="3582">
+        <a href="/livre/3582/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3594.webp" 
+              alt="Le miroir aux espions"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le miroir aux espions</h3>
+            <p>John LE CARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le tailleur de panama" 
+        data-auteur="john le carre"
+        data-annee="2009"
+        data-ordre="3583">
+        <a href="/livre/3583/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3595.webp" 
+              alt="Le Tailleur de Panama"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Tailleur de Panama</h3>
+            <p>John LE CARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="single &amp; single" 
+        data-auteur="john le carre"
+        data-annee="1999"
+        data-ordre="3584">
+        <a href="/livre/3584/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3596.webp" 
+              alt="Single &amp; Single"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Single &amp; Single</h3>
+            <p>John LE CARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un pur espion" 
+        data-auteur="john le carre"
+        data-annee="1991"
+        data-ordre="3585">
+        <a href="/livre/3585/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3597.webp" 
+              alt="Un pur espion"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un pur espion</h3>
+            <p>John LE CARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une petite ville en allemagne" 
+        data-auteur="john le carre"
+        data-annee="1983"
+        data-ordre="3586">
+        <a href="/livre/3586/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3598.webp" 
+              alt="Une petite ville en Allemagne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une petite ville en Allemagne</h3>
+            <p>John LE CARRE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gens des nuages" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1997"
+        data-ordre="3587">
+        <a href="/livre/3587/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3599.webp" 
+              alt="Gens des nuages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gens des nuages</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="diego et frida" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1993"
+        data-ordre="3588">
+        <a href="/livre/3588/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3600.webp" 
+              alt="Diego et Frida"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Diego et Frida</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cœur brûlé" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="2002"
+        data-ordre="3589">
+        <a href="/livre/3589/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3601.webp" 
+              alt="Cœur brûlé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cœur brûlé</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="désert" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1980"
+        data-ordre="3590">
+        <a href="/livre/3590/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3602.webp" 
+              alt="Désert"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Désert</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="etoile errante" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1992"
+        data-ordre="3591">
+        <a href="/livre/3591/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3603.webp" 
+              alt="Etoile errante"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Etoile errante</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;africain" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="2004"
+        data-ordre="3592">
+        <a href="/livre/3592/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3604.webp" 
+              alt="L&#39;africain"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;africain</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la fièvre" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1965"
+        data-ordre="3593">
+        <a href="/livre/3593/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3605.webp" 
+              alt="La fièvre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La fièvre</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la quarantaine" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1995"
+        data-ordre="3594">
+        <a href="/livre/3594/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3606.webp" 
+              alt="La quarantaine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La quarantaine</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chercheur d&#39;or" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="2002"
+        data-ordre="3595">
+        <a href="/livre/3595/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3607.webp" 
+              alt="Le chercheur d&#39;or"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chercheur d&#39;or</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le procès-verbal" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1996"
+        data-ordre="3596">
+        <a href="/livre/3596/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3608.webp" 
+              alt="Le procès-verbal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le procès-verbal</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le rêve mexicain ou la pensée interrompue" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1988"
+        data-ordre="3597">
+        <a href="/livre/3597/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3609.webp" 
+              alt="Le rêve mexicain ou la pensée interrompue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le rêve mexicain ou la pensée interrompue</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mondo et autres histoires" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1978"
+        data-ordre="3598">
+        <a href="/livre/3598/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3610.webp" 
+              alt="Mondo et autres histoires"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mondo et autres histoires</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="onitsha" 
+        data-auteur="jean-marie g. le clezio"
+        data-annee="1991"
+        data-ordre="3599">
+        <a href="/livre/3599/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3611.webp" 
+              alt="Onitsha"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Onitsha</h3>
+            <p>Jean-Marie G. LE CLEZIO</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-74/">← Précédent</a>
+    
+    
+    <span>Page 75 sur 153</span>
+    
+    
+      <a href="/catalogue/page-76/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

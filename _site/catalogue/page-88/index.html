@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;ile" 
+        data-auteur="robert merle"
+        data-annee="1962"
+        data-ordre="4176">
+        <a href="/livre/4176/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4188.webp" 
+              alt="L&#39;Ile"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;Ile</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="malevil" 
+        data-auteur="robert merle"
+        data-annee="1972"
+        data-ordre="4177">
+        <a href="/livre/4177/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4189.webp" 
+              alt="Malevil"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Malevil</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un animal doué de raison" 
+        data-auteur="robert merle"
+        data-annee="1967"
+        data-ordre="4178">
+        <a href="/livre/4178/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4190.webp" 
+              alt="Un animal doué de raison"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un animal doué de raison</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fortune de france : 08. l’enfant-roi" 
+        data-auteur="robert merle"
+        data-annee="1999"
+        data-ordre="4179">
+        <a href="/livre/4179/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4191.webp" 
+              alt="Fortune de France : 08. L’enfant-roi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fortune de France : 08. L’enfant-roi</h3>
+            <p>Robert MERLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chasseur de violons" 
+        data-auteur="jules merleau-ponty"
+        data-annee="1986"
+        data-ordre="4180">
+        <a href="/livre/4180/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4192.webp" 
+              alt="Le chasseur de violons"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chasseur de violons</h3>
+            <p>Jules MERLEAU-PONTY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mammifères" 
+        data-auteur="pierre merot"
+        data-annee="2006"
+        data-ordre="4181">
+        <a href="/livre/4181/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4193.webp" 
+              alt="Mammifères"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mammifères</h3>
+            <p>Pierre MEROT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de l&#39;oubli" 
+        data-auteur="block stefan merrill"
+        data-annee="2009"
+        data-ordre="4182">
+        <a href="/livre/4182/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4194.webp" 
+              alt="Histoire de l&#39;oubli"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de l&#39;oubli</h3>
+            <p>BLOCK Stefan MERRILL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les éblouissements" 
+        data-auteur="pierre mertens"
+        data-annee="1987"
+        data-ordre="4183">
+        <a href="/livre/4183/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4195.webp" 
+              alt="Les éblouissements"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les éblouissements</h3>
+            <p>Pierre MERTENS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une algérienne debout" 
+        data-auteur="khalida messaoudi"
+        data-annee="1995"
+        data-ordre="4184">
+        <a href="/livre/4184/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4196.webp" 
+              alt="Une Algérienne debout"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une Algérienne debout</h3>
+            <p>Khalida MESSAOUDI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon herbier de santé" 
+        data-auteur="maurice messegue"
+        data-annee="1975"
+        data-ordre="4185">
+        <a href="/livre/4185/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4197.webp" 
+              alt="Mon herbier de santé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon herbier de santé</h3>
+            <p>Maurice MESSEGUE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie après" 
+        data-auteur="claire messud"
+        data-annee="2025"
+        data-ordre="4186">
+        <a href="/livre/4186/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4198.webp" 
+              alt="La vie après"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie après</h3>
+            <p>Claire MESSUD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les vivants et les ombres" 
+        data-auteur="diane meur"
+        data-annee="2007"
+        data-ordre="4187">
+        <a href="/livre/4187/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4199.webp" 
+              alt="Les vivants et les ombres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les vivants et les ombres</h3>
+            <p>Diane MEUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;âme du chasseur" 
+        data-auteur="deon meyer"
+        data-annee="2010"
+        data-ordre="4188">
+        <a href="/livre/4188/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4200.webp" 
+              alt="L&#39;âme du chasseur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;âme du chasseur</h3>
+            <p>Deon MEYER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une histoire de l&#39;inde" 
+        data-auteur="eric-paul meyer"
+        data-annee="2007"
+        data-ordre="4189">
+        <a href="/livre/4189/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4201.webp" 
+              alt="Une histoire de l&#39;Inde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une histoire de l&#39;Inde</h3>
+            <p>Eric-Paul MEYER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="esclaves et négriers" 
+        data-auteur="jean meyer"
+        data-annee="1986"
+        data-ordre="4190">
+        <a href="/livre/4190/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4202.webp" 
+              alt="Esclaves et négriers"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Esclaves et négriers</h3>
+            <p>Jean MEYER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dans mon pays lui-même..." 
+        data-auteur="philippe meyer"
+        data-annee="1993"
+        data-ordre="4191">
+        <a href="/livre/4191/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4203.webp" 
+              alt="Dans mon pays lui-même..."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dans mon pays lui-même...</h3>
+            <p>Philippe MEYER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="paris la grande" 
+        data-auteur="philippe meyer"
+        data-annee="1997"
+        data-ordre="4192">
+        <a href="/livre/4192/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4204.webp" 
+              alt="Paris la Grande"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Paris la Grande</h3>
+            <p>Philippe MEYER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="contours du jour qui vient" 
+        data-auteur="léonora miano"
+        data-annee="2006"
+        data-ordre="4193">
+        <a href="/livre/4193/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4205.webp" 
+              alt="Contours du jour qui vient"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Contours du jour qui vient</h3>
+            <p>Léonora MIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la saison de l’ombre" 
+        data-auteur="léonora miano"
+        data-annee="2013"
+        data-ordre="4194">
+        <a href="/livre/4194/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4206.webp" 
+              alt="La saison de l’ombre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La saison de l’ombre</h3>
+            <p>Léonora MIANO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pierre-jean jouve(poètes d&#39;aujourd&#39;hui)" 
+        data-auteur="rené micha"
+        data-annee="1987"
+        data-ordre="4195">
+        <a href="/livre/4195/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4207.webp" 
+              alt="Pierre-Jean Jouve(poètes d&#39;aujourd&#39;hui)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pierre-Jean Jouve(poètes d&#39;aujourd&#39;hui)</h3>
+            <p>René MICHA</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sylvia" 
+        data-auteur="leonard michaels"
+        data-annee="1992"
+        data-ordre="4196">
+        <a href="/livre/4196/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4208.webp" 
+              alt="Sylvia"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sylvia</h3>
+            <p>Leonard MICHAELS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a distance" 
+        data-auteur="henri michaux"
+        data-annee="1997"
+        data-ordre="4197">
+        <a href="/livre/4197/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4209.webp" 
+              alt="A distance"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A distance</h3>
+            <p>Henri MICHAUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="requiem pour une huître" 
+        data-auteur="hubert michel"
+        data-annee="2000"
+        data-ordre="4198">
+        <a href="/livre/4198/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4210.webp" 
+              alt="Requiem pour une huître"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Requiem pour une huître</h3>
+            <p>Hubert MICHEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="des grives aux loups" 
+        data-auteur="claude michelet"
+        data-annee="1979"
+        data-ordre="4199">
+        <a href="/livre/4199/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4211.webp" 
+              alt="Des grives aux loups"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Des grives aux loups</h3>
+            <p>Claude MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;appel des engoulevents" 
+        data-auteur="claude michelet"
+        data-annee="1990"
+        data-ordre="4200">
+        <a href="/livre/4200/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4212.webp" 
+              alt="L&#39;appel des engoulevents"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;appel des engoulevents</h3>
+            <p>Claude MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la terre des vialhe" 
+        data-auteur="claude michelet"
+        data-annee="1998"
+        data-ordre="4201">
+        <a href="/livre/4201/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4213.webp" 
+              alt="La terre des Vialhe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La terre des Vialhe</h3>
+            <p>Claude MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand sillon" 
+        data-auteur="claude michelet"
+        data-annee="1988"
+        data-ordre="4202">
+        <a href="/livre/4202/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4214.webp" 
+              alt="Le grand sillon"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le grand sillon</h3>
+            <p>Claude MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les palombes ne passeront plus" 
+        data-auteur="claude michelet"
+        data-annee="1980"
+        data-ordre="4203">
+        <a href="/livre/4203/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4215.webp" 
+              alt="Les palombes ne passeront plus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les palombes ne passeront plus</h3>
+            <p>Claude MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les promesses du ciel et de la terre" 
+        data-auteur="claude michelet"
+        data-annee="1985"
+        data-ordre="4204">
+        <a href="/livre/4204/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4216.webp" 
+              alt="Les promesses du ciel et de la terre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les promesses du ciel et de la terre</h3>
+            <p>Claude MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pour un arpent de terre" 
+        data-auteur="claude michelet"
+        data-annee="1986"
+        data-ordre="4205">
+        <a href="/livre/4205/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4217.webp" 
+              alt="Pour un arpent de terre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pour un arpent de terre</h3>
+            <p>Claude MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de la révolution française(2 tomes)" 
+        data-auteur="jules michelet"
+        data-annee="1998"
+        data-ordre="4206">
+        <a href="/livre/4206/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4218.webp" 
+              alt="Histoire de la Révolution française(2 tomes)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de la Révolution française(2 tomes)</h3>
+            <p>Jules MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la france devant l&#39;europe" 
+        data-auteur="jules michelet"
+        data-annee="1871"
+        data-ordre="4207">
+        <a href="/livre/4207/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4219.webp" 
+              alt="La France devant l&#39;Europe"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La France devant l&#39;Europe</h3>
+            <p>Jules MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="portraits de la révolution" 
+        data-auteur="jules michelet"
+        data-annee="1989"
+        data-ordre="4208">
+        <a href="/livre/4208/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4220.webp" 
+              alt="Portraits de la Révolution"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Portraits de la Révolution</h3>
+            <p>Jules MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mer" 
+        data-auteur="jules michelet"
+        data-annee="1861"
+        data-ordre="4209">
+        <a href="/livre/4209/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4221.webp" 
+              alt="La mer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mer</h3>
+            <p>Jules MICHELET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="docteur zorn" 
+        data-auteur="james a. michener"
+        data-annee="1996"
+        data-ordre="4210">
+        <a href="/livre/4210/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4222.webp" 
+              alt="Docteur Zorn"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Docteur Zorn</h3>
+            <p>James A. MICHENER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les onze" 
+        data-auteur="pierre michon"
+        data-annee="2011"
+        data-ordre="4211">
+        <a href="/livre/4211/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4223.webp" 
+              alt="Les Onze"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Onze</h3>
+            <p>Pierre MICHON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="1. dames insignes et serviteurs galants" 
+        data-auteur="mille et une nuits (les)"
+        data-annee="0"
+        data-ordre="4212">
+        <a href="/livre/4212/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4224.webp" 
+              alt="1. Dames insignes et serviteurs galants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>1. Dames insignes et serviteurs galants</h3>
+            <p>MILLE ET UNE NUITS (LES)</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="2. les coeurs inhumains" 
+        data-auteur="mille et une nuits (les)"
+        data-annee="0"
+        data-ordre="4213">
+        <a href="/livre/4213/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4225.webp" 
+              alt="2. Les coeurs inhumains"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>2. Les coeurs inhumains</h3>
+            <p>MILLE ET UNE NUITS (LES)</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="histoire de sindbad le marin" 
+        data-auteur="mille et une nuits (les)"
+        data-annee="0"
+        data-ordre="4214">
+        <a href="/livre/4214/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4226.webp" 
+              alt="Histoire de Sindbad le marin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Histoire de Sindbad le marin</h3>
+            <p>MILLE ET UNE NUITS (LES)</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la saveur des jours" 
+        data-auteur="mille et une nuits (les)"
+        data-annee="2016"
+        data-ordre="4215">
+        <a href="/livre/4215/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4227.webp" 
+              alt="La saveur des jours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La saveur des jours</h3>
+            <p>MILLE ET UNE NUITS (LES)</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les amants du paradis" 
+        data-auteur="raoul mille"
+        data-annee="1987"
+        data-ordre="4216">
+        <a href="/livre/4216/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4228.webp" 
+              alt="Les amants du paradis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les amants du paradis</h3>
+            <p>Raoul MILLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="au fil du temps" 
+        data-auteur="arthur miller"
+        data-annee="1989"
+        data-ordre="4217">
+        <a href="/livre/4217/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4229.webp" 
+              alt="Au fil du temps"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Au fil du temps</h3>
+            <p>Arthur MILLER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les sorcières de salem" 
+        data-auteur="arthur miller"
+        data-annee="1955"
+        data-ordre="4218">
+        <a href="/livre/4218/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4230.webp" 
+              alt="Les sorcières de Salem"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les sorcières de Salem</h3>
+            <p>Arthur MILLER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mort d’un commis voyageur" 
+        data-auteur="arthur miller"
+        data-annee="1966"
+        data-ordre="4219">
+        <a href="/livre/4219/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4231.webp" 
+              alt="Mort d’un commis voyageur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mort d’un commis voyageur</h3>
+            <p>Arthur MILLER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="big suret les oranges de jérôme bosch" 
+        data-auteur="henry miller"
+        data-annee="0"
+        data-ordre="4220">
+        <a href="/livre/4220/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4232.webp" 
+              alt="Big Suret les oranges de Jérôme Bosch"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Big Suret les oranges de Jérôme Bosch</h3>
+            <p>Henry MILLER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sexus" 
+        data-auteur="henry miller"
+        data-annee="1949"
+        data-ordre="4221">
+        <a href="/livre/4221/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4233.webp" 
+              alt="Sexus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sexus</h3>
+            <p>Henry MILLER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chant d&#39;achille" 
+        data-auteur="madeline miller"
+        data-annee="2014"
+        data-ordre="4222">
+        <a href="/livre/4222/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4234.webp" 
+              alt="Le chant d&#39;Achille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chant d&#39;Achille</h3>
+            <p>Madeline MILLER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="il m&#39;appelait vieille france" 
+        data-auteur="hélène millerand"
+        data-annee="2005"
+        data-ordre="4223">
+        <a href="/livre/4223/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/4235.webp" 
+              alt="Il m&#39;appelait Vieille France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Il m&#39;appelait Vieille France</h3>
+            <p>Hélène MILLERAND</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-87/">← Précédent</a>
+    
+    
+    <span>Page 88 sur 153</span>
+    
+    
+      <a href="/catalogue/page-89/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

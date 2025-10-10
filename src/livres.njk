@@ -1,0 +1,75 @@
+---
+pagination:
+  data: livres
+  size: 1
+  alias: livre
+  addAllPagesToCollections: true
+permalink: "/livre/{{ pagination.pageNumber }}/"
+tags: livre
+eleventyComputed:
+  title: "{{ livre.nom }}"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="livre-detail">
+  
+  <nav class="breadcrumb">
+    <a href="/">Accueil</a> / 
+    <a href="/catalogue/">Catalogue</a> / 
+    <span>{{ livre.nom }}</span>
+  </nav>
+
+  <div class="livre-grid">
+    
+    <div class="livre-cover">
+      <img 
+        src="/images/covers/{{ livre.id }}.webp" 
+        alt="Couverture de {{ livre.nom }}"
+        loading="lazy"
+        width="300"
+        height="450"
+        onerror="this.src='/images/0-livre-par-defaut.svg'"
+      >
+    </div>
+
+    <div class="livre-info">
+      <h1>{{ livre.nom }}</h1>
+      
+      {% if livre.type %}
+      <p class="livre-type">
+        <span class="badge">{{ livre.type }}</span>
+      </p>
+      {% endif %}
+      
+      <p class="auteur">
+        <strong>Auteur :</strong> 
+        {{ livre.auteur | auteurFormat }}
+      </p>
+
+      <div class="resume">
+        <h2>Résumé</h2>
+        {% if livre.resume %}
+          <p>{{ livre.resume }}</p>
+        {% else %}
+          <p><em>Aucun résumé disponible.</em></p>
+        {% endif %}
+      </div>
+
+      <div class="actions">
+        <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/1" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-availability">
+          📋 Vérifier la disponibilité du livre
+        </a>
+        <button onclick="history.back()" class="btn-secondary">
+          ← Retour
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+{% endblock %}

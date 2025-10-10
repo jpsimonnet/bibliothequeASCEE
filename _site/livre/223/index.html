@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marie-Claire - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+<article class="livre-detail">
+  
+  <nav class="breadcrumb">
+    <a href="/">Accueil</a> / 
+    <a href="/catalogue/">Catalogue</a> / 
+    <span>Marie-Claire</span>
+  </nav>
+
+  <div class="livre-grid">
+    
+    <div class="livre-cover">
+      <img 
+        src="/images/covers/225.webp" 
+        alt="Couverture de Marie-Claire"
+        loading="lazy"
+        width="300"
+        height="450"
+        onerror="this.src='/images/0-livre-par-defaut.svg'"
+      >
+    </div>
+
+    <div class="livre-info">
+      <h1>Marie-Claire</h1>
+      
+      
+      <p class="livre-type">
+        <span class="badge">Littérature française</span>
+      </p>
+      
+      
+      <p class="auteur">
+        <strong>Auteur :</strong> 
+        Marguerite AUDOUX
+      </p>
+
+      <div class="resume">
+        <h2>Résumé</h2>
+        
+          <p>Audoux&#39;s first novel is the most autobiographical of the four. She describes her childhood and adolescence, inculding the story of her mother&#39;s death, her father&#39;s departure, and the nine years she spent in the orphanage of the convent Hôpital Général de Bourges. The second part of the novel takes place on the farm in Villevielle where Marie-Claire&#39;s first employers Master Sylvain and Pauline surround the young shepardess with good-hearted affection. In the third part, Marie-Claire, now a young woman, falls in love with Henri Deslois, the brother of the farmer&#39;s wife who followed Pauline. The young man&#39;s mother forbids Marie-Claire to see her son again. Marie-Claire returns to the convent before leaving for Paris.</p>
+        
+      </div>
+
+      <div class="actions">
+        <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/1" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-availability">
+          📋 Vérifier la disponibilité du livre
+        </a>
+        <button onclick="history.back()" class="btn-secondary">
+          ← Retour
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

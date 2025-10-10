@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="la course du rat " 
+        data-auteur="lauzier"
+        data-annee="1985"
+        data-ordre="6960">
+        <a href="/livre/6960/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6976.webp" 
+              alt="La course du rat "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La course du rat </h3>
+            <p>Lauzier</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les cadres" 
+        data-auteur="lauzier"
+        data-annee="1981"
+        data-ordre="6961">
+        <a href="/livre/6961/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6977.webp" 
+              alt="Les cadres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les cadres</h3>
+            <p>Lauzier</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="souvenirs d&#39;un jeune homme" 
+        data-auteur="lauzier"
+        data-annee="0"
+        data-ordre="6962">
+        <a href="/livre/6962/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6978.webp" 
+              alt="Souvenirs d&#39;un jeune homme"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Souvenirs d&#39;un jeune homme</h3>
+            <p>Lauzier</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quatre pas dans l&#39;avenir" 
+        data-auteur="fred et alexis"
+        data-annee="1992"
+        data-ordre="6963">
+        <a href="/livre/6963/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6979.webp" 
+              alt="Quatre pas dans l&#39;avenir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quatre pas dans l&#39;avenir</h3>
+            <p>Fred et Alexis</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le piano sauvage" 
+        data-auteur="fred"
+        data-annee="1977"
+        data-ordre="6964">
+        <a href="/livre/6964/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6980.webp" 
+              alt="Le piano sauvage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le piano sauvage</h3>
+            <p>Fred</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cinémastock" 
+        data-auteur="gotlib"
+        data-annee="1979"
+        data-ordre="6965">
+        <a href="/livre/6965/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6981.webp" 
+              alt="Cinémastock"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cinémastock</h3>
+            <p>Gotlib</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="pervers pépère" 
+        data-auteur="gotlib"
+        data-annee="1998"
+        data-ordre="6966">
+        <a href="/livre/6966/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6982.webp" 
+              alt="Pervers pépère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Pervers pépère</h3>
+            <p>Gotlib</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sont pas plus fort que nous" 
+        data-auteur="reiser"
+        data-annee="1995"
+        data-ordre="6967">
+        <a href="/livre/6967/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6983.webp" 
+              alt="Sont pas plus fort que nous"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sont pas plus fort que nous</h3>
+            <p>Reiser</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="phantasmes " 
+        data-auteur="reiser"
+        data-annee="1980"
+        data-ordre="6968">
+        <a href="/livre/6968/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6984.webp" 
+              alt="Phantasmes "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Phantasmes </h3>
+            <p>Reiser</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les copines" 
+        data-auteur="reiser"
+        data-annee="1981"
+        data-ordre="6969">
+        <a href="/livre/6969/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6985.webp" 
+              alt="Les copines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les copines</h3>
+            <p>Reiser</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie de bêtes " 
+        data-auteur="reiser"
+        data-annee="1987"
+        data-ordre="6970">
+        <a href="/livre/6970/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6986.webp" 
+              alt="La vie de bêtes "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie de bêtes </h3>
+            <p>Reiser</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ils sont moche" 
+        data-auteur="reiser"
+        data-annee="2000"
+        data-ordre="6971">
+        <a href="/livre/6971/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6987.webp" 
+              alt="Ils sont moche"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ils sont moche</h3>
+            <p>Reiser</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="y&#39;en aura pour tout le monde" 
+        data-auteur="reiser et coluche"
+        data-annee="1998"
+        data-ordre="6972">
+        <a href="/livre/6972/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6988.webp" 
+              alt="Y&#39;en aura pour tout le monde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Y&#39;en aura pour tout le monde</h3>
+            <p>Reiser et Coluche</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon papa" 
+        data-auteur="reiser"
+        data-annee="1984"
+        data-ordre="6973">
+        <a href="/livre/6973/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6989.webp" 
+              alt="Mon papa"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon papa</h3>
+            <p>Reiser</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="saison des amours" 
+        data-auteur="reiser"
+        data-annee="1986"
+        data-ordre="6974">
+        <a href="/livre/6974/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6990.webp" 
+              alt="Saison des amours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Saison des amours</h3>
+            <p>Reiser</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le destin de monique" 
+        data-auteur="claire bretecher"
+        data-annee="1998"
+        data-ordre="6975">
+        <a href="/livre/6975/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6991.webp" 
+              alt="Le destin de Monique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le destin de Monique</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cordon infernal" 
+        data-auteur="claire bretecher"
+        data-annee="1984"
+        data-ordre="6976">
+        <a href="/livre/6976/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6992.webp" 
+              alt="le cordon infernal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>le cordon infernal</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les méres" 
+        data-auteur="claire bretecher"
+        data-annee="2003"
+        data-ordre="6977">
+        <a href="/livre/6977/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6993.webp" 
+              alt="Les méres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les méres</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="tourista" 
+        data-auteur="claire bretecher"
+        data-annee="2000"
+        data-ordre="6978">
+        <a href="/livre/6978/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6994.webp" 
+              alt="Tourista"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Tourista</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les gnangnan" 
+        data-auteur="claire bretecher"
+        data-annee="1995"
+        data-ordre="6979">
+        <a href="/livre/6979/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6995.webp" 
+              alt="Les gnangnan"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les gnangnan</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="agrippine et la secte a raymonde" 
+        data-auteur="claire bretecher"
+        data-annee="1975"
+        data-ordre="6980">
+        <a href="/livre/6980/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6996.webp" 
+              alt="Agrippine et la secte a raymonde"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Agrippine et la secte a raymonde</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="allergie" 
+        data-auteur="claire bretecher"
+        data-annee="2022"
+        data-ordre="6981">
+        <a href="/livre/6981/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6997.webp" 
+              alt="Allergie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Allergie</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les états d&#39;âme de cellulite" 
+        data-auteur="claire bretecher"
+        data-annee="1981"
+        data-ordre="6982">
+        <a href="/livre/6982/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6998.webp" 
+              alt="Les états d&#39;âme de cellulite"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les états d&#39;âme de cellulite</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="agrippe déconfite" 
+        data-auteur="claire bretecher"
+        data-annee="2009"
+        data-ordre="6983">
+        <a href="/livre/6983/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6999.webp" 
+              alt="Agrippe déconfite"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Agrippe déconfite</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les amour ecologique du bolbt occidental" 
+        data-auteur="claire bretecher"
+        data-annee="1977"
+        data-ordre="6984">
+        <a href="/livre/6984/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7000.webp" 
+              alt="Les amour ecologique du Bolbt Occidental"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les amour ecologique du Bolbt Occidental</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mouler démouler" 
+        data-auteur="claire bretecher"
+        data-annee="1996"
+        data-ordre="6985">
+        <a href="/livre/6985/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7001.webp" 
+              alt="Mouler démouler"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mouler démouler</h3>
+            <p>Claire Bretecher</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le voyage de l&#39;incredule" 
+        data-auteur="fred"
+        data-annee="2001"
+        data-ordre="6986">
+        <a href="/livre/6986/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7002.webp" 
+              alt="Le voyage de l&#39;incredule"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le voyage de l&#39;incredule</h3>
+            <p>Fred</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chateau suspendu" 
+        data-auteur="fred"
+        data-annee="2013"
+        data-ordre="6987">
+        <a href="/livre/6987/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7003.webp" 
+              alt="Le chateau suspendu"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chateau suspendu</h3>
+            <p>Fred</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la balade de la mer salee" 
+        data-auteur="hugo pratt"
+        data-annee="0"
+        data-ordre="6988">
+        <a href="/livre/6988/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7004.webp" 
+              alt="La balade de la mer salee"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La balade de la mer salee</h3>
+            <p>Hugo Pratt</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je mourrai pas gibier" 
+        data-auteur="alfred"
+        data-annee="2009"
+        data-ordre="6989">
+        <a href="/livre/6989/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7005.webp" 
+              alt="je mourrai pas Gibier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>je mourrai pas Gibier</h3>
+            <p>Alfred</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="come prima" 
+        data-auteur="alfred"
+        data-annee="2013"
+        data-ordre="6990">
+        <a href="/livre/6990/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7006.webp" 
+              alt="Come prima"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Come prima</h3>
+            <p>Alfred</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les longues traversées" 
+        data-auteur="et cailleaux  giraudeau et cailleaux "
+        data-annee="2011"
+        data-ordre="6991">
+        <a href="/livre/6991/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7007.webp" 
+              alt="les longues traversées"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>les longues traversées</h3>
+            <p>et Cailleaux  Giraudeau et Cailleaux </p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="après la pluie " 
+        data-auteur="andré juillard"
+        data-annee="1998"
+        data-ordre="6992">
+        <a href="/livre/6992/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7008.webp" 
+              alt="Après la pluie "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Après la pluie </h3>
+            <p>André Juillard</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="quartier lointain" 
+        data-auteur="jirô taniguchi"
+        data-annee="2010"
+        data-ordre="6993">
+        <a href="/livre/6993/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7009.webp" 
+              alt="Quartier lointain"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Quartier lointain</h3>
+            <p>Jirô Taniguchi</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un amour exemplaire" 
+        data-auteur="cestac - pennac"
+        data-annee="2021"
+        data-ordre="6994">
+        <a href="/livre/6994/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7010.webp" 
+              alt="Un amour exemplaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un amour exemplaire</h3>
+            <p>Cestac - pennac</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="crève saucisse" 
+        data-auteur="simon hureau et pascal rabaté "
+        data-annee="2013"
+        data-ordre="6995">
+        <a href="/livre/6995/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7011.webp" 
+              alt="Crève saucisse"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Crève saucisse</h3>
+            <p>Simon Hureau et Pascal rabaté </p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les mauvais gens " 
+        data-auteur="etienne davodeau"
+        data-annee="2018"
+        data-ordre="6996">
+        <a href="/livre/6996/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7012.webp" 
+              alt="les mauvais gens "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>les mauvais gens </h3>
+            <p>Etienne Davodeau</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les ignorants " 
+        data-auteur="etienne davodeau"
+        data-annee="0"
+        data-ordre="6997">
+        <a href="/livre/6997/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7013.webp" 
+              alt="Les ignorants "
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les ignorants </h3>
+            <p>Etienne Davodeau</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="becassine aux bains de mer" 
+        data-auteur="caumery"
+        data-annee="1920"
+        data-ordre="6998">
+        <a href="/livre/6998/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7014.webp" 
+              alt="Becassine aux bains de mer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Becassine aux bains de mer</h3>
+            <p>Caumery</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la volupté" 
+        data-auteur="blutch"
+        data-annee="2006"
+        data-ordre="6999">
+        <a href="/livre/6999/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7015.webp" 
+              alt="La volupté"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La volupté</h3>
+            <p>Blutch</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un homme est mort" 
+        data-auteur="kris et étienne davodeau"
+        data-annee="1993"
+        data-ordre="7000">
+        <a href="/livre/7000/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7016.webp" 
+              alt="Un homme est mort"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un homme est mort</h3>
+            <p>Kris et étienne Davodeau</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="manabé shima" 
+        data-auteur="florent chavolet"
+        data-annee="2010"
+        data-ordre="7001">
+        <a href="/livre/7001/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7017.webp" 
+              alt="Manabé Shima"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Manabé Shima</h3>
+            <p>Florent Chavolet</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="etat de veille" 
+        data-auteur="davide reviati"
+        data-annee="2011"
+        data-ordre="7002">
+        <a href="/livre/7002/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7018.webp" 
+              alt="Etat de veille"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Etat de veille</h3>
+            <p>Davide Reviati</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="persepolis" 
+        data-auteur="marjane satrapi"
+        data-annee="2000"
+        data-ordre="7003">
+        <a href="/livre/7003/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7019.webp" 
+              alt="Persepolis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Persepolis</h3>
+            <p>Marjane Satrapi</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;arabe du futur" 
+        data-auteur="riad sattouf"
+        data-annee="2020"
+        data-ordre="7004">
+        <a href="/livre/7004/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7020.webp" 
+              alt="L&#39;arabe du futur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;arabe du futur</h3>
+            <p>Riad Sattouf</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="cité de verre" 
+        data-auteur="paul auster"
+        data-annee="1997"
+        data-ordre="7005">
+        <a href="/livre/7005/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7021.webp" 
+              alt="Cité de verre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Cité de verre</h3>
+            <p>Paul Auster</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="approximativement" 
+        data-auteur="lewis trondheim"
+        data-annee="2001"
+        data-ordre="7006">
+        <a href="/livre/7006/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7022.webp" 
+              alt="Approximativement"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Approximativement</h3>
+            <p>Lewis Trondheim</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="popeye" 
+        data-auteur="vegar"
+        data-annee="0"
+        data-ordre="7007">
+        <a href="/livre/7007/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7023.webp" 
+              alt="Popeye"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Popeye</h3>
+            <p>Vegar</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-145/">← Précédent</a>
+    
+    
+    <span>Page 146 sur 153</span>
+    
+    
+      <a href="/catalogue/page-147/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

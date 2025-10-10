@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="un homme sur la plage" 
+        data-auteur="jennifer johnston"
+        data-annee="1991"
+        data-ordre="3264">
+        <a href="/livre/3264/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3275.webp" 
+              alt="Un homme sur la plage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un homme sur la plage</h3>
+            <p>Jennifer JOHNSTON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="notre affaire à tous" 
+        data-auteur="eva joly"
+        data-annee="2000"
+        data-ordre="3265">
+        <a href="/livre/3265/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3276.webp" 
+              alt="Notre affaire à tous"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Notre affaire à tous</h3>
+            <p>Eva JOLY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vieux qui ne voulait pas fêter son anniversaire" 
+        data-auteur="jonas jonasson"
+        data-annee="2012"
+        data-ordre="3266">
+        <a href="/livre/3266/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3277.webp" 
+              alt="Le vieux qui ne voulait pas fêter son anniversaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vieux qui ne voulait pas fêter son anniversaire</h3>
+            <p>Jonas JONASSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="u.v." 
+        data-auteur="serge joncour"
+        data-annee="2003"
+        data-ordre="3267">
+        <a href="/livre/3267/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3278.webp" 
+              alt="U.V."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>U.V.</h3>
+            <p>Serge JONCOUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="repose-toi sur moi" 
+        data-auteur="serge joncour"
+        data-annee="2016"
+        data-ordre="3268">
+        <a href="/livre/3268/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3279.webp" 
+              alt="Repose-toi sur moi"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Repose-toi sur moi</h3>
+            <p>Serge JONCOUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ad vitam aeternam" 
+        data-auteur="thierry jonquet"
+        data-annee="2002"
+        data-ordre="3269">
+        <a href="/livre/3269/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3280.webp" 
+              alt="Ad vitam aeternam"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ad vitam aeternam</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="du passé faisons table rase" 
+        data-auteur="thierry jonquet"
+        data-annee="1999"
+        data-ordre="3270">
+        <a href="/livre/3270/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3281.webp" 
+              alt="Du passé faisons table rase"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Du passé faisons table rase</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ils sont votre épouvante et vous êtes leur crainte" 
+        data-auteur="thierry jonquet"
+        data-annee="2006"
+        data-ordre="3271">
+        <a href="/livre/3271/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3282.webp" 
+              alt="Ils sont votre épouvante et vous êtes leur crainte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ils sont votre épouvante et vous êtes leur crainte</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bête et la belle" 
+        data-auteur="thierry jonquet"
+        data-annee="1985"
+        data-ordre="3272">
+        <a href="/livre/3272/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3283.webp" 
+              alt="La bête et la belle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La bête et la belle</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie de ma mère" 
+        data-auteur="thierry jonquet"
+        data-annee="2001"
+        data-ordre="3273">
+        <a href="/livre/3273/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3284.webp" 
+              alt="La vie de ma mère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie de ma mère</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le manoir des immortelles" 
+        data-auteur="thierry jonquet"
+        data-annee="2003"
+        data-ordre="3274">
+        <a href="/livre/3274/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3285.webp" 
+              alt="Le manoir des immortelles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le manoir des immortelles</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le secret du rabbin" 
+        data-auteur="thierry jonquet"
+        data-annee="1986"
+        data-ordre="3275">
+        <a href="/livre/3275/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3286.webp" 
+              alt="Le secret du rabbin"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le secret du rabbin</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les orpailleurs" 
+        data-auteur="thierry jonquet"
+        data-annee="1993"
+        data-ordre="3276">
+        <a href="/livre/3276/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3287.webp" 
+              alt="Les orpailleurs"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les orpailleurs</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mémoire en cage" 
+        data-auteur="thierry jonquet"
+        data-annee="1999"
+        data-ordre="3277">
+        <a href="/livre/3277/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3288.webp" 
+              alt="Mémoire en cage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mémoire en cage</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="moloch" 
+        data-auteur="thierry jonquet"
+        data-annee="1995"
+        data-ordre="3278">
+        <a href="/livre/3278/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3289.webp" 
+              alt="Moloch"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Moloch</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mon vieux" 
+        data-auteur="thierry jonquet"
+        data-annee="2004"
+        data-ordre="3279">
+        <a href="/livre/3279/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3290.webp" 
+              alt="Mon vieux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon vieux</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mygale" 
+        data-auteur="thierry jonquet"
+        data-annee="1984"
+        data-ordre="3280">
+        <a href="/livre/3280/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3291.webp" 
+              alt="Mygale"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mygale</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vampire" 
+        data-auteur="thierry jonquet"
+        data-annee="2011"
+        data-ordre="3281">
+        <a href="/livre/3281/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3292.webp" 
+              alt="Vampire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vampire</h3>
+            <p>Thierry JONQUET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vent qui siffle dans les grues" 
+        data-auteur="lidia jorge"
+        data-annee="2004"
+        data-ordre="3282">
+        <a href="/livre/3282/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3293.webp" 
+              alt="Le vent qui siffle dans les grues"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vent qui siffle dans les grues</h3>
+            <p>Lidia JORGE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dernier gardien d’ellis island" 
+        data-auteur="gaëlle josse"
+        data-annee="2014"
+        data-ordre="3283">
+        <a href="/livre/3283/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3294.webp" 
+              alt="Le dernier gardien d’Ellis Island"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dernier gardien d’Ellis Island</h3>
+            <p>Gaëlle JOSSE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la noyée du pont des invalides" 
+        data-auteur="yves josso"
+        data-annee="2007"
+        data-ordre="3284">
+        <a href="/livre/3284/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3295.webp" 
+              alt="La noyée du pont des Invalides"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La noyée du pont des Invalides</h3>
+            <p>Yves JOSSO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chaminadour" 
+        data-auteur="marcel jouhandeau"
+        data-annee="1934"
+        data-ordre="3285">
+        <a href="/livre/3285/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3296.webp" 
+              alt="Chaminadour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chaminadour</h3>
+            <p>Marcel JOUHANDEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal sous l&#39;occupation" 
+        data-auteur="marcel jouhandeau"
+        data-annee="1980"
+        data-ordre="3286">
+        <a href="/livre/3286/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3297.webp" 
+              alt="Journal sous l&#39;occupation"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal sous l&#39;occupation</h3>
+            <p>Marcel JOUHANDEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="monsieur godeau marié" 
+        data-auteur="marcel jouhandeau"
+        data-annee="1933"
+        data-ordre="3287">
+        <a href="/livre/3287/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3298.webp" 
+              alt="Monsieur Godeau marié"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Monsieur Godeau marié</h3>
+            <p>Marcel JOUHANDEAU</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="petit traité de manipulation à l&#39;usage des honnêtes gens" 
+        data-auteur="r-v./beauvois j-l. joule"
+        data-annee="2012"
+        data-ordre="3288">
+        <a href="/livre/3288/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3299.webp" 
+              alt="Petit traité de manipulation à l&#39;usage des honnêtes gens"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Petit traité de manipulation à l&#39;usage des honnêtes gens</h3>
+            <p>R-V./BEAUVOIS J-L. JOULE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="entre chien et loup(anthologie de la peur)" 
+        data-auteur="eric jourdan"
+        data-annee="1989"
+        data-ordre="3289">
+        <a href="/livre/3289/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3300.webp" 
+              alt="Entre chien et loup(Anthologie de la peur)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Entre chien et loup(Anthologie de la peur)</h3>
+            <p>Eric JOURDAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;heure et l&#39;ombre" 
+        data-auteur="pierre jourde"
+        data-annee="2006"
+        data-ordre="3290">
+        <a href="/livre/3290/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3301.webp" 
+              alt="L&#39;heure et l&#39;ombre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;heure et l&#39;ombre</h3>
+            <p>Pierre JOURDE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le sommeil et le rêve" 
+        data-auteur="michel jouvet"
+        data-annee="2000"
+        data-ordre="3291">
+        <a href="/livre/3291/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3302.webp" 
+              alt="Le sommeil et le rêve"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le sommeil et le rêve</h3>
+            <p>Michel JOUVET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dedalus" 
+        data-auteur="james joyce"
+        data-annee="1943"
+        data-ordre="3292">
+        <a href="/livre/3292/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3303.webp" 
+              alt="Dedalus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dedalus</h3>
+            <p>James JOYCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="dublinois" 
+        data-auteur="james joyce"
+        data-annee="2021"
+        data-ordre="3293">
+        <a href="/livre/3293/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3304.webp" 
+              alt="Dublinois"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Dublinois</h3>
+            <p>James JOYCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ulysse i" 
+        data-auteur="james joyce"
+        data-annee="2020"
+        data-ordre="3294">
+        <a href="/livre/3294/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3305.webp" 
+              alt="Ulysse I"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ulysse I</h3>
+            <p>James JOYCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ulysse ii" 
+        data-auteur="james joyce"
+        data-annee="1978"
+        data-ordre="3295">
+        <a href="/livre/3295/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3306.webp" 
+              alt="Ulysse II"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ulysse II</h3>
+            <p>James JOYCE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="changer d&#39;alimentation – prévention des cancers" 
+        data-auteur="henri joyeux"
+        data-annee="2013"
+        data-ordre="3296">
+        <a href="/livre/3296/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3307.webp" 
+              alt="Changer d&#39;alimentation – Prévention des cancers"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Changer d&#39;alimentation – Prévention des cancers</h3>
+            <p>Henri JOYEUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="femmes si vous saviez ..." 
+        data-auteur="henri joyeux"
+        data-annee="2003"
+        data-ordre="3297">
+        <a href="/livre/3297/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3308.webp" 
+              alt="Femmes si vous saviez ..."
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Femmes si vous saviez ...</h3>
+            <p>Henri JOYEUX</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lambeaux" 
+        data-auteur="charles juliet"
+        data-annee="1995"
+        data-ordre="3298">
+        <a href="/livre/3298/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3309.webp" 
+              alt="Lambeaux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lambeaux</h3>
+            <p>Charles JULIET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la faute à rousseau" 
+        data-auteur="jacques julliard"
+        data-annee="1985"
+        data-ordre="3299">
+        <a href="/livre/3299/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3310.webp" 
+              alt="La faute à Rousseau"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La faute à Rousseau</h3>
+            <p>Jacques JULLIARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les années mitterrand" 
+        data-auteur="serge july"
+        data-annee="1986"
+        data-ordre="3300">
+        <a href="/livre/3300/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3311.webp" 
+              alt="Les années Mitterrand"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les années Mitterrand</h3>
+            <p>Serge JULY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un mythe moderne" 
+        data-auteur="c.c. jung"
+        data-annee="1961"
+        data-ordre="3301">
+        <a href="/livre/3301/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3312.webp" 
+              alt="Un mythe moderne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un mythe moderne</h3>
+            <p>C.C. JUNG</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="jardin et routes" 
+        data-auteur="ernst junger"
+        data-annee="1979"
+        data-ordre="3302">
+        <a href="/livre/3302/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3313.webp" 
+              alt="Jardin et routes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Jardin et routes</h3>
+            <p>Ernst JUNGER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="héliopolis" 
+        data-auteur="ernst junger"
+        data-annee="1949"
+        data-ordre="3303">
+        <a href="/livre/3303/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3314.webp" 
+              alt="Héliopolis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Héliopolis</h3>
+            <p>Ernst JUNGER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="sur les falaises de marbre" 
+        data-auteur="ernst junger"
+        data-annee="1979"
+        data-ordre="3304">
+        <a href="/livre/3304/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3315.webp" 
+              alt="Sur les falaises de marbre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Sur les falaises de marbre</h3>
+            <p>Ernst JUNGER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les visions d&#39;un rescapé ou le syndrôme d&#39;auschwitz" 
+        data-auteur="ka-tzetnik 135633"
+        data-annee="0"
+        data-ordre="3305">
+        <a href="/livre/3305/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3316.webp" 
+              alt="Les visions d&#39;un rescapé ou le syndrôme d&#39;Auschwitz"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les visions d&#39;un rescapé ou le syndrôme d&#39;Auschwitz</h3>
+            <p>Ka-Tzetnik 135633</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le général de l&#39;armée morte" 
+        data-auteur="ismael kadare"
+        data-annee="1970"
+        data-ordre="3306">
+        <a href="/livre/3306/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3317.webp" 
+              alt="Le général de l&#39;armée morte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le général de l&#39;armée morte</h3>
+            <p>Ismael KADARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="avril brisé" 
+        data-auteur="ismaïl kadare"
+        data-annee="2002"
+        data-ordre="3307">
+        <a href="/livre/3307/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3318.webp" 
+              alt="Avril brisé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Avril brisé</h3>
+            <p>Ismaïl KADARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="invitation à un concert officiel" 
+        data-auteur="ismaïl kadare"
+        data-annee="1985"
+        data-ordre="3308">
+        <a href="/livre/3308/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3319.webp" 
+              alt="Invitation à un concert officiel"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Invitation à un concert officiel</h3>
+            <p>Ismaïl KADARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la pyramide" 
+        data-auteur="ismaïl kadare"
+        data-annee="1992"
+        data-ordre="3309">
+        <a href="/livre/3309/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3320.webp" 
+              alt="La pyramide"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La pyramide</h3>
+            <p>Ismaïl KADARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le grand hiver" 
+        data-auteur="ismaïl kadare"
+        data-annee="1978"
+        data-ordre="3310">
+        <a href="/livre/3310/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3321.webp" 
+              alt="Le grand hiver"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le grand hiver</h3>
+            <p>Ismaïl KADARE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le palais des rêves" 
+        data-auteur="ismaïl kadare"
+        data-annee="1990"
+        data-ordre="3311">
+        <a href="/livre/3311/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3322.webp" 
+              alt="Le palais des rêves"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le palais des rêves</h3>
+            <p>Ismaïl KADARE</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-68/">← Précédent</a>
+    
+    
+    <span>Page 69 sur 153</span>
+    
+    
+      <a href="/catalogue/page-70/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

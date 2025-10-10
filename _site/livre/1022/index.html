@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Povchéri - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+<article class="livre-detail">
+  
+  <nav class="breadcrumb">
+    <a href="/">Accueil</a> / 
+    <a href="/catalogue/">Catalogue</a> / 
+    <span>Povchéri</span>
+  </nav>
+
+  <div class="livre-grid">
+    
+    <div class="livre-cover">
+      <img 
+        src="/images/covers/1025.webp" 
+        alt="Couverture de Povchéri"
+        loading="lazy"
+        width="300"
+        height="450"
+        onerror="this.src='/images/0-livre-par-defaut.svg'"
+      >
+    </div>
+
+    <div class="livre-info">
+      <h1>Povchéri</h1>
+      
+      
+      <p class="livre-type">
+        <span class="badge">Littérature française</span>
+      </p>
+      
+      
+      <p class="auteur">
+        <strong>Auteur :</strong> 
+        Patrick CAUVIN
+      </p>
+
+      <div class="resume">
+        <h2>Résumé</h2>
+        
+          <p>&quot; J&#39;avais onze ans dans l&#39;été 43. C&#39;était la guerre. J&#39;en ai donc soixante et onze en cet hiver 2003 et c&#39;est encore la guerre. Pas la même ; la Troisième mondiale. Petit bonhomme en galoches soumis aux restrictions ou vieillard déambulant dans un couloir d&#39;hôpital, c&#39;est quand même toujours moi, Povchéri. Ceci est mon journal de début et de fin. Malgré tout, et dans l&#39;ensemble, ce fut parfois rigolo de vivre. &quot; Patrick Cauvin n&#39;a pas son pareil pour rendre dans sa fraîcheur et sa vérité le monde de l&#39;enfance. Et sa vision du monde &quot; adulte &quot;, dans un futur qui s&#39;approche dangereusement, est d&#39;une force saisissante. Povchéri est un roman tendre, drôle, émouvant. Povchéri est un très grand Cauvin.</p>
+        
+      </div>
+
+      <div class="actions">
+        <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/1" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-availability">
+          📋 Vérifier la disponibilité du livre
+        </a>
+        <button onclick="history.back()" class="btn-secondary">
+          ← Retour
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

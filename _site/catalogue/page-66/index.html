@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="mon cinéma" 
+        data-auteur="john irving"
+        data-annee="2013"
+        data-ordre="3120">
+        <a href="/livre/3120/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3131.webp" 
+              alt="Mon cinéma"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mon cinéma</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="a moi seul bien des personnages" 
+        data-auteur="john irving"
+        data-annee="2014"
+        data-ordre="3121">
+        <a href="/livre/3121/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3132.webp" 
+              alt="A moi seul bien des personnages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>A moi seul bien des personnages</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;épopée du buveur d&#39;eau" 
+        data-auteur="john irving"
+        data-annee="1988"
+        data-ordre="3122">
+        <a href="/livre/3122/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3133.webp" 
+              alt="L&#39;épopée du buveur d&#39;eau"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;épopée du buveur d&#39;eau</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la quatrième main" 
+        data-auteur="john irving"
+        data-annee="2002"
+        data-ordre="3123">
+        <a href="/livre/3123/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3134.webp" 
+              alt="La quatrième main"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La quatrième main</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rêves des autres" 
+        data-auteur="john irving"
+        data-annee="1993"
+        data-ordre="3124">
+        <a href="/livre/3124/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3135.webp" 
+              alt="Les rêves des autres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rêves des autres</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="liberté pour les ours !" 
+        data-auteur="john irving"
+        data-annee="1991"
+        data-ordre="3125">
+        <a href="/livre/3125/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3136.webp" 
+              alt="Liberté pour les ours !"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Liberté pour les ours !</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un mariage poids moyen" 
+        data-auteur="john irving"
+        data-annee="1984"
+        data-ordre="3126">
+        <a href="/livre/3126/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3137.webp" 
+              alt="Un mariage poids moyen"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un mariage poids moyen</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une prière pour owen" 
+        data-auteur="john irving"
+        data-annee="1990"
+        data-ordre="3127">
+        <a href="/livre/3127/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3138.webp" 
+              alt="Une prière pour Owen"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une prière pour Owen</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une veuve de papier" 
+        data-auteur="john irving"
+        data-annee="1999"
+        data-ordre="3128">
+        <a href="/livre/3128/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3139.webp" 
+              alt="Une veuve de papier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une veuve de papier</h3>
+            <p>John IRVING</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="auprès de moi toujours" 
+        data-auteur="kazuo ishiguro"
+        data-annee="2008"
+        data-ordre="3129">
+        <a href="/livre/3129/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3140.webp" 
+              alt="Auprès de moi toujours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Auprès de moi toujours</h3>
+            <p>Kazuo ISHIGURO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les vestiges du jour" 
+        data-auteur="kazuo ishiguro"
+        data-annee="1991"
+        data-ordre="3130">
+        <a href="/livre/3130/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3141.webp" 
+              alt="Les vestiges du jour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les vestiges du jour</h3>
+            <p>Kazuo ISHIGURO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nocturnes" 
+        data-auteur="kazuo ishiguro"
+        data-annee="2009"
+        data-ordre="3131">
+        <a href="/livre/3131/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3142.webp" 
+              alt="Nocturnes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nocturnes</h3>
+            <p>Kazuo ISHIGURO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="domnitza de snagov" 
+        data-auteur="panaït istrati"
+        data-annee="1935"
+        data-ordre="3132">
+        <a href="/livre/3132/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3143.webp" 
+              alt="Domnitza de Snagov"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Domnitza de Snagov</h3>
+            <p>Panaït ISTRATI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la disparue du père lachaise" 
+        data-auteur="claude izner"
+        data-annee="2003"
+        data-ordre="3133">
+        <a href="/livre/3133/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3144.webp" 
+              alt="La disparue du Père Lachaise"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La disparue du Père Lachaise</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la momie de la butte-aux cailles" 
+        data-auteur="claude izner"
+        data-annee="2009"
+        data-ordre="3134">
+        <a href="/livre/3134/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3145.webp" 
+              alt="La momie de la Butte-aux Cailles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La momie de la Butte-aux Cailles</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le carrefour des écrasés" 
+        data-auteur="claude izner"
+        data-annee="2003"
+        data-ordre="3135">
+        <a href="/livre/3135/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3146.webp" 
+              alt="Le carrefour des écrasés"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le carrefour des écrasés</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le petit homme de l&#39;opéra" 
+        data-auteur="claude izner"
+        data-annee="2010"
+        data-ordre="3136">
+        <a href="/livre/3136/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3147.webp" 
+              alt="Le petit homme de l&#39;Opéra"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le petit homme de l&#39;Opéra</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les souliers bruns du quai voltaire" 
+        data-auteur="claude izner"
+        data-annee="2011"
+        data-ordre="3137">
+        <a href="/livre/3137/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3148.webp" 
+              alt="Les souliers bruns du quai Voltaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les souliers bruns du quai Voltaire</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="minuit, impasse du cadran" 
+        data-auteur="claude izner"
+        data-annee="2012"
+        data-ordre="3138">
+        <a href="/livre/3138/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3149.webp" 
+              alt="Minuit, impasse du cadran"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Minuit, impasse du cadran</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="rendez-vous passage d&#39;enfer" 
+        data-auteur="claude izner"
+        data-annee="2008"
+        data-ordre="3139">
+        <a href="/livre/3139/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3150.webp" 
+              alt="Rendez-vous passage d&#39;enfer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Rendez-vous passage d&#39;enfer</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dragon du trocadéro" 
+        data-auteur="claude izner"
+        data-annee="2014"
+        data-ordre="3140">
+        <a href="/livre/3140/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3151.webp" 
+              alt="Le dragon du Trocadéro"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dragon du Trocadéro</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le léopard des batignolles" 
+        data-auteur="claude izner"
+        data-annee="2005"
+        data-ordre="3141">
+        <a href="/livre/3141/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3152.webp" 
+              alt="Le léopard des Batignolles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le léopard des Batignolles</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le secret des enfants rouges" 
+        data-auteur="claude izner"
+        data-annee="2004"
+        data-ordre="3142">
+        <a href="/livre/3142/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3153.webp" 
+              alt="Le secret des enfants rouges"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le secret des enfants rouges</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le talisman de la villette" 
+        data-auteur="claude izner"
+        data-annee="2006"
+        data-ordre="3143">
+        <a href="/livre/3143/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3154.webp" 
+              alt="Le talisman de La Villette"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le talisman de La Villette</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mystère rue des saints-pères" 
+        data-auteur="claude izner"
+        data-annee="2004"
+        data-ordre="3144">
+        <a href="/livre/3144/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3155.webp" 
+              alt="Mystère rue des Saints-Pères"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mystère rue des Saints-Pères</h3>
+            <p>Claude IZNER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l’aride des jours" 
+        data-auteur="jean-claude izzo"
+        data-annee="1999"
+        data-ordre="3145">
+        <a href="/livre/3145/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3156.webp" 
+              alt="L’aride des jours"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L’aride des jours</h3>
+            <p>Jean-Claude IZZO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="chourmo" 
+        data-auteur="jean-claude izzo"
+        data-annee="1996"
+        data-ordre="3146">
+        <a href="/livre/3146/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3157.webp" 
+              alt="Chourmo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Chourmo</h3>
+            <p>Jean-Claude IZZO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le soleil des mourants" 
+        data-auteur="jean-claude izzo"
+        data-annee="1999"
+        data-ordre="3147">
+        <a href="/livre/3147/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3158.webp" 
+              alt="Le soleil des mourants"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le soleil des mourants</h3>
+            <p>Jean-Claude IZZO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les marins perdus" 
+        data-auteur="jean-claude izzo"
+        data-annee="1997"
+        data-ordre="3148">
+        <a href="/livre/3148/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3159.webp" 
+              alt="Les marins perdus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les marins perdus</h3>
+            <p>Jean-Claude IZZO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="solea" 
+        data-auteur="jean-claude izzo"
+        data-annee="1998"
+        data-ordre="3149">
+        <a href="/livre/3149/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3160.webp" 
+              alt="Solea"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Solea</h3>
+            <p>Jean-Claude IZZO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="total khéops" 
+        data-auteur="jean-claude izzo"
+        data-annee="1995"
+        data-ordre="3150">
+        <a href="/livre/3150/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3161.webp" 
+              alt="Total Khéops"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Total Khéops</h3>
+            <p>Jean-Claude IZZO</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ce peu de bruits" 
+        data-auteur="philippe jaccottet"
+        data-annee="2008"
+        data-ordre="3151">
+        <a href="/livre/3151/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3162.webp" 
+              alt="Ce peu de bruits"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ce peu de bruits</h3>
+            <p>Philippe JACCOTTET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui sniffait de la colle" 
+        data-auteur="braun lilian jackson"
+        data-annee="1998"
+        data-ordre="3152">
+        <a href="/livre/3152/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3163.webp" 
+              alt="Le chat qui sniffait de la colle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui sniffait de la colle</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vie secrète du chat qui…" 
+        data-auteur="braun lilian jackson"
+        data-annee="1998"
+        data-ordre="3153">
+        <a href="/livre/3153/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3164.webp" 
+              alt="La vie secrète du chat qui…"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vie secrète du chat qui…</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui connaissait shakespeare" 
+        data-auteur="braun lilian jackson"
+        data-annee="1998"
+        data-ordre="3154">
+        <a href="/livre/3154/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3165.webp" 
+              alt="Le chat qui connaissait Shakespeare"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui connaissait Shakespeare</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui connaissait un cardinal" 
+        data-auteur="braun lilian jackson"
+        data-annee="2012"
+        data-ordre="3155">
+        <a href="/livre/3155/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3166.webp" 
+              alt="Le chat qui connaissait un cardinal"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui connaissait un cardinal</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui déplaçait des montagnes" 
+        data-auteur="braun lilian jackson"
+        data-annee="1999"
+        data-ordre="3156">
+        <a href="/livre/3156/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3167.webp" 
+              alt="Le chat qui déplaçait des montagnes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui déplaçait des montagnes</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui disait cheese" 
+        data-auteur="braun lilian jackson"
+        data-annee="1999"
+        data-ordre="3157">
+        <a href="/livre/3157/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3168.webp" 
+              alt="Le chat qui disait cheese"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui disait cheese</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui flairait une piste" 
+        data-auteur="braun lilian jackson"
+        data-annee="1997"
+        data-ordre="3158">
+        <a href="/livre/3158/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3169.webp" 
+              alt="Le chat qui flairait une piste"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui flairait une piste</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui jouait au postier" 
+        data-auteur="braun lilian jackson"
+        data-annee="2004"
+        data-ordre="3159">
+        <a href="/livre/3159/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3170.webp" 
+              alt="Le chat qui jouait au postier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui jouait au postier</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui jouait aux dominos" 
+        data-auteur="braun lilian jackson"
+        data-annee="1997"
+        data-ordre="3160">
+        <a href="/livre/3160/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3171.webp" 
+              alt="Le chat qui jouait aux dominos"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui jouait aux dominos</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui regardait les étoiles" 
+        data-auteur="braun lilian jackson"
+        data-annee="1999"
+        data-ordre="3161">
+        <a href="/livre/3161/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3172.webp" 
+              alt="Le chat qui regardait les étoiles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui regardait les étoiles</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chat qui volait une banque" 
+        data-auteur="braun lilian jackson"
+        data-annee="2003"
+        data-ordre="3162">
+        <a href="/livre/3162/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3173.webp" 
+              alt="Le chat qui volait une banque"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chat qui volait une banque</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="légendes du comté de moose" 
+        data-auteur="braun lilian jackson"
+        data-annee="2007"
+        data-ordre="3163">
+        <a href="/livre/3163/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3174.webp" 
+              alt="Légendes du comté de Moose"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Légendes du comté de Moose</h3>
+            <p>BRAUN Lilian JACKSON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="introduction à la philosophie du langage" 
+        data-auteur="andré jacob"
+        data-annee="1976"
+        data-ordre="3164">
+        <a href="/livre/3164/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3175.webp" 
+              alt="Introduction à la philosophie du langage"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Introduction à la philosophie du langage</h3>
+            <p>André JACOB</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la statue intérieure" 
+        data-auteur="françois jacob"
+        data-annee="1993"
+        data-ordre="3165">
+        <a href="/livre/3165/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3176.webp" 
+              alt="La statue intérieure"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La statue intérieure</h3>
+            <p>François JACOB</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la logique du vivant –une histoire pour l&#39;hérédité" 
+        data-auteur="françois jacob"
+        data-annee="1978"
+        data-ordre="3166">
+        <a href="/livre/3166/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3177.webp" 
+              alt="La logique du vivant –Une histoire pour l&#39;hérédité"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La logique du vivant –Une histoire pour l&#39;hérédité</h3>
+            <p>François JACOB</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cabinet noir" 
+        data-auteur="max jacob"
+        data-annee="1900"
+        data-ordre="3167">
+        <a href="/livre/3167/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/3178.webp" 
+              alt="Le cabinet noir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cabinet noir</h3>
+            <p>Max JACOB</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-65/">← Précédent</a>
+    
+    
+    <span>Page 66 sur 153</span>
+    
+    
+      <a href="/catalogue/page-67/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

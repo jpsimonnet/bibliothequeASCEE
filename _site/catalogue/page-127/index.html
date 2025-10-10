@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="gaspard, melchior et baltazar" 
+        data-auteur="michel tournier"
+        data-annee="1981"
+        data-ordre="6048">
+        <a href="/livre/6048/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6061.webp" 
+              alt="Gaspard, Melchior et Baltazar"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gaspard, Melchior et Baltazar</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal extime" 
+        data-auteur="michel tournier"
+        data-annee="2002"
+        data-ordre="6049">
+        <a href="/livre/6049/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6062.webp" 
+              alt="Journal extime"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal extime</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la goutte d&#39;or" 
+        data-auteur="michel tournier"
+        data-annee="1985"
+        data-ordre="6050">
+        <a href="/livre/6050/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6063.webp" 
+              alt="La goutte d&#39;or"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La goutte d&#39;or</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le médianoche amoureux" 
+        data-auteur="michel tournier"
+        data-annee="1989"
+        data-ordre="6051">
+        <a href="/livre/6051/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6064.webp" 
+              alt="Le Médianoche amoureux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le Médianoche amoureux</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le coq de bruyère" 
+        data-auteur="michel tournier"
+        data-annee="1978"
+        data-ordre="6052">
+        <a href="/livre/6052/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6065.webp" 
+              alt="Le coq de bruyère"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le coq de bruyère</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le roi des aulnes" 
+        data-auteur="michel tournier"
+        data-annee="1970"
+        data-ordre="6053">
+        <a href="/livre/6053/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6066.webp" 
+              alt="Le roi des Aulnes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le roi des Aulnes</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les météores" 
+        data-auteur="michel tournier"
+        data-annee="1975"
+        data-ordre="6054">
+        <a href="/livre/6054/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6067.webp" 
+              alt="Les météores"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les météores</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un mois à la campagne" 
+        data-auteur="michel tournier"
+        data-annee="2018"
+        data-ordre="6055">
+        <a href="/livre/6055/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6068.webp" 
+              alt="Un mois à la campagne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un mois à la campagne</h3>
+            <p>Michel TOURNIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vendredi ou les limbes du pacifique" 
+        data-auteur="nathalie tournillon"
+        data-annee="1989"
+        data-ordre="6056">
+        <a href="/livre/6056/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6069.webp" 
+              alt="Vendredi ou les limbes du Pacifique"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vendredi ou les limbes du Pacifique</h3>
+            <p>Nathalie TOURNILLON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="légendes et récits de paris" 
+        data-auteur="jean-philippe toussaint"
+        data-annee="2008"
+        data-ordre="6057">
+        <a href="/livre/6057/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6070.webp" 
+              alt="Légendes et récits de Paris"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Légendes et récits de Paris</h3>
+            <p>Jean-Philippe TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="faire l&#39;amour" 
+        data-auteur="jean-philippe toussaint"
+        data-annee="2009"
+        data-ordre="6058">
+        <a href="/livre/6058/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6071.webp" 
+              alt="Faire l&#39;amour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Faire l&#39;amour</h3>
+            <p>Jean-Philippe TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;appareil photo" 
+        data-auteur="jean-philippe toussaint"
+        data-annee="1988"
+        data-ordre="6059">
+        <a href="/livre/6059/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6072.webp" 
+              alt="L&#39;appareil photo"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;appareil photo</h3>
+            <p>Jean-Philippe TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la vérité sur marie" 
+        data-auteur="jean-philippe toussaint"
+        data-annee="2009"
+        data-ordre="6060">
+        <a href="/livre/6060/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6073.webp" 
+              alt="La vérité sur Marie"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La vérité sur Marie</h3>
+            <p>Jean-Philippe TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="nue" 
+        data-auteur="jean-philippe toussaint"
+        data-annee="2013"
+        data-ordre="6061">
+        <a href="/livre/6061/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6074.webp" 
+              alt="Nue"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Nue</h3>
+            <p>Jean-Philippe TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="fuir" 
+        data-auteur="jean-philippe toussaint"
+        data-annee="2005"
+        data-ordre="6062">
+        <a href="/livre/6062/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6075.webp" 
+              alt="Fuir"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Fuir</h3>
+            <p>Jean-Philippe TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la salle de bain" 
+        data-auteur="jean-philippe toussaint"
+        data-annee="1985"
+        data-ordre="6063">
+        <a href="/livre/6063/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6076.webp" 
+              alt="La salle de bain"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La salle de bain</h3>
+            <p>Jean-Philippe TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la télévision" 
+        data-auteur="yvon toussaint"
+        data-annee="2014"
+        data-ordre="6064">
+        <a href="/livre/6064/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6077.webp" 
+              alt="La télévision"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La télévision</h3>
+            <p>Yvon TOUSSAINT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le manuscrit de la giudecca" 
+        data-auteur="warner sylvia towsend"
+        data-annee="0"
+        data-ordre="6065">
+        <a href="/livre/6065/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6078.webp" 
+              alt="Le manuscrit de la Giudecca"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le manuscrit de la Giudecca</h3>
+            <p>WARNER Sylvia TOWSEND</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="laura willowes" 
+        data-auteur="yasmina traboulsi"
+        data-annee="0"
+        data-ordre="6066">
+        <a href="/livre/6066/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6079.webp" 
+              alt="Laura Willowes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Laura Willowes</h3>
+            <p>Yasmina TRABOULSI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la révolte des pendus" 
+        data-auteur="b. traven"
+        data-annee="1955"
+        data-ordre="6067">
+        <a href="/livre/6067/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6080.webp" 
+              alt="La révolte des pendus"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La révolte des pendus</h3>
+            <p>B. TRAVEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le trésor de la sierra madre" 
+        data-auteur="b. traven"
+        data-annee="1961"
+        data-ordre="6068">
+        <a href="/livre/6068/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6081.webp" 
+              alt="Le trésor de la Sierra Madre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le trésor de la Sierra Madre</h3>
+            <p>B. TRAVEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vaisseau des morts" 
+        data-auteur="b. traven"
+        data-annee="1967"
+        data-ordre="6069">
+        <a href="/livre/6069/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6082.webp" 
+              alt="Le vaisseau des morts"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vaisseau des morts</h3>
+            <p>B. TRAVEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les enfants de la place" 
+        data-auteur="b. traven"
+        data-annee="2013"
+        data-ordre="6070">
+        <a href="/livre/6070/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6083.webp" 
+              alt="Les enfants de la Place"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les enfants de la Place</h3>
+            <p>B. TRAVEN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la charrette" 
+        data-auteur="maïtie trelaun"
+        data-annee="0"
+        data-ordre="6071">
+        <a href="/livre/6071/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6084.webp" 
+              alt="La charrette"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La charrette</h3>
+            <p>Maïtie TRELAUN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le royaume interdit" 
+        data-auteur="rose tremain"
+        data-annee="1996"
+        data-ordre="6072">
+        <a href="/livre/6072/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6085.webp" 
+              alt="Le royaume interdit"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le royaume interdit</h3>
+            <p>Rose TREMAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="j&#39;accouche bientôt et j&#39;ai peur de la douleur" 
+        data-auteur="rose tremain"
+        data-annee="0"
+        data-ordre="6073">
+        <a href="/livre/6073/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6086.webp" 
+              alt="J&#39;accouche bientôt et j&#39;ai peur de la douleur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>J&#39;accouche bientôt et j&#39;ai peur de la douleur</h3>
+            <p>Rose TREMAIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="musique et silence" 
+        data-auteur="peter tremayne"
+        data-annee="2011"
+        data-ordre="6074">
+        <a href="/livre/6074/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6087.webp" 
+              alt="Musique et silence"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Musique et silence</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="absolution par le meutre" 
+        data-auteur="peter tremayne"
+        data-annee="2011"
+        data-ordre="6075">
+        <a href="/livre/6075/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6088.webp" 
+              alt="Absolution par le meutre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Absolution par le meutre</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la dame des ténèbres" 
+        data-auteur="peter tremayne"
+        data-annee="2011"
+        data-ordre="6076">
+        <a href="/livre/6076/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6089.webp" 
+              alt="La dame des ténèbres"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La dame des ténèbres</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la mort aux trois visages" 
+        data-auteur="peter tremayne"
+        data-annee="2011"
+        data-ordre="6077">
+        <a href="/livre/6077/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6090.webp" 
+              alt="La mort aux trois visages"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La mort aux trois visages</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la ruse du serpent" 
+        data-auteur="peter tremayne"
+        data-annee="2005"
+        data-ordre="6078">
+        <a href="/livre/6078/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6091.webp" 
+              alt="La ruse du serpent"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La ruse du serpent</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le châtiment de l&#39;au-delà" 
+        data-auteur="peter tremayne"
+        data-annee="2011"
+        data-ordre="6079">
+        <a href="/livre/6079/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6092.webp" 
+              alt="Le châtiment de l&#39;au-delà"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le châtiment de l&#39;au-delà</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le pèlerinage de sœur fidelma" 
+        data-auteur="peter tremayne"
+        data-annee="2011"
+        data-ordre="6080">
+        <a href="/livre/6080/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6093.webp" 
+              alt="Le pèlerinage de Sœur Fidelma"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le pèlerinage de Sœur Fidelma</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le sang du moine" 
+        data-auteur="peter tremayne"
+        data-annee="2005"
+        data-ordre="6081">
+        <a href="/livre/6081/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6094.webp" 
+              alt="Le sang du moine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le sang du moine</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le suaire de l&#39;archevêque" 
+        data-auteur="peter tremayne"
+        data-annee="2011"
+        data-ordre="6082">
+        <a href="/livre/6082/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6095.webp" 
+              alt="Le suaire de l&#39;archevêque"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le suaire de l&#39;archevêque</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les cinq royaumes" 
+        data-auteur="peter tremayne"
+        data-annee="2004"
+        data-ordre="6083">
+        <a href="/livre/6083/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6096.webp" 
+              alt="Les cinq royaumes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les cinq royaumes</h3>
+            <p>Peter TREMAYNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la grosse femme d’à côté est enceinte" 
+        data-auteur="michel tremblay"
+        data-annee="1978"
+        data-ordre="6084">
+        <a href="/livre/6084/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6097.webp" 
+              alt="La grosse femme d’à côté est enceinte"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La grosse femme d’à côté est enceinte</h3>
+            <p>Michel TREMBLAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le coeur découvert" 
+        data-auteur="michel tremblay"
+        data-annee="1986"
+        data-ordre="6085">
+        <a href="/livre/6085/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6098.webp" 
+              alt="Le coeur découvert"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le coeur découvert</h3>
+            <p>Michel TREMBLAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les disparus de dyfed" 
+        data-auteur="michel tremblay"
+        data-annee="2020"
+        data-ordre="6086">
+        <a href="/livre/6086/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6099.webp" 
+              alt="Les disparus de Dyfed"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les disparus de Dyfed</h3>
+            <p>Michel TREMBLAY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="un ange cornu avec des ailes de tôle" 
+        data-auteur="david treuer"
+        data-annee="0"
+        data-ordre="6087">
+        <a href="/livre/6087/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6100.webp" 
+              alt="Un ange cornu avec des ailes de tôle"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Un ange cornu avec des ailes de tôle</h3>
+            <p>David TREUER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="little" 
+        data-auteur="trevanian"
+        data-annee="2005"
+        data-ordre="6088">
+        <a href="/livre/6088/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6101.webp" 
+              alt="Little"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Little</h3>
+            <p>TREVANIAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la sanction" 
+        data-auteur="marc trevidic"
+        data-annee="0"
+        data-ordre="6089">
+        <a href="/livre/6089/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6102.webp" 
+              alt="La sanction"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La sanction</h3>
+            <p>Marc TREVIDIC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="terroristes" 
+        data-auteur="dalton trevisan"
+        data-annee="0"
+        data-ordre="6090">
+        <a href="/livre/6090/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6103.webp" 
+              alt="Terroristes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Terroristes</h3>
+            <p>Dalton TREVISAN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le vampire de curitiba" 
+        data-auteur="william trevor"
+        data-annee="1998"
+        data-ordre="6091">
+        <a href="/livre/6091/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6104.webp" 
+              alt="Le vampire de Curitiba"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le vampire de Curitiba</h3>
+            <p>William TREVOR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="merci pour ce moment" 
+        data-auteur="valérie trieweiler"
+        data-annee="2015"
+        data-ordre="6092">
+        <a href="/livre/6092/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6105.webp" 
+              alt="Merci pour ce moment"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Merci pour ce moment</h3>
+            <p>Valérie TRIEWEILER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="lucy" 
+        data-auteur="marc trillard"
+        data-annee="2004"
+        data-ordre="6093">
+        <a href="/livre/6093/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6106.webp" 
+              alt="Lucy"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Lucy</h3>
+            <p>Marc TRILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="coup de lame" 
+        data-auteur="nadine trintignant"
+        data-annee="2021"
+        data-ordre="6094">
+        <a href="/livre/6094/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6107.webp" 
+              alt="Coup de lame"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Coup de lame</h3>
+            <p>Nadine TRINTIGNANT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="ton chapeau au vestiaire" 
+        data-auteur="anne tristan"
+        data-annee="0"
+        data-ordre="6095">
+        <a href="/livre/6095/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/6108.webp" 
+              alt="Ton chapeau au vestiaire"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Ton chapeau au vestiaire</h3>
+            <p>Anne TRISTAN</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-126/">← Précédent</a>
+    
+    
+    <span>Page 127 sur 153</span>
+    
+    
+      <a href="/catalogue/page-128/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>

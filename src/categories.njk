@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+title: Toutes les catégories
+permalink: /categories/
+---
+
+<div class="categories-container">
+  
+  <header class="categories-header">
+    <h1>Parcourir par catégorie</h1>
+    {% set allCategories = livres | map("type") | unique | sort %}
+    <p>{{ allCategories.length }} catégories disponibles</p>
+  </header>
+
+  <div class="categories-grid">
+    {% for categorie in allCategories %}
+      {% if categorie %}
+        {% set count = 0 %}
+        {% for livre in livres %}
+          {% if livre.type == categorie %}
+            {% set count = count + 1 %}
+          {% endif %}
+        {% endfor %}
+        
+        <article class="categorie-card">
+          <a href="/categorie/{{ categorie | slugify }}/">
+            <div class="categorie-preview">
+              {% set shown = 0 %}
+              {% for livre in livres %}
+                {% if livre.type == categorie and shown < 4 %}
+                  <img src="/images/covers/{{ livre.id }}.webp" alt="{{ livre.nom }}" loading="lazy" onerror="this.src='/images/0-livre-par-defaut.svg'">
+                  {% set shown = shown + 1 %}
+                {% endif %}
+              {% endfor %}
+            </div>
+            <div class="categorie-info">
+              <h3>{{ categorie }}</h3>
+              <p class="livre-count">{{ count }} livre{% if count > 1 %}s{% endif %}</p>
+            </div>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

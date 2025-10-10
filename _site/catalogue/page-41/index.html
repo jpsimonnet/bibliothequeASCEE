@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue complet - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="catalogue-container">
+  <h1>Catalogue</h1>
+  <p>7310 livres disponibles</p>
+
+  <div class="search-bar">
+    <input 
+      type="search" 
+      id="searchInput" 
+      placeholder="Rechercher..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;idiot(tomes i et ii)" 
+        data-auteur="fédor dostoievski"
+        data-annee="0"
+        data-ordre="1920">
+        <a href="/livre/1920/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1924.webp" 
+              alt="L&#39;idiot(tomes I et II)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;idiot(tomes I et II)</h3>
+            <p>Fédor DOSTOIEVSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le joueur" 
+        data-auteur="fédor dostoievski"
+        data-annee="1972"
+        data-ordre="1921">
+        <a href="/livre/1921/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1925.webp" 
+              alt="Le joueur"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le joueur</h3>
+            <p>Fédor DOSTOIEVSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les frères karamazov" 
+        data-auteur="fédor dostoievski"
+        data-annee="1971"
+        data-ordre="1922">
+        <a href="/livre/1922/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1926.webp" 
+              alt="Les frères Karamazov"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les frères Karamazov</h3>
+            <p>Fédor DOSTOIEVSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les possédés(tomes i et ii)" 
+        data-auteur="fédor dostoievski"
+        data-annee="2015"
+        data-ordre="1923">
+        <a href="/livre/1923/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1927.webp" 
+              alt="Les possédés(tomes I et II)"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les possédés(tomes I et II)</h3>
+            <p>Fédor DOSTOIEVSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="crime et châtiment" 
+        data-auteur="fédor dostoievski"
+        data-annee="2015"
+        data-ordre="1924">
+        <a href="/livre/1924/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1928.webp" 
+              alt="Crime et châtiment"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Crime et châtiment</h3>
+            <p>Fédor DOSTOIEVSKI</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le fils du chiffonnier" 
+        data-auteur="kirk douglas"
+        data-annee="1989"
+        data-ordre="1925">
+        <a href="/livre/1925/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1929.webp" 
+              alt="Le fils du chiffonnier"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le fils du chiffonnier</h3>
+            <p>Kirk DOUGLAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vent du sud" 
+        data-auteur="norman douglas"
+        data-annee="1993"
+        data-ordre="1926">
+        <a href="/livre/1926/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1930.webp" 
+              alt="Vent du Sud"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vent du Sud</h3>
+            <p>Norman DOUGLAS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les comptoirs du sud" 
+        data-auteur="philippe doumenc"
+        data-annee="1989"
+        data-ordre="1927">
+        <a href="/livre/1927/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1931.webp" 
+              alt="Les comptoirs du Sud"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les comptoirs du Sud</h3>
+            <p>Philippe DOUMENC</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la femme qui se cognait dans les portes" 
+        data-auteur="roddy doyle"
+        data-annee="1998"
+        data-ordre="1928">
+        <a href="/livre/1928/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1932.webp" 
+              alt="La femme qui se cognait dans les portes"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La femme qui se cognait dans les portes</h3>
+            <p>Roddy DOYLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la sorcière d&#39;exmoor" 
+        data-auteur="margaret drabble"
+        data-annee="2011"
+        data-ordre="1929">
+        <a href="/livre/1929/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1933.webp" 
+              alt="La sorcière d&#39;Exmoor"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La sorcière d&#39;Exmoor</h3>
+            <p>Margaret DRABBLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="votre chat et vous – mieux le comprendre pour mieux l&#39;aimer" 
+        data-auteur="valérie dramard"
+        data-annee="2006"
+        data-ordre="1930">
+        <a href="/livre/1930/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1934.webp" 
+              alt="Votre chat et vous – Mieux le comprendre pour mieux l&#39;aimer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Votre chat et vous – Mieux le comprendre pour mieux l&#39;aimer</h3>
+            <p>Valérie DRAMARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la micheline" 
+        data-auteur="patrick drevet"
+        data-annee="1990"
+        data-ordre="1931">
+        <a href="/livre/1931/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1935.webp" 
+              alt="La micheline"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La micheline</h3>
+            <p>Patrick DREVET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal – 1939-1945" 
+        data-auteur="pierre drieu la rochelle"
+        data-annee="1992"
+        data-ordre="1932">
+        <a href="/livre/1932/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1936.webp" 
+              alt="Journal – 1939-1945"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal – 1939-1945</h3>
+            <p>Pierre DRIEU LA ROCHELLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="journal d&#39;un homme trompé" 
+        data-auteur="pierre drieu la rochelle"
+        data-annee="1934"
+        data-ordre="1933">
+        <a href="/livre/1933/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1937.webp" 
+              alt="Journal d&#39;un homme trompé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Journal d&#39;un homme trompé</h3>
+            <p>Pierre DRIEU LA ROCHELLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;homme à cheval" 
+        data-auteur="pierre drieu la rochelle"
+        data-annee="1943"
+        data-ordre="1934">
+        <a href="/livre/1934/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1938.webp" 
+              alt="L&#39;homme à cheval"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;homme à cheval</h3>
+            <p>Pierre DRIEU LA ROCHELLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="gilles" 
+        data-auteur="pierre drieu la rochelle"
+        data-annee="1939"
+        data-ordre="1935">
+        <a href="/livre/1935/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1939.webp" 
+              alt="Gilles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Gilles</h3>
+            <p>Pierre DRIEU LA ROCHELLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le feu folletsuivi deadieu à gonzague" 
+        data-auteur="pierre drieu la rochelle"
+        data-annee="1980"
+        data-ordre="1936">
+        <a href="/livre/1936/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1940.webp" 
+              alt="Le feu folletsuivi deAdieu à Gonzague"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le feu folletsuivi deAdieu à Gonzague</h3>
+            <p>Pierre DRIEU LA ROCHELLE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;art est-il une connaissance ?" 
+        data-auteur="roger-pol droit"
+        data-annee="1993"
+        data-ordre="1937">
+        <a href="/livre/1937/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1941.webp" 
+              alt="L&#39;art est-il une connaissance ?"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;art est-il une connaissance ?</h3>
+            <p>Roger-Pol DROIT</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la bible : le code secret" 
+        data-auteur="michael drosnin"
+        data-annee="1998"
+        data-ordre="1938">
+        <a href="/livre/1938/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1942.webp" 
+              alt="La Bible : le code secret"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La Bible : le code secret</h3>
+            <p>Michael DROSNIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="alexandre le grand" 
+        data-auteur="maurice druon"
+        data-annee="1958"
+        data-ordre="1939">
+        <a href="/livre/1939/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1943.webp" 
+              alt="Alexandre le Grand"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Alexandre le Grand</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois maudits : 1. le roi de fer" 
+        data-auteur="maurice druon"
+        data-annee="2013"
+        data-ordre="1940">
+        <a href="/livre/1940/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1944.webp" 
+              alt="Les rois maudits : 1. Le roi de fer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois maudits : 1. Le roi de fer</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois maudits : 2. la reine étranglée" 
+        data-auteur="maurice druon"
+        data-annee="1973"
+        data-ordre="1941">
+        <a href="/livre/1941/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1945.webp" 
+              alt="Les rois maudits : 2. La reine étranglée"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois maudits : 2. La reine étranglée</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois maudits : 3. les poisons de la couronne" 
+        data-auteur="maurice druon"
+        data-annee="1991"
+        data-ordre="1942">
+        <a href="/livre/1942/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1946.webp" 
+              alt="Les rois maudits : 3. Les poisons de la Couronne"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois maudits : 3. Les poisons de la Couronne</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois maudits : 4. la loi des mâles" 
+        data-auteur="maurice druon"
+        data-annee="1993"
+        data-ordre="1943">
+        <a href="/livre/1943/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1947.webp" 
+              alt="Les rois maudits : 4. La loi des mâles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois maudits : 4. La loi des mâles</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois maudits : 5. la louve de france" 
+        data-auteur="maurice druon"
+        data-annee="2015"
+        data-ordre="1944">
+        <a href="/livre/1944/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1948.webp" 
+              alt="Les rois maudits : 5. La louve de France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois maudits : 5. La louve de France</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois maudits : 6. le lis et le lion" 
+        data-auteur="maurice druon"
+        data-annee="1993"
+        data-ordre="1945">
+        <a href="/livre/1945/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1949.webp" 
+              alt="Les rois maudits : 6. Le lis et le lion"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois maudits : 6. Le lis et le lion</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les rois maudits : 7. quand un roi perd la france" 
+        data-auteur="maurice druon"
+        data-annee="1987"
+        data-ordre="1946">
+        <a href="/livre/1946/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1950.webp" 
+              alt="Les rois maudits : 7. Quand un roi perd la France"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les rois maudits : 7. Quand un roi perd la France</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les grandes familles" 
+        data-auteur="maurice druon"
+        data-annee="1948"
+        data-ordre="1947">
+        <a href="/livre/1947/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1951.webp" 
+              alt="Les grandes familles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les grandes familles</h3>
+            <p>Maurice DRUON</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="l&#39;extraordinaire histoire de fatima monsour" 
+        data-auteur="joanne et gerry dryansky"
+        data-annee="2011"
+        data-ordre="1948">
+        <a href="/livre/1948/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1952.webp" 
+              alt="L&#39;extraordinaire histoire de Fatima Monsour"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>L&#39;extraordinaire histoire de Fatima Monsour</h3>
+            <p>Joanne et Gerry DRYANSKY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="…où boivent les vaches" 
+        data-auteur="roland dubillard"
+        data-annee="1972"
+        data-ordre="1949">
+        <a href="/livre/1949/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1953.webp" 
+              alt="…où boivent les vaches"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>…où boivent les vaches</h3>
+            <p>Roland DUBILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="naïves hirondelles" 
+        data-auteur="roland dubillard"
+        data-annee="1968"
+        data-ordre="1950">
+        <a href="/livre/1950/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1954.webp" 
+              alt="Naïves hirondelles"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Naïves hirondelles</h3>
+            <p>Roland DUBILLARD</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="hommes entre eux" 
+        data-auteur="jean-paul dubois"
+        data-annee="2007"
+        data-ordre="1951">
+        <a href="/livre/1951/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1955.webp" 
+              alt="Hommes entre eux"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Hommes entre eux</h3>
+            <p>Jean-Paul DUBOIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="je pense à autre chose" 
+        data-auteur="jean-paul dubois"
+        data-annee="1997"
+        data-ordre="1952">
+        <a href="/livre/1952/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1956.webp" 
+              alt="Je pense à autre chose"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Je pense à autre chose</h3>
+            <p>Jean-Paul DUBOIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le cas sneijder" 
+        data-auteur="jean-paul dubois"
+        data-annee="2012"
+        data-ordre="1953">
+        <a href="/livre/1953/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1957.webp" 
+              alt="Le cas Sneijder"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le cas Sneijder</h3>
+            <p>Jean-Paul DUBOIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les accommodements raisonnables" 
+        data-auteur="jean-paul dubois"
+        data-annee="2008"
+        data-ordre="1954">
+        <a href="/livre/1954/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1958.webp" 
+              alt="Les accommodements raisonnables"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les accommodements raisonnables</h3>
+            <p>Jean-Paul DUBOIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="une vie française" 
+        data-auteur="jean-paul dubois"
+        data-annee="2004"
+        data-ordre="1955">
+        <a href="/livre/1955/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1959.webp" 
+              alt="Une vie française"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Une vie française</h3>
+            <p>Jean-Paul DUBOIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="vous plaisantez, monsieur tanner" 
+        data-auteur="jean-paul dubois"
+        data-annee="2006"
+        data-ordre="1956">
+        <a href="/livre/1956/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1960.webp" 
+              alt="Vous plaisantez, Monsieur Tanner"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Vous plaisantez, Monsieur Tanner</h3>
+            <p>Jean-Paul DUBOIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="la succession" 
+        data-auteur="jean-paul dubois"
+        data-annee="2017"
+        data-ordre="1957">
+        <a href="/livre/1957/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1961.webp" 
+              alt="La succession"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>La succession</h3>
+            <p>Jean-Paul DUBOIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le chevalier, la femme et le prêtre" 
+        data-auteur="georges duby"
+        data-annee="1981"
+        data-ordre="1958">
+        <a href="/livre/1958/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1962.webp" 
+              alt="Le chevalier, la femme et le prêtre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le chevalier, la femme et le prêtre</h3>
+            <p>Georges DUBY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le dimanche de bouvines" 
+        data-auteur="georges duby"
+        data-annee="1973"
+        data-ordre="1959">
+        <a href="/livre/1959/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1963.webp" 
+              alt="Le dimanche de Bouvines"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le dimanche de Bouvines</h3>
+            <p>Georges DUBY</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le guide sport santé" 
+        data-auteur="alain/porte gérard/boulanger pascal ducardonnet"
+        data-annee="1995"
+        data-ordre="1960">
+        <a href="/livre/1960/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1964.webp" 
+              alt="Le guide Sport Santé"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le guide Sport Santé</h3>
+            <p>Alain/PORTE Gérard/BOULANGER Pascal DUCARDONNET</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les byzantins" 
+        data-auteur="alain ducellier"
+        data-annee="1963"
+        data-ordre="1961">
+        <a href="/livre/1961/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1965.webp" 
+              alt="Les Byzantins"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les Byzantins</h3>
+            <p>Alain DUCELLIER</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="marie stuart" 
+        data-auteur="michel duchein"
+        data-annee="1987"
+        data-ordre="1962">
+        <a href="/livre/1962/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1966.webp" 
+              alt="Marie Stuart"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Marie Stuart</h3>
+            <p>Michel DUCHEIN</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="mourir d&#39;aimer" 
+        data-auteur="pierre duchesne"
+        data-annee="1971"
+        data-ordre="1963">
+        <a href="/livre/1963/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1967.webp" 
+              alt="Mourir d&#39;aimer"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Mourir d&#39;aimer</h3>
+            <p>Pierre DUCHESNE</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="les galères de l&#39;orfèvre" 
+        data-auteur="jean-christophe duchon-doris"
+        data-annee="2010"
+        data-ordre="1964">
+        <a href="/livre/1964/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1968.webp" 
+              alt="Les galères de l&#39;orfèvre"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Les galères de l&#39;orfèvre</h3>
+            <p>Jean-Christophe DUCHON-DORIS</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="de l&#39;eau" 
+        data-auteur="john von duffel"
+        data-annee="2001"
+        data-ordre="1965">
+        <a href="/livre/1965/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1969.webp" 
+              alt="De l&#39;eau"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>De l&#39;eau</h3>
+            <p>John von DUFFEL</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="comtesse de ségurnée sophie rostopchine" 
+        data-auteur="hortense dufour"
+        data-annee="2012"
+        data-ordre="1966">
+        <a href="/livre/1966/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1970.webp" 
+              alt="Comtesse de Ségurnée Sophie Rostopchine"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Comtesse de Ségurnée Sophie Rostopchine</h3>
+            <p>Hortense DUFOUR</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card" 
+        data-titre="le tournis" 
+        data-auteur="hortense dufour"
+        data-annee="1984"
+        data-ordre="1967">
+        <a href="/livre/1967/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/1971.webp" 
+              alt="Le tournis"
+              loading="lazy"
+              width="200"
+              height="300"
+              onerror="this.src='/images/0-livre-par-defaut.svg'"
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Le tournis</h3>
+            <p>Hortense DUFOUR</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+
+  <nav class="pagination">
+    
+      <a href="/catalogue/page-40/">← Précédent</a>
+    
+    
+    <span>Page 41 sur 153</span>
+    
+    
+      <a href="/catalogue/page-42/">Suivant →</a>
+    
+  </nav>
+
+</div>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+// Recherche
+searchInput.addEventListener('input', filterBooks);
+
+// Tri
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    
+    switch(currentSort) {
+      case 'titre':
+        valA = a.dataset.titre;
+        valB = b.dataset.titre;
+        return valA.localeCompare(valB);
+        
+      case 'auteur':
+        valA = a.dataset.auteur;
+        valB = b.dataset.auteur;
+        return valA.localeCompare(valB);
+        
+      case 'annee':
+        valA = parseInt(a.dataset.annee) || 0;
+        valB = parseInt(b.dataset.annee) || 0;
+        return valB - valA; // Plus récent en premier
+        
+      default:
+        valA = parseInt(a.dataset.ordre);
+        valB = parseInt(b.dataset.ordre);
+        return valA - valB;
+    }
+  });
+  
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+</body>
+</html>
