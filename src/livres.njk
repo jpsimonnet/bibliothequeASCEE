@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: livre
   addAllPagesToCollections: true
-permalink: "/livre/{{ pagination.pageNumber }}/"
+permalink: "/livre/{{ livre.id }}/"
 tags: livre
 eleventyComputed:
   title: "{{ livre.nom }}"
@@ -29,7 +29,6 @@ eleventyComputed:
         loading="lazy"
         width="300"
         height="450"
-        
       >
     </div>
 

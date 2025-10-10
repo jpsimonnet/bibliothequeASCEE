@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
     "auteur": {{ livre.auteur | dump | safe }},
     "type": {{ livre.type | dump | safe }},
     "resume": {{ (livre.resume | truncate(200) | replace('\n', ' ') | replace('\r', '')) | dump | safe }},
-    "url": "{{ ('/livre/' + loop.index0|string + '/') | url }}"
+    "url": "{{ ('/livre/' + livre.id + '/') | url }}"
   }{% if not loop.last %},{% endif %}
 {%- endfor -%}
 ]

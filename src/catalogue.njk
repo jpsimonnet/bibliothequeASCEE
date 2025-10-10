@@ -36,7 +36,7 @@ permalink: "/catalogue/{% if pagination.pageNumber > 0 %}page-{{ pagination.page
         data-auteur="{{ livre.auteur | lower }}"
         data-annee="{{ livre.annee or '0' }}"
         data-ordre="{{ globalIndex }}">
-        <a href="{{ ('/livre/' + globalIndex|string + '/') | url }}">
+        <a href="{{ ('/livre/' + livre.id + '/') | url }}">
           <div class="livre-card-cover">
             <img 
               src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
