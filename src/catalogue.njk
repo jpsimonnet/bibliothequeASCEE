@@ -16,9 +16,10 @@ permalink: "/catalogue/{% if pagination.pageNumber > 0 %}page-{{ pagination.page
     <input 
       type="search" 
       id="searchInput" 
-      placeholder="Rechercher..."
+      placeholder="Rechercher dans tous les livres..."
       autocomplete="off"
     >
+    <p class="search-info" id="searchInfo" style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280;"></p>
     <div class="sort-buttons">
       <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
       <button class="sort-btn" data-sort="titre">Trier par titre</button>
@@ -35,15 +36,14 @@ permalink: "/catalogue/{% if pagination.pageNumber > 0 %}page-{{ pagination.page
         data-auteur="{{ livre.auteur | lower }}"
         data-annee="{{ livre.annee or '0' }}"
         data-ordre="{{ globalIndex }}">
-        <a href="/livre/{{ globalIndex }}/">
+        <a href="{{ ('/livre/' + globalIndex|string + '/') | url }}">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/{{ livre.id }}.webp" 
+              src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
               alt="{{ livre.nom }}"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -57,32 +57,119 @@ permalink: "/catalogue/{% if pagination.pageNumber > 0 %}page-{{ pagination.page
 
   <nav class="pagination">
     {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}">← Précédent</a>
+      <a href="{{ pagination.href.previous | url }}">← Précédent</a>
     {% endif %}
     
     <span>Page {{ pagination.pageNumber + 1 }} sur {{ pagination.pages.length }}</span>
     
     {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}">Suivant →</a>
+      <a href="{{ pagination.href.next | url }}">Suivant →</a>
     {% endif %}
   </nav>
 
 </div>
 
 <script>
+let booksData = [];
 const searchInput = document.getElementById('searchInput');
+const searchInfo = document.getElementById('searchInfo');
 const sortButtons = document.querySelectorAll('.sort-btn');
 const livresGrid = document.getElementById('livresGrid');
-const cards = Array.from(document.querySelectorAll('.livre-card'));
+const originalCards = Array.from(document.querySelectorAll('.livre-card'));
+const imagesPath = '{{ "/images/covers/" | url }}';
 
 let currentSort = 'default';
+let isSearchMode = false;
+
+// Charger les données pour la recherche globale
+fetch('{{ "/search.json" | url }}')
+  .then(response => response.json())
+  .then(data => {
+    booksData = data;
+  })
+  .catch(error => {
+    console.error('Erreur chargement search.json:', error);
+  });
 
 // Recherche
-searchInput.addEventListener('input', filterBooks);
+let searchTimeout;
+searchInput.addEventListener('input', () => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(performSearch, 300);
+});
+
+function performSearch() {
+  const query = searchInput.value.toLowerCase().trim();
+  
+  if (query.length < 2) {
+    // Revenir à l'affichage normal
+    isSearchMode = false;
+    searchInfo.textContent = '';
+    livresGrid.innerHTML = '';
+    originalCards.forEach(card => livresGrid.appendChild(card));
+    sortBooks();
+    return;
+  }
+
+  if (booksData.length === 0) {
+    searchInfo.textContent = 'Chargement...';
+    return;
+  }
+
+  isSearchMode = true;
+
+  // Recherche dans tous les livres
+  const results = booksData.filter(book => {
+    return book.titre.toLowerCase().includes(query) ||
+           book.auteur.toLowerCase().includes(query) ||
+           (book.resume && book.resume.toLowerCase().includes(query));
+  }).slice(0, 100);
+
+  searchInfo.textContent = `${results.length} résultat${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''}`;
+  
+  displaySearchResults(results, query);
+}
+
+function displaySearchResults(results, query) {
+  livresGrid.innerHTML = results.map(book => `
+    <article class="livre-card">
+      <a href="${book.url}">
+        <div class="livre-card-cover">
+          <img 
+            src="${imagesPath}${book.id}.webp" 
+            alt="${escapeHtml(book.titre)}"
+            loading="lazy"
+            width="200"
+            height="300"
+          >
+        </div>
+        <div class="livre-card-info">
+          <h3>${highlightText(escapeHtml(book.titre), query)}</h3>
+          <p>${highlightText(escapeHtml(book.auteur), query)}</p>
+        </div>
+      </a>
+    </article>
+  `).join('');
+  
+  // Gérer les images manquantes
+  document.querySelectorAll('#livresGrid .livre-card-cover img').forEach(img => {
+    img.addEventListener('error', function() {
+      if (this.dataset.fallbackApplied) return;
+      this.dataset.fallbackApplied = 'true';
+      this.style.display = 'none';
+      const fallback = document.createElement('div');
+      fallback.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;opacity:0.7;';
+      fallback.textContent = '📚';
+      this.parentElement.style.position = 'relative';
+      this.parentElement.appendChild(fallback);
+    });
+  });
+}
 
 // Tri
 sortButtons.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (isSearchMode) return; // Pas de tri en mode recherche
     sortButtons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     currentSort = btn.dataset.sort;
@@ -90,17 +177,10 @@ sortButtons.forEach(btn => {
   });
 });
 
-function filterBooks() {
-  const searchTerm = searchInput.value.toLowerCase();
-  cards.forEach(card => {
-    const titre = card.dataset.titre;
-    const auteur = card.dataset.auteur;
-    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
-    card.style.display = matches ? 'block' : 'none';
-  });
-}
-
 function sortBooks() {
+  if (isSearchMode) return;
+  
+  const cards = Array.from(livresGrid.querySelectorAll('.livre-card'));
   const sorted = [...cards].sort((a, b) => {
     let valA, valB;
     
@@ -118,7 +198,7 @@ function sortBooks() {
       case 'annee':
         valA = parseInt(a.dataset.annee) || 0;
         valB = parseInt(b.dataset.annee) || 0;
-        return valB - valA; // Plus récent en premier
+        return valB - valA;
         
       default:
         valA = parseInt(a.dataset.ordre);
@@ -128,5 +208,20 @@ function sortBooks() {
   });
   
   sorted.forEach(card => livresGrid.appendChild(card));
+}
+
+function highlightText(text, query) {
+  const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+  return text.replace(regex, '<mark>$1</mark>');
+}
+
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
 }
 </script>

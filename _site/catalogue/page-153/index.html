@@ -32,9 +32,10 @@
     <input 
       type="search" 
       id="searchInput" 
-      placeholder="Rechercher..."
+      placeholder="Rechercher dans tous les livres..."
       autocomplete="off"
     >
+    <p class="search-info" id="searchInfo" style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280;"></p>
     <div class="sort-buttons">
       <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
       <button class="sort-btn" data-sort="titre">Trier par titre</button>
@@ -54,12 +55,11 @@
         <a href="/livre/7296/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7319.webp" 
+              src="/images/covers/7319.webp"
               alt="Les déferlantes"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -78,12 +78,11 @@
         <a href="/livre/7297/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7321.webp" 
+              src="/images/covers/7321.webp"
               alt="L’homme fatal"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -102,12 +101,11 @@
         <a href="/livre/7298/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7322.webp" 
+              src="/images/covers/7322.webp"
               alt="Secret de famille"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -126,12 +124,11 @@
         <a href="/livre/7299/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7324.webp" 
+              src="/images/covers/7324.webp"
               alt="La mort en pantalon rouge"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -150,12 +147,11 @@
         <a href="/livre/7300/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7325.webp" 
+              src="/images/covers/7325.webp"
               alt="Le Jardin des Oliviers"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -174,12 +170,11 @@
         <a href="/livre/7301/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7326.webp" 
+              src="/images/covers/7326.webp"
               alt="Les Patriotes, t.1 : L’ombre et la nuit"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -198,12 +193,11 @@
         <a href="/livre/7302/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7327.webp" 
+              src="/images/covers/7327.webp"
               alt="Les Patriotes, t.2 : La flamme ne s’éteindra pas"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -222,12 +216,11 @@
         <a href="/livre/7303/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7328.webp" 
+              src="/images/covers/7328.webp"
               alt="Les Patriotes, t.3 : Le prix du sang"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -246,12 +239,11 @@
         <a href="/livre/7304/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7329.webp" 
+              src="/images/covers/7329.webp"
               alt="Les Patriotes, t.4 : Dans l’honneur et par la victoire"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -270,12 +262,11 @@
         <a href="/livre/7305/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7330.webp" 
+              src="/images/covers/7330.webp"
               alt="A propos du roman"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -294,12 +285,11 @@
         <a href="/livre/7306/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7338.webp" 
+              src="/images/covers/7338.webp"
               alt="Un territoire fragile"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -318,12 +308,11 @@
         <a href="/livre/7307/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7339.webp" 
+              src="/images/covers/7339.webp"
               alt="Le Bureau des affaires occultes (t.1)"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -342,12 +331,11 @@
         <a href="/livre/7308/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7302.webp" 
+              src="/images/covers/7302.webp"
               alt="Siloe"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -366,12 +354,11 @@
         <a href="/livre/7309/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7341.webp" 
+              src="/images/covers/7341.webp"
               alt="Elle dans dans le noir"
               loading="lazy"
               width="200"
               height="300"
-              
             >
           </div>
           <div class="livre-card-info">
@@ -396,19 +383,106 @@
 </div>
 
 <script>
+let booksData = [];
 const searchInput = document.getElementById('searchInput');
+const searchInfo = document.getElementById('searchInfo');
 const sortButtons = document.querySelectorAll('.sort-btn');
 const livresGrid = document.getElementById('livresGrid');
-const cards = Array.from(document.querySelectorAll('.livre-card'));
+const originalCards = Array.from(document.querySelectorAll('.livre-card'));
+const imagesPath = '/images/covers/';
 
 let currentSort = 'default';
+let isSearchMode = false;
+
+// Charger les données pour la recherche globale
+fetch('/search.json')
+  .then(response => response.json())
+  .then(data => {
+    booksData = data;
+  })
+  .catch(error => {
+    console.error('Erreur chargement search.json:', error);
+  });
 
 // Recherche
-searchInput.addEventListener('input', filterBooks);
+let searchTimeout;
+searchInput.addEventListener('input', () => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(performSearch, 300);
+});
+
+function performSearch() {
+  const query = searchInput.value.toLowerCase().trim();
+  
+  if (query.length < 2) {
+    // Revenir à l'affichage normal
+    isSearchMode = false;
+    searchInfo.textContent = '';
+    livresGrid.innerHTML = '';
+    originalCards.forEach(card => livresGrid.appendChild(card));
+    sortBooks();
+    return;
+  }
+
+  if (booksData.length === 0) {
+    searchInfo.textContent = 'Chargement...';
+    return;
+  }
+
+  isSearchMode = true;
+
+  // Recherche dans tous les livres
+  const results = booksData.filter(book => {
+    return book.titre.toLowerCase().includes(query) ||
+           book.auteur.toLowerCase().includes(query) ||
+           (book.resume && book.resume.toLowerCase().includes(query));
+  }).slice(0, 100);
+
+  searchInfo.textContent = `${results.length} résultat${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''}`;
+  
+  displaySearchResults(results, query);
+}
+
+function displaySearchResults(results, query) {
+  livresGrid.innerHTML = results.map(book => `
+    <article class="livre-card">
+      <a href="${book.url}">
+        <div class="livre-card-cover">
+          <img 
+            src="${imagesPath}${book.id}.webp" 
+            alt="${escapeHtml(book.titre)}"
+            loading="lazy"
+            width="200"
+            height="300"
+          >
+        </div>
+        <div class="livre-card-info">
+          <h3>${highlightText(escapeHtml(book.titre), query)}</h3>
+          <p>${highlightText(escapeHtml(book.auteur), query)}</p>
+        </div>
+      </a>
+    </article>
+  `).join('');
+  
+  // Gérer les images manquantes
+  document.querySelectorAll('#livresGrid .livre-card-cover img').forEach(img => {
+    img.addEventListener('error', function() {
+      if (this.dataset.fallbackApplied) return;
+      this.dataset.fallbackApplied = 'true';
+      this.style.display = 'none';
+      const fallback = document.createElement('div');
+      fallback.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);display:flex;align-items:center;justify-content:center;font-size:4rem;opacity:0.7;';
+      fallback.textContent = '📚';
+      this.parentElement.style.position = 'relative';
+      this.parentElement.appendChild(fallback);
+    });
+  });
+}
 
 // Tri
 sortButtons.forEach(btn => {
   btn.addEventListener('click', () => {
+    if (isSearchMode) return; // Pas de tri en mode recherche
     sortButtons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     currentSort = btn.dataset.sort;
@@ -416,17 +490,10 @@ sortButtons.forEach(btn => {
   });
 });
 
-function filterBooks() {
-  const searchTerm = searchInput.value.toLowerCase();
-  cards.forEach(card => {
-    const titre = card.dataset.titre;
-    const auteur = card.dataset.auteur;
-    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
-    card.style.display = matches ? 'block' : 'none';
-  });
-}
-
 function sortBooks() {
+  if (isSearchMode) return;
+  
+  const cards = Array.from(livresGrid.querySelectorAll('.livre-card'));
   const sorted = [...cards].sort((a, b) => {
     let valA, valB;
     
@@ -444,7 +511,7 @@ function sortBooks() {
       case 'annee':
         valA = parseInt(a.dataset.annee) || 0;
         valB = parseInt(b.dataset.annee) || 0;
-        return valB - valA; // Plus récent en premier
+        return valB - valA;
         
       default:
         valA = parseInt(a.dataset.ordre);
@@ -455,6 +522,21 @@ function sortBooks() {
   
   sorted.forEach(card => livresGrid.appendChild(card));
 }
+
+function highlightText(text, query) {
+  const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+  return text.replace(regex, '<mark>$1</mark>');
+}
+
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
 </script>
 
     
@@ -464,6 +546,43 @@ function sortBooks() {
     <p>&copy; 2024 - Ma Bibliothèque</p>
     <p>7310 livres disponibles</p>
   </footer>
+
+  <script>
+    // Gérer les images manquantes avec un fallback propre
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.livre-card-cover img, .livre-cover img').forEach(img => {
+        img.addEventListener('error', function() {
+          // Empêcher les erreurs multiples
+          if (this.dataset.fallbackApplied) return;
+          this.dataset.fallbackApplied = 'true';
+          
+          // Cacher l'image cassée
+          this.style.display = 'none';
+          
+          // Créer le fallback avec emoji
+          const fallback = document.createElement('div');
+          fallback.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            opacity: 0.7;
+          `;
+          fallback.textContent = '📚';
+          
+          // Ajouter le fallback
+          this.parentElement.style.position = 'relative';
+          this.parentElement.appendChild(fallback);
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>

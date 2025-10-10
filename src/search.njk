@@ -1,15 +1,16 @@
 ---
 permalink: /search.json
+eleventyExcludeFromCollections: true
 ---
 [
-  {%- for livre in livres -%}
+{%- for livre in livres -%}
   {
-    "id": "{{ livre.id }}",
+    "id": {{ livre.id | dump | safe }},
     "titre": {{ livre.nom | dump | safe }},
     "auteur": {{ livre.auteur | dump | safe }},
     "type": {{ livre.type | dump | safe }},
-    "resume": {{ livre.resume | truncate(200) | dump | safe }},
-    "url": "/livre/{{ loop.index0 }}/"
+    "resume": {{ (livre.resume | truncate(200) | replace('\n', ' ') | replace('\r', '')) | dump | safe }},
+    "url": "{{ ('/livre/' + loop.index0|string + '/') | url }}"
   }{% if not loop.last %},{% endif %}
-  {%- endfor -%}
+{%- endfor -%}
 ]

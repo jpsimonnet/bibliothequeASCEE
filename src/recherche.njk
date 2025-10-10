@@ -72,10 +72,9 @@ mark {
   const searchResults = document.getElementById('searchResults');
   const searchInfo = document.getElementById('searchInfo');
   const searchLoading = document.getElementById('searchLoading');
-  const pathPrefix = '{{ "" | url }}';
+  const imagesPath = '{{ "/images/covers/" | url }}';
 
-  // Charger les données au chargement de la page
-  fetch(pathPrefix + 'search.json')
+  fetch('{{ "/search.json" | url }}')
     .then(response => response.json())
     .then(data => {
       booksData = data;
@@ -86,7 +85,6 @@ mark {
       console.error('Erreur:', error);
     });
 
-  // Recherche avec debounce
   let searchTimeout;
   searchInput.addEventListener('input', () => {
     clearTimeout(searchTimeout);
@@ -104,12 +102,11 @@ mark {
 
     searchLoading.style.display = 'block';
 
-    // Recherche simple mais efficace
     const results = booksData.filter(book => {
       return book.titre.toLowerCase().includes(query) ||
              book.auteur.toLowerCase().includes(query) ||
              (book.resume && book.resume.toLowerCase().includes(query));
-    }).slice(0, 100); // Limiter à 100 résultats pour la performance
+    }).slice(0, 100);
 
     searchLoading.style.display = 'none';
     displayResults(results, query);
@@ -129,12 +126,12 @@ mark {
         <a href="${book.url}">
           <div class="livre-card-cover">
             <img 
-              src="${pathPrefix}images/covers/${book.id}.webp" 
+              src="${imagesPath}${book.id}.webp" 
               alt="${escapeHtml(book.titre)}"
               loading="lazy"
               width="200"
               height="300"
-              
+              data-book-id="${book.id}"
             >
           </div>
           <div class="livre-card-info">
@@ -145,6 +142,35 @@ mark {
         </a>
       </article>
     `).join('');
+    
+    // Attacher le gestionnaire d'erreur aux nouvelles images
+    document.querySelectorAll('#searchResults .livre-card-cover img').forEach(img => {
+      img.addEventListener('error', function() {
+        if (this.dataset.fallbackApplied) return;
+        this.dataset.fallbackApplied = 'true';
+        
+        this.style.display = 'none';
+        
+        const fallback = document.createElement('div');
+        fallback.style.cssText = `
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 4rem;
+          opacity: 0.7;
+        `;
+        fallback.textContent = '📚';
+        
+        this.parentElement.style.position = 'relative';
+        this.parentElement.appendChild(fallback);
+      });
+    });
   }
 
   function highlightText(text, query) {
