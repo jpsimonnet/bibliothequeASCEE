@@ -52,7 +52,7 @@ eleventyComputed:
           data-auteur="{{ livre.auteur | lower }}"
           data-annee="{{ livre.annee or '0' }}"
           data-ordre="{{ loop.index0 }}">
-          <a href="{{ ('/livre/' + loop.index0|string + '/') | url }}">
+          <a href="{{ ('/livre/' + livre.id + '/') | url }}">
             <div class="livre-card-cover">
               <img 
                 src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Révolte des anges - Ma Bibliothèque</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 La Bibiothèque de l'ASCEE</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/catalogue/">Catalogue</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+<article class="livre-detail">
+  
+  <nav class="breadcrumb">
+    <a href="/">Accueil</a> / 
+    <a href="/catalogue/">Catalogue</a> / 
+    <span>La Révolte des anges</span>
+  </nav>
+
+  <div class="livre-grid">
+    
+    <div class="livre-cover">
+      <img 
+        src="/images/covers/7346.webp"
+        alt="Couverture de La Révolte des anges"
+        loading="lazy"
+        width="300"
+        height="450"
+      >
+    </div>
+
+    <div class="livre-info">
+      <h1>La Révolte des anges</h1>
+      
+      
+      <p class="livre-type">
+        <span class="badge">Littérature française</span>
+      </p>
+      
+      
+      <p class="auteur">
+        <strong>Auteur :</strong> 
+        Anatole FRANCE
+      </p>
+
+      <div class="resume">
+        <h2>Résumé</h2>
+        
+          <p>Des anges voulant détrôner Dieu interrogent le pouvoir, la connaissance et la liberté, dans le Paris de la IIIe République.</p>
+        
+      </div>
+
+      <div class="actions">
+        <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/1" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-availability">
+          📋 Vérifier la disponibilité du livre
+        </a>
+        <button onclick="history.back()" class="btn-secondary">
+          ← Retour
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+  <script>
+    // Gérer les images manquantes avec un fallback propre
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.livre-card-cover img, .livre-cover img').forEach(img => {
+        img.addEventListener('error', function() {
+          // Empêcher les erreurs multiples
+          if (this.dataset.fallbackApplied) return;
+          this.dataset.fallbackApplied = 'true';
+          
+          // Cacher l'image cassée
+          this.style.display = 'none';
+          
+          // Créer le fallback avec emoji
+          const fallback = document.createElement('div');
+          fallback.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            opacity: 0.7;
+          `;
+          fallback.textContent = '📚';
+          
+          // Ajouter le fallback
+          this.parentElement.style.position = 'relative';
+          this.parentElement.appendChild(fallback);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
