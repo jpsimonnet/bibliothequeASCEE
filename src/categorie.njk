@@ -13,8 +13,8 @@ eleventyComputed:
 <article class="categorie-detail">
   
   <nav class="breadcrumb">
-    <a href="/">Accueil</a> / 
-    <a href="/categories/">Catégories</a> / 
+    <a href="{{ '/' | url }}">Accueil</a> / 
+    <a href="{{ '/categories/' | url }}">Catégories</a> / 
     <span>{{ categorie }}</span>
   </nav>
 
@@ -52,15 +52,15 @@ eleventyComputed:
           data-auteur="{{ livre.auteur | lower }}"
           data-annee="{{ livre.annee or '0' }}"
           data-ordre="{{ loop.index0 }}">
-          <a href="/livre/{{ loop.index0 }}/">
+          <a href="{{ ('/livre/' + loop.index0|string + '/') | url }}">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/{{ livre.id }}.webp" 
+                src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
                 alt="Couverture de {{ livre.nom }}"
                 loading="lazy"
                 width="200"
                 height="300"
-                onerror="this.src='/bibliothequeASCEE/images/0-livre-par-defaut.svg'"
+                
               >
             </div>
             <div class="livre-card-info">
@@ -83,10 +83,8 @@ const cards = Array.from(document.querySelectorAll('.livre-card'));
 
 let currentSort = 'default';
 
-// Recherche
 searchInput.addEventListener('input', filterBooks);
 
-// Tri
 sortButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     sortButtons.forEach(b => b.classList.remove('active'));

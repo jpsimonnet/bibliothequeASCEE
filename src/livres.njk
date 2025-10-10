@@ -15,8 +15,8 @@ eleventyComputed:
 <article class="livre-detail">
   
   <nav class="breadcrumb">
-    <a href="/">Accueil</a> / 
-    <a href="/catalogue/">Catalogue</a> / 
+    <a href="{{ '/' | url }}">Accueil</a> / 
+    <a href="{{ '/catalogue/' | url }}">Catalogue</a> / 
     <span>{{ livre.nom }}</span>
   </nav>
 
@@ -24,12 +24,12 @@ eleventyComputed:
     
     <div class="livre-cover">
       <img 
-        src="/images/covers/{{ livre.id }}.webp" 
+        src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
         alt="Couverture de {{ livre.nom }}"
         loading="lazy"
         width="300"
         height="450"
-        onerror="this.src='/bibliothequeASCEE/images/0-livre-par-defaut.svg'"
+        
       >
     </div>
 

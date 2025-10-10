@@ -16,15 +16,15 @@ title: Accueil
     {% for livre in recentBooks %}
       {% set realIndex = totalBooks - loop.index %}
       <article class="livre-card">
-        <a href="/livre/{{ realIndex }}/">
+        <a href="{{ ('/livre/' + realIndex|string + '/') | url }}">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/{{ livre.id }}.webp" 
+              src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
               alt="Couverture de {{ livre.nom }}"
               loading="lazy"
               width="200"
               height="300"
-              onerror="this.src='/bibliothequeASCEE/images/0-livre-par-defaut.svg'"
+              
             >
           </div>
           <div class="livre-card-info">
@@ -37,6 +37,6 @@ title: Accueil
   </div>
   
   <div class="home-cta">
-    <a href="/catalogue/" class="btn-primary btn-large">Voir tout le catalogue</a>
+    <a href="{{ '/catalogue/' | url }}" class="btn-primary btn-large">Voir tout le catalogue</a>
   </div>
 </section>

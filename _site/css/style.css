@@ -593,8 +593,32 @@ mark {
   }
 }
 
-/* Fallback image avec CSS */
+/* Fallback pour images manquantes */
+.livre-card-cover,
+.livre-cover {
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow: visible;
+}
+
+.livre-card-cover::before,
+.livre-cover::before {
+  content: '📚';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .livre-card-cover img,
 .livre-cover img {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  z-index: 1;
 }
+
+/* Quand l'image ne charge pas, le gradient et l'emoji apparaissent en dessous */

@@ -8,7 +8,6 @@ permalink: /auteurs/
   
   <header class="auteurs-header">
     <h1>Tous les auteurs</h1>
-    <p>{{ livres | map("auteur") | unique | length }} auteurs dans notre collection</p>
   </header>
 
   <div class="search-bar">
@@ -24,16 +23,10 @@ permalink: /auteurs/
     {% set auteurs = livres | map("auteur") | unique | sort %}
     {% for auteur in auteurs %}
       {% if auteur %}
-        {% set livresAuteur = livres | selectattr("auteur", "equalto", auteur) %}
         <article class="auteur-card" data-auteur="{{ auteur | lower }}">
-          <a href="/auteur/{{ auteur | slugify }}/">
+          <a href="{{ ('/auteur/' + auteur|slugify + '/') | url }}">
             <h3>{{ auteur }}</h3>
-            <p class="livre-count">{{ livresAuteur | length }} livre{% if livresAuteur | length > 1 %}s{% endif %}</p>
-            <div class="auteur-preview">
-              {% for livre in livresAuteur | limit(3) %}
-                <img src="{{ livre.id | coverUrl }}" alt="{{ livre.nom }}" loading="lazy">
-              {% endfor %}
-            </div>
+            <p class="livre-count">Voir les livres →</p>
           </a>
         </article>
       {% endif %}
@@ -81,23 +74,8 @@ permalink: /auteurs/
 }
 
 .livre-count {
-  color: #6b7280;
+  color: #2563eb;
   font-size: 0.875rem;
-  margin-bottom: 1rem;
-}
-
-.auteur-preview {
-  display: flex;
-  gap: 0.5rem;
-  overflow: hidden;
-}
-
-.auteur-preview img {
-  width: 60px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 </style>
 

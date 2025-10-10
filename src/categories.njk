@@ -23,12 +23,12 @@ permalink: /categories/
         {% endfor %}
         
         <article class="categorie-card">
-          <a href="/categorie/{{ categorie | slugify }}/">
+          <a href="{{ ('/categorie/' + categorie|slugify + '/') | url }}">
             <div class="categorie-preview">
               {% set shown = 0 %}
               {% for livre in livres %}
                 {% if livre.type == categorie and shown < 4 %}
-                  <img src="/images/covers/{{ livre.id }}.webp" alt="{{ livre.nom }}" loading="lazy" onerror="this.src='/bibliothequeASCEE/images/0-livre-par-defaut.svg'">
+                  <img src="{{ ('/images/covers/' + livre.id + '.webp') | url }}" alt="{{ livre.nom }}" loading="lazy" >
                   {% set shown = shown + 1 %}
                 {% endif %}
               {% endfor %}

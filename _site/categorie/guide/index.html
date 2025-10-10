@@ -29124,12 +29124,12 @@
           <a href="/livre/7216/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7233.webp" 
+                src="/images/covers/7233.webp"
                 alt="Couverture de Guide - La suisse"
                 loading="lazy"
                 width="200"
                 height="300"
-                onerror="this.src='/images/0-livre-par-defaut.svg'"
+                
               >
             </div>
             <div class="livre-card-info">
@@ -29149,12 +29149,12 @@
           <a href="/livre/7217/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7234.webp" 
+                src="/images/covers/7234.webp"
                 alt="Couverture de Guide Guadeloupe"
                 loading="lazy"
                 width="200"
                 height="300"
-                onerror="this.src='/images/0-livre-par-defaut.svg'"
+                
               >
             </div>
             <div class="livre-card-info">
@@ -29176,12 +29176,12 @@
           <a href="/livre/7219/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7236.webp" 
+                src="/images/covers/7236.webp"
                 alt="Couverture de 100 PEPITES POUR DECOUVRIR la France"
                 loading="lazy"
                 width="200"
                 height="300"
-                onerror="this.src='/images/0-livre-par-defaut.svg'"
+                
               >
             </div>
             <div class="livre-card-info">
@@ -29203,12 +29203,12 @@
           <a href="/livre/7221/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7238.webp" 
+                src="/images/covers/7238.webp"
                 alt="Couverture de Rome"
                 loading="lazy"
                 width="200"
                 height="300"
-                onerror="this.src='/images/0-livre-par-defaut.svg'"
+                
               >
             </div>
             <div class="livre-card-info">
@@ -29407,10 +29407,8 @@ const cards = Array.from(document.querySelectorAll('.livre-card'));
 
 let currentSort = 'default';
 
-// Recherche
 searchInput.addEventListener('input', filterBooks);
 
-// Tri
 sortButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     sortButtons.forEach(b => b.classList.remove('active'));

@@ -13,41 +13,49 @@ eleventyComputed:
 <article class="auteur-detail">
   
   <nav class="breadcrumb">
-    <a href="/">Accueil</a> / 
-    <a href="/auteurs/">Auteurs</a> / 
+    <a href="{{ '/' | url }}">Accueil</a> / 
+    <a href="{{ '/auteurs/' | url }}">Auteurs</a> / 
     <span>{{ auteur }}</span>
   </nav>
 
   <header class="auteur-header">
     <h1>{{ auteur }}</h1>
-    {% set livresAuteur = livres | selectattr("auteur", "equalto", auteur) %}
-    <p class="auteur-stats">{{ livresAuteur | length }} livre{% if livresAuteur | length > 1 %}s{% endif %} dans notre collection</p>
+    {% set count = 0 %}
+    {% for livre in livres %}
+      {% if livre.auteur == auteur %}
+        {% set count = count + 1 %}
+      {% endif %}
+    {% endfor %}
+    <p class="auteur-stats">{{ count }} livre{% if count > 1 %}s{% endif %} dans notre collection</p>
   </header>
 
   <div class="livres-grid">
-    {% for livre in livresAuteur | sort(attribute="nom") %}
-      <article class="livre-card">
-        <a href="/livre/{{ livre.id | slugify }}/">
-          <div class="livre-card-cover">
-            <img 
-              src="{{ livre.id | coverUrl }}" 
-              alt="Couverture de {{ livre.nom }}"
-              loading="lazy"
-              width="200"
-              height="300"
-            >
-          </div>
-          <div class="livre-card-info">
-            {% if livre.type %}
-            <span class="livre-card-type">{{ livre.type }}</span>
-            {% endif %}
-            <h3>{{ livre.nom }}</h3>
-            {% if livre.annee and livre.annee != "0" %}
-            <p class="livre-annee">{{ livre.annee }}</p>
-            {% endif %}
-          </div>
-        </a>
-      </article>
+    {% for livre in livres %}
+      {% if livre.auteur == auteur %}
+        <article class="livre-card">
+          <a href="{{ ('/livre/' + loop.index0|string + '/') | url }}">
+            <div class="livre-card-cover">
+              <img 
+                src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
+                alt="Couverture de {{ livre.nom }}"
+                loading="lazy"
+                width="200"
+                height="300"
+                
+              >
+            </div>
+            <div class="livre-card-info">
+              {% if livre.type %}
+              <span class="livre-card-type">{{ livre.type }}</span>
+              {% endif %}
+              <h3>{{ livre.nom }}</h3>
+              {% if livre.annee and livre.annee != "0" %}
+              <p class="livre-annee">{{ livre.annee }}</p>
+              {% endif %}
+            </div>
+          </a>
+        </article>
+      {% endif %}
     {% endfor %}
   </div>
 

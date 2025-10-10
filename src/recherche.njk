@@ -72,9 +72,10 @@ mark {
   const searchResults = document.getElementById('searchResults');
   const searchInfo = document.getElementById('searchInfo');
   const searchLoading = document.getElementById('searchLoading');
+  const pathPrefix = '{{ "" | url }}';
 
   // Charger les données au chargement de la page
-  fetch('/search.json')
+  fetch(pathPrefix + 'search.json')
     .then(response => response.json())
     .then(data => {
       booksData = data;
@@ -128,11 +129,12 @@ mark {
         <a href="${book.url}">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/${book.id}.webp" 
+              src="${pathPrefix}images/covers/${book.id}.webp" 
               alt="${escapeHtml(book.titre)}"
               loading="lazy"
               width="200"
               height="300"
+              
             >
           </div>
           <div class="livre-card-info">

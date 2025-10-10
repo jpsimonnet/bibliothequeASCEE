@@ -5,11 +5,6 @@ module.exports = function(eleventyConfig) {
   
   eleventyConfig.watchIgnores.add("src/images/**");
   
-  // Créer une variable globale accessible dans tous les templates
-  eleventyConfig.addGlobalData("pathPrefix", function() {
-    return process.env.ELEVENTY_PATHPREFIX || '';
-  });
-  
   eleventyConfig.addFilter("auteurFormat", function(auteur) {
     return auteur || "Auteur inconnu";
   });
@@ -20,9 +15,7 @@ module.exports = function(eleventyConfig) {
     return text.substring(0, length) + "...";
   });
   
-  eleventyConfig.addFilter("coverUrl", function(id) {
-    return `/images/covers/${id}.webp`;
-  });
+  // NE PAS utiliser coverUrl - on va le supprimer et utiliser url directement
   
   eleventyConfig.addFilter("unique", function(array) {
     return [...new Set(array)];
