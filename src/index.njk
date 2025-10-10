@@ -67,6 +67,7 @@ mark {
 </style>
 
 <script>
+(function() {
   let booksData = [];
   const searchInput = document.getElementById('globalSearch');
   const searchResults = document.getElementById('searchResults');
@@ -187,34 +188,43 @@ mark {
     div.textContent = text;
     return div.innerHTML;
   }
+})();
 </script>
 
 <section class="home-featured">
-  <h2>Livres récemment ajoutés</h2>
+  <h2>Nouveautés</h2>
   <div class="livres-grid">
-    {% set recentBooks = livres | reverse | limit(12) %}
-    {% set totalBooks = livres.length %}
-    {% for livre in recentBooks %}
-      {% set realIndex = totalBooks - loop.index %}
-      <article class="livre-card">
-        <a href="{{ ('/livre/' + livre.id + '/') | url }}">
-          <div class="livre-card-cover">
-            <img 
-              src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
-              alt="Couverture de {{ livre.nom }}"
-              loading="lazy"
-              width="200"
-              height="300"
-              
-            >
-          </div>
-          <div class="livre-card-info">
-            <h3>{{ livre.nom | truncate(50) }}</h3>
-            <p class="auteur">{{ livre.auteur | auteurFormat }}</p>
-          </div>
-        </a>
-      </article>
+    {% set toutesNouveautes = [] %}
+    {% for livre in livres %}
+      {% if livre.nouveaute == "true" %}
+        {% set toutesNouveautes = (toutesNouveautes.push(livre), toutesNouveautes) %}
+      {% endif %}
     {% endfor %}
+    {% set nouveautes = toutesNouveautes | sort(attribute="id") | reverse | limit(20) %}
+    
+    {% if nouveautes.length == 0 %}
+      <p>Aucune nouveauté pour le moment. Nombre total de livres parcourus : {{ livres.length }}</p>
+    {% else %}
+      {% for livre in nouveautes %}
+        <article class="livre-card">
+          <a href="{{ ('/livre/' + livre.id + '/') | url }}">
+            <div class="livre-card-cover">
+              <img 
+                src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
+                alt="Couverture de {{ livre.nom }}"
+                loading="lazy"
+                width="200"
+                height="300"
+              >
+            </div>
+            <div class="livre-card-info">
+              <h3>{{ livre.nom | truncate(50) }}</h3>
+              <p class="auteur">{{ livre.auteur | auteurFormat }}</p>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    {% endif %}
   </div>
   
   <div class="home-cta">

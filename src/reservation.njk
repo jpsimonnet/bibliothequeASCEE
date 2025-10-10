@@ -1,0 +1,62 @@
+---
+layout: layouts/base.njk
+title: Réserver un livre
+permalink: /reservation/
+---
+
+<div class="reservation-container">
+  
+  <header class="reservation-header">
+    <h1>Réserver un livre</h1>
+    <p>Remplissez le formulaire ci-dessous pour réserver un livre de notre bibliothèque.</p>
+  </header>
+
+  <div class="form-container">
+    <iframe 
+      style="border: none; width: 100%; max-width: 640px; height: 734px; margin: 0 auto; display: block;" 
+      src="https://grist.numerique.gouv.fr/o/docs/forms/kdqj7hf9KMkEu3ATjfWiU7/134"
+      title="Formulaire de réservation de livre"
+    ></iframe>
+  </div>
+
+</div>
+
+<style>
+.reservation-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reservation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reservation-header h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.reservation-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1rem;
+  }
+  
+  .form-container iframe {
+    height: 700px;
+  }
+}
+</style>

@@ -24,7 +24,8 @@ const books = records.map(record => ({
   annee: record.Annee || '0',
   pages: record.Pages || '',
   langues: record.Langues || '',
-  couverture_url: record['Couverture-bnum'] || ''
+  couverture_url: record['Couverture-bnum'] || '',
+  nouveaute: record['Nouveautée'] || 'false'
 })).filter(book => book.id);
 
 console.log(`✅ ${books.length} livres convertis`);

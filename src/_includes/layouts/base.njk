@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if title %}{{ title }} - {% endif %}Ma Bibliothèque</title>
+  <title>{% if title %}{{ title }} - {% endif %} La Bibiothèque de l'ASCEE</title>
   <meta name="description" content="{{ description or 'Catalogue de 7240 livres' }}">
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
@@ -14,9 +14,10 @@
       <a href="{{ '/' | url }}" class="logo">📚 La Bibiothèque de l'ASCEE</a>
       <ul>
         <li><a href="{{ '/' | url }}">Accueil</a></li>
-        <li><a href="{{ '/catalogue/' | url }}">Catalogue</a></li>
         <li><a href="{{ '/categories/' | url }}">Catégories</a></li>
         <li><a href="{{ '/recherche/' | url }}">Recherche</a></li>
+        <li><a href="{{ '/reservation/' | url }}">Réservation</a></li>
+        <li><a href="{{ '/suggestions/' | url }}">Suggestions</a></li>
       </ul>
     </nav>
   </header>
@@ -37,14 +38,11 @@
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.livre-card-cover img, .livre-cover img').forEach(img => {
         img.addEventListener('error', function() {
-          // Empêcher les erreurs multiples
           if (this.dataset.fallbackApplied) return;
           this.dataset.fallbackApplied = 'true';
           
-          // Cacher l'image cassée
           this.style.display = 'none';
           
-          // Créer le fallback avec emoji
           const fallback = document.createElement('div');
           fallback.style.cssText = `
             position: absolute;
@@ -61,7 +59,6 @@
           `;
           fallback.textContent = '📚';
           
-          // Ajouter le fallback
           this.parentElement.style.position = 'relative';
           this.parentElement.appendChild(fallback);
         });

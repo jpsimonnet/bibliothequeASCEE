@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réserver un livre -  La Bibiothèque de l'ASCEE</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="/" class="logo">📚 La Bibiothèque de l'ASCEE</a>
+      <ul>
+        <li><a href="/">Accueil</a></li>
+        <li><a href="/categories/">Catégories</a></li>
+        <li><a href="/recherche/">Recherche</a></li>
+        <li><a href="/reservation/">Réservation</a></li>
+        <li><a href="/suggestions/">Suggestions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    
+    
+<div class="reservation-container">
+  
+  <header class="reservation-header">
+    <h1>Réserver un livre</h1>
+    <p>Remplissez le formulaire ci-dessous pour réserver un livre de notre bibliothèque.</p>
+  </header>
+
+  <div class="form-container">
+    <iframe 
+      style="border: none; width: 100%; max-width: 640px; height: 734px; margin: 0 auto; display: block;" 
+      src="https://grist.numerique.gouv.fr/o/docs/forms/kdqj7hf9KMkEu3ATjfWiU7/134"
+      title="Formulaire de réservation de livre"
+    ></iframe>
+  </div>
+
+</div>
+
+<style>
+.reservation-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.reservation-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reservation-header h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.reservation-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1rem;
+  }
+  
+  .form-container iframe {
+    height: 700px;
+  }
+}
+</style>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 - Ma Bibliothèque</p>
+    <p>7310 livres disponibles</p>
+  </footer>
+
+  <script>
+    // Gérer les images manquantes avec un fallback propre
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.livre-card-cover img, .livre-cover img').forEach(img => {
+        img.addEventListener('error', function() {
+          if (this.dataset.fallbackApplied) return;
+          this.dataset.fallbackApplied = 'true';
+          
+          this.style.display = 'none';
+          
+          const fallback = document.createElement('div');
+          fallback.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            opacity: 0.7;
+          `;
+          fallback.textContent = '📚';
+          
+          this.parentElement.style.position = 'relative';
+          this.parentElement.appendChild(fallback);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
