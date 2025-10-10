@@ -33,7 +33,6 @@ module.exports = function(eleventyConfig) {
     return array.filter(item => item[attr] === value);
   });
   
-  // Nouveau filtre pour obtenir l'index global
   eleventyConfig.addFilter("withIndex", function(livresArray, allLivres) {
     return livresArray.map(livre => ({
       livre: livre,
@@ -52,6 +51,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/bibliothequeASCEE/",
     dir: {
       input: "src",
       output: "_site",
