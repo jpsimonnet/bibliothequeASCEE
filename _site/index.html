@@ -11,7 +11,7 @@
   
   <header class="site-header">
     <nav class="nav-main">
-      <a href="/" class="logo">📚 Ma Bibliothèque</a>
+      <a href="/" class="logo">📚 La Bibiothèque de l'ASCEE</a>
       <ul>
         <li><a href="/">Accueil</a></li>
         <li><a href="/catalogue/">Catalogue</a></li>
@@ -29,6 +29,187 @@
   <p class="subtitle">Découvrez notre collection de 7310 livres</p>
 </div>
 
+ <div class="search-advanced">
+    <input 
+      type="search" 
+      id="globalSearch" 
+      placeholder="Rechercher parmi les livres..."
+      autocomplete="off"
+    >
+    <p class="search-info" id="searchInfo">Entrez au moins 2 caractères pour rechercher</p>
+  </div>
+
+  <div id="searchResults" class="livres-grid"></div>
+  
+  <div id="searchLoading" class="loading" style="display: none;">
+    <p>Recherche en cours...</p>
+  </div>
+
+</div>
+
+<style>
+.recherche-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.recherche-container h1 {
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.search-advanced {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.search-info {
+  color: #6b7280;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+mark {
+  background: #fef3c7;
+  padding: 0 0.25rem;
+  font-weight: 500;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+}
+</style>
+
+<script>
+  let booksData = [];
+  const searchInput = document.getElementById('globalSearch');
+  const searchResults = document.getElementById('searchResults');
+  const searchInfo = document.getElementById('searchInfo');
+  const searchLoading = document.getElementById('searchLoading');
+  const imagesPath = '/images/covers/';
+
+  fetch('/search.json')
+    .then(response => response.json())
+    .then(data => {
+      booksData = data;
+      searchInfo.textContent = `${data.length} livres disponibles. Entrez au moins 2 caractères pour rechercher.`;
+    })
+    .catch(error => {
+      searchInfo.textContent = 'Erreur de chargement des données.';
+      console.error('Erreur:', error);
+    });
+
+  let searchTimeout;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(performSearch, 300);
+  });
+
+  function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
+    
+    if (query.length < 2) {
+      searchResults.innerHTML = '';
+      searchInfo.textContent = `${booksData.length} livres disponibles. Entrez au moins 2 caractères pour rechercher.`;
+      return;
+    }
+
+    searchLoading.style.display = 'block';
+
+    const results = booksData.filter(book => {
+      return book.titre.toLowerCase().includes(query) ||
+             book.auteur.toLowerCase().includes(query) ||
+             (book.resume && book.resume.toLowerCase().includes(query));
+    }).slice(0, 100);
+
+    searchLoading.style.display = 'none';
+    displayResults(results, query);
+  }
+
+  function displayResults(results, query) {
+    if (results.length === 0) {
+      searchInfo.textContent = `Aucun résultat pour "${query}"`;
+      searchResults.innerHTML = '';
+      return;
+    }
+
+    searchInfo.textContent = `${results.length} résultat${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''} pour "${query}"`;
+    
+    searchResults.innerHTML = results.map(book => `
+      <article class="livre-card">
+        <a href="${book.url}">
+          <div class="livre-card-cover">
+            <img 
+              src="${imagesPath}${book.id}.webp" 
+              alt="${escapeHtml(book.titre)}"
+              loading="lazy"
+              width="200"
+              height="300"
+              data-book-id="${book.id}"
+            >
+          </div>
+          <div class="livre-card-info">
+            ${book.type ? `<span class="livre-card-type">${escapeHtml(book.type)}</span>` : ''}
+            <h3>${highlightText(escapeHtml(book.titre), query)}</h3>
+            <p class="auteur">${highlightText(escapeHtml(book.auteur), query)}</p>
+          </div>
+        </a>
+      </article>
+    `).join('');
+    
+    // Attacher le gestionnaire d'erreur aux nouvelles images
+    document.querySelectorAll('#searchResults .livre-card-cover img').forEach(img => {
+      img.addEventListener('error', function() {
+        if (this.dataset.fallbackApplied) return;
+        this.dataset.fallbackApplied = 'true';
+        
+        this.style.display = 'none';
+        
+        const fallback = document.createElement('div');
+        fallback.style.cssText = `
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 4rem;
+          opacity: 0.7;
+        `;
+        fallback.textContent = '📚';
+        
+        this.parentElement.style.position = 'relative';
+        this.parentElement.appendChild(fallback);
+      });
+    });
+  }
+
+  function highlightText(text, query) {
+    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+    return text.replace(regex, '<mark>$1</mark>');
+  }
+
+  function escapeRegex(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+</script>
+
 <section class="home-featured">
   <h2>Livres récemment ajoutés</h2>
   <div class="livres-grid">
@@ -37,11 +218,12 @@
     
       
       <article class="livre-card">
-        <a href="/livre/7341/">
+        <a href="/livre/7342/">
           <div class="livre-card-cover">
             <img 
-              src="/images/covers/7341.webp"
-              alt="Couverture de Elle dans dans le noir"
+              src="/images/covers/7342.webp"
+              alt="Couverture de Le pornithorynque est un salopare : Dictionnaire de mots-valises
+"
               loading="lazy"
               width="200"
               height="300"
@@ -49,7 +231,27 @@
             >
           </div>
           <div class="livre-card-info">
-            <h3>Elle dans dans le noir</h3>
+            <h3>Le pornithorynque est un salopare : Dictionnaire d...</h3>
+            <p class="auteur">Alain Créhange</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      <article class="livre-card">
+        <a href="/livre/7341/">
+          <div class="livre-card-cover">
+            <img 
+              src="/images/covers/7341.webp"
+              alt="Couverture de Elle danse dans le noir"
+              loading="lazy"
+              width="200"
+              height="300"
+              
+            >
+          </div>
+          <div class="livre-card-info">
+            <h3>Elle danse dans le noir</h3>
             <p class="auteur">René Frègni</p>
           </div>
         </a>
@@ -251,26 +453,6 @@
           <div class="livre-card-info">
             <h3>La mort en pantalon rouge</h3>
             <p class="auteur">John Dickson Carr</p>
-          </div>
-        </a>
-      </article>
-    
-      
-      <article class="livre-card">
-        <a href="/livre/7322/">
-          <div class="livre-card-cover">
-            <img 
-              src="/images/covers/7322.webp"
-              alt="Couverture de Secret de famille"
-              loading="lazy"
-              width="200"
-              height="300"
-              
-            >
-          </div>
-          <div class="livre-card-info">
-            <h3>Secret de famille</h3>
-            <p class="auteur">Irène FRAIN</p>
           </div>
         </a>
       </article>

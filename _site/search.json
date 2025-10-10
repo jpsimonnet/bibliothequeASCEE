@@ -51043,13 +51043,6 @@
     "resume": "Épopée historique (Kingsbridge) sur la guerre des religions à l’époque d’Élisabeth Iʳᵉ.",
     "url": "/livre/7315/"
   },{
-    "id": "7342",
-    "titre": "Le pornithorynque est un salopare : Dictionnaire de mots-valises\n",
-    "auteur": "Alain Créhange",
-    "type": "Vie pratique",
-    "resume": "Pornithorynque : Mammifère salopare d'Australie, dont les mœurs sexuelles sont assez surprenantes. Salopare : Animal qui se reproduit malproprement. Directeur marketing passionné de littérature et de ...",
-    "url": "/livre/7342/"
-  },{
     "id": "7316",
     "titre": "La Révolte des anges",
     "auteur": "Anatole FRANCE",
@@ -51163,9 +51156,16 @@
     "url": "/livre/7303/"
   },{
     "id": "7341",
-    "titre": "Elle dans dans le noir",
+    "titre": "Elle danse dans le noir",
     "auteur": "René Frègni",
     "type": "Littérature française",
     "resume": "Sa femme lui a dit un soir : \"Je n'ai plus de désir pour toi\". Le lendemain elle partait avec leur petite fille de six ans, Marilou. Le choc, terrible, le projette quatre ans en arrière, lors de la di...",
     "url": "/livre/7341/"
+  },{
+    "id": "7342",
+    "titre": "Le pornithorynque est un salopare : Dictionnaire de mots-valises\n",
+    "auteur": "Alain Créhange",
+    "type": "Vie pratique",
+    "resume": "Pornithorynque : Mammifère salopare d'Australie, dont les mœurs sexuelles sont assez surprenantes. Salopare : Animal qui se reproduit malproprement. Directeur marketing passionné de littérature et de ...",
+    "url": "/livre/7342/"
   }]
