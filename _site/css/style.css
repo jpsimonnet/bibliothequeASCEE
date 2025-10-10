@@ -149,6 +149,8 @@ main {
   object-fit: cover;
 }
 
+
+
 .livre-card-info {
   padding: 1rem;
 }
@@ -199,6 +201,7 @@ main {
 .livre-cover img {
   width: 100%;
   border-radius: 8px;
+  object-fit: cover;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
