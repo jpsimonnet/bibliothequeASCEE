@@ -27,7 +27,7 @@ permalink: /categories/
             <div class="categorie-preview">
               {% set shown = 0 %}
               {% for livre in livres %}
-                {% if livre.type == categorie and shown < 4 %}
+                {% if livre.type == categorie and shown < 2 %}
                   <img src="{{ ('/images/covers/' + livre.id + '.webp') | url }}" alt="{{ livre.nom }}" loading="lazy" >
                   {% set shown = shown + 1 %}
                 {% endif %}

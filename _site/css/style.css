@@ -26,7 +26,7 @@ a:hover {
   background: white;
   border-bottom: 1px solid #e5e7eb;
   padding: 1rem 2rem;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 100;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -426,9 +426,7 @@ mark {
     gap: 1rem;
   }
   
-  .nav-main ul {
-    gap: 1rem;
-  }
+ 
   
   main {
     padding: 0 1rem;
@@ -754,4 +752,127 @@ h2 {
   .nav-list a.btn-secondary {
     width: auto;
   }
+}
+
+
+.skip-link {
+  position:fixed;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus	{
+  position:fixed;
+  width: auto;
+  height: auto;
+}
+
+.skiplinks {
+    --ul-type: none;
+    --ol-type: none;
+    --ul-start: 0;
+    --ol-start: 0;
+    --xl-block: 0;
+    --li-bottom: 0;
+    --ol-content: none;
+    --idle: transparent;
+    --hover: var(--background-contrast-grey-hover);
+    --active: var(--background-contrast-grey-active);
+    background-color: var(--background-contrast-grey);
+    opacity: 0;
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+.skiplinks:focus-within {
+    opacity: 1;
+    position: relative;
+    transform: translateY(0)
+}
+
+.skiplinks__list {
+    display: flex;
+    flex-direction: column
+}
+
+.skiplinks__list>li {
+    margin: 0 1rem 0 1rem;
+    list-style: none;
+}
+
+.skiplinks__list>li:before {
+    content: none
+}
+
+.skiplinks__list>li .fr-link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0
+}
+
+.skiplinks__list>li .fr-link:after,.fr-skiplinks__list>li .fr-link:before {
+    --icon-size: 1rem
+}
+
+.skiplinks__list>li:last-child {
+    margin-bottom: 0
+}
+
+.skiplinks__list:focus-within {
+    position: relative;
+    transform: translateY(0)
+}
+
+
+
+
+@media (min-width: 48em) {
+    .skiplinks__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+}
+
+/**** menu responsive *****/
+
+@media (max-width: 768px) {
+  .nav-main {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-main ul {
+gap: 0.2rem;
+  }
+
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-list a.btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding:0.5rem;
+  }
+
+  .encadre-grid {
+    display: grid;
+    grid-template-columns:  auto;
+}
+
 }
