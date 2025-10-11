@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} - {% endif %} La Bibiothèque de l'ASCEE</title>
+  <meta name="description" content="{{ description or 'Catalogue de 7240 livres' }}">
+  <link rel="stylesheet" href="{{ '/css/bulma.min.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+</head>
+<body>
+  
+  <header class="site-header">
+    <nav class="nav-main">
+      <a href="{{ '/' | url }}" class="logo">📚 La Bibiothèque de l'ASCEE</a>
+      <ul class="nav-list">
+        <li><a class="btn-secondary" href="{{ '/' | url }}">🏠 Accueil</a></li>
+        <li><a class="btn-secondary" href="{{ '/categories/' | url }}">🗂️ Catégories</a></li>
+        <li><a class="btn-secondary" href="{{ '/recherche/' | url }}">🔎 Recherche</a></li>
+        <li><a class="btn-secondary" href="{{ '/reservation/' | url }}">🧾 Réservation</a></li>
+        <li><a class="btn-secondary" href="{{ '/suggestions/' | url }}">📥 Suggestions</a></li>
+        <li><a class="btn-secondary" href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/16">👤 Votre compte</a></li>    
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    {{ content | safe }}
+    {% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 - Bibliothèque de l'ASCEE</p>
+    <p>{{ livres.length }} livres disponibles</p>
+  </footer>
+
+  <script>
+    // Gérer les images manquantes avec un fallback propre
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.livre-card-cover img, .livre-cover img').forEach(img => {
+        img.addEventListener('error', function() {
+          if (this.dataset.fallbackApplied) return;
+          this.dataset.fallbackApplied = 'true';
+          
+          this.style.display = 'none';
+          
+          const fallback = document.createElement('div');
+          fallback.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            opacity: 0.7;
+          `;
+          fallback.textContent = '📚';
+          
+          this.parentElement.style.position = 'relative';
+          this.parentElement.appendChild(fallback);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
