@@ -40469,7 +40469,7 @@
     "id": "5794",
     "titre": "Les visiteurs d'Histoire",
     "auteur": "Bruno SOLO",
-    "type": "Ethnographie / Biographie",
+    "type": "Biographie historique romancé ",
     "resume": "Féru d'histoire et conteur savoureux, Bruno Solo a convié chez lui, le temps d'un dîner imaginaire, des personnages de l'Histoire de France : Clovis, l'inconnu le plus célèbre de notre récit national ...",
     "url": "/livre/5794/"
   },{
@@ -50959,13 +50959,6 @@
     "resume": "Nouvelles du « réel brut » sur la Côte d’Azur et ses marges.",
     "url": "/livre/7331/"
   },{
-    "id": "7376",
-    "titre": "Siloe",
-    "auteur": "Paul Gadenne",
-    "type": "Littérature française",
-    "resume": "Simon Delambre, à la veille de passer l’agrégation de lettres classiques, est atteint de tuberculose et doit séjourner en sanatorium au Crêt d’Armenaz, univers clos, coupé du monde, au coeur d’une \"mo...",
-    "url": "/livre/7376/"
-  },{
     "id": "7333",
     "titre": "Demain",
     "auteur": "Guillaume  Musso",
@@ -51049,6 +51042,13 @@
     "type": "Littérature étrangère",
     "resume": "Épopée historique (Kingsbridge) sur la guerre des religions à l’époque d’Élisabeth Iʳᵉ.",
     "url": "/livre/7344/"
+  },{
+    "id": "7345",
+    "titre": "Le pornithorynque est un salopare : Dictionnaire de mots-valises\n",
+    "auteur": "Alain Créhange",
+    "type": "Littérature française",
+    "resume": "Pornithorynque : Mammifère salopare d'Australie, dont les mœurs sexuelles sont assez surprenantes. Salopare : Animal qui se reproduit malproprement. Directeur marketing passionné de littérature et de ...",
+    "url": "/livre/7345/"
   },{
     "id": "7346",
     "titre": "La Révolte des anges",
@@ -51151,9 +51151,16 @@
     "id": "7369",
     "titre": "Le Bureau des affaires occultes (t.1)",
     "auteur": "Éric Fouassier",
-    "type": "Littérature française",
+    "type": "Policier suspens thriller",
     "resume": "À Paris en 1830, l’agent Valentin Verne enquête sur des morts suspects au sein d’un service naissant dédié au crime moderne.",
     "url": "/livre/7369/"
+  },{
+    "id": "7376",
+    "titre": "Siloe",
+    "auteur": "Paul Gadenne",
+    "type": "Littérature française",
+    "resume": "Simon Delambre, à la veille de passer l’agrégation de lettres classiques, est atteint de tuberculose et doit séjourner en sanatorium au Crêt d’Armenaz, univers clos, coupé du monde, au coeur d’une \"mo...",
+    "url": "/livre/7376/"
   },{
     "id": "7379",
     "titre": "Elle danse dans le noir",
@@ -51162,10 +51169,94 @@
     "resume": "Sa femme lui a dit un soir : \"Je n'ai plus de désir pour toi\". Le lendemain elle partait avec leur petite fille de six ans, Marilou. Le choc, terrible, le projette quatre ans en arrière, lors de la di...",
     "url": "/livre/7379/"
   },{
-    "id": "7345",
-    "titre": "Le pornithorynque est un salopare : Dictionnaire de mots-valises\n",
-    "auteur": "Alain Créhange",
-    "type": "Vie pratique",
-    "resume": "Pornithorynque : Mammifère salopare d'Australie, dont les mœurs sexuelles sont assez surprenantes. Salopare : Animal qui se reproduit malproprement. Directeur marketing passionné de littérature et de ...",
-    "url": "/livre/7345/"
+    "id": "7380",
+    "titre": "Pissaro",
+    "auteur": "Charles Kunstler",
+    "type": "Art",
+    "resume": "",
+    "url": "/livre/7380/"
+  },{
+    "id": "7381",
+    "titre": "Monet",
+    "auteur": "Daniel Wildenstein",
+    "type": "Art",
+    "resume": "",
+    "url": "/livre/7381/"
+  },{
+    "id": "7382",
+    "titre": "Van Gogh",
+    "auteur": "Jacques Lassagne",
+    "type": "Art",
+    "resume": "",
+    "url": "/livre/7382/"
+  },{
+    "id": "7383",
+    "titre": "Renoir",
+    "auteur": "François Daulte",
+    "type": "Art",
+    "resume": "",
+    "url": "/livre/7383/"
+  },{
+    "id": "7384",
+    "titre": "Degas",
+    "auteur": "Antoine Terrasse",
+    "type": "Art",
+    "resume": "",
+    "url": "/livre/7384/"
+  },{
+    "id": "7385",
+    "titre": "Toulouse lautrec",
+    "auteur": "P. Huisman & M.G. Dortu",
+    "type": "Art",
+    "resume": "",
+    "url": "/livre/7385/"
+  },{
+    "id": "7386",
+    "titre": "Sisley",
+    "auteur": "François Daulte",
+    "type": "Art",
+    "resume": "",
+    "url": "/livre/7386/"
+  },{
+    "id": "7387",
+    "titre": "Débâcle",
+    "auteur": "Lize Spit",
+    "type": "Policier suspens thriller",
+    "resume": "La même année qu'Eva sont nés deux garçons dans le petit village flamand de Bovenmeer. Les \"trois mousquetaires\" sont inséparables, mais à l'adolescence leurs rapports se fissurent. Un été de canicule...",
+    "url": "/livre/7387/"
+  },{
+    "id": "7388",
+    "titre": "Le Village",
+    "auteur": "Dan Smith",
+    "type": "Policier suspens thriller",
+    "resume": "En 1930, dans le village ukrainien de Vyriv. Luka, vétéran de la guerre de Crimée et ses deux fils recueillent un homme inconscient qu'ils trouvent dans la steppe enneigée. Dans son traîneau gisent de...",
+    "url": "/livre/7388/"
+  },{
+    "id": "7389",
+    "titre": "Bleu de Prusse",
+    "auteur": "Philip Kerr",
+    "type": "Policier suspens thriller",
+    "resume": "1956. À peine remis des émotions des Pièges de l'exil, Bernie Gunther doit s'enfuir pour sauver sa peau : le marché que lui impose Erich Mielke, numéro deux de la Stasi, est inacceptable. Du cap Ferra...",
+    "url": "/livre/7389/"
+  },{
+    "id": "7390",
+    "titre": "Un cadavre de trop",
+    "auteur": "Ellis Peters",
+    "type": "Policier suspens thriller",
+    "resume": "Frère Cadfael 02 Au début de l'été 1138 la guerre qui oppose le roi Étienne et de l'impératrice Mathilde qui se disputant le trône d'Angleterre est aux portes de Shrewsbury. La mort plane sur le châte...",
+    "url": "/livre/7390/"
+  },{
+    "id": "7391",
+    "titre": "À contre-sens",
+    "auteur": "Noëlle Châtelet",
+    "type": "Littérature française",
+    "resume": "Après Histoires de bouches, Noëlle Châtelet poursuit son voyage romanesque autour du corps, avec ces cinq petits romans où l'odorat, le toucher, la vue, le goût et l'ouïe sont à la fête, une fête qui ...",
+    "url": "/livre/7391/"
+  },{
+    "id": "7392",
+    "titre": "Une rose pour loyer",
+    "auteur": "Ellis Peters",
+    "type": "Policier suspens thriller",
+    "resume": "Un rose chaque année, voici un loyer bien modeste pour une propriété cossue. C'est pourtant tout ce que demande la propriétaire, une jeune veuve, à l'abbaye de Shrewsbury. Tant de désintéressement aga...",
+    "url": "/livre/7392/"
   }]

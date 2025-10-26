@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleu de Prusse -  La Bibiothèque de l'ASCEE</title>
+  <meta name="description" content="Catalogue de 7240 livres">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+ 
+
+<div class="skiplinks">
+      <nav role="navigation" aria-label="Accès rapide" class="container">
+        <ul class="skiplinks__list">
+          <li>
+            <a  class="" href="#main">Contenu</a>
+          </li>
+
+          <li>
+            <a  class="" href="#menu">Menu</a>
+          </li>
+
+          <li>
+            <a  class="" href="#recherche">Rechercher</a>
+          </li>
+
+          <li>
+            <a  class="" href="#footer"  >Pied de page</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+  <header class="site-header">
+    <nav class="nav-main" id="menu">
+      <a href="/" class="logo">📚 La Bibiothèque de l'ASCEE</a>
+      <ul class="nav-list">
+        <li><a class="btn-secondary" href="/">🏠 Accueil</a></li>
+        <li><a class="btn-secondary" href="/categories/">🗂️ Catégories</a></li>
+        <li><a class="btn-secondary" href="/recherche/">🔎 Recherche</a></li>
+        <li><a class="btn-secondary" href="/reservation/">🧾 Réservation</a></li>
+        <li><a class="btn-secondary" href="/suggestions/">📥 Suggestions</a></li>
+        <li><a class="btn-secondary" href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/16">👤 Votre compte</a></li>    
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    
+<article class="livre-detail">
+  
+  <nav class="breadcrumb">
+    <a href="/">Accueil</a> / 
+    <a href="/catalogue/">Catalogue</a> / 
+    <span>Bleu de Prusse</span>
+  </nav>
+
+  <div class="livre-grid">
+    
+    <div class="livre-cover">
+      <img 
+        src="/images/covers/7389.webp"
+        alt="Couverture de Bleu de Prusse"
+        loading="lazy"
+        width="300"
+        height="auto"
+      >
+    </div>
+
+    <div class="livre-info">
+      <h1>Bleu de Prusse</h1>
+      
+      
+      <p class="livre-type">
+        <span class="badge">Policier suspens thriller</span>
+      </p>
+      
+      
+      <p class="auteur">
+        <strong>Auteur :</strong> 
+        Philip Kerr
+      </p>
+
+      <div class="resume">
+        <h2>Résumé</h2>
+        
+          <p>1956. À peine remis des émotions des Pièges de l&#39;exil, Bernie Gunther doit s&#39;enfuir pour sauver sa peau : le marché que lui impose Erich Mielke, numéro deux de la Stasi, est inacceptable. Du cap Ferrat à Sarrebrück, sa cavale héroïque sera semée d&#39;embuches. 1939. Parallèlement, selon une de ces constructions virtuoses dont il a le secret, Philip Kerr nous emmène à Berchtesgaden, où Hitler est attendu pour son cinquantième anniversaire. Quand un ingénieur est assassiné sur la terrasse du Berghof, le nid d&#39;aigle du Führer, c&#39;est la panique : jamais au grand jamais ce sacrilège ne doit être rendu public. Sommé par le général Heydrich de découvrir, et dans la plus absolue discrétion, le coupable, Bernie Gunther ne dispose que d&#39;une semaine pour réussir. Or personne ne semble disposé à l&#39;aider : Martin Bormann règne en tyran à Berchtesgaden - du moins tant que le tyran suprême n&#39;est pas là - et s&#39;y livre à maints trafics lucratifs alimentés par un réseau bien organisé. Et parmi les proches de Hitler en Bavière nombreux sont ceux qui ont des choses à cacher : ils feront tout pour que l&#39;enquête échoue. Plus Gunther approchera de la vérité, plus sa vie sera menacée.</p>
+        
+      </div>
+
+      <div class="actions">
+         <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/42#a1.s147.r7389.c4" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-availability">
+          📋 Vérifier la disponibilité du livre
+        </a>
+        <button onclick="history.back()" class="btn-secondary">
+          ← Retour
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <p>&copy; 2025 - Bibliothèque de l'ASCEE</p>
+    <p>7323 livres disponibles</p>
+  </footer>
+
+  <script>
+    // Gérer les images manquantes avec un fallback propre
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.livre-card-cover img, .livre-cover img').forEach(img => {
+        img.addEventListener('error', function() {
+          if (this.dataset.fallbackApplied) return;
+          this.dataset.fallbackApplied = 'true';
+          
+          this.style.display = 'none';
+          
+          const fallback = document.createElement('div');
+          fallback.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            opacity: 0.7;
+          `;
+          fallback.textContent = '📚';
+          
+          this.parentElement.style.position = 'relative';
+          this.parentElement.appendChild(fallback);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

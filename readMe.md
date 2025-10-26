@@ -1,5 +1,15 @@
 # ✅ Checklist complète des fichiers à créer
 
+# Principales Commandes
+
+# Tout en une fois
+```
+cd ~/Sites\ web/bibliothequeASCEE
+node scripts/import-csv-final.js livres.csv
+node scripts/download-from-json.js  # Si nouvelles images
+npm start  # Tester
+```
+
 ## 📁 Structure complète du projet
 
 ```
