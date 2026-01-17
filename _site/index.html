@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil -  La Bibiothèque de l'ASCEE</title>
   <meta name="description" content="Catalogue de 7240 livres">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/bibliothequeASCEE/css/style.css">
 </head>
 <body>
 
@@ -35,13 +35,13 @@
   
   <header class="site-header">
     <nav class="nav-main" id="menu">
-      <a href="/" class="logo">📚 La Bibiothèque de l'ASCEE</a>
+      <a href="/bibliothequeASCEE/" class="logo">📚 La Bibiothèque de l'ASCEE</a>
       <ul class="nav-list">
-        <li><a class="btn-secondary" href="/">🏠 Accueil</a></li>
-        <li><a class="btn-secondary" href="/categories/">🗂️ Catégories</a></li>
-        <li><a class="btn-secondary" href="/recherche/">🔎 Recherche</a></li>
-        <li><a class="btn-secondary" href="/reservation/">🧾 Réservation</a></li>
-        <li><a class="btn-secondary" href="/suggestions/">📥 Suggestions</a></li>
+        <li><a class="btn-secondary" href="/bibliothequeASCEE/">🏠 Accueil</a></li>
+        <li><a class="btn-secondary" href="/bibliothequeASCEE/categories/">🗂️ Catégories</a></li>
+        <li><a class="btn-secondary" href="/bibliothequeASCEE/recherche/">🔎 Recherche</a></li>
+        <li><a class="btn-secondary" href="/bibliothequeASCEE/reservation/">🧾 Réservation</a></li>
+        <li><a class="btn-secondary" href="/bibliothequeASCEE/suggestions/">📥 Suggestions</a></li>
         <li><a class="btn-secondary" href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/16">👤 Votre compte</a></li>    
       </ul>
     </nav>
@@ -106,9 +106,9 @@
   const searchResults = document.getElementById('searchResults');
   const searchInfo = document.getElementById('searchInfo');
   const searchLoading = document.getElementById('searchLoading');
-  const imagesPath = '/images/covers/';
+  const imagesPath = '/bibliothequeASCEE/images/covers/';
 
-  fetch('/search.json')
+  fetch('/bibliothequeASCEE/search.json')
     .then(response => response.json())
     .then(data => {
       booksData = data;
@@ -14958,10 +14958,10 @@
     
       
         <article class="livre-card">
-          <a href="/livre/7409/">
+          <a href="/bibliothequeASCEE/livre/7409/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7409.webp"
+                src="/bibliothequeASCEE/images/covers/7409.webp"
                 alt="Couverture de La traque"
                 loading="lazy"
                 width="200"
@@ -14976,10 +14976,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7407/">
+          <a href="/bibliothequeASCEE/livre/7407/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7407.webp"
+                src="/bibliothequeASCEE/images/covers/7407.webp"
                 alt="Couverture de Rouge Sibérie"
                 loading="lazy"
                 width="200"
@@ -14994,10 +14994,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7406/">
+          <a href="/bibliothequeASCEE/livre/7406/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7406.webp"
+                src="/bibliothequeASCEE/images/covers/7406.webp"
                 alt="Couverture de Mille regrets"
                 loading="lazy"
                 width="200"
@@ -15012,10 +15012,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7399/">
+          <a href="/bibliothequeASCEE/livre/7399/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7399.webp"
+                src="/bibliothequeASCEE/images/covers/7399.webp"
                 alt="Couverture de Les Femmes du bout du monde"
                 loading="lazy"
                 width="200"
@@ -15030,10 +15030,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7397/">
+          <a href="/bibliothequeASCEE/livre/7397/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7397.webp"
+                src="/bibliothequeASCEE/images/covers/7397.webp"
                 alt="Couverture de Fille en colère sur un banc de pierre"
                 loading="lazy"
                 width="200"
@@ -15048,10 +15048,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7396/">
+          <a href="/bibliothequeASCEE/livre/7396/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7396.webp"
+                src="/bibliothequeASCEE/images/covers/7396.webp"
                 alt="Couverture de Retour de service"
                 loading="lazy"
                 width="200"
@@ -15066,10 +15066,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7395/">
+          <a href="/bibliothequeASCEE/livre/7395/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7395.webp"
+                src="/bibliothequeASCEE/images/covers/7395.webp"
                 alt="Couverture de Seules les bêtes"
                 loading="lazy"
                 width="200"
@@ -15084,10 +15084,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7394/">
+          <a href="/bibliothequeASCEE/livre/7394/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7394.webp"
+                src="/bibliothequeASCEE/images/covers/7394.webp"
                 alt="Couverture de Incendie nocturne"
                 loading="lazy"
                 width="200"
@@ -15102,10 +15102,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7393/">
+          <a href="/bibliothequeASCEE/livre/7393/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7393.webp"
+                src="/bibliothequeASCEE/images/covers/7393.webp"
                 alt="Couverture de Les enquêtes du maître d&#39;hôtel de François Ier - Tome 5 : À la table du sultan"
                 loading="lazy"
                 width="200"
@@ -15120,10 +15120,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7310/">
+          <a href="/bibliothequeASCEE/livre/7310/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7310.webp"
+                src="/bibliothequeASCEE/images/covers/7310.webp"
                 alt="Couverture de Silo origines"
                 loading="lazy"
                 width="200"
@@ -15138,10 +15138,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7309/">
+          <a href="/bibliothequeASCEE/livre/7309/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7309.webp"
+                src="/bibliothequeASCEE/images/covers/7309.webp"
                 alt="Couverture de Ils sont chez nous"
                 loading="lazy"
                 width="200"
@@ -15156,10 +15156,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7308/">
+          <a href="/bibliothequeASCEE/livre/7308/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7308.webp"
+                src="/bibliothequeASCEE/images/covers/7308.webp"
                 alt="Couverture de Tu nous appartiens"
                 loading="lazy"
                 width="200"
@@ -15174,10 +15174,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7307/">
+          <a href="/bibliothequeASCEE/livre/7307/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7307.webp"
+                src="/bibliothequeASCEE/images/covers/7307.webp"
                 alt="Couverture de On ne parle pas de ces choses-là"
                 loading="lazy"
                 width="200"
@@ -15192,10 +15192,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7306/">
+          <a href="/bibliothequeASCEE/livre/7306/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7306.webp"
+                src="/bibliothequeASCEE/images/covers/7306.webp"
                 alt="Couverture de L&#39;Arabe Du Futur, une jeunesse au Moyen-Orient (1978-2011) - Tome 2"
                 loading="lazy"
                 width="200"
@@ -15210,10 +15210,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7305/">
+          <a href="/bibliothequeASCEE/livre/7305/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7305.webp"
+                src="/bibliothequeASCEE/images/covers/7305.webp"
                 alt="Couverture de Mon vrai nom est Elisabeth"
                 loading="lazy"
                 width="200"
@@ -15228,10 +15228,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7304/">
+          <a href="/bibliothequeASCEE/livre/7304/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7304.webp"
+                src="/bibliothequeASCEE/images/covers/7304.webp"
                 alt="Couverture de La Femme De Ménage - : Les secrets de la femme de ménage"
                 loading="lazy"
                 width="200"
@@ -15246,10 +15246,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7303/">
+          <a href="/bibliothequeASCEE/livre/7303/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7303.webp"
+                src="/bibliothequeASCEE/images/covers/7303.webp"
                 alt="Couverture de La Vérité sur l&#39;Affaire Harry Quebert"
                 loading="lazy"
                 width="200"
@@ -15264,10 +15264,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7302/">
+          <a href="/bibliothequeASCEE/livre/7302/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7302.webp"
+                src="/bibliothequeASCEE/images/covers/7302.webp"
                 alt="Couverture de Ceci n&#39;est pas un fait divers"
                 loading="lazy"
                 width="200"
@@ -15282,10 +15282,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7301/">
+          <a href="/bibliothequeASCEE/livre/7301/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7301.webp"
+                src="/bibliothequeASCEE/images/covers/7301.webp"
                 alt="Couverture de Sel (Les Enquêtes du département V, Tome 9)"
                 loading="lazy"
                 width="200"
@@ -15300,10 +15300,10 @@
         </article>
       
         <article class="livre-card">
-          <a href="/livre/7300/">
+          <a href="/bibliothequeASCEE/livre/7300/">
             <div class="livre-card-cover">
               <img 
-                src="/images/covers/7300.webp"
+                src="/bibliothequeASCEE/images/covers/7300.webp"
                 alt="Couverture de Trois amis en quête de sagesse"
                 loading="lazy"
                 width="200"
@@ -15321,7 +15321,7 @@
   </div>
   
   <div class="home-cta">
-    <a href="/catalogue/" class="btn-primary btn-large">Voir tout le catalogue</a>
+    <a href="/bibliothequeASCEE/catalogue/" class="btn-primary btn-large">Voir tout le catalogue</a>
   </div>
 </section>
     
