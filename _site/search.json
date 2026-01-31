@@ -25348,14 +25348,14 @@
   },{
     "id": "3633",
     "titre": "Le château d'amour",
-    "auteur": "QUINTREC Charles",
+    "auteur": "leQUINTREC Charles",
     "type": "Littérature française",
     "resume": "",
     "url": "/livre/3633/"
   },{
     "id": "3634",
     "titre": "Les nuits du Parc-Lann",
-    "auteur": "QUINTREC Charles",
+    "auteur": "leQUINTREC Charles",
     "type": "Littérature française",
     "resume": "",
     "url": "/livre/3634/"
@@ -28882,7 +28882,7 @@
     "url": "/livre/4137/"
   },{
     "id": "4138",
-    "titre": "La femme de ménage",
+    "titre": "La femme de ménage - Tome 1",
     "auteur": "McFADDEN Freida",
     "type": "Policier suspens thriller",
     "resume": "Chaque jour, Millie fait le ménage dans la belle maison des Winchester, une riche famille new-yorkaise. Elle récupère aussi leur fille à l'école et prépare les repas avant d'aller se coucher dans sa c...",
@@ -50792,9 +50792,9 @@
     "url": "/livre/7303/"
   },{
     "id": "7304",
-    "titre": "La Femme De Ménage - : Les secrets de la femme de ménage",
+    "titre": "La femme de ménage : Les secrets de la femme de ménage - Tome 2",
     "auteur": "McFADDEN Freida",
-    "type": "Littérature française",
+    "type": "Policier suspens thriller",
     "resume": "Avec ce nouvel emploi, Millie semble avoir une chance en or. Chez les Garrick, un couple fortuné qui possède un somptueux appartement avec vue sur Manhattan, elle fait le ménage et prépare les repas d...",
     "url": "/livre/7304/"
   },{
@@ -51413,4 +51413,60 @@
     "type": "Policier suspens thriller",
     "resume": "Comment réagir quand, à huit ans, on vous somme de savoir \"qui aimer, comment et jusqu'où\" ? Comment survivre quand, après un événement affreux dont on a été témoin, on vous demande de trahir la vérit...",
     "url": "/livre/7416/"
+  },{
+    "id": "7417",
+    "titre": "Mafalda et ses amis",
+    "auteur": "QUINO ",
+    "type": "Bande Dessinée",
+    "resume": "",
+    "url": "/livre/7417/"
+  },{
+    "id": "7418",
+    "titre": "Mafalda (1)",
+    "auteur": "QUINO ",
+    "type": "Bande Dessinée",
+    "resume": "",
+    "url": "/livre/7418/"
+  },{
+    "id": "7419",
+    "titre": "Encore Mafalda",
+    "auteur": "QUINO ",
+    "type": "",
+    "resume": "",
+    "url": "/livre/7419/"
+  },{
+    "id": "7420",
+    "titre": "Tant mieux",
+    "auteur": "NOTHOMB Amélie",
+    "type": "Littérature française",
+    "resume": "« Tant mieux : la version joyeuse du sang-froid » Amélie Nothomb Pour la première fois, après son père dans Premier sang (2021) et Psychopompe (2023), Amélie Nothomb évoque sa mère, et le lien singuli...",
+    "url": "/livre/7420/"
+  },{
+    "id": "7421",
+    "titre": "La Maison vide",
+    "auteur": "MAUVIGNIER Laurent",
+    "type": "Littérature française",
+    "resume": "En 1976, mon père a rouvert la maison qu’il avait reçue de sa mère, restée fermée pendant vingt ans. À l’intérieur : un piano, une commode au marbre ébréché, une Légion d’honneur, des photographies su...",
+    "url": "/livre/7421/"
+  },{
+    "id": "7422",
+    "titre": "La femme de ménage : La femme de ménage voit tout - Tome 4",
+    "auteur": "McFADDEN Freida",
+    "type": "Policier suspens thriller",
+    "resume": "Après avoir été au service des autres en tant que femme de ménage, Millie s'est enfin construit une vie à elle. Elle vient même d'emménager dans une belle maison, à l'abri d'une petite impasse chic et...",
+    "url": "/livre/7422/"
+  },{
+    "id": "7423",
+    "titre": "La femme de ménage : La femme de ménage se marie - Tome 3",
+    "auteur": "McFADDEN Freida",
+    "type": "Policier suspens thriller",
+    "resume": "Aujourd’hui est censé être le plus beau jour de la vie de Millie. La femme de ménage se marie avec Enzo, l’homme de ses rêves, et rien ne peut gâcher son bonheur. D’autant que ses parents, avec lesque...",
+    "url": "/livre/7423/"
+  },{
+    "id": "7424",
+    "titre": "Les Grandes Oubliées - Pourquoi l'histoire a effacé les femmes",
+    "auteur": "LECOQ \nTitiou",
+    "type": "Bande Dessinée",
+    "resume": "Le livre phénomène de Titiou Lecoq en bande dessinée De tout temps, les femmes ont agi. Elles ont régné, écrit, milité, créé, combattu, crié parfois. Et pourtant elles sont pour la plupart absentes de...",
+    "url": "/livre/7424/"
   }]
