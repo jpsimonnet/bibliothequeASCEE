@@ -9,7 +9,7 @@ on:
     - cron: '0 3 * * *'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -48,11 +48,18 @@ jobs:
             "https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP/download?path=%2Fcouvertures"
           mkdir -p /tmp/couvertures
           unzip -o couvertures.zip -d /tmp/couvertures
-          # Copier les webp dans le dossier covers (ecrase si plus recent)
           find /tmp/couvertures -name "*.webp" -exec cp {} src/images/covers/ \;
           echo "Covers importees depuis Nextcloud: $(find /tmp/couvertures -name '*.webp' | wc -l)"
           echo "Total covers: $(ls src/images/covers/*.webp | wc -l)"
           rm -rf /tmp/couvertures couvertures.zip
+
+      - name: Commit new covers to repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/images/covers/*.webp
+          git diff --cached --quiet || git commit -m "Import couvertures depuis mDrive"
+          git push || true
 
       - name: Build with 11ty
         run: npm run build
