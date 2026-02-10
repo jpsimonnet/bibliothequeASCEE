@@ -7,7 +7,11 @@
     "build": "NODE_ENV=production eleventy --pathprefix=/bibliothequeASCEE/",
     "clean": "rm -rf _site"
   },
-  "keywords": ["11ty", "bibliothèque", "livres"],
+  "keywords": [
+    "11ty",
+    "bibliothèque",
+    "livres"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {

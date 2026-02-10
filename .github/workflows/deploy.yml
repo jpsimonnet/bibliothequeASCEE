@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    # Rebuild automatique chaque nuit a 3h (recupère les dernières données Nextcloud)
+    - cron: '0 3 * * *'
 
 permissions:
   contents: read
@@ -29,6 +32,27 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Download CSV from Nextcloud
+        run: |
+          curl -L -o livres.csv \
+            "https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP/download?path=%2F&files=livres.csv"
+          echo "CSV: $(wc -l < livres.csv) lignes"
+
+      - name: Convert CSV to JSON
+        run: node scripts/import-csv-final.js livres.csv
+
+      - name: Download new covers from Nextcloud
+        run: |
+          curl -L -o couvertures.zip \
+            "https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP/download?path=%2Fcouvertures"
+          mkdir -p /tmp/couvertures
+          unzip -o couvertures.zip -d /tmp/couvertures
+          # Copier les webp dans le dossier covers (ecrase si plus recent)
+          find /tmp/couvertures -name "*.webp" -exec cp {} src/images/covers/ \;
+          echo "Covers importees depuis Nextcloud: $(find /tmp/couvertures -name '*.webp' | wc -l)"
+          echo "Total covers: $(ls src/images/covers/*.webp | wc -l)"
+          rm -rf /tmp/couvertures couvertures.zip
 
       - name: Build with 11ty
         run: npm run build
