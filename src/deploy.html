@@ -1,0 +1,98 @@
+---
+layout: false
+permalink: deploy.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Déployer le site</title>
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f5f5f5;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 3rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 400px;
+    }
+    h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    p { color: #666; margin-bottom: 2rem; font-size: 0.95rem; }
+    button {
+      background: #2ea44f;
+      color: white;
+      border: none;
+      padding: 14px 36px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    button:hover { background: #2c974b; }
+    button:disabled { background: #94d3a2; cursor: not-allowed; }
+    .status {
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      min-height: 1.5em;
+    }
+    .success { color: #2ea44f; }
+    .error { color: #d73a49; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Bibliothèque ASCEE</h1>
+    <p>Mettre à jour le site avec les dernières données du mDrive.</p>
+    <button id="deployBtn" onclick="deploy()">Lancer le déploiement</button>
+    <div id="status" class="status"></div>
+  </div>
+  <script>
+    async function deploy() {
+      const btn = document.getElementById('deployBtn');
+      const status = document.getElementById('status');
+      btn.disabled = true;
+      btn.textContent = 'Lancement...';
+      status.textContent = '';
+      status.className = 'status';
+      try {
+        const res = await fetch(
+          'https://api.github.com/repos/jpsimonnet/bibliothequeASCEE/actions/workflows/deploy.yml/dispatches',
+          {
+            method: 'POST',
+            headers: {
+              'Authorization': 'Bearer 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',
+              'Accept': 'application/vnd.github.v3+json'
+            },
+            body: JSON.stringify({ ref: 'main' })
+          }
+        );
+        if (res.status === 204) {
+          status.textContent = 'Déploiement lancé ! Le site sera mis à jour dans quelques minutes.';
+          status.className = 'status success';
+        } else {
+          const data = await res.json();
+          status.textContent = 'Erreur : ' + (data.message || res.status);
+          status.className = 'status error';
+        }
+      } catch (e) {
+        status.textContent = 'Erreur réseau : ' + e.message;
+        status.className = 'status error';
+      }
+      btn.disabled = false;
+      btn.textContent = 'Lancer le déploiement';
+    }
+  </script>
+</body>
+</html>
