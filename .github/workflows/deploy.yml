@@ -42,6 +42,9 @@ jobs:
       - name: Convert CSV to JSON
         run: node scripts/import-csv-final.js livres.csv
 
+      - name: Extract ebooks from Calibre database
+        run: node scripts/extract-ebooks.js
+
       - name: Download new covers from Nextcloud
         run: |
           curl -L -o couvertures.zip \
@@ -62,7 +65,10 @@ jobs:
           git push || true
 
       - name: Build with 11ty
-        run: npm run build
+        run: npx eleventy --pathprefix=/bibliothequeASCEE/
+        env:
+          NODE_OPTIONS: "--max-old-space-size=8192"
+          NODE_ENV: "production"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
