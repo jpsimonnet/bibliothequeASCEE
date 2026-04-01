@@ -1,13 +1,13 @@
 ---
 layout: layouts/base.njk
-title: Catégories - Bibliothèque numérique
-permalink: /numerique/categories/
+title: Catégories - Epubs
+permalink: /epub/categories/
 ---
 
 <div class="categories-container">
 
   <header class="categories-header">
-    <h1>Catégories - Bibliothèque numérique</h1>
+    <h1>Catégories - Epubs</h1>
     <p>{{ collections.ebookCategoriesUniques.length }} catégories disponibles</p>
   </header>
 
@@ -22,7 +22,7 @@ permalink: /numerique/categories/
         {% endfor %}
 
         <article class="categorie-card">
-          <a href="{{ ('/numerique/categorie/' + tag|slugify + '/') | url }}">
+          <a href="{{ ('/epub/categorie/' + tag|slugify + '/') | url }}">
             <div class="categorie-preview">
               {% set shown = 0 %}
               {% for ebook in ebooks %}

@@ -3,9 +3,9 @@ pagination:
   data: collections.ebookAuteursUniques
   size: 1
   alias: ebookAuteur
-permalink: "/numerique/auteur/{{ ebookAuteur | slugify }}/"
+permalink: "/epub/auteur/{{ ebookAuteur | slugify }}/"
 eleventyComputed:
-  title: "{{ ebookAuteur }} - Bibliothèque numérique"
+  title: "{{ ebookAuteur }} - Epubs"
 ---
 {% extends "layouts/base.njk" %}
 
@@ -14,8 +14,8 @@ eleventyComputed:
 
   <nav class="breadcrumb">
     <a href="{{ '/' | url }}">Accueil</a> /
-    <a href="{{ '/numerique/' | url }}">Bibliothèque numérique</a> /
-    <a href="{{ '/numerique/auteurs/' | url }}">Auteurs</a> /
+    <a href="{{ '/epub/' | url }}">Epubs</a> /
+    <a href="{{ '/epub/auteurs/' | url }}">Auteurs</a> /
     <span>{{ ebookAuteur }}</span>
   </nav>
 
@@ -34,7 +34,7 @@ eleventyComputed:
     {% for ebook in ebooks %}
       {% if ebook.auteur == ebookAuteur %}
         <article class="livre-card livre-card--numerique">
-          <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+          <a href="{{ ('/epub/livre/' + ebook.id + '/') | url }}">
             <div class="livre-card-cover">
               <img
                 src="{{ ebook | ebookCover }}"

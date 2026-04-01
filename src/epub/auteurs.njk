@@ -1,13 +1,13 @@
 ---
 layout: layouts/base.njk
-title: Auteurs - Bibliothèque numérique
-permalink: /numerique/auteurs/
+title: Auteurs - Epubs
+permalink: /epub/auteurs/
 ---
 
 <div class="auteurs-container">
 
   <header class="auteurs-header">
-    <h1>Auteurs - Bibliothèque numérique</h1>
+    <h1>Auteurs - Epubs</h1>
     <p>{{ collections.ebookAuteursUniques.length }} auteurs</p>
   </header>
 
@@ -24,7 +24,7 @@ permalink: /numerique/auteurs/
     {% for auteur in collections.ebookAuteursUniques %}
       {% if auteur %}
         <article class="auteur-card" data-auteur="{{ auteur | lower }}">
-          <a href="{{ ('/numerique/auteur/' + auteur|slugify + '/') | url }}">
+          <a href="{{ ('/epub/auteur/' + auteur|slugify + '/') | url }}">
             <h3>{{ auteur }}</h3>
             <p class="livre-count">Voir les ebooks &#8594;</p>
           </a>

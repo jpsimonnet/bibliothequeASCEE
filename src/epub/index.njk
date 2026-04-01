@@ -1,16 +1,17 @@
 ---
 layout: layouts/base.njk
-title: Bibliothèque numérique
+title: "Biblioth\u00e8que d'epubs libres de droits"
 pagination:
   data: ebooks
   size: 48
   alias: ebooksPage
-permalink: "/numerique/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+permalink: "/epub/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
 ---
 
 <div class="catalogue-container">
-  <h1>Bibliothèque numérique</h1>
-  <p>{{ ebooks.length }} ebooks disponibles en téléchargement</p>
+  <h1>Biblioth&#232;que d'epubs libres de droits</h1>
+  <p>Nous vous proposons une s&#233;lection d'epubs libres de droits en t&#233;l&#233;chargements gratuits. Red&#233;couvrez des livres d'auteurs qui ont travers&#233; le si&#232;cle.</p>
+  <p>{{ ebooks.length }} epubs disponibles</p>
 
   <div class="search-bar">
     <input
@@ -36,7 +37,7 @@ permalink: "/numerique/{% if pagination.pageNumber > 0 %}page-{{ pagination.page
         data-auteur="{{ ebook.auteur | lower }}"
         data-annee="{{ ebook.annee or '0' }}"
         data-ordre="{{ globalIndex }}">
-        <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+        <a href="{{ ('/epub/livre/' + ebook.id + '/') | url }}">
           <div class="livre-card-cover">
             <img
               src="{{ ebook | ebookCover }}"
@@ -69,8 +70,8 @@ permalink: "/numerique/{% if pagination.pageNumber > 0 %}page-{{ pagination.page
   </nav>
 
   <div class="home-cta" style="margin-top: 2rem;">
-    <a href="{{ '/numerique/categories/' | url }}" class="btn-secondary">Parcourir par catégorie</a>
-    <a href="{{ '/numerique/auteurs/' | url }}" class="btn-secondary">Parcourir par auteur</a>
+    <a href="{{ '/epub/categories/' | url }}" class="btn-secondary">Parcourir par catégorie</a>
+    <a href="{{ '/epub/auteurs/' | url }}" class="btn-secondary">Parcourir par auteur</a>
   </div>
 </div>
 

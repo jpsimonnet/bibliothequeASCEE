@@ -3,9 +3,9 @@ pagination:
   data: collections.ebookCategoriesUniques
   size: 1
   alias: tag
-permalink: "/numerique/categorie/{{ tag | slugify }}/"
+permalink: "/epub/categorie/{{ tag | slugify }}/"
 eleventyComputed:
-  title: "{{ tag }} - Bibliothèque numérique"
+  title: "{{ tag }} - Epubs"
 ---
 {% extends "layouts/base.njk" %}
 
@@ -14,8 +14,8 @@ eleventyComputed:
 
   <nav class="breadcrumb">
     <a href="{{ '/' | url }}">Accueil</a> /
-    <a href="{{ '/numerique/' | url }}">Bibliothèque numérique</a> /
-    <a href="{{ '/numerique/categories/' | url }}">Catégories</a> /
+    <a href="{{ '/epub/' | url }}">Epubs</a> /
+    <a href="{{ '/epub/categories/' | url }}">Catégories</a> /
     <span>{{ tag }}</span>
   </nav>
 
@@ -53,7 +53,7 @@ eleventyComputed:
           data-auteur="{{ ebook.auteur | lower }}"
           data-annee="{{ ebook.annee or '0' }}"
           data-ordre="{{ loop.index0 }}">
-          <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+          <a href="{{ ('/epub/livre/' + ebook.id + '/') | url }}">
             <div class="livre-card-cover">
               <img
                 src="{{ ebook | ebookCover }}"

@@ -3,7 +3,7 @@ pagination:
   data: ebooks
   size: 1
   alias: ebook
-permalink: "/numerique/livre/{{ ebook.id }}/"
+permalink: "/epub/livre/{{ ebook.id }}/"
 eleventyComputed:
   title: "{{ ebook.titre }}"
 ---
@@ -14,7 +14,7 @@ eleventyComputed:
 
   <nav class="breadcrumb">
     <a href="{{ '/' | url }}">Accueil</a> /
-    <a href="{{ '/numerique/' | url }}">Bibliothèque numérique</a> /
+    <a href="{{ '/epub/' | url }}">Epubs</a> /
     <span>{{ ebook.titre }}</span>
   </nav>
 

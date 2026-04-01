@@ -15,12 +15,15 @@ title: Accueil
       <li>Jeudi de 13h à 14h</li>
     </ul>
     
-    <h2>📚 Prêts de livres</h2>
+    <h2>📚 Pr&#234;ts de livres</h2>
     <p><strong>Vous pouvez emprunter :</strong></p>
         <ul>
       <li>5 livres</li>
       <li>pendant 4 semaines</li>
     </ul>
+
+    <h2>📖 Nouveau : T&#233;l&#233;charger des epubs libres de droits</h2>
+    <p>Nous vous proposons une s&#233;lection d'epubs libres de droits <a href="{{ '/epub/' | url }}">en t&#233;l&#233;chargement gratuit</a>. Red&#233;couvrez des livres d'auteurs qui ont travers&#233; le si&#232;cle.</p>
 
   </div>
 
@@ -237,12 +240,12 @@ title: Accueil
 </section>
 
 <section class="home-featured home-numerique">
-  <h2>Bibliothèque numérique</h2>
-  <p>{{ ebooks.length }} ebooks disponibles en téléchargement</p>
+  <h2>Biblioth&#232;que d'epubs libres de droits</h2>
+  <p>Nous vous proposons une s&#233;lection d'epubs libres de droits en t&#233;l&#233;chargements gratuits. Red&#233;couvrez des livres d'auteurs qui ont travers&#233; le si&#232;cle.</p>
   <div class="livres-grid">
     {% for ebook in ebooks | limit(8) %}
       <article class="livre-card livre-card--numerique">
-        <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+        <a href="{{ ('/epub/livre/' + ebook.id + '/') | url }}">
           <div class="livre-card-cover">
             <img
               src="{{ ebook | ebookCover }}"
@@ -263,6 +266,6 @@ title: Accueil
   </div>
 
   <div class="home-cta">
-    <a href="{{ '/numerique/' | url }}" class="btn-primary btn-large btn-numerique">Voir tous les ebooks</a>
+    <a href="{{ '/epub/' | url }}" class="btn-primary btn-large btn-numerique">Voir tous les ebooks</a>
   </div>
 </section>
