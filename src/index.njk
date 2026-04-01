@@ -34,12 +34,17 @@ title: Accueil
 
 
  <div class="search-advanced" id="recherche">
-    <input 
-      type="search" 
-      id="globalSearch" 
-      placeholder="Rechercher parmi les livres..."
+    <input
+      type="search"
+      id="globalSearch"
+      placeholder="Rechercher parmi tous les livres..."
       autocomplete="off"
     >
+    <div class="search-filters" id="searchFilters">
+      <button class="filter-btn active" data-filter="tous">Tous</button>
+      <button class="filter-btn" data-filter="physique">Livres physiques</button>
+      <button class="filter-btn" data-filter="numerique">Ebooks</button>
+    </div>
     <p class="search-info" id="searchInfo">Entrez au moins 2 caractères pour rechercher</p>
   </div>
 
@@ -60,17 +65,32 @@ title: Accueil
   const searchInfo = document.getElementById('searchInfo');
   const searchLoading = document.getElementById('searchLoading');
   const imagesPath = '{{ "/images/covers/" | url }}';
+  const defaultCover = '{{ "/images/0-livre-par-defaut.svg" | url }}';
+
+  let currentFilter = 'tous';
 
   fetch('{{ "/search.json" | url }}')
     .then(response => response.json())
     .then(data => {
       booksData = data;
-      searchInfo.textContent = `${data.length} livres disponibles. Entrez au moins 2 caractères pour rechercher.`;
+      const physiques = data.filter(b => b.source === 'physique').length;
+      const numeriques = data.filter(b => b.source === 'numerique').length;
+      searchInfo.textContent = `${data.length} livres disponibles (${physiques} physiques, ${numeriques} ebooks). Entrez au moins 2 caractères pour rechercher.`;
     })
     .catch(error => {
       searchInfo.textContent = 'Erreur de chargement des données.';
       console.error('Erreur:', error);
     });
+
+  // Gestion des filtres
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      performSearch();
+    });
+  });
 
   let searchTimeout;
   searchInput.addEventListener('input', () => {
@@ -80,16 +100,23 @@ title: Accueil
 
   function performSearch() {
     const query = searchInput.value.toLowerCase().trim();
-    
+
     if (query.length < 2) {
       searchResults.innerHTML = '';
-      searchInfo.textContent = `${booksData.length} livres disponibles. Entrez au moins 2 caractères pour rechercher.`;
+      const physiques = booksData.filter(b => b.source === 'physique').length;
+      const numeriques = booksData.filter(b => b.source === 'numerique').length;
+      searchInfo.textContent = `${booksData.length} livres disponibles (${physiques} physiques, ${numeriques} ebooks). Entrez au moins 2 caractères pour rechercher.`;
       return;
     }
 
     searchLoading.style.display = 'block';
 
-    const results = booksData.filter(book => {
+    let filtered = booksData;
+    if (currentFilter !== 'tous') {
+      filtered = booksData.filter(b => b.source === currentFilter);
+    }
+
+    const results = filtered.filter(book => {
       return book.titre.toLowerCase().includes(query) ||
              book.auteur.toLowerCase().includes(query) ||
              (book.resume && book.resume.toLowerCase().includes(query));
@@ -108,12 +135,20 @@ title: Accueil
 
     searchInfo.textContent = `${results.length} résultat${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''} pour "${query}"`;
     
-    searchResults.innerHTML = results.map(book => `
-      <article class="livre-card">
+    searchResults.innerHTML = results.map(book => {
+      const isEbook = book.source === 'numerique';
+      const coverSrc = isEbook ? (book.cover || defaultCover) : `${imagesPath}${book.id}.webp`;
+      const sourceBadge = isEbook
+        ? '<span class="search-source-badge search-source-badge--numerique">Télécharger</span>'
+        : '<span class="search-source-badge search-source-badge--physique">À emprunter</span>';
+      const cardClass = isEbook ? 'livre-card livre-card--numerique' : 'livre-card';
+
+      return `
+      <article class="${cardClass}">
         <a href="${book.url}">
           <div class="livre-card-cover">
-            <img 
-              src="${imagesPath}${book.id}.webp" 
+            <img
+              src="${coverSrc}"
               alt="${escapeHtml(book.titre)}"
               loading="lazy"
               width="200"
@@ -122,13 +157,15 @@ title: Accueil
             >
           </div>
           <div class="livre-card-info">
+            ${sourceBadge}
             ${book.type ? `<span class="livre-card-type">${escapeHtml(book.type)}</span>` : ''}
             <h3>${highlightText(escapeHtml(book.titre), query)}</h3>
             <p class="auteur">${highlightText(escapeHtml(book.auteur), query)}</p>
           </div>
         </a>
       </article>
-    `).join('');
+    `;
+    }).join('');
     
     // Gérer les images manquantes
     const defaultCover = '{{ "/images/0-livre-par-defaut.svg" | url }}';
@@ -196,5 +233,36 @@ title: Accueil
   
   <div class="home-cta">
     <a href="{{ '/catalogue/' | url }}" class="btn-primary btn-large">Voir tout le catalogue</a>
+  </div>
+</section>
+
+<section class="home-featured home-numerique">
+  <h2>Bibliothèque numérique</h2>
+  <p>{{ ebooks.length }} ebooks disponibles en téléchargement</p>
+  <div class="livres-grid">
+    {% for ebook in ebooks | limit(8) %}
+      <article class="livre-card livre-card--numerique">
+        <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+          <div class="livre-card-cover">
+            <img
+              src="{{ ebook | ebookCover }}"
+              alt="Couverture de {{ ebook.titre }}"
+              loading="lazy"
+              width="200"
+              height="300"
+            >
+          </div>
+          <div class="livre-card-info">
+            <span class="livre-card-type badge-numerique">Ebook</span>
+            <h3>{{ ebook.titre | truncate(50) }}</h3>
+            <p class="auteur">{{ ebook.auteur }}</p>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <div class="home-cta">
+    <a href="{{ '/numerique/' | url }}" class="btn-primary btn-large btn-numerique">Voir tous les ebooks</a>
   </div>
 </section>

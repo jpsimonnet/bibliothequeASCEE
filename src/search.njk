@@ -10,7 +10,20 @@ eleventyExcludeFromCollections: true
     "auteur": {{ livre.auteur | dump | safe }},
     "type": {{ livre.type | dump | safe }},
     "resume": {{ (livre.resume | truncate(200) | replace('\n', ' ') | replace('\r', '')) | dump | safe }},
-    "url": "{{ ('/livre/' + livre.id + '/') | url }}"
+    "url": "{{ ('/livre/' + livre.id + '/') | url }}",
+    "source": "physique"
+  },
+{%- endfor -%}
+{%- for ebook in ebooks -%}
+  {
+    "id": {{ ebook.id | dump | safe }},
+    "titre": {{ ebook.titre | dump | safe }},
+    "auteur": {{ ebook.auteur | dump | safe }},
+    "type": {{ (ebook.tags[0] or '') | dump | safe }},
+    "resume": {{ (ebook.resume | truncate(200) | replace('\n', ' ') | replace('\r', '')) | dump | safe }},
+    "url": "{{ ('/numerique/livre/' + ebook.id + '/') | url }}",
+    "source": "numerique",
+    "cover": {{ (ebook | ebookCover) | dump | safe }}
   }{% if not loop.last %},{% endif %}
 {%- endfor -%}
 ]

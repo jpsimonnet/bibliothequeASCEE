@@ -1,0 +1,97 @@
+---
+pagination:
+  data: ebooks
+  size: 1
+  alias: ebook
+permalink: "/numerique/livre/{{ ebook.id }}/"
+eleventyComputed:
+  title: "{{ ebook.titre }}"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="livre-detail">
+
+  <nav class="breadcrumb">
+    <a href="{{ '/' | url }}">Accueil</a> /
+    <a href="{{ '/numerique/' | url }}">Bibliothèque numérique</a> /
+    <span>{{ ebook.titre }}</span>
+  </nav>
+
+  <div class="livre-grid">
+
+    <div class="livre-cover">
+      <img
+        src="{{ ebook | ebookCover }}"
+        alt="Couverture de {{ ebook.titre }}"
+        loading="lazy"
+        width="300"
+        height="auto"
+      >
+    </div>
+
+    <div class="livre-info">
+      <h1>{{ ebook.titre }}</h1>
+
+      <span class="badge badge-numerique">Ebook</span>
+
+      {% if ebook.tags.length > 0 %}
+      <p class="livre-type">
+        {% for tag in ebook.tags %}
+          <span class="badge">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      {% endif %}
+
+      <p class="auteur">
+        <strong>Auteur :</strong>
+        {{ ebook.auteur }}
+      </p>
+
+      {% if ebook.annee and ebook.annee != "0101" and ebook.annee != "0" %}
+      <p><strong>Année :</strong> {{ ebook.annee }}</p>
+      {% endif %}
+
+      {% if ebook.langues.length > 0 %}
+      <p><strong>Langue :</strong>
+        {% for langue in ebook.langues %}
+          {% if langue == "fra" %}Français{% elif langue == "eng" %}Anglais{% elif langue == "deu" %}Allemand{% else %}{{ langue }}{% endif %}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      </p>
+      {% endif %}
+
+      {% if ebook.serie %}
+      <p><strong>Série :</strong> {{ ebook.serie }}{% if ebook.serie_index %} (tome {{ ebook.serie_index }}){% endif %}</p>
+      {% endif %}
+
+      {% if ebook.format %}
+      <p><strong>Format :</strong> {{ ebook.format }}</p>
+      {% endif %}
+
+      <div class="resume">
+        <h2>Description</h2>
+        {% if ebook.resume %}
+          <p>{{ ebook.resume }}</p>
+        {% else %}
+          <p><em>Aucune description disponible.</em></p>
+        {% endif %}
+      </div>
+
+      <div class="actions">
+        {% if ebook.efile %}
+        <a href="{{ ebook | ebookDownload }}"
+           class="btn-download"
+           download>
+          Télécharger l'ebook (EPUB)
+        </a>
+        {% endif %}
+        <button onclick="history.back()" class="btn-secondary">
+          &#8592; Retour
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</article>
+{% endblock %}

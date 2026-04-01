@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+title: Catégories - Bibliothèque numérique
+permalink: /numerique/categories/
+---
+
+<div class="categories-container">
+
+  <header class="categories-header">
+    <h1>Catégories - Bibliothèque numérique</h1>
+    <p>{{ collections.ebookCategoriesUniques.length }} catégories disponibles</p>
+  </header>
+
+  <div class="categories-grid">
+    {% for tag in collections.ebookCategoriesUniques %}
+      {% if tag %}
+        {% set count = 0 %}
+        {% for ebook in ebooks %}
+          {% if tag in ebook.tags %}
+            {% set count = count + 1 %}
+          {% endif %}
+        {% endfor %}
+
+        <article class="categorie-card">
+          <a href="{{ ('/numerique/categorie/' + tag|slugify + '/') | url }}">
+            <div class="categorie-preview">
+              {% set shown = 0 %}
+              {% for ebook in ebooks %}
+                {% if tag in ebook.tags and shown < 2 and ebook.has_cover %}
+                  <img src="{{ ebook | ebookCover }}" alt="{{ ebook.titre }}" loading="lazy">
+                  {% set shown = shown + 1 %}
+                {% endif %}
+              {% endfor %}
+            </div>
+            <div class="categorie-info">
+              <h3>{{ tag }}</h3>
+              <p class="livre-count">{{ count }} ebook{% if count > 1 %}s{% endif %}</p>
+            </div>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

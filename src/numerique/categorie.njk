@@ -1,0 +1,124 @@
+---
+pagination:
+  data: collections.ebookCategoriesUniques
+  size: 1
+  alias: tag
+permalink: "/numerique/categorie/{{ tag | slugify }}/"
+eleventyComputed:
+  title: "{{ tag }} - Bibliothèque numérique"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="categorie-detail">
+
+  <nav class="breadcrumb">
+    <a href="{{ '/' | url }}">Accueil</a> /
+    <a href="{{ '/numerique/' | url }}">Bibliothèque numérique</a> /
+    <a href="{{ '/numerique/categories/' | url }}">Catégories</a> /
+    <span>{{ tag }}</span>
+  </nav>
+
+  <header class="categorie-header">
+    <h1>{{ tag }}</h1>
+    {% set count = 0 %}
+    {% for ebook in ebooks %}
+      {% if tag in ebook.tags %}
+        {% set count = count + 1 %}
+      {% endif %}
+    {% endfor %}
+    <p class="categorie-stats">{{ count }} ebook{% if count > 1 %}s{% endif %} dans cette catégorie</p>
+  </header>
+
+  <div class="search-bar">
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Rechercher dans cette catégorie..."
+      autocomplete="off"
+    >
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    {% for ebook in ebooks %}
+      {% if tag in ebook.tags %}
+        <article class="livre-card livre-card--numerique"
+          data-titre="{{ ebook.titre | lower }}"
+          data-auteur="{{ ebook.auteur | lower }}"
+          data-annee="{{ ebook.annee or '0' }}"
+          data-ordre="{{ loop.index0 }}">
+          <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+            <div class="livre-card-cover">
+              <img
+                src="{{ ebook | ebookCover }}"
+                alt="Couverture de {{ ebook.titre }}"
+                loading="lazy"
+                width="200"
+                height="300"
+              >
+            </div>
+            <div class="livre-card-info">
+              <span class="livre-card-type badge-numerique">Ebook</span>
+              <h3>{{ ebook.titre | truncate(60) }}</h3>
+              <p class="auteur">{{ ebook.auteur }}</p>
+            </div>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</article>
+
+<script>
+const searchInput = document.getElementById('searchInput');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const cards = Array.from(document.querySelectorAll('.livre-card'));
+
+let currentSort = 'default';
+
+searchInput.addEventListener('input', filterBooks);
+
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function filterBooks() {
+  const searchTerm = searchInput.value.toLowerCase();
+  cards.forEach(card => {
+    const titre = card.dataset.titre;
+    const auteur = card.dataset.auteur;
+    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    card.style.display = matches ? 'block' : 'none';
+  });
+}
+
+function sortBooks() {
+  const sorted = [...cards].sort((a, b) => {
+    switch(currentSort) {
+      case 'titre':
+        return a.dataset.titre.localeCompare(b.dataset.titre);
+      case 'auteur':
+        return a.dataset.auteur.localeCompare(b.dataset.auteur);
+      case 'annee':
+        return (parseInt(b.dataset.annee) || 0) - (parseInt(a.dataset.annee) || 0);
+      default:
+        return parseInt(a.dataset.ordre) - parseInt(b.dataset.ordre);
+    }
+  });
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+</script>
+{% endblock %}

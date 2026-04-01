@@ -1,0 +1,67 @@
+---
+pagination:
+  data: collections.ebookAuteursUniques
+  size: 1
+  alias: ebookAuteur
+permalink: "/numerique/auteur/{{ ebookAuteur | slugify }}/"
+eleventyComputed:
+  title: "{{ ebookAuteur }} - Bibliothèque numérique"
+---
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+<article class="auteur-detail">
+
+  <nav class="breadcrumb">
+    <a href="{{ '/' | url }}">Accueil</a> /
+    <a href="{{ '/numerique/' | url }}">Bibliothèque numérique</a> /
+    <a href="{{ '/numerique/auteurs/' | url }}">Auteurs</a> /
+    <span>{{ ebookAuteur }}</span>
+  </nav>
+
+  <header class="auteur-header">
+    <h1>{{ ebookAuteur }}</h1>
+    {% set count = 0 %}
+    {% for ebook in ebooks %}
+      {% if ebook.auteur == ebookAuteur %}
+        {% set count = count + 1 %}
+      {% endif %}
+    {% endfor %}
+    <p class="auteur-stats">{{ count }} ebook{% if count > 1 %}s{% endif %} disponible{% if count > 1 %}s{% endif %}</p>
+  </header>
+
+  <div class="livres-grid">
+    {% for ebook in ebooks %}
+      {% if ebook.auteur == ebookAuteur %}
+        <article class="livre-card livre-card--numerique">
+          <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+            <div class="livre-card-cover">
+              <img
+                src="{{ ebook | ebookCover }}"
+                alt="Couverture de {{ ebook.titre }}"
+                loading="lazy"
+                width="200"
+                height="300"
+              >
+            </div>
+            <div class="livre-card-info">
+              <span class="livre-card-type badge-numerique">Ebook</span>
+              <h3>{{ ebook.titre | truncate(60) }}</h3>
+              {% if ebook.annee and ebook.annee != "0101" and ebook.annee != "0" %}
+              <p class="livre-annee">{{ ebook.annee }}</p>
+              {% endif %}
+            </div>
+          </a>
+        </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="auteur-actions">
+    <button onclick="history.back()" class="btn-secondary">
+      &#8592; Retour aux auteurs
+    </button>
+  </div>
+
+</article>
+{% endblock %}

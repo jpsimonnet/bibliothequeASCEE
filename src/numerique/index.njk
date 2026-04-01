@@ -1,0 +1,205 @@
+---
+layout: layouts/base.njk
+title: Bibliothèque numérique
+pagination:
+  data: ebooks
+  size: 48
+  alias: ebooksPage
+permalink: "/numerique/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+---
+
+<div class="catalogue-container">
+  <h1>Bibliothèque numérique</h1>
+  <p>{{ ebooks.length }} ebooks disponibles en téléchargement</p>
+
+  <div class="search-bar">
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Rechercher dans les ebooks..."
+      autocomplete="off"
+    >
+    <p class="search-info" id="searchInfo" style="margin-top: 0.5rem; font-size: 0.9rem; color: #6b7280;"></p>
+    <div class="sort-buttons">
+      <button class="sort-btn active" data-sort="default">Ordre par défaut</button>
+      <button class="sort-btn" data-sort="titre">Trier par titre</button>
+      <button class="sort-btn" data-sort="auteur">Trier par auteur</button>
+      <button class="sort-btn" data-sort="annee">Trier par année</button>
+    </div>
+  </div>
+
+  <div class="livres-grid" id="livresGrid">
+    {% for ebook in ebooksPage %}
+      {% set globalIndex = loop.index0 + (pagination.pageNumber * 48) %}
+      <article class="livre-card livre-card--numerique"
+        data-titre="{{ ebook.titre | lower }}"
+        data-auteur="{{ ebook.auteur | lower }}"
+        data-annee="{{ ebook.annee or '0' }}"
+        data-ordre="{{ globalIndex }}">
+        <a href="{{ ('/numerique/livre/' + ebook.id + '/') | url }}">
+          <div class="livre-card-cover">
+            <img
+              src="{{ ebook | ebookCover }}"
+              alt="{{ ebook.titre }}"
+              loading="lazy"
+              width="200"
+              height="300"
+            >
+          </div>
+          <div class="livre-card-info">
+            <span class="livre-card-type badge-numerique">Ebook</span>
+            <h3>{{ ebook.titre | truncate(60) }}</h3>
+            <p class="auteur">{{ ebook.auteur }}</p>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <nav class="pagination">
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous | url }}">&#8592; Précédent</a>
+    {% endif %}
+
+    <span>Page {{ pagination.pageNumber + 1 }} sur {{ pagination.pages.length }}</span>
+
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next | url }}">Suivant &#8594;</a>
+    {% endif %}
+  </nav>
+
+  <div class="home-cta" style="margin-top: 2rem;">
+    <a href="{{ '/numerique/categories/' | url }}" class="btn-secondary">Parcourir par catégorie</a>
+    <a href="{{ '/numerique/auteurs/' | url }}" class="btn-secondary">Parcourir par auteur</a>
+  </div>
+</div>
+
+<script>
+let booksData = [];
+const searchInput = document.getElementById('searchInput');
+const searchInfo = document.getElementById('searchInfo');
+const sortButtons = document.querySelectorAll('.sort-btn');
+const livresGrid = document.getElementById('livresGrid');
+const originalCards = Array.from(document.querySelectorAll('.livre-card'));
+const defaultCover = '{{ "/images/0-livre-par-defaut.svg" | url }}';
+
+let currentSort = 'default';
+let isSearchMode = false;
+
+fetch('{{ "/search.json" | url }}')
+  .then(response => response.json())
+  .then(data => {
+    booksData = data.filter(b => b.source === 'numerique');
+  })
+  .catch(error => {
+    console.error('Erreur chargement search.json:', error);
+  });
+
+let searchTimeout;
+searchInput.addEventListener('input', () => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(performSearch, 300);
+});
+
+function performSearch() {
+  const query = searchInput.value.toLowerCase().trim();
+
+  if (query.length < 2) {
+    isSearchMode = false;
+    searchInfo.textContent = '';
+    livresGrid.innerHTML = '';
+    originalCards.forEach(card => livresGrid.appendChild(card));
+    sortBooks();
+    return;
+  }
+
+  if (booksData.length === 0) {
+    searchInfo.textContent = 'Chargement...';
+    return;
+  }
+
+  isSearchMode = true;
+
+  const results = booksData.filter(book => {
+    return book.titre.toLowerCase().includes(query) ||
+           book.auteur.toLowerCase().includes(query) ||
+           (book.resume && book.resume.toLowerCase().includes(query));
+  }).slice(0, 100);
+
+  searchInfo.textContent = `${results.length} résultat${results.length > 1 ? 's' : ''} trouvé${results.length > 1 ? 's' : ''}`;
+  displaySearchResults(results, query);
+}
+
+function displaySearchResults(results, query) {
+  livresGrid.innerHTML = results.map(book => `
+    <article class="livre-card livre-card--numerique">
+      <a href="${book.url}">
+        <div class="livre-card-cover">
+          <img
+            src="${book.cover || defaultCover}"
+            alt="${escapeHtml(book.titre)}"
+            loading="lazy"
+            width="200"
+            height="300"
+          >
+        </div>
+        <div class="livre-card-info">
+          <span class="livre-card-type badge-numerique">Ebook</span>
+          <h3>${highlightText(escapeHtml(book.titre), query)}</h3>
+          <p class="auteur">${highlightText(escapeHtml(book.auteur), query)}</p>
+        </div>
+      </a>
+    </article>
+  `).join('');
+
+  document.querySelectorAll('#livresGrid .livre-card-cover img').forEach(img => {
+    img.addEventListener('error', function() {
+      if (this.dataset.fallbackApplied) return;
+      this.dataset.fallbackApplied = 'true';
+      this.src = defaultCover;
+    });
+  });
+}
+
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (isSearchMode) return;
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    sortBooks();
+  });
+});
+
+function sortBooks() {
+  if (isSearchMode) return;
+  const cards = Array.from(livresGrid.querySelectorAll('.livre-card'));
+  const sorted = [...cards].sort((a, b) => {
+    let valA, valB;
+    switch(currentSort) {
+      case 'titre':
+        return a.dataset.titre.localeCompare(b.dataset.titre);
+      case 'auteur':
+        return a.dataset.auteur.localeCompare(b.dataset.auteur);
+      case 'annee':
+        return (parseInt(b.dataset.annee) || 0) - (parseInt(a.dataset.annee) || 0);
+      default:
+        return parseInt(a.dataset.ordre) - parseInt(b.dataset.ordre);
+    }
+  });
+  sorted.forEach(card => livresGrid.appendChild(card));
+}
+
+function highlightText(text, query) {
+  const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+  return text.replace(regex, '<mark>$1</mark>');
+}
+function escapeRegex(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+</script>

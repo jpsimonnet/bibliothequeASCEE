@@ -848,3 +848,107 @@ gap: 0.2rem;
 }
 
 }
+
+/* === Bibliothèque Numérique === */
+
+.badge-numerique {
+  background: #d1fae5 !important;
+  color: #065f46 !important;
+}
+
+.badge-physique {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.livre-card--numerique {
+  border-left: 3px solid #10b981;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  background: #10b981;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.btn-download:hover {
+  background: #059669;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-numerique {
+  background: #d1fae5 !important;
+  color: #065f46 !important;
+  border-color: #10b981 !important;
+}
+
+.btn-numerique:hover {
+  background: #a7f3d0 !important;
+}
+
+.search-source-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.search-source-badge--physique {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.search-source-badge--numerique {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.search-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.4rem 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 20px;
+  background: white;
+  color: #374151;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #9ca3af;
+}
+
+.filter-btn.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.filter-btn[data-filter="numerique"].active {
+  background: #10b981;
+  border-color: #10b981;
+}
+
+.home-numerique {
+  border-top: 3px solid #10b981;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
