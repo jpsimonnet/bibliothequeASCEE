@@ -1,25 +1,38 @@
 # Bibliothèque ASCEE
 
-Catalogue en ligne de la bibliothèque ASCEE. Site statique généré avec [Eleventy (11ty)](https://www.11ty.dev/) et hébergé sur GitHub Pages.
+Catalogue en ligne de la bibliothèque ASCEE : livres physiques et ebooks (EPUB). Site statique généré avec [Eleventy (11ty)](https://www.11ty.dev/) et hébergé sur GitHub Pages.
 
 ## Mettre à jour le catalogue
 
 Aucune installation requise. Tout se fait depuis un navigateur.
 
-### 1. Mettre à jour les livres
+### 1. Mettre à jour les livres physiques
 
 1. Modifier les données dans **Grist**
 2. Exporter le CSV et le déposer dans le dossier partagé mDrive :
    `https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP`
 3. Le fichier doit s'appeler **`livres.csv`** et être à la racine du dossier partagé
 
-### 2. Ajouter des couvertures
+### 2. Ajouter des couvertures de livres physiques
 
 1. Préparer les images au format **`.webp`**
 2. Nommer chaque fichier avec l'**ID du livre** (ex : `7425.webp`)
 3. Les déposer dans le sous-dossier **`couvertures/`** du mDrive
 
-### 3. Lancer la mise à jour du site
+### 3. Mettre à jour les ebooks
+
+Les ebooks sont gérés via **Calibre** (base `metadata.db`). Les fichiers EPUB et couvertures sont hébergés sur **Cloudflare R2** :
+
+- Bucket : `bibliotheque-ascee`
+- URL publique : `https://pub-ad35d75f972549028d32a8686e002705.r2.dev`
+
+Pour synchroniser de nouveaux ebooks vers R2 :
+
+```bash
+rclone sync '/Volumes/4TO/ASCEE/Livres Libres de droits' ascee:bibliotheque-ascee --progress
+```
+
+### 4. Lancer la mise à jour du site
 
 Le site se reconstruit automatiquement dans 3 cas :
 
@@ -37,33 +50,42 @@ Le workflow GitHub Actions effectue automatiquement :
 
 1. Télécharge `livres.csv` depuis le mDrive
 2. Convertit le CSV en JSON (`scripts/import-csv-final.js`)
-3. Télécharge les couvertures depuis le dossier `couvertures/` du mDrive
-4. Génère le site avec 11ty (pages livres, auteurs, catégories, index de recherche)
-5. Déploie sur GitHub Pages
+3. Extrait les métadonnées ebooks depuis la base Calibre (`scripts/extract-ebooks.js`)
+4. Télécharge les couvertures depuis le dossier `couvertures/` du mDrive
+5. Génère le site avec 11ty (pages livres, ebooks, auteurs, catégories, index de recherche)
+6. Déploie sur GitHub Pages
 
 ## Structure du projet
 
 ```
-├── livres.csv                  # Données source (téléchargé depuis mDrive)
+├── metadata.db                 # Base Calibre (ebooks)
+├── livres.csv                  # Données livres physiques (téléchargé depuis mDrive)
 ├── scripts/
 │   ├── import-csv-final.js     # Conversion CSV → JSON
+│   ├── extract-ebooks.js       # Extraction Calibre → JSON
 │   └── download-fast.js        # Téléchargement couvertures (usage local)
 ├── src/
 │   ├── _data/
-│   │   └── livres.json         # Données générées (ne pas modifier à la main)
+│   │   ├── livres.json         # Données livres physiques (généré)
+│   │   └── ebooks.json         # Données ebooks (généré)
 │   ├── _includes/layouts/
 │   │   └── base.njk            # Template principal
 │   ├── css/style.css           # Styles
-│   ├── images/covers/          # Couvertures au format webp (par ID)
+│   ├── images/covers/          # Couvertures livres physiques (.webp par ID)
 │   ├── index.njk               # Page d'accueil avec recherche
-│   ├── catalogue.njk           # Catalogue paginé
+│   ├── catalogue.njk           # Catalogue livres physiques paginé
 │   ├── livres.njk              # Pages individuelles des livres
-│   ├── recherche.njk           # Page de recherche
 │   ├── search.njk              # Index de recherche (JSON)
 │   ├── auteurs.njk             # Liste des auteurs
 │   ├── auteur.njk              # Pages par auteur
 │   ├── categories.njk          # Liste des catégories
-│   └── categorie.njk           # Pages par catégorie
+│   ├── categorie.njk           # Pages par catégorie
+│   └── epub/
+│       ├── index.njk           # Catalogue ebooks paginé
+│       ├── livre.njk           # Pages individuelles ebooks
+│       ├── categories.njk      # Catégories ebooks
+│       ├── categorie.njk       # Pages par catégorie ebook
+│       └── auteur.njk          # Pages par auteur ebook
 ├── .github/workflows/
 │   └── deploy.yml              # Pipeline de déploiement automatique
 ├── .eleventy.js                # Configuration 11ty
@@ -99,3 +121,5 @@ npm install
 npm start        # Serveur de dev sur http://localhost:8080
 npm run build    # Build de production
 ```
+
+Note : le build nécessite ~8 Go de RAM Node.js en raison du volume de données.
