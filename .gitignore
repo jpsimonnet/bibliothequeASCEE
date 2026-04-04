@@ -1,3 +1,5 @@
 src/images/covers/.DS_Store
 src/images/.DS_Store
 .DS_Store
+/_site
+/node_modules

@@ -110,17 +110,17 @@ module.exports = function(eleventyConfig) {
     return auteurs;
   });
 
-  // URL de base mDrive pour les ebooks
-  eleventyConfig.addGlobalData("mdriveBase", "https://bnum.din.gouv.fr/mdrive/index.php/s/Kgpc5jtKTGKPkN8/download");
+  // URL de base Cloudflare R2 pour les ebooks
+  const r2Base = "https://pub-ad35d75f972549028d32a8686e002705.r2.dev";
 
   eleventyConfig.addFilter("ebookCover", function(ebook) {
     if (!ebook || !ebook.has_cover) return '';
-    return `https://bnum.din.gouv.fr/mdrive/index.php/s/Kgpc5jtKTGKPkN8/download?path=/${ebook.epath}&files=cover.jpg`;
+    return `${r2Base}/${ebook.epath}/cover.jpg`;
   });
 
   eleventyConfig.addFilter("ebookDownload", function(ebook) {
     if (!ebook || !ebook.efile) return '';
-    return `https://bnum.din.gouv.fr/mdrive/index.php/s/Kgpc5jtKTGKPkN8/download?path=/${ebook.epath}&files=${ebook.efile}`;
+    return `${r2Base}/${ebook.epath}/${ebook.efile}`;
   });
 
   eleventyConfig.addFilter("stripHtml", function(text) {
