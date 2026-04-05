@@ -207,7 +207,7 @@ title: Accueil
         {% set toutesNouveautes = (toutesNouveautes.push(livre), toutesNouveautes) %}
       {% endif %}
     {% endfor %}
-    {% set nouveautes = toutesNouveautes | sort(attribute="id") | reverse | limit(20) %}
+    {% set nouveautes = toutesNouveautes | sort(attribute="id") | reverse | limit(10) %}
     
     {% if nouveautes.length == 0 %}
       <p>Aucune nouveauté pour le moment. Nombre total de livres parcourus : {{ livres.length }}</p>
@@ -242,26 +242,29 @@ title: Accueil
 <section class="home-featured home-numerique">
   <h2>Biblioth&#232;que d'epubs libres de droits</h2>
   <p>Nous vous proposons une s&#233;lection d'epubs libres de droits en t&#233;l&#233;chargements gratuits. Red&#233;couvrez des livres d'auteurs qui ont travers&#233; le si&#232;cle.</p>
-  <div class="livres-grid">
-    {% for ebook in ebooks | limit(8) %}
-      <article class="livre-card livre-card--numerique">
-        <a href="{{ ('/epub/livre/' + ebook.id + '/') | url }}">
-          <div class="livre-card-cover">
-            <img
-              src="{{ ebook | ebookCover }}"
-              alt="Couverture de {{ ebook.titre }}"
-              loading="lazy"
-              width="200"
-              height="300"
-            >
-          </div>
-          <div class="livre-card-info">
-            <span class="livre-card-type badge-numerique">Ebook</span>
-            <h3>{{ ebook.titre | truncate(50) }}</h3>
-            <p class="auteur">{{ ebook.auteur }}</p>
-          </div>
-        </a>
-      </article>
+
+  {% set auteursSelection = [
+    "Alexandre Dumas", "Honoré de Balzac", "Victor Hugo", "Émile Zola",
+    "Jules Verne", "Guy de Maupassant", "Gustave Flaubert", "Molière",
+    "Voltaire", "Marcel Proust", "Stendhal", "Jean-Jacques Rousseau",
+    "Pierre Corneille", "Jean de La Fontaine", "Charles Baudelaire",
+    "Antoine de Saint-Exupéry", "Albert Camus", "André Gide", "Colette", "Boris Vian",
+    "Arthur Conan Doyle", "Charles Dickens", "Edgar Allan Poe",
+    "William Shakespeare", "Fédor Mikhaïlovitch Dostoïevski", "Léon Tolstoï",
+    "Jack London", "Robert Louis Stevenson", "Herbert George Wells",
+    "Oscar Wilde", "Stefan Zweig", "Howard Phillips Lovecraft",
+    "Jane Austen", "Mark Twain", "Thomas Mann", "George Orwell",
+    "Maurice Leblanc", "Gaston Leroux", "George Sand",
+    "Alphonse Daudet", "Rudyard Kipling"
+  ] %}
+
+  <div class="auteurs-selection">
+    {% for nom in auteursSelection | sortByLastName %}
+      {% set count = 0 %}
+      {% for ebook in ebooks %}
+        {% if ebook.auteur == nom %}{% set count = count + 1 %}{% endif %}
+      {% endfor %}
+      <a href="{{ ('/epub/auteur/' + nom | slugify + '/') | url }}" class="auteur-tag">{{ nom }} ({{ count }})</a>
     {% endfor %}
   </div>
 

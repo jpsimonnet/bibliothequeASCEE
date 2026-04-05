@@ -123,6 +123,22 @@ module.exports = function(eleventyConfig) {
     return `${r2Base}/${ebook.epath}/${ebook.efile}`;
   });
 
+  // Tri des auteurs par nom de famille
+  eleventyConfig.addFilter("sortByLastName", function(auteurs) {
+    const particules = ['de', 'du', 'des', 'le', 'la', 'les', 'von', 'van', 'di', 'da', 'al'];
+    function getLastName(name) {
+      const parts = name.split(' ');
+      // Parcourir depuis la fin pour trouver le nom (en ignorant les particules)
+      for (let i = parts.length - 1; i >= 0; i--) {
+        if (!particules.includes(parts[i].toLowerCase())) {
+          return parts[i].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        }
+      }
+      return parts[parts.length - 1].toLowerCase();
+    }
+    return [...auteurs].sort((a, b) => getLastName(a).localeCompare(getLastName(b)));
+  });
+
   eleventyConfig.addFilter("stripHtml", function(text) {
     if (!text) return '';
     return text.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();

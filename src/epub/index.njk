@@ -29,6 +29,31 @@ permalink: "/epub/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
     </div>
   </div>
 
+  {% set auteursSelection = [
+    "Alexandre Dumas", "Honoré de Balzac", "Victor Hugo", "Émile Zola",
+    "Jules Verne", "Guy de Maupassant", "Gustave Flaubert", "Molière",
+    "Voltaire", "Marcel Proust", "Stendhal", "Jean-Jacques Rousseau",
+    "Pierre Corneille", "Jean de La Fontaine", "Charles Baudelaire",
+    "Antoine de Saint-Exupéry", "Albert Camus", "André Gide", "Colette", "Boris Vian",
+    "Arthur Conan Doyle", "Charles Dickens", "Edgar Allan Poe",
+    "William Shakespeare", "Fédor Mikhaïlovitch Dostoïevski", "Léon Tolstoï",
+    "Jack London", "Robert Louis Stevenson", "Herbert George Wells",
+    "Oscar Wilde", "Stefan Zweig", "Howard Phillips Lovecraft",
+    "Jane Austen", "Mark Twain", "Thomas Mann", "George Orwell",
+    "Maurice Leblanc", "Gaston Leroux", "George Sand",
+    "Alphonse Daudet", "Rudyard Kipling"
+  ] %}
+
+  <div class="auteurs-selection">
+    {% for nom in auteursSelection | sortByLastName %}
+      {% set count = 0 %}
+      {% for ebook in ebooks %}
+        {% if ebook.auteur == nom %}{% set count = count + 1 %}{% endif %}
+      {% endfor %}
+      <a href="{{ ('/epub/auteur/' + nom | slugify + '/') | url }}" class="auteur-tag">{{ nom }} ({{ count }})</a>
+    {% endfor %}
+  </div>
+
   <div class="livres-grid" id="livresGrid">
     {% for ebook in ebooksPage %}
       {% set globalIndex = loop.index0 + (pagination.pageNumber * 48) %}

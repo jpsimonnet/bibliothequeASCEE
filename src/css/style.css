@@ -952,3 +952,27 @@ gap: 0.2rem;
   padding-top: 2rem;
   margin-top: 3rem;
 }
+
+.auteurs-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.auteur-tag {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: #e0f2fe;
+  color: #1266dc;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.auteur-tag:hover {
+  background: #1266dc;
+  color: white;
+  text-decoration: none;
+}
