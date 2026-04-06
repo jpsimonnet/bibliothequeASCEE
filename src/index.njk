@@ -258,6 +258,7 @@ title: Accueil
     "Alphonse Daudet", "Rudyard Kipling"
   ] %}
 
+  <h3>Notre s&#233;lection d'auteurs</h3>
   <div class="auteurs-selection">
     {% for nom in auteursSelection | sortByLastName %}
       {% set count = 0 %}
@@ -271,4 +272,15 @@ title: Accueil
   <div class="home-cta">
     <a href="{{ '/epub/' | url }}" class="btn-primary btn-large btn-numerique">Voir tous les ebooks</a>
   </div>
+
+  <article class="encadre-logiciels">
+    <h3>Quelques logiciels pour lire les epubs</h3>
+    <p>Les fichiers epub se lisent avec une application de lecture. Voici quelques applications gratuites :</p>
+    <ul>
+      <li><strong>Windows</strong> : <a href="https://calibre-ebook.com/download" target="_blank">Calibre</a> (gratuit, open source) ou <a href="https://www.sumatrapdfreader.org/download-free-pdf-viewer" target="_blank">Sumatra PDF</a></li>
+      <li><strong>Mac</strong> : Apple Livres (pr&#233;install&#233;) ou <a href="https://calibre-ebook.com/download" target="_blank">Calibre</a></li>
+      <li><strong>iPhone / iPad</strong> : Apple Livres (pr&#233;install&#233;)</li>
+      <li><strong>Android</strong> : <a href="https://play.google.com/store/apps/details?id=org.readera" target="_blank">ReadEra</a> (gratuit)</li>
+    </ul>
+  </article>
 </section>
