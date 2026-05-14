@@ -7,24 +7,8 @@ title: Accueil
   <h1>Bienvenue dans votre bibliothèque</h1>
 </div>
 <article class="encadre m-1 encadre-grid">
-  <div>
-    <h2>📅  Horaires de la bibliothèque</h2>
-    <p><strong>La bibliothèque est ouverte :</strong></p>
-    <ul>
-      <li>Mardi de 12h30 à 14h</li>
-      <li>Jeudi de 13h à 14h</li>
-    </ul>
-    
-    <h2>📚 Pr&#234;ts de livres</h2>
-    <p><strong>Vous pouvez emprunter :</strong></p>
-        <ul>
-      <li>5 livres</li>
-      <li>pendant 4 semaines</li>
-    </ul>
-
-    <h2>📖 Nouveau : T&#233;l&#233;charger des epubs libres de droits</h2>
-    <p>Nous vous proposons une s&#233;lection d'epubs libres de droits <a href="{{ '/epub/' | url }}">en t&#233;l&#233;chargement gratuit</a>. Red&#233;couvrez des livres d'auteurs qui ont travers&#233; le si&#232;cle.</p>
-
+  <div class="intro-content">
+    {{ intro | markdown | safe }}
   </div>
 
   <img class="right fr-responsive-img"
