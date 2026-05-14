@@ -45,15 +45,14 @@ module.exports = function(eleventyConfig) {
   });
   
   eleventyConfig.addCollection("categoriesUniques", function(collectionApi) {
-    const livresData = require('./src/_data/livres.json');
-    const categories = [...new Set(livresData.map(livre => livre.type).filter(Boolean))];
+    const livresPages = collectionApi.getFilteredByTag("livre");
+    const categories = [...new Set(livresPages.map(p => p.data.livre && p.data.livre.type).filter(Boolean))];
     return categories.sort();
   });
 
   eleventyConfig.addCollection("auteursUniques", function(collectionApi) {
-    const livresData = require('./src/_data/livres.json');
-    const allAuteurs = [...new Set(livresData.map(livre => livre.auteur).filter(Boolean))];
-    // Dédupliquer par slug pour éviter les conflits de permalink
+    const livresPages = collectionApi.getFilteredByTag("livre");
+    const allAuteurs = [...new Set(livresPages.map(p => p.data.livre && p.data.livre.auteur).filter(Boolean))];
     function slugify(text) {
       return text.toString().toLowerCase()
         .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
@@ -137,6 +136,22 @@ module.exports = function(eleventyConfig) {
       return parts[parts.length - 1].toLowerCase();
     }
     return [...auteurs].sort((a, b) => getLastName(a).localeCompare(getLastName(b)));
+  });
+
+  // Filtres pour les avis
+  eleventyConfig.addFilter("avisPourLivre", function(avisList, livreId) {
+    return (avisList || []).filter(a => a.livre_id === String(livreId));
+  });
+
+  eleventyConfig.addFilter("etoiles", function(note) {
+    const n = Math.max(0, Math.min(5, parseInt(note) || 0));
+    return '★'.repeat(n) + '☆'.repeat(5 - n);
+  });
+
+  eleventyConfig.addFilter("noteAverage", function(avisList) {
+    if (!avisList || avisList.length === 0) return 0;
+    const sum = avisList.reduce((acc, a) => acc + (parseInt(a.note) || 0), 0);
+    return Math.round((sum / avisList.length) * 10) / 10;
   });
 
   eleventyConfig.addFilter("stripHtml", function(text) {

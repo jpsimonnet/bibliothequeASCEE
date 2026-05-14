@@ -33,15 +33,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Download CSV from Nextcloud
-        run: |
-          curl -L -o livres.csv \
-            "https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP/download?path=%2F&files=livres.csv"
-          echo "CSV: $(wc -l < livres.csv) lignes"
-
-      - name: Convert CSV to JSON
-        run: node scripts/import-csv-final.js livres.csv
-
       - name: Extract ebooks from Calibre database
         run: node scripts/extract-ebooks.js
 
@@ -69,6 +60,7 @@ jobs:
         env:
           NODE_OPTIONS: "--max-old-space-size=8192"
           NODE_ENV: "production"
+          GRIST_API_KEY: ${{ secrets.GRIST_API_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

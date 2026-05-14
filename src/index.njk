@@ -239,6 +239,40 @@ title: Accueil
   </div>
 </section>
 
+{% if avis.length > 0 %}
+<section class="home-featured home-avis">
+  <h2>Derniers avis des lecteurs</h2>
+  <div class="derniers-avis-grid">
+    {% for unAvis in avis | limit(4) %}
+      {% set leLivre = null %}
+      {% for livre in livres %}
+        {% if livre.id == unAvis.livre_id %}{% set leLivre = livre %}{% endif %}
+      {% endfor %}
+      {% if leLivre %}
+      <article class="dernier-avis-card">
+        <a href="{{ ('/livre/' + unAvis.livre_id + '/#avis') | url }}" class="dernier-avis-livre">
+          <img
+            src="{{ ('/images/covers/' + unAvis.livre_id + '.webp') | url }}"
+            alt="Couverture de {{ leLivre.nom }}"
+            loading="lazy"
+            width="60"
+            height="auto"
+          >
+          <span class="dernier-avis-titre">{{ leLivre.nom | truncate(45) }}</span>
+        </a>
+        <div class="avis-etoiles">{{ unAvis.note | etoiles }}</div>
+        <p class="avis-commentaire">{{ unAvis.commentaire | truncate(120) }}</p>
+        <p class="avis-signature">— {{ unAvis.nom }}{% if unAvis.date %}, {{ unAvis.date }}{% endif %}</p>
+      </article>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="home-cta">
+    <a href="{{ '/avis/' | url }}" class="btn-primary">Voir tous les avis</a>
+  </div>
+</section>
+{% endif %}
+
 <section class="home-featured home-numerique">
   <h2>Biblioth&#232;que d'epubs libres de droits</h2>
   <p>Nous vous proposons une s&#233;lection d'epubs libres de droits en t&#233;l&#233;chargements gratuits. Red&#233;couvrez des livres d'auteurs qui ont travers&#233; le si&#232;cle.</p>
