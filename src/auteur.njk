@@ -33,7 +33,7 @@ eleventyComputed:
     {% for livre in livres %}
       {% if livre.auteur == auteur %}
         <article class="livre-card">
-          <a href="{{ ('/livre/' + loop.index0|string + '/') | url }}">
+          <a href="{{ ('/livre/' + livre.id + '/') | url }}">
             <div class="livre-card-cover">
               <img 
                 src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"

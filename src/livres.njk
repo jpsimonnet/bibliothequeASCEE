@@ -43,7 +43,11 @@ eleventyComputed:
 
       <p class="auteur">
         <strong>Auteur :</strong>
-        {{ livre.auteur | auteurFormat }}
+        {% if livre.auteur %}
+          <a href="{{ ('/auteur/' + (livre.auteur | slugify) + '/') | url }}">{{ livre.auteur }}</a>
+        {% else %}
+          Auteur inconnu
+        {% endif %}
       </p>
 
       {% set livreAvis = avis | avisPourLivre(livre.id) %}
