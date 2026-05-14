@@ -29,7 +29,9 @@ module.exports = async function() {
       id: r.id,
       date: r.fields.date || '',
       nom: r.fields.nom || 'Anonyme',
-      note: parseInt(r.fields.note) || 0,
+      // La note est un choix unique avec étoiles (★★★) → on compte les étoiles
+      note: [...(r.fields.note || '')].filter(c => c === '★' || c === '⭐' || c === '🌟').length
+            || (r.fields.note || '').trim().length,
       commentaire: r.fields.commentaire || '',
       livre_id: String(r.fields.livre_id || '')
     }))
