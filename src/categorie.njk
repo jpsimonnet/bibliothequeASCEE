@@ -94,12 +94,16 @@ sortButtons.forEach(btn => {
   });
 });
 
+function normalize(str) {
+  return (str || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function filterBooks() {
-  const searchTerm = searchInput.value.toLowerCase();
+  const searchTerm = normalize(searchInput.value);
   cards.forEach(card => {
     const titre = card.dataset.titre;
     const auteur = card.dataset.auteur;
-    const matches = titre.includes(searchTerm) || auteur.includes(searchTerm);
+    const matches = normalize(titre).includes(searchTerm) || normalize(auteur).includes(searchTerm);
     card.style.display = matches ? 'block' : 'none';
   });
 }

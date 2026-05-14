@@ -110,7 +110,7 @@ mark {
   });
 
   function performSearch() {
-    const query = searchInput.value.toLowerCase().trim();
+    const query = normalize(searchInput.value.trim());
 
     if (query.length < 2) {
       searchResults.innerHTML = '';
@@ -128,9 +128,9 @@ mark {
     }
 
     const results = filtered.filter(book => {
-      return book.titre.toLowerCase().includes(query) ||
-             book.auteur.toLowerCase().includes(query) ||
-             (book.resume && book.resume.toLowerCase().includes(query));
+      return normalize(book.titre).includes(query) ||
+             normalize(book.auteur).includes(query) ||
+             (book.resume && normalize(book.resume).includes(query));
     }).slice(0, 100);
 
     searchLoading.style.display = 'none';
@@ -187,8 +187,14 @@ mark {
   }
 
   function highlightText(text, query) {
-    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
+    const map = {'a':'[aàâäáãå]','e':'[eéèêëæ]','i':'[iîïíì]','o':'[oôöóòõøœ]','u':'[uùûüú]','c':'[cç]','n':'[nñ]','y':'[yÿý]'};
+    const pattern = [...query].map(ch => map[ch] || escapeRegex(ch)).join('');
+    const regex = new RegExp(`(${pattern})`, 'gi');
     return text.replace(regex, '<mark>$1</mark>');
+  }
+
+  function normalize(str) {
+    return (str || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   }
 
   function escapeRegex(string) {
