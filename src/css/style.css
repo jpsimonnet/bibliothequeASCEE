@@ -1145,48 +1145,51 @@ gap: 0.2rem;
 /* Section "Derniers avis" sur l'accueil */
 .home-avis { margin-top: 2rem; }
 
-.derniers-avis-liste {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+.derniers-avis-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.2rem;
   margin-bottom: 1.5rem;
 }
 
-.dernier-avis-item {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 1rem;
+.dernier-avis-card {
+  display: flex;
+  flex-direction: column;
   background: #fffbeb;
   border: 1px solid #fde68a;
   border-radius: 0.5rem;
-  padding: 0.8rem 1rem;
-  align-items: start;
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
-@media (max-width: 600px) {
-  .dernier-avis-item { grid-template-columns: 1fr; }
+.dernier-avis-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.dernier-avis-livre-info {
+.dernier-avis-cover-link {
+  display: block;
+  line-height: 0;
+}
+
+.dernier-avis-cover-link img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.dernier-avis-body {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-  border-right: 1px solid #fde68a;
-  padding-right: 1rem;
-}
-
-@media (max-width: 600px) {
-  .dernier-avis-livre-info {
-    border-right: none;
-    border-bottom: 1px solid #fde68a;
-    padding-right: 0;
-    padding-bottom: 0.5rem;
-  }
+  gap: 0.3rem;
+  padding: 0.8rem;
+  flex: 1;
 }
 
 .dernier-avis-titre {
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: #1d4ed8;
   text-decoration: none;
   line-height: 1.3;
@@ -1194,28 +1197,29 @@ gap: 0.2rem;
 .dernier-avis-titre:hover { text-decoration: underline; }
 
 .dernier-avis-auteur {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: #6b7280;
   font-style: italic;
+  margin-bottom: 0.2rem;
 }
 
-.dernier-avis-contenu {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+.dernier-avis-body .avis-etoiles {
+  color: #f59e0b;
+  font-size: 0.95rem;
 }
 
-.dernier-avis-contenu .avis-etoiles { color: #f59e0b; font-size: 0.95rem; }
-
-.dernier-avis-contenu .avis-commentaire {
-  font-size: 0.88rem;
+.dernier-avis-body .avis-commentaire {
+  font-size: 0.85rem;
   line-height: 1.5;
   color: #374151;
   margin: 0;
+  flex: 1;
 }
 
-.dernier-avis-contenu .avis-signature {
-  font-size: 0.8rem;
+.dernier-avis-body .avis-signature {
+  font-size: 0.78rem;
   color: #9ca3af;
   font-style: italic;
+  margin-top: auto;
+  padding-top: 0.3rem;
 }

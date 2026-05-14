@@ -248,21 +248,29 @@ title: Accueil
 {% if avis.length > 0 %}
 <section class="home-featured home-avis">
   <h2>Derniers avis des lecteurs</h2>
-  <div class="derniers-avis-liste">
+  <div class="derniers-avis-grille">
     {% for unAvis in avis | limit(6) %}
       {% set leLivre = null %}
       {% for livre in livres %}
         {% if livre.id == unAvis.livre_id %}{% set leLivre = livre %}{% endif %}
       {% endfor %}
       {% if leLivre %}
-      <article class="dernier-avis-item">
-        <div class="dernier-avis-livre-info">
+      <article class="dernier-avis-card">
+        <a href="{{ ('/livre/' + unAvis.livre_id + '/#avis') | url }}" class="dernier-avis-cover-link">
+          <img
+            src="{{ ('/images/covers/' + unAvis.livre_id + '.webp') | url }}"
+            alt="Couverture de {{ leLivre.nom }}"
+            loading="lazy"
+            width="200"
+            height="280"
+            onerror="this.src='{{ '/images/0-livre-par-defaut.svg' | url }}'"
+          >
+        </a>
+        <div class="dernier-avis-body">
           <a href="{{ ('/livre/' + unAvis.livre_id + '/#avis') | url }}" class="dernier-avis-titre">{{ leLivre.nom | truncate(50) }}</a>
           <span class="dernier-avis-auteur">{{ leLivre.auteur | auteurFormat }}</span>
-        </div>
-        <div class="dernier-avis-contenu">
           <span class="avis-etoiles" aria-label="Note : {{ unAvis.note }} sur 5">{{ unAvis.note | etoiles }}</span>
-          <p class="avis-commentaire">{{ unAvis.commentaire | truncate(160) }}</p>
+          <p class="avis-commentaire">{{ unAvis.commentaire | truncate(250) }}</p>
           <span class="avis-signature">— {{ unAvis.nom }}</span>
         </div>
       </article>
