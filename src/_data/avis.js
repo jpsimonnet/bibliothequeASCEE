@@ -34,8 +34,8 @@ module.exports = async function() {
       livre_id: String(r.fields.livre_id || '')
     }))
     .filter(a => a.livre_id && a.commentaire)
+    // Tri par date décroissante si disponible, sinon par ID (plus récent en premier)
     .sort((a, b) => {
-      // Tri par date décroissante, puis par id décroissant
       if (a.date && b.date && a.date !== b.date) return b.date.localeCompare(a.date);
       return b.id - a.id;
     });
