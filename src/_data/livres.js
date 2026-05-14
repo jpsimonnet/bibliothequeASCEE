@@ -23,21 +23,45 @@ module.exports = async function() {
 
   console.log('📚 Chargement des livres depuis Grist...');
 
-  // Charge la table Typologie pour résoudre les références (Type est une ref column)
+  // Auto-détecte la table de typologies (référence de la colonne Type)
   let typeMap = {};
   try {
-    const typRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables/Typologie/records?limit=1000`, {
+    const tablesRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables`, {
       headers: { 'Authorization': `Bearer ${apiKey}` }
     });
-    if (typRes.ok) {
-      const typData = await typRes.json();
-      for (const r of (typData.records || [])) {
-        // Prend le premier champ texte disponible comme libellé
-        const label = r.fields.Nom || r.fields.nom || r.fields.Libelle || r.fields.libelle
-                   || r.fields.Type || r.fields.type || Object.values(r.fields).find(v => typeof v === 'string' && v) || '';
-        typeMap[r.id] = label;
+    if (tablesRes.ok) {
+      const tablesData = await tablesRes.json();
+      const allTableIds = (tablesData.tables || []).map(t => t.id);
+      console.log(`🔍 Tables Grist disponibles: ${allTableIds.join(', ')}`);
+
+      // Cherche une table dont le nom contient "typolog" (insensible à la casse)
+      const typTableId = allTableIds.find(id => id.toLowerCase().includes('typolog'));
+      if (typTableId) {
+        const typRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables/${typTableId}/records?limit=1000`, {
+          headers: { 'Authorization': `Bearer ${apiKey}` }
+        });
+        if (typRes.ok) {
+          const typData = await typRes.json();
+          if (typData.records && typData.records.length > 0) {
+            // Affiche les colonnes de la table pour diagnostic
+            const typCols = Object.keys(typData.records[0].fields);
+            console.log(`🔍 Table "${typTableId}" colonnes: ${typCols.join(', ')}`);
+            console.log(`🔍 Table "${typTableId}" 1er enregistrement: ${JSON.stringify(typData.records[0].fields)}`);
+
+            // Prend la première colonne de type texte non vide comme libellé
+            const labelCol = typCols.find(c => typeof typData.records[0].fields[c] === 'string' && typData.records[0].fields[c]);
+            console.log(`🔍 Colonne libellé détectée: "${labelCol || 'non trouvée'}"`);
+
+            for (const r of typData.records) {
+              const label = labelCol ? r.fields[labelCol] : Object.values(r.fields).find(v => typeof v === 'string' && v) || '';
+              typeMap[r.id] = label;
+            }
+            console.log(`✅ Table "${typTableId}" chargée : ${Object.keys(typeMap).length} entrées`);
+          }
+        }
+      } else {
+        console.warn('⚠️  Aucune table de typologies trouvée (recherche "typolog")');
       }
-      console.log(`🔍 Table Typologie chargée : ${Object.keys(typeMap).length} entrées`);
     }
   } catch (e) {
     console.warn('⚠️  Impossible de charger la table Typologie:', e.message);

@@ -46,16 +46,20 @@ async function main() {
   console.log(`🌐 Base: ${GRIST_BASE}`);
 
   // Lister toutes les tables du document
+  let allTables = [];
   const tablesRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables`, {
     headers: { 'Authorization': `Bearer ${apiKey}` }
   });
   if (tablesRes.ok) {
     const tables = await tablesRes.json();
-    console.log(`\n📂 Tables dans le document: ${tables.tables.map(t => t.id).join(', ')}`);
+    allTables = tables.tables.map(t => t.id);
+    console.log(`\n📂 Tables dans le document: ${allTables.join(', ')}`);
   }
 
-  await checkTable(apiKey, 'LIVRES');
-  await checkTable(apiKey, 'avis');
+  // Inspecter toutes les tables trouvées
+  for (const table of allTables) {
+    await checkTable(apiKey, table);
+  }
 }
 
 main().catch(err => {
