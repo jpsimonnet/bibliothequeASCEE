@@ -43,6 +43,10 @@ module.exports = async function() {
   const colonnes = Object.keys(data.records[0].fields);
   console.log(`🔍 Colonnes Grist disponibles: ${colonnes.join(', ')}`);
 
+  // Identifie la colonne nouveauté (booléen Grist)
+  const colNouveaute = colonnes.find(c => c.toLowerCase().replace(/[^a-z]/g, '').includes('nouveaut'));
+  console.log(`🔍 Colonne nouveauté détectée: "${colNouveaute || 'non trouvée'}"`);
+
   const livres = data.records.map(r => ({
     id: String(r.id),
     nom:          col(r.fields, 'Titre', 'titre', 'Nom', 'nom'),
@@ -54,7 +58,7 @@ module.exports = async function() {
     pages:        col(r.fields, 'Pages', 'pages'),
     langues:      col(r.fields, 'Langues', 'langues'),
     couverture_url: col(r.fields, 'Couverture_bnum', 'Couverture-bnum', 'couverture_url'),
-    nouveaute:    String(col(r.fields, 'Nouveaut_e', 'Nouveautée', 'Nouveaute', 'nouveaute') || 'false')
+    nouveaute:    (colNouveaute && r.fields[colNouveaute] === true) ? 'true' : 'false'
   })).filter(book => book.id && book.nom);
 
   console.log(`✅ ${livres.length} livres chargés depuis Grist`);
