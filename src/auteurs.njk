@@ -84,12 +84,16 @@ const auteurSearch = document.getElementById('auteurSearch');
 const auteursGrid = document.getElementById('auteursGrid');
 const auteurCards = Array.from(document.querySelectorAll('.auteur-card'));
 
+function normalize(str) {
+  return (str || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 auteurSearch.addEventListener('input', () => {
-  const searchTerm = auteurSearch.value.toLowerCase();
-  
+  const searchTerm = normalize(auteurSearch.value);
+
   auteurCards.forEach(card => {
     const auteur = card.dataset.auteur;
-    const matches = auteur.includes(searchTerm);
+    const matches = normalize(auteur).includes(searchTerm);
     card.style.display = matches ? 'block' : 'none';
   });
 });
