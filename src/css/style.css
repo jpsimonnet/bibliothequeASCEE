@@ -1145,40 +1145,77 @@ gap: 0.2rem;
 /* Section "Derniers avis" sur l'accueil */
 .home-avis { margin-top: 2rem; }
 
-.derniers-avis-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1rem;
+.derniers-avis-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
   margin-bottom: 1.5rem;
 }
 
-.dernier-avis-card {
+.dernier-avis-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 1rem;
   background: #fffbeb;
   border: 1px solid #fde68a;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
+  align-items: start;
 }
-.dernier-avis-livre {
+
+@media (max-width: 600px) {
+  .dernier-avis-item { grid-template-columns: 1fr; }
+}
+
+.dernier-avis-livre-info {
   display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  text-decoration: none;
-  color: inherit;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-right: 1px solid #fde68a;
+  padding-right: 1rem;
 }
-.dernier-avis-livre:hover .dernier-avis-titre { text-decoration: underline; }
-.dernier-avis-livre img { border-radius: 3px; flex-shrink: 0; }
-.dernier-avis-titre { font-weight: 600; font-size: 0.9rem; line-height: 1.3; }
-.dernier-avis-card .avis-etoiles { color: #f59e0b; font-size: 1rem; }
-.dernier-avis-card .avis-commentaire {
+
+@media (max-width: 600px) {
+  .dernier-avis-livre-info {
+    border-right: none;
+    border-bottom: 1px solid #fde68a;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.dernier-avis-titre {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #1d4ed8;
+  text-decoration: none;
+  line-height: 1.3;
+}
+.dernier-avis-titre:hover { text-decoration: underline; }
+
+.dernier-avis-auteur {
+  font-size: 0.82rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.dernier-avis-contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dernier-avis-contenu .avis-etoiles { color: #f59e0b; font-size: 0.95rem; }
+
+.dernier-avis-contenu .avis-commentaire {
   font-size: 0.88rem;
   line-height: 1.5;
   color: #374151;
-  margin: 0.4rem 0;
+  margin: 0;
 }
-.dernier-avis-card .avis-signature {
+
+.dernier-avis-contenu .avis-signature {
   font-size: 0.8rem;
   color: #9ca3af;
-  margin: 0;
   font-style: italic;
 }
