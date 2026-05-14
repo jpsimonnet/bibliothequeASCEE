@@ -23,6 +23,26 @@ module.exports = async function() {
 
   console.log('📚 Chargement des livres depuis Grist...');
 
+  // Charge la table Typologie pour résoudre les références (Type est une ref column)
+  let typeMap = {};
+  try {
+    const typRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables/Typologie/records?limit=1000`, {
+      headers: { 'Authorization': `Bearer ${apiKey}` }
+    });
+    if (typRes.ok) {
+      const typData = await typRes.json();
+      for (const r of (typData.records || [])) {
+        // Prend le premier champ texte disponible comme libellé
+        const label = r.fields.Nom || r.fields.nom || r.fields.Libelle || r.fields.libelle
+                   || r.fields.Type || r.fields.type || Object.values(r.fields).find(v => typeof v === 'string' && v) || '';
+        typeMap[r.id] = label;
+      }
+      console.log(`🔍 Table Typologie chargée : ${Object.keys(typeMap).length} entrées`);
+    }
+  } catch (e) {
+    console.warn('⚠️  Impossible de charger la table Typologie:', e.message);
+  }
+
   const url = `${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables/LIVRES/records?limit=10000&sort=id`;
   const response = await fetch(url, {
     headers: { 'Authorization': `Bearer ${apiKey}` }
@@ -52,7 +72,7 @@ module.exports = async function() {
     nom:           r.fields.Titre || '',
     auteur:        r.fields.Nom_auteur_complet || '',
     resume:       (r.fields.Resume || '').replace(/\s+/g, ' ').trim(),
-    type:          r.fields.Typologie || r.fields.Type || '',
+    type:          (typeof r.fields.Type === 'number' ? typeMap[r.fields.Type] : r.fields.Type) || '',
     isbn:          r.fields.ISBN || '',
     annee:         r.fields.Annee || '0',
     pages:         r.fields.Pages || '',
