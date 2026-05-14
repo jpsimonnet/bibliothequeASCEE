@@ -1,0 +1,120 @@
+---
+layout: layouts/base.njk
+title: Avis des lecteurs
+permalink: /avis/
+---
+
+<div class="avis-page">
+  <h1>Avis des lecteurs</h1>
+
+  {% if avis.length == 0 %}
+  <p>Aucun avis pour le moment. Soyez le premier à donner votre avis sur un livre !</p>
+
+  {% else %}
+
+  <div class="avis-tri">
+    <button class="tri-btn active" data-tri="date">Trier par date</button>
+    <button class="tri-btn" data-tri="note">Trier par note</button>
+  </div>
+
+  {# Construire la liste des livres qui ont des avis, avec leurs avis regroupés #}
+  {% set livresAvecAvis = [] %}
+  {% for livre in livres %}
+    {% set livreAvis = avis | avisPourLivre(livre.id) %}
+    {% if livreAvis.length > 0 %}
+      {% set noteAvg = livreAvis | noteAverage %}
+      {% set dernierAvis = livreAvis[0] %}
+      {% set livresAvecAvis = (livresAvecAvis.push({
+        livre: livre,
+        avis: livreAvis,
+        noteAvg: noteAvg,
+        dernierAvis: dernierAvis.date
+      }), livresAvecAvis) %}
+    {% endif %}
+  {% endfor %}
+
+  <p class="avis-stats">{{ livresAvecAvis.length }} livre{% if livresAvecAvis.length > 1 %}s{% endif %} avec des avis · {{ avis.length }} avis au total</p>
+
+  <div class="livres-avec-avis" id="livresAvecAvis">
+    {% for item in livresAvecAvis %}
+    <article class="livre-avis-card"
+             data-date="{{ item.dernierAvis }}"
+             data-note="{{ item.noteAvg }}">
+      <div class="livre-avis-header">
+        <div class="livre-avis-cover">
+          <a href="{{ ('/livre/' + item.livre.id + '/') | url }}">
+            <img
+              src="{{ ('/images/covers/' + item.livre.id + '.webp') | url }}"
+              alt="Couverture de {{ item.livre.nom }}"
+              loading="lazy"
+              width="80"
+              height="auto"
+            >
+          </a>
+        </div>
+        <div class="livre-avis-info">
+          <h2>
+            <a href="{{ ('/livre/' + item.livre.id + '/#avis') | url }}">{{ item.livre.nom }}</a>
+          </h2>
+          <p class="auteur">{{ item.livre.auteur | auteurFormat }}</p>
+          <p class="livre-avis-note">
+            <span class="etoiles">{{ item.noteAvg | etoiles }}</span>
+            <span class="note-chiffre">{{ item.noteAvg }}/5</span>
+            <span class="note-count">({{ item.avis.length }} avis)</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="avis-liste-courte">
+        {% for unAvis in item.avis | limit(3) %}
+        <div class="avis-item">
+          <div class="avis-header">
+            <span class="avis-nom">{{ unAvis.nom }}</span>
+            <span class="avis-etoiles" aria-label="Note : {{ unAvis.note }} sur 5">{{ unAvis.note | etoiles }}</span>
+            {% if unAvis.date %}
+            <time class="avis-date" datetime="{{ unAvis.date }}">{{ unAvis.date }}</time>
+            {% endif %}
+          </div>
+          <p class="avis-commentaire">{{ unAvis.commentaire | truncate(200) }}</p>
+        </div>
+        {% endfor %}
+        {% if item.avis.length > 3 %}
+        <a href="{{ ('/livre/' + item.livre.id + '/#avis') | url }}" class="voir-plus-avis">
+          Voir les {{ item.avis.length - 3 }} autres avis →
+        </a>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+
+  {% endif %}
+</div>
+
+<script>
+(function() {
+  const btns = document.querySelectorAll('.tri-btn');
+  const container = document.getElementById('livresAvecAvis');
+  if (!container) return;
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      btns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      const cards = Array.from(container.querySelectorAll('.livre-avis-card'));
+      const tri = this.dataset.tri;
+
+      cards.sort((a, b) => {
+        if (tri === 'note') {
+          return parseFloat(b.dataset.note) - parseFloat(a.dataset.note);
+        }
+        // tri par date décroissante
+        return (b.dataset.date || '').localeCompare(a.dataset.date || '');
+      });
+
+      cards.forEach(c => container.appendChild(c));
+    });
+  });
+})();
+</script>

@@ -13,17 +13,17 @@ eleventyComputed:
 
 {% block content %}
 <article class="livre-detail">
-  
+
   <nav class="breadcrumb">
-    <a href="{{ '/' | url }}">Accueil</a> / 
-    <a href="{{ '/catalogue/' | url }}">Catalogue</a> / 
+    <a href="{{ '/' | url }}">Accueil</a> /
+    <a href="{{ '/catalogue/' | url }}">Catalogue</a> /
     <span>{{ livre.nom }}</span>
   </nav>
 
   <div class="livre-grid">
-    
+
     <div class="livre-cover">
-      <img 
+      <img
         src="{{ ('/images/covers/' + livre.id + '.webp') | url }}"
         alt="Couverture de {{ livre.nom }}"
         loading="lazy"
@@ -34,17 +34,26 @@ eleventyComputed:
 
     <div class="livre-info">
       <h1>{{ livre.nom }}</h1>
-      
+
       {% if livre.type %}
       <p class="livre-type">
         <span class="badge">{{ livre.type }}</span>
       </p>
       {% endif %}
-      
+
       <p class="auteur">
-        <strong>Auteur :</strong> 
+        <strong>Auteur :</strong>
         {{ livre.auteur | auteurFormat }}
       </p>
+
+      {% set livreAvis = avis | avisPourLivre(livre.id) %}
+      {% if livreAvis.length > 0 %}
+      <p class="livre-note-moyenne">
+        <span class="etoiles">{{ livreAvis | noteAverage | etoiles }}</span>
+        <span class="note-chiffre">{{ livreAvis | noteAverage }}/5</span>
+        <span class="note-count">({{ livreAvis.length }} avis)</span>
+      </p>
+      {% endif %}
 
       <div class="resume">
         <h2>Résumé</h2>
@@ -56,9 +65,9 @@ eleventyComputed:
       </div>
 
       <div class="actions">
-         <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/42#a1.s147.r{{ livre.id }}.c4" 
-           target="_blank" 
-           rel="noopener noreferrer" 
+         <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/42#a1.s147.r{{ livre.id }}.c4"
+           target="_blank"
+           rel="noopener noreferrer"
            class="btn-availability">
           📋 Vérifier la disponibilité du livre
         </a>
@@ -69,6 +78,48 @@ eleventyComputed:
     </div>
 
   </div>
+
+  {# Section avis #}
+  <section class="section-avis" id="avis">
+
+    {% if livreAvis.length > 0 %}
+    <h2>Avis des lecteurs ({{ livreAvis.length }})</h2>
+    <div class="liste-avis">
+      {% for unAvis in livreAvis %}
+      <article class="avis-card">
+        <div class="avis-header">
+          <span class="avis-nom">{{ unAvis.nom }}</span>
+          <span class="avis-etoiles" aria-label="Note : {{ unAvis.note }} sur 5">{{ unAvis.note | etoiles }}</span>
+          {% if unAvis.date %}
+          <time class="avis-date" datetime="{{ unAvis.date }}">{{ unAvis.date }}</time>
+          {% endif %}
+        </div>
+        <p class="avis-commentaire">{{ unAvis.commentaire }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <h2>Avis des lecteurs</h2>
+    <p class="avis-vide">Soyez le premier à donner votre avis sur ce livre !</p>
+    {% endif %}
+
+    <div class="avis-formulaire">
+      <h3>Laisser un avis</h3>
+      {% if config.gristFormAvisUrl and config.gristFormAvisUrl != "REMPLACER_PAR_URL_FORMULAIRE_GRIST" %}
+      <iframe
+        src="{{ config.gristFormAvisUrl }}?livre_id={{ livre.id }}"
+        title="Formulaire pour laisser un avis sur {{ livre.nom }}"
+        loading="lazy"
+        style="border: none; width: 100%; min-height: 500px;"
+      ></iframe>
+      {% else %}
+      <p class="avis-form-indisponible">
+        <em>Le formulaire d'avis sera disponible prochainement.</em>
+      </p>
+      {% endif %}
+    </div>
+
+  </section>
 
 </article>
 {% endblock %}

@@ -997,3 +997,188 @@ gap: 0.2rem;
 .encadre-logiciels li {
   margin-bottom: 0.3rem;
 }
+/* ============================================================
+   Avis des lecteurs
+   ============================================================ */
+
+/* Note moyenne sur la fiche livre */
+.livre-note-moyenne {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+}
+.livre-note-moyenne .etoiles {
+  color: #f59e0b;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.note-chiffre { font-weight: 600; }
+.note-count { color: #6b7280; font-size: 0.9rem; }
+
+/* Section avis sur la fiche livre */
+.section-avis {
+  margin-top: 3rem;
+  border-top: 2px solid #e5e7eb;
+  padding-top: 2rem;
+}
+.section-avis h2 { margin-bottom: 1.5rem; }
+
+.liste-avis {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.avis-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
+}
+
+.avis-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+.avis-nom { font-weight: 600; }
+.avis-etoiles { color: #f59e0b; letter-spacing: 1px; }
+.avis-date { color: #6b7280; font-size: 0.85rem; margin-left: auto; }
+.avis-commentaire { margin: 0; line-height: 1.6; }
+
+.avis-vide {
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+/* Formulaire d'avis (iframe Grist) */
+.avis-formulaire {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+.avis-formulaire h3 { margin-bottom: 1rem; }
+.avis-form-indisponible { color: #6b7280; }
+
+/* Page /avis/ */
+.avis-page { max-width: 900px; margin: 0 auto; padding: 1rem; }
+.avis-page h1 { margin-bottom: 1.5rem; }
+.avis-stats { color: #6b7280; margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+.avis-tri {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.tri-btn {
+  padding: 0.4rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s, color 0.15s;
+}
+.tri-btn.active {
+  background: #1d4ed8;
+  color: white;
+  border-color: #1d4ed8;
+}
+
+.livres-avec-avis {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.livre-avis-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  background: white;
+}
+.livre-avis-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.livre-avis-cover img {
+  border-radius: 4px;
+  object-fit: cover;
+}
+.livre-avis-info { flex: 1; }
+.livre-avis-info h2 { font-size: 1.1rem; margin: 0 0 0.3rem; }
+.livre-avis-info h2 a { color: inherit; text-decoration: none; }
+.livre-avis-info h2 a:hover { text-decoration: underline; }
+.livre-avis-note {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+.livre-avis-note .etoiles { color: #f59e0b; }
+
+.avis-liste-courte {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.avis-item { padding: 0.6rem 0; border-bottom: 1px solid #f3f4f6; }
+.avis-item:last-child { border-bottom: none; }
+.voir-plus-avis {
+  font-size: 0.9rem;
+  color: #1d4ed8;
+  text-decoration: none;
+}
+.voir-plus-avis:hover { text-decoration: underline; }
+
+/* Section "Derniers avis" sur l'accueil */
+.home-avis { margin-top: 2rem; }
+
+.derniers-avis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dernier-avis-card {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.dernier-avis-livre {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0.5rem;
+}
+.dernier-avis-livre:hover .dernier-avis-titre { text-decoration: underline; }
+.dernier-avis-livre img { border-radius: 3px; flex-shrink: 0; }
+.dernier-avis-titre { font-weight: 600; font-size: 0.9rem; line-height: 1.3; }
+.dernier-avis-card .avis-etoiles { color: #f59e0b; font-size: 1rem; }
+.dernier-avis-card .avis-commentaire {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #374151;
+  margin: 0.4rem 0;
+}
+.dernier-avis-card .avis-signature {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin: 0;
+  font-style: italic;
+}
