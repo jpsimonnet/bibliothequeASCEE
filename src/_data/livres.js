@@ -23,48 +23,24 @@ module.exports = async function() {
 
   console.log('📚 Chargement des livres depuis Grist...');
 
-  // Auto-détecte la table de typologies (référence de la colonne Type)
+  // Charge la table TYPOLOGIE pour résoudre la colonne de référence Type
+  // Colonne libellé confirmée : Genre_complet (ex: "Littérature française")
   let typeMap = {};
   try {
-    const tablesRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables`, {
+    const typRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables/TYPOLOGIE/records?limit=1000`, {
       headers: { 'Authorization': `Bearer ${apiKey}` }
     });
-    if (tablesRes.ok) {
-      const tablesData = await tablesRes.json();
-      const allTableIds = (tablesData.tables || []).map(t => t.id);
-      console.log(`🔍 Tables Grist disponibles: ${allTableIds.join(', ')}`);
-
-      // Cherche une table dont le nom contient "typolog" (insensible à la casse)
-      const typTableId = allTableIds.find(id => id.toLowerCase().includes('typolog'));
-      if (typTableId) {
-        const typRes = await fetch(`${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables/${typTableId}/records?limit=1000`, {
-          headers: { 'Authorization': `Bearer ${apiKey}` }
-        });
-        if (typRes.ok) {
-          const typData = await typRes.json();
-          if (typData.records && typData.records.length > 0) {
-            // Affiche les colonnes de la table pour diagnostic
-            const typCols = Object.keys(typData.records[0].fields);
-            console.log(`🔍 Table "${typTableId}" colonnes: ${typCols.join(', ')}`);
-            console.log(`🔍 Table "${typTableId}" 1er enregistrement: ${JSON.stringify(typData.records[0].fields)}`);
-
-            // Prend la première colonne de type texte non vide comme libellé
-            const labelCol = typCols.find(c => typeof typData.records[0].fields[c] === 'string' && typData.records[0].fields[c]);
-            console.log(`🔍 Colonne libellé détectée: "${labelCol || 'non trouvée'}"`);
-
-            for (const r of typData.records) {
-              const label = labelCol ? r.fields[labelCol] : Object.values(r.fields).find(v => typeof v === 'string' && v) || '';
-              typeMap[r.id] = label;
-            }
-            console.log(`✅ Table "${typTableId}" chargée : ${Object.keys(typeMap).length} entrées`);
-          }
-        }
-      } else {
-        console.warn('⚠️  Aucune table de typologies trouvée (recherche "typolog")');
+    if (typRes.ok) {
+      const typData = await typRes.json();
+      for (const r of (typData.records || [])) {
+        typeMap[r.id] = r.fields.Genre_complet || r.fields.abr || '';
       }
+      console.log(`✅ Table TYPOLOGIE chargée : ${Object.keys(typeMap).length} types (ex: ${Object.values(typeMap)[0] || '?'})`);
+    } else {
+      console.warn(`⚠️  Table TYPOLOGIE inaccessible (${typRes.status})`);
     }
   } catch (e) {
-    console.warn('⚠️  Impossible de charger la table Typologie:', e.message);
+    console.warn('⚠️  Impossible de charger la table TYPOLOGIE:', e.message);
   }
 
   const url = `${GRIST_BASE}/docs/${GRIST_DOC_ID}/tables/LIVRES/records?limit=10000&sort=id`;
