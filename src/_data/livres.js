@@ -52,7 +52,7 @@ module.exports = async function() {
     nom:           r.fields.Titre || '',
     auteur:        r.fields.Nom_auteur_complet || '',
     resume:       (r.fields.Resume || '').replace(/\s+/g, ' ').trim(),
-    type:          r.fields.Type || '',
+    type:          r.fields.Typologie || r.fields.Type || '',
     isbn:          r.fields.ISBN || '',
     annee:         r.fields.Annee || '0',
     pages:         r.fields.Pages || '',
