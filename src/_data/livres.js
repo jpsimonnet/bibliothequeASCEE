@@ -49,15 +49,15 @@ module.exports = async function() {
 
   const livres = data.records.map(r => ({
     id: String(r.id),
-    nom:          col(r.fields, 'Titre', 'titre', 'Nom', 'nom'),
-    auteur:       col(r.fields, 'Nom_auteur_complet', 'Nom auteur complet', 'Auteur', 'auteur'),
-    resume:      (col(r.fields, 'R_sum_', 'Résumé', 'Resume', 'resume', 'Résumé') || '').replace(/\s+/g, ' ').trim(),
-    type:         col(r.fields, 'Type', 'type'),
-    isbn:         col(r.fields, 'ISBN', 'isbn'),
-    annee:        col(r.fields, 'Annee', 'annee', 'Année') || '0',
-    pages:        col(r.fields, 'Pages', 'pages'),
-    langues:      col(r.fields, 'Langues', 'langues'),
-    couverture_url: col(r.fields, 'Couverture_bnum', 'Couverture-bnum', 'couverture_url'),
+    nom:           r.fields.Titre || '',
+    auteur:        r.fields.Nom_auteur_complet || '',
+    resume:       (r.fields.Resume || '').replace(/\s+/g, ' ').trim(),
+    type:          r.fields.Type || '',
+    isbn:          r.fields.ISBN || '',
+    annee:         r.fields.Annee || '0',
+    pages:         r.fields.Pages || '',
+    langues:       r.fields.Langues || '',
+    couverture_url: r.fields.Couverture_bnum || '',
     nouveaute:    (colNouveaute && r.fields[colNouveaute] === true) ? 'true' : 'false'
   })).filter(book => book.id && book.nom);
 
