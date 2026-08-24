@@ -68,6 +68,14 @@ eleventyComputed:
         {% endif %}
       </div>
 
+      {% if livre.etagere %}
+      <p class="livre-emplacement">
+        <span class="emplacement-icone" aria-hidden="true">📍</span>
+        <strong>Emplacement :</strong>
+        <span class="emplacement-code">{{ livre.etagere }}</span>
+      </p>
+      {% endif %}
+
       <div class="actions">
          <a href="https://grist.numerique.gouv.fr/o/docs/sH5fAFqm9fRs/bibliotheque-ASCE/p/42#a1.s147.r{{ livre.id }}.c4"
            target="_blank"
@@ -82,6 +90,24 @@ eleventyComputed:
     </div>
 
   </div>
+
+  {% set planEtagere = livre.etagere | etagerePlan %}
+  {% if planEtagere %}
+  {# Plan de localisation dans la bibliothèque #}
+  <section class="section-plan" id="plan">
+    <h2>Où trouver ce livre ?</h2>
+    <p class="plan-legende">
+      Rayonnage <strong>{{ planEtagere }}</strong> — emplacement <strong>{{ livre.etagere }}</strong>
+    </p>
+    <img
+      class="plan-image"
+      src="{{ ('/images/covers/' + planEtagere + '.png') | url }}"
+      alt="Plan de la bibliothèque indiquant l'emplacement {{ livre.etagere }}"
+      loading="lazy"
+      onerror="this.closest('.section-plan').style.display='none'"
+    >
+  </section>
+  {% endif %}
 
   {# Section avis #}
   <section class="section-avis" id="avis">

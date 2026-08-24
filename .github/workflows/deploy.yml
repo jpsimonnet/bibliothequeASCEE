@@ -43,7 +43,10 @@ jobs:
           mkdir -p /tmp/couvertures
           unzip -o couvertures.zip -d /tmp/couvertures
           find /tmp/couvertures -name "*.webp" -exec cp {} src/images/covers/ \;
+          # Plans de rayonnage (LF1.png, LF2.png...) affiches sur les fiches livres
+          find /tmp/couvertures -name "*.png" -exec cp {} src/images/covers/ \;
           echo "Covers importees depuis Nextcloud: $(find /tmp/couvertures -name '*.webp' | wc -l)"
+          echo "Plans importes depuis Nextcloud: $(find /tmp/couvertures -name '*.png' | wc -l)"
           echo "Total covers: $(ls src/images/covers/*.webp | wc -l)"
           rm -rf /tmp/couvertures couvertures.zip
 
@@ -52,6 +55,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add src/images/covers/*.webp
+          git add src/images/covers/*.png || true
           git diff --cached --quiet || git commit -m "Import couvertures depuis mDrive"
           git push || true
 

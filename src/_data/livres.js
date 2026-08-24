@@ -67,6 +67,13 @@ module.exports = async function() {
   const colNouveaute = colonnes.find(c => c.toLowerCase().replace(/[^a-z]/g, '').includes('nouveaut'));
   console.log(`🔍 Colonne nouveauté détectée: "${colNouveaute || 'non trouvée'}"`);
 
+  // Identifie la colonne étagère / emplacement (Etagere, Etagère, Emplacement...)
+  const colEtagere = colonnes.find(c => {
+    const n = c.toLowerCase().normalize('NFD').replace(/[^a-z]/g, '');
+    return n.includes('etagere') || n.includes('emplacement');
+  });
+  console.log(`🔍 Colonne étagère détectée: "${colEtagere || 'non trouvée'}"`);
+
   const livres = data.records.map(r => ({
     id: String(r.id),
     nom:           r.fields.Titre || '',
@@ -78,8 +85,9 @@ module.exports = async function() {
     pages:         r.fields.Pages || '',
     langues:       r.fields.Langues || '',
     couverture_url: r.fields.Couverture_bnum || '',
+    etagere:       String(colEtagere ? (r.fields[colEtagere] ?? '') : '').trim(),
     nouveaute:    (colNouveaute && r.fields[colNouveaute] === true) ? 'true' : 'false'
-  })).filter(book => book.id && book.nom);
+  })).filter(book => book.id && book.nom && book.type !== 'En cours de classement');
 
   console.log(`✅ ${livres.length} livres chargés depuis Grist`);
   return livres;

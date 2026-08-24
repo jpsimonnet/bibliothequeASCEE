@@ -129,6 +129,13 @@ module.exports = function(eleventyConfig) {
     return `${r2Base}/${ebook.epath}/${ebook.efile}`;
   });
 
+  // Préfixe du plan d'étagère : "LF1-1" -> "LF1" (nom du fichier image du plan)
+  eleventyConfig.addFilter("etagerePlan", function(etagere) {
+    if (!etagere) return '';
+    const m = String(etagere).trim().toUpperCase().match(/^[A-Z]+\d*/);
+    return m ? m[0] : '';
+  });
+
   // Tri des auteurs par nom de famille
   eleventyConfig.addFilter("sortByLastName", function(auteurs) {
     const particules = ['de', 'du', 'des', 'le', 'la', 'les', 'von', 'van', 'di', 'da', 'al'];

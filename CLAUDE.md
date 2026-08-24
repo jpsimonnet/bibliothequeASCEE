@@ -45,6 +45,7 @@ Colonnes Grist mappées (noms réels vérifiés) :
 | `langues` | `Langues` |
 | `couverture_url` | `Couverture_bnum` |
 | `nouveaute` | `Nouveautee` (booléen) |
+| `etagere` | `Etagere` (auto-détectée : `Etagere`/`Etagère`/`Emplacement`) |
 
 ### Avis lecteurs — source Grist (build-time)
 
@@ -78,6 +79,7 @@ L'iframe est intégrée avec `?livre_id={{ livre.id }}` pour pré-remplir le cha
 | `slugify` | Slugifie en gérant les accents français |
 | `ebookCover(ebook)` | URL couverture R2 |
 | `ebookDownload(ebook)` | URL téléchargement R2 |
+| `etagerePlan(etagere)` | Préfixe du rayonnage : `LF1-1` → `LF1` (nom du fichier plan) |
 
 ## Pages
 
@@ -107,7 +109,7 @@ Déclencheurs : push sur `main`, `workflow_dispatch`, cron `0 3 * * *`
 
 Étapes du build :
 1. Extraction ebooks depuis Calibre
-2. Téléchargement couvertures depuis mDrive (Nextcloud)
+2. Téléchargement couvertures (`.webp`) et plans de rayonnage (`.png`) depuis mDrive (Nextcloud)
 3. Commit des nouvelles couvertures
 4. Build 11ty (avec `GRIST_API_KEY` → fetch Grist pour livres + avis)
 5. Déploiement GitHub Pages
@@ -120,5 +122,6 @@ Variable requise : secret GitHub `GRIST_API_KEY` (clé API personnelle Grist).
 - **Ne jamais recréer `livres.json`** dans `src/_data/` : conflit de noms avec `livres.js`.
 - **RAM** : le build nécessite `--max-old-space-size=8192` (7 000+ pages générées).
 - **La clé API Grist** ne doit jamais apparaître dans le code — uniquement dans les secrets GitHub Actions ou en variable d'environnement locale.
+- **Plans de rayonnage** : `src/images/covers/{PREFIXE}.png` (ex. `LF1.png`), importés depuis mDrive par le workflow au même titre que les couvertures. Affichés sur la fiche livre au-dessus des avis ; masqués en JS (`onerror`) si le fichier n'existe pas.
 - **Les couvertures ebooks** viennent de R2, pas du repo git (pas de `src/images/covers/` pour les ebooks).
 - **Tri des avis** sur `/avis/` : fait côté client en JavaScript (tri statique par date à la génération).

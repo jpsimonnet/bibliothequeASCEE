@@ -1,140 +1,261 @@
-# Bibliothèque ASCEE
+# Bibliothèque ASCEE — Mode d'emploi
 
-Catalogue en ligne de la bibliothèque ASCEE : livres physiques et ebooks (EPUB). Site statique généré avec [Eleventy (11ty)](https://www.11ty.dev/) et hébergé sur GitHub Pages.
+Catalogue en ligne de la bibliothèque ASCEE : **~7 400 livres physiques** et **~2 800 ebooks (EPUB)**. Site statique généré avec [Eleventy (11ty)](https://www.11ty.dev/) et hébergé sur GitHub Pages.
 
-## Mettre à jour le catalogue
+🌐 **URL du site** : [https://ascee.github.io/bibliothequeASCEE/](https://ascee.github.io/bibliothequeASCEE/)
 
-Aucune installation requise. Tout se fait depuis un navigateur.
+---
 
-### 1. Mettre à jour les livres physiques
+## Sommaire
 
-Les données livres sont **directement lues depuis Grist** à chaque build. Il suffit de modifier les données dans Grist — le site se met à jour automatiquement à 3h du matin, ou manuellement via le bouton GitHub Actions.
+1. [Mettre à jour les livres physiques](#1-mettre-à-jour-les-livres-physiques)
+2. [Ajouter ou modifier des couvertures](#2-ajouter-ou-modifier-des-couvertures)
+3. [Gérer les avis des lecteurs](#3-gérer-les-avis-des-lecteurs)
+4. [Mettre à jour les ebooks](#4-mettre-à-jour-les-ebooks)
+5. [Déclencher une mise à jour du site](#5-déclencher-une-mise-à-jour-du-site)
+6. [Développement local](#6-développement-local)
+7. [Architecture technique](#7-architecture-technique)
 
-Plus besoin d'exporter un CSV.
+---
 
-### 2. Ajouter des couvertures de livres physiques
+## 1. Mettre à jour les livres physiques
 
-1. Préparer les images au format **`.webp`**
-2. Nommer chaque fichier avec l'**ID du livre** (ex : `7425.webp`)
-3. Les déposer dans le sous-dossier **`couvertures/`** du mDrive :
-   `https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP`
+Les données des livres sont **lues directement depuis Grist** à chaque build du site. Il n'y a rien à exporter ni à télécharger.
 
-### 3. Gérer les avis des lecteurs
+### Comment faire
 
-Les avis sont saisis via le formulaire intégré sur chaque fiche livre. Ils sont stockés dans la table **`avis`** du document Grist et apparaissent sur le site au prochain build.
+1. Ouvrir le document Grist → table **`LIVRES`**
+2. Ajouter, modifier ou supprimer des lignes directement
+3. Le site se mettra à jour automatiquement la nuit suivante (3h), ou immédiatement via le [bouton manuel](#5-déclencher-une-mise-à-jour-du-site)
 
-Pour modérer un avis : l'ouvrir directement dans Grist et supprimer ou modifier la ligne.
+### Champs disponibles dans Grist
 
-### 4. Mettre à jour les ebooks
+| Colonne Grist | Description | Remarque |
+|---|---|---|
+| `Titre` | Titre du livre | Obligatoire |
+| `Nom_auteur_complet` | Auteur(s) | Affiché "Auteur inconnu" si vide |
+| `Resume` | Résumé / description | Texte libre |
+| `Type` | Référence vers la table `TYPOLOGIE` | Catégorie du livre |
+| `ISBN` | Code ISBN | Optionnel |
+| `Annee` | Année de publication | Optionnel |
+| `Pages` | Nombre de pages | Optionnel |
+| `Langues` | Langue(s) du livre | Optionnel |
+| `Couverture_bnum` | URL de la couverture | Rempli automatiquement si l'image est déposée sur mDrive |
+| `Nouveautee` | Booléen — affiche le livre dans la section "Nouveautés" | Cocher pour mettre en avant |
 
-Les ebooks sont gérés via **Calibre** (base `metadata.db`). Les fichiers EPUB et couvertures sont hébergés sur **Cloudflare R2** :
+### Règle de filtrage
 
-- Bucket : `bibliotheque-ascee`
-- URL publique : `https://pub-ad35d75f972549028d32a8686e002705.r2.dev`
+Les livres dont la **typologie est "En cours de classement"** sont automatiquement exclus du site — ils n'apparaissent ni dans le catalogue, ni dans la recherche.
 
-Pour synchroniser de nouveaux ebooks vers R2 :
+---
+
+## 2. Ajouter ou modifier des couvertures
+
+Les couvertures des livres physiques sont des images au format **`.webp`**, nommées par l'**ID du livre** dans Grist (ex : `7425.webp`).
+
+### Comment déposer une couverture
+
+1. Préparer l'image au format **`.webp`** (outil de conversion en ligne : [Squoosh](https://squoosh.app/))
+2. Nommer le fichier avec l'**ID numérique du livre** tel qu'il apparaît dans Grist
+3. Déposer le fichier dans le sous-dossier **`couvertures/`** du mDrive :
+   👉 [https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP](https://bnum.din.gouv.fr/mdrive/index.php/s/LL4kWAiiWsdmGgP)
+
+Le workflow de build récupère automatiquement les nouveaux fichiers à chaque déploiement et les intègre au site.
+
+### Remarques
+
+- Si aucune couverture n'est disponible, le site affiche une image de remplacement générique
+- Les couvertures des **ebooks** ne passent pas par mDrive — elles sont hébergées sur Cloudflare R2 et extraites directement depuis Calibre
+
+---
+
+## 3. Gérer les avis des lecteurs
+
+### Saisie d'un avis
+
+Chaque fiche livre du site contient un **formulaire intégré** (iframe Grist). Les visiteurs peuvent y saisir :
+- Leur prénom (optionnel, "Anonyme" par défaut)
+- Une note de 1 à 5 étoiles
+- Un commentaire libre
+
+Les avis sont stockés dans la table **`avis`** du document Grist et apparaissent sur le site au prochain build.
+
+### Modérer un avis
+
+1. Ouvrir le document Grist → table **`avis`**
+2. Trouver la ligne correspondante
+3. La modifier ou la supprimer directement
+
+La suppression est prise en compte au prochain build.
+
+### Structure de la table `avis` dans Grist
+
+| Colonne | Type | Description |
+|---|---|---|
+| `date` | DateTime | Date de saisie (remplie automatiquement) |
+| `nom` | Texte | Prénom du lecteur |
+| `note` | Choix unique | ★ à ★★★★★ |
+| `commentaire` | Texte | Contenu de l'avis |
+| `livre_id` | Entier | ID du livre (pré-rempli par l'URL de la fiche) |
+
+---
+
+## 4. Mettre à jour les ebooks
+
+Les ebooks sont gérés via **Calibre** (logiciel de gestion de bibliothèque numérique). Les fichiers EPUB et leurs couvertures sont hébergés sur **Cloudflare R2**.
+
+### Workflow pour ajouter des ebooks
+
+1. Ajouter les livres dans Calibre (sur le poste qui héberge la bibliothèque)
+2. Synchroniser les fichiers vers R2 avec rclone :
 
 ```bash
 rclone sync '/Volumes/4TO/ASCEE/Livres Libres de droits' ascee:bibliotheque-ascee --progress
 ```
 
-### 5. Lancer la mise à jour du site
+3. Copier le fichier `metadata.db` de Calibre à la racine du dépôt GitHub
+4. Pousser sur `main` — le build extrait automatiquement les métadonnées et régénère le catalogue ebooks
 
-Le site se reconstruit automatiquement dans 3 cas :
+### Infos Cloudflare R2
+
+| Paramètre | Valeur |
+|---|---|
+| Bucket | `bibliotheque-ascee` |
+| URL publique | `https://pub-ad35d75f972549028d32a8686e002705.r2.dev` |
+
+---
+
+## 5. Déclencher une mise à jour du site
+
+Le site se reconstruit automatiquement dans trois cas :
 
 | Déclencheur | Quand |
 |---|---|
-| **Automatique** | Chaque nuit à 3h |
-| **Push sur main** | Quand un fichier du dépôt GitHub est modifié |
-| **Bouton manuel** | Onglet "Actions" sur GitHub > "Deploy to GitHub Pages" > "Run workflow" |
+| **Automatique (cron)** | Chaque nuit à 3h00 |
+| **Push sur `main`** | Dès qu'un fichier du dépôt est modifié et poussé |
+| **Bouton manuel** | Onglet **Actions** sur GitHub → workflow "Deploy to GitHub Pages" → bouton **Run workflow** |
 
-Pour une mise à jour immédiate après avoir modifié des données dans Grist, utiliser le **bouton manuel** sur GitHub.
+Pour une mise à jour immédiate après une modification dans Grist (livres, avis), utiliser le **bouton manuel**.
 
-### Ce qui se passe en coulisses
+### Ce qui se passe lors d'un build
 
-Le workflow GitHub Actions effectue automatiquement :
+1. Extraction des métadonnées ebooks depuis `metadata.db` (Calibre)
+2. Téléchargement des nouvelles couvertures depuis le dossier `couvertures/` du mDrive
+3. Commit des nouvelles couvertures dans le dépôt
+4. Appel à l'API Grist → récupération des livres physiques et des avis
+5. Génération du site avec 11ty (7 000+ pages : livres, ebooks, auteurs, catégories, avis, index de recherche)
+6. Déploiement sur GitHub Pages
 
-1. Appel à l'API Grist → récupère les 7 000+ livres physiques et les avis
-2. Extraction des métadonnées ebooks depuis la base Calibre (`scripts/extract-ebooks.js`)
-3. Téléchargement des nouvelles couvertures depuis le dossier `couvertures/` du mDrive
-4. Génération du site avec 11ty (pages livres, ebooks, auteurs, catégories, avis, index de recherche)
-5. Déploiement sur GitHub Pages
+---
 
-## Structure du projet
+## 6. Développement local
 
-```
-├── CLAUDE.md                   # Documentation technique (pour Claude Code)
-├── metadata.db                 # Base Calibre (ebooks)
-├── scripts/
-│   ├── extract-ebooks.js       # Extraction Calibre → JSON
-│   ├── test-grist.js           # Diagnostic colonnes Grist (usage local)
-│   └── download-fast.js        # Téléchargement couvertures (usage local)
-├── src/
-│   ├── _data/
-│   │   ├── livres.js           # Livres physiques — fetch API Grist au build
-│   │   ├── livres-static.json  # Fallback local (si pas de clé API)
-│   │   ├── avis.js             # Avis lecteurs — fetch API Grist au build
-│   │   ├── config.json         # Config site (URL formulaire Grist)
-│   │   └── ebooks.json         # Données ebooks (généré par extract-ebooks.js)
-│   ├── _includes/layouts/
-│   │   └── base.njk            # Template principal
-│   ├── css/style.css           # Styles
-│   ├── images/covers/          # Couvertures livres physiques (.webp par ID)
-│   ├── index.njk               # Accueil : recherche, nouveautés, avis, epub
-│   ├── catalogue.njk           # Catalogue livres physiques paginé
-│   ├── livres.njk              # Fiches livres : infos + avis + formulaire
-│   ├── avis.njk                # Page tous les avis (tri date/note)
-│   ├── search.njk              # Index de recherche (JSON)
-│   ├── auteurs.njk             # Liste des auteurs
-│   ├── auteur.njk              # Pages par auteur
-│   ├── categories.njk          # Liste des catégories
-│   ├── categorie.njk           # Pages par catégorie
-│   ├── reservation.njk         # Formulaire de réservation (Grist iframe)
-│   ├── suggestions.njk         # Formulaire de suggestion (Grist iframe)
-│   └── epub/                   # Section ebooks
-│       ├── index.njk
-│       ├── livre.njk
-│       ├── auteurs.njk / auteur.njk
-│       └── categories.njk / categorie.njk
-├── .github/workflows/
-│   └── deploy.yml              # Pipeline CI/CD
-├── .eleventy.js                # Configuration 11ty (filtres, collections)
-└── package.json
+Pour travailler sur le site en local (modifications de templates, CSS, filtres…).
+
+### Prérequis
+
+- Node.js 20+
+- Clé API Grist (demander à l'administrateur du document)
+
+### Installation
+
+```bash
+git clone https://github.com/ascee/bibliothequeASCEE.git
+cd bibliothequeASCEE
+npm install
 ```
 
-## Configuration Grist
+### Lancer le serveur de développement
+
+```bash
+GRIST_API_KEY=votre_cle npm start
+# Serveur disponible sur http://localhost:8080
+```
+
+Sans `GRIST_API_KEY`, le build utilise le fichier de secours `src/_data/livres-static.json` (données figées) et ne charge pas les avis.
+
+### Build de production
+
+```bash
+GRIST_API_KEY=votre_cle npm run build
+# Génère le site dans _site/ avec le préfixe /bibliothequeASCEE/
+```
+
+### Commandes disponibles
+
+| Commande | Description |
+|---|---|
+| `npm start` | Serveur de dev avec rechargement automatique (port 8080) |
+| `npm run build` | Build de production (avec pathprefix GitHub Pages) |
+| `npm run clean` | Supprime le dossier `_site/` |
+| `npm run extract-ebooks` | Régénère `src/_data/ebooks.json` depuis `metadata.db` |
+| `GRIST_API_KEY=... node scripts/test-grist.js` | Affiche les colonnes réelles des tables Grist (diagnostic) |
+
+---
+
+## 7. Architecture technique
+
+### Sources de données
+
+| Source | Données | Moment de lecture |
+|---|---|---|
+| **Grist** (API REST) | Livres physiques, typologies, avis lecteurs | À chaque build |
+| **Calibre** (`metadata.db`) | Métadonnées ebooks | À chaque build |
+| **mDrive (Nextcloud)** | Couvertures livres physiques (`.webp`) | À chaque build |
+| **Cloudflare R2** | Fichiers EPUB + couvertures ebooks | En ligne (servis directement) |
+
+### Configuration Grist
 
 | Paramètre | Valeur |
 |---|---|
 | Document | `sH5fAFqm9fRs` |
 | Table livres | `LIVRES` |
+| Table typologies | `TYPOLOGIE` |
 | Table avis | `avis` |
-| Secret GitHub | `GRIST_API_KEY` |
-| Formulaire avis | configuré dans `src/_data/config.json` |
+| Secret GitHub Actions | `GRIST_API_KEY` |
 
-Colonnes de la table `avis` :
+### Pages du site
 
-| Colonne | Type | Description |
-|---|---|---|
-| `date` | DateTime | Date de saisie (automatique via formule Grist) |
-| `nom` | Texte | Nom du lecteur (défaut : Anonyme) |
-| `note` | Choix unique | Étoiles ★ à ★★★★★ |
-| `commentaire` | Texte | Texte de l'avis |
-| `livre_id` | Entier | ID du livre (pré-rempli par l'URL) |
+| URL | Description |
+|---|---|
+| `/` | Accueil : recherche, nouveautés, derniers avis, sélection ebooks |
+| `/catalogue/` | Catalogue livres physiques (paginé) |
+| `/livre/{id}/` | Fiche livre : infos, avis, formulaire |
+| `/auteurs/` | Liste des auteurs |
+| `/auteur/{slug}/` | Page par auteur |
+| `/categories/` | Liste des catégories |
+| `/categorie/{slug}/` | Livres par catégorie |
+| `/avis/` | Tous les avis (tri date/note côté client) |
+| `/epub/` | Catalogue ebooks (paginé) |
+| `/epub/livre/{id}/` | Fiche ebook |
+| `/reservation/` | Formulaire de réservation |
+| `/suggestions/` | Formulaire de suggestions d'achat |
+| `/search.json` | Index de recherche (JSON statique) |
 
-## Développement local (optionnel)
+### Structure des fichiers clés
 
-```bash
-npm install
-GRIST_API_KEY=votre_cle npm start   # Serveur de dev sur http://localhost:8080
-npm run build                        # Build de production
+```
+├── metadata.db                   # Base Calibre (ebooks) — à mettre à jour manuellement
+├── src/
+│   ├── _data/
+│   │   ├── livres.js             # Fetch API Grist → livres physiques
+│   │   ├── livres-static.json    # Fallback local (build sans clé API)
+│   │   ├── avis.js               # Fetch API Grist → avis lecteurs
+│   │   ├── ebooks.json           # Généré automatiquement par extract-ebooks.js
+│   │   └── config.json           # URL du formulaire Grist (avis)
+│   ├── images/covers/            # Couvertures livres physiques (.webp, par ID)
+│   └── (templates .njk)          # Pages et mises en page Nunjucks
+├── scripts/
+│   ├── extract-ebooks.js         # Lit metadata.db → génère ebooks.json
+│   ├── test-grist.js             # Diagnostic colonnes Grist
+│   └── download-fast.js          # Téléchargement couvertures (usage local)
+├── .eleventy.js                  # Configuration 11ty (filtres, collections, pagination)
+├── .github/workflows/deploy.yml  # Pipeline CI/CD complet
+└── package.json
 ```
 
-Sans `GRIST_API_KEY`, le build utilise `src/_data/livres-static.json` comme fallback et charge zéro avis.
+### Notes techniques
 
-Pour vérifier les colonnes Grist :
-```bash
-GRIST_API_KEY=votre_cle node scripts/test-grist.js
-```
-
-Note : le build nécessite ~8 Go de RAM Node.js en raison du volume de données (7 000+ pages générées).
+- Le build nécessite jusqu'à **8 Go de RAM** Node.js en raison du volume de données (7 000+ pages générées simultanément)
+- La clé API Grist ne doit **jamais** apparaître dans le code — uniquement dans les secrets GitHub Actions ou en variable d'environnement locale
+- Ne pas recréer de fichier `livres.json` dans `src/_data/` — il entrerait en conflit avec `livres.js`
