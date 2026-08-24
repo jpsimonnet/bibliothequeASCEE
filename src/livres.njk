@@ -92,20 +92,29 @@ eleventyComputed:
   </div>
 
   {% set planEtagere = livre.etagere | etagerePlan %}
+  <div class="livre-bas{% if planEtagere %} livre-bas--2col{% endif %}">
+
   {% if planEtagere %}
   {# Plan de localisation dans la bibliothèque #}
   <section class="section-plan" id="plan">
     <h2>Où trouver ce livre ?</h2>
     <p class="plan-legende">
-      Rayonnage <strong>{{ planEtagere }}</strong> — emplacement <strong>{{ livre.etagere }}</strong>
+      Rayonnage <strong>{{ planEtagere }}</strong><br>
+      Emplacement <strong>{{ livre.etagere }}</strong>
     </p>
-    <img
-      class="plan-image"
-      src="{{ ('/images/covers/' + planEtagere + '.png') | url }}"
-      alt="Plan de la bibliothèque indiquant l'emplacement {{ livre.etagere }}"
-      loading="lazy"
-      onerror="this.closest('.section-plan').style.display='none'"
-    >
+    <a class="plan-lien"
+       href="{{ ('/images/covers/' + planEtagere + '.png') | url }}"
+       target="_blank"
+       rel="noopener noreferrer">
+      <img
+        class="plan-image"
+        src="{{ ('/images/covers/' + planEtagere + '.png') | url }}"
+        alt="Plan de la bibliothèque indiquant l'emplacement {{ livre.etagere }}"
+        loading="lazy"
+        onerror="this.closest('.livre-bas').classList.remove('livre-bas--2col'); this.closest('.section-plan').remove()"
+      >
+      <span class="plan-agrandir">🔍 Agrandir le plan</span>
+    </a>
   </section>
   {% endif %}
 
@@ -150,6 +159,8 @@ eleventyComputed:
     </div>
 
   </section>
+
+  </div>
 
 </article>
 {% endblock %}

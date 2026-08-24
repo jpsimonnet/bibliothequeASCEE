@@ -283,6 +283,8 @@ ul {
   letter-spacing: 0.03em;
 }
 
+/* Bas de fiche : plan du rayonnage + avis.
+   Empiles par defaut, cote a cote a partir de 1024px (voir media query plus bas). */
 /* Plan de localisation (rayonnage) */
 .section-plan {
   margin-top: 3rem;
@@ -290,20 +292,56 @@ ul {
   padding-top: 2rem;
 }
 
-.section-plan h2 { margin-bottom: 0.5rem; }
+.section-plan h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
 
 .plan-legende {
   margin-bottom: 1rem;
   color: #4b5563;
+  line-height: 1.6;
 }
 
 .plan-image {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  /* garde-fou : un plan tres allonge ne doit pas manger toute la page */
+  max-height: 60vh;
+  object-fit: contain;
+  object-position: top;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
   background: #fff;
+}
+
+.plan-lien {
+  display: block;
+  text-decoration: none;
+}
+
+.plan-agrandir {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #2563eb;
+}
+
+/* Ecrans larges : plan a gauche, avis a droite */
+@media (min-width: 1024px) {
+  .livre-bas--2col {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  /* le plan reste visible pendant le defilement des avis */
+  .livre-bas--2col .section-plan {
+    position: sticky;
+    top: 1rem;
+  }
 }
 
 .actions {
